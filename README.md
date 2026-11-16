@@ -39,12 +39,11 @@ Re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" 
 
 ## Run
 
-Python 3.12 with `requirements.txt`. Stage 3 is resumable: repeat `python scripts/stage3_extension.py` until it prints DONE.
+Python 3.12 with `requirements.txt`. One command rebuilds everything from `data/raw/` in the right order and stops on any failure:
 
     python -m venv .venv && .venv/bin/pip install -r requirements.txt
-    for s in stage0_feasibility stage1_cohort_counts stage2_pilot_original stage3_label_extract stage3_extension stage3_tests stage4_drift_robustness stage4_code_only stage5_figures; do .venv/bin/python scripts/$s.py; done
-    .venv/bin/python scripts/stage1_reproduce.py --project .     # before stage2_pilot_original on a fresh checkout
+    PY=.venv/bin/python ./run_all.sh
 
 ## Status, 16 November 2026 (latest)
 
-Stages 0 to 4 done; first paper draft in `paper/draft_v0.1.md`. Read `outputs/stage3_report.md` and `outputs/stage4_report.md` for results. Open items are the TODO list at the end of the draft. Older status notes above are kept for the record.
+Stages 0 to 5 done. An independent review (`reviews/review_2026-11-16.md`) led to a major revision of the paper's claims: see `reviews/response_2026-11-16.md`. Current paper: `paper/main.pdf` (v0.2); the pre-review version is `paper/main_v0.1_before_review.tex`. Results: `outputs/stage3_report.md` (planned), `outputs/stage4_report.md` and `outputs/stage6/` (exploratory). Older status notes above are kept for the record.

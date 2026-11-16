@@ -70,11 +70,11 @@ for coh, col in (("O", BLUE), ("E", ORANGE)):
     x = a[a.Cohort == coh]
     axs[0].scatter(x.total, x.mean_gap.abs() * 100, s=16, color=col, edgecolor="white", linewidth=0.5, label=f"{LAB[coh]}, n = {len(x)}")
     axs[1].scatter(x.total, x.top10_gap_excess * 100, s=16, color=col, edgecolor="white", linewidth=0.5)
-axs[0].set(xscale="log", yscale="log", xlabel="Test-set size, public plus private", ylabel="Absolute mean gap (percentage points)", title="Gap size falls with test-set size")
-axs[1].set(xscale="log", yscale="symlog", xlabel="Test-set size, public plus private", ylabel="Top-10% gap minus selection-only gap (pp)", title="Excess over selection does not")
+axs[0].set(xscale="log", yscale="log", xlabel="Minimum compatible test-set size", ylabel="Absolute mean gap (percentage points)", title="Gap size falls with test-set size")
+axs[1].set(xscale="log", yscale="symlog", xlabel="Minimum compatible test-set size", ylabel="Top-10% gap minus reference (pp)", title="Net of the resplitting reference")
 axs[1].set_yscale("symlog", linthresh=0.1); axs[1].axhline(0, color=MUTED, lw=0.8)
 for ax in axs: ax.axvline(10_000, color=MUTED, lw=0.8, ls=":")
-fig.tight_layout(w_pad=4.5); bottom_legend(fig, axs[0], "Accuracy competitions with test-set sizes inferred from scores. Dotted line: 10,000 examples.")
+fig.tight_layout(w_pad=4.5); bottom_legend(fig, axs[0], "Accuracy competitions; sizes are the smallest compatible with the scores. Dotted line: 10,000 examples.")
 save(fig, "fig3_test_size")
 
 # Figure 4: prize competitions, relative gap of all and of first submissions

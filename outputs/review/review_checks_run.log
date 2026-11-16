@@ -1,0 +1,59 @@
+{
+  "O": {
+    "raw_positive": 76,
+    "raw_finite": 114,
+    "clipped_positive": 77,
+    "sign_flips": 1,
+    "accuracy_first_rejection_medians": {
+      "1": 0.017094017094017096,
+      "2": 0.11119573495811119,
+      "10": 0.5182863113897597
+    }
+  },
+  "E": {
+    "raw_positive": 307,
+    "raw_finite": 481,
+    "clipped_positive": 327,
+    "sign_flips": 50,
+    "accuracy_first_rejection_medians": {
+      "1": 0.017862838915470493,
+      "2": 0.11747434283435942,
+      "10": 0.5082993197278911
+    }
+  },
+  "excluded_after_clipping_only": [],
+  "nonadaptive": {
+    "n": 2000,
+    "teams": 100,
+    "mean_gap": -1.6999999999600667e-08,
+    "median_gap": 0.0,
+    "first_mean_gap": -0.0009999999999999987,
+    "top10_mean_gap": 0.0007752649999999994,
+    "top10_n": 200,
+    "noise_sd_first": 0.0,
+    "share_identical": 0.0,
+    "drift_teams": 100,
+    "drift_mean": 0.0010526219999999976,
+    "drift_se": 2.1109622488611075e-08,
+    "drift_median": 0.0010525999999999756,
+    "drift_share_positive": 1.0,
+    "drift_share_negative": 0.0,
+    "team_spread": 0.09797820000000002,
+    "rel_mean_gap": -1.735079844251136e-07,
+    "rel_drift": 0.010743430681518925,
+    "drift_late": 0.0005263040000000003,
+    "drift_skip2": 0.0009473544444444441,
+    "slope_adj": 0.0020000029285301077
+  },
+  "environment": {
+    "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.4.2",
+    "pandas": "3.0.1"
+  },
+  "git_head": "787131f8b6ee02cadaf3193cc26b449b35a976e2",
+  "files": {
+    "paper/main.pdf": "5d948e7065d872be689555adaa19ca877a2ecb70f61fd17f4ea347d6e7bb452b",
+    "scripts/stage2_measures.py": "14179ef7c31712b376b22eebd26996f74ad734616b93fef03d4352867c91a425",
+    "analysis_plan/stage2_analysis_plan_v1.0.md": "2198d3d71593d304a3ecda942c25387514b208aa1d7efe52f04c74709a7e2fb1"
+  }
+}

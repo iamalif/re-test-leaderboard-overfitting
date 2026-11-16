@@ -1,0 +1,10 @@
+{
+  "inferred": 100,
+  "fits_n100": true,
+  "fits_n10000": true,
+  "p_for_075_vs_065_n100": 0.1646366738452582,
+  "p_for_075_vs_065_n10000": 8.548763466017164e-54,
+  "identical_predictions_true_expected_selected_gap": 0,
+  "independent_null_gap": 0.035140366572575514,
+  "independent_null_sd": 0.001363473132454569
+}

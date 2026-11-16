@@ -51,3 +51,5 @@ Restricted to unflagged competitions the pattern is the same (median relative ga
 ## 4. Reproducibility check
 
 All scripts from stage 0 to stage 4 were re-run from the raw files in a clean directory under Python 3.12. Every per-competition table and every result table matched the project's outputs (largest relative difference 9e-14) once the bootstrap ordering note in the stage 3 report was fixed.
+
+> **Amendment, 16 November 2026 (after independent review).** The checks in section 1 rule out explanations A and B only. They do not establish adaptation: see `reviews/review_2026-11-16.md` finding 1 and `reviews/response_2026-11-16.md`. "Selection-adjusted" quantities in this report are relative to an independent-resplitting reference, not estimates of selection bias.

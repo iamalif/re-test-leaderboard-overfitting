@@ -1,0 +1,84 @@
+{
+  "exact_tail_cases": 198,
+  "exact_tail_max_error": 1.1102230246251565e-16,
+  "independent_tests": [
+    {
+      "group": "Accuracy",
+      "p": 0.5896954866430071,
+      "n_E": 95,
+      "n_O": 33,
+      "diff_medians": -0.00029491546772960004,
+      "holm": 1
+    },
+    {
+      "group": "AUC",
+      "p": 0.24047576319717023,
+      "n_E": 73,
+      "n_O": 40,
+      "diff_medians": -0.0006881038051529,
+      "holm": 0.7214272895915107
+    },
+    {
+      "group": "FIVE",
+      "p": 0.9208851543030421,
+      "n_E": 194,
+      "n_O": 113,
+      "diff_medians": 0.0012948203556496993,
+      "holm": 1
+    },
+    {
+      "group": "H2",
+      "p": 2.2129261612447087e-15,
+      "n_E": 481,
+      "holm": 8.851704644978835e-15
+    }
+  ],
+  "drift_by_metric": {
+    "AUC": {
+      "n": 73,
+      "positive": 52
+    },
+    "Accuracy": {
+      "n": 95,
+      "positive": 58
+    },
+    "LogLoss": {
+      "n": 8,
+      "positive": 5
+    },
+    "MAP@K": {
+      "n": 14,
+      "positive": 10
+    },
+    "MulticlassLoss": {
+      "n": 4,
+      "positive": 3
+    },
+    "Other": {
+      "n": 213,
+      "positive": 156
+    },
+    "Regression": {
+      "n": 74,
+      "positive": 43
+    }
+  },
+  "noncommunity_auc_counts": {
+    "E": 44,
+    "total_E": 73
+  },
+  "allstate": {
+    "rows": 198856,
+    "customers": 55716,
+    "missing": 0
+  },
+  "size_multiplier_note": "Exploratory non-identifiability illustration only; multiplying source-verified counts is not a plausible alternative for those contests.",
+  "bootstrap_table_max_absolute_difference": 0.0,
+  "hashes": {
+    "analysis_plan/stage2_analysis_plan_v1.0.md": true,
+    "data/reference/split_label_decisions.py": true,
+    "scripts/stage2_measures.py": true,
+    "outputs/stage3/split_labels.csv": true
+  },
+  "plan_diff_from_initial_commit": ""
+}

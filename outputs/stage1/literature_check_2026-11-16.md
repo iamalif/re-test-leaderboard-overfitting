@@ -1,0 +1,11 @@
+# Limited literature and implementation check — 16 November 2026
+
+This is a search record, not a claim of exhaustive novelty review.
+
+- Searched the original title with code/GitHub, author names with Kaggle, and GitHub repository metadata. Checked Sara Fridovich-Keil's project page and repositories, Rebecca Roelofs's repositories and Vaishaal Shankar's repository listing. No original analysis repository found through these checks. Sara's project page links the paper but no code: https://sarafridov.github.io/research/ .
+- The NeurIPS review explicitly says source code was provided: https://proceedings.neurips.cc/paper_files/paper/2019/file/ee39e503b6bedf0c98c388b7e8589aca-Reviews.html . Public proceedings supplemental ZIP contains a PDF only. OpenReview page https://openreview.net/forum?id=HJlr9NBgUr exists, but browser verification/API 403 blocked attachment inspection. Researcher check pending.
+- GitHub name matches EHilly/kaggle-overfitting-analysis and rdimaggio/kaggle_overfitting were created/updated before the 2019 publication, so they do not establish a recent re-test. Repository metadata only inspected; no novelty conclusions drawn.
+- Confirmed the Monoculture paper exists at https://arxiv.org/abs/2607.13077 . Latest listed version is v3, revised 29 September 2026, with expanded title "The Hitchhiker's Guide to Monoculture: AI Homogenizes Syntax, Not (Necessarily) Semantics". Abstract describes Kaggle coding convergence from 2019 to mid-2026. Full latest methods and overlap remain to be reviewed; the brief's description should not be treated as version-independent.
+- Confirmed the ecosystem survey at https://arxiv.org/abs/2604.08001 . Abstract indicates a broad platforms/participants study; full-text overlap not re-audited here.
+- Targeted search terms included "leaderboard overfitting" "Roelofs" replication and the two exact related-work titles. This did not establish that no other replication exists.
+- Allstate participant primary evidence: https://speakerdeck.com/justmarkham/allstate-purchase-prediction-challenge-on-kaggle (slide 7 total test customers), https://github.com/justmarkham/kaggle-allstate/blob/master/allstate-paper.md (unit of prediction), https://www.kaggle.com/c/allstate-purchase-prediction-challenge/forums/t/8218/solution-sharing (participant discussion). Actual source test file verification pending.

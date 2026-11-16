@@ -1,0 +1,24 @@
+{
+  "status": "Conditional sensitivity using reconstructed denominators; original test file verification pending",
+  "public_n": 16714,
+  "private_n": 39002,
+  "total_n_source": "https://speakerdeck.com/justmarkham/allstate-purchase-prediction-challenge-on-kaggle slide 7",
+  "derivation": "Reduced observed score fractions include 8991/16714 and 20777/39002. Assuming 55716 distinct equally weighted scored customers and disjoint exhaustive splits, the denominators must be these values. All current original-sample scores fit.",
+  "results": [
+    {
+      "subset": "all",
+      "n": 24523,
+      "fraction_inclusive_p_le005": 0.012845084206663132
+    },
+    {
+      "subset": "top10",
+      "n": 2453,
+      "fraction_inclusive_p_le005": 0.038320423970648186
+    },
+    {
+      "subset": "first",
+      "n": 1570,
+      "fraction_inclusive_p_le005": 0.017834394904458598
+    }
+  ]
+}

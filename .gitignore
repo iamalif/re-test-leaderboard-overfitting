@@ -1,0 +1,13 @@
+# Raw Meta Kaggle download (3.7 GB; get it from Kaggle, hashes are in decision_log.md)
+data/raw/
+# Third-party files that are not ours to redistribute
+data/reference/*.pdf
+data/reference/test_v2.csv
+# Large derived extracts of Meta Kaggle; rebuilt by scripts/stage1_reproduce.py
+outputs/stage1/original_predeadline_submissions.csv.gz
+outputs/stage1/original_pvalues_consistent_sizes.csv.gz
+# Unused draft email
+outputs/author_code_request.md
+.DS_Store
+.venv/
+__pycache__/

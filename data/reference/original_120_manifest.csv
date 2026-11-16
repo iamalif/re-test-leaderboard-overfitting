@@ -1,0 +1,121 @@
+CompetitionId,PaperMetric,PaperName,PaperSubmissions,PaperPublicSize,PaperPrivateSize,IdenticalSplits,SourcePage
+3362,Accuracy,Dogs vs. Cats,1225,3750,8751,False,13
+3366,Accuracy,The Black Box Learning Challenge*,1924,5000,5000,False,13
+3428,Accuracy,Data Science London + Scikit-learn,1477,2700,6299,False,13
+3641,Accuracy,DecMeg2014 - Decoding the Human Brain,4507,1745,2313,False,13
+3649,Accuracy,CIFAR-10 - Object Recognition in Images,1634,300,9700,False,13
+3788,Accuracy,Allstate Purchase Prediction Challenge,24532,59657,139199,False,13
+4554,Accuracy,MSU Visits*,1288,30000,270000,False,13
+4821,Accuracy,104-1 MLDS_Final,1060,36400,36401,False,13
+4857,Accuracy,Let’s Overﬁt,1080,500000,500000,False,13
+5275,Accuracy,Can we predict voting outcomes?,35247,696,696,False,13
+5896,Accuracy,Prediction Reviews Sentiment Analysis*,1770,50,50,False,13
+5903,Accuracy,Prediction Reviews Sentiment Analysis (Light)*,3528,400,100,False,13
+5942,Accuracy,Identify Me If You Can – Yandex & MIPT,1242,20588,20589,False,13
+6109,Accuracy,Identify Me If You Can,1819,23236,23237,False,13
+7042,Accuracy,Text Normalization Challenge - English Language,1834,20446,2024166,False,13
+7115,Accuracy,Cdiscount’s Image Classiﬁcation Challenge,5859,530455,1237727,False,13
+7563,Accuracy,Cover Type Prediction of Forests,3077,6000,14000,False,13
+7634,Accuracy,TensorFlow Speech Recognition Challenge,24263,3171,155365,False,13
+8307,Accuracy,Data Science Nigeria Telecoms Churn,1259,180,420,False,13
+9051,Accuracy,Digit Recongnizer 1438,1640,2576,2575,False,13
+9491,Accuracy,ML-2018spring-hw5,2247,100000,100000,False,13
+10851,Accuracy,CSE158 fa18 Category Prediction,3872,7000,7000,False,13
+11842,Accuracy,AIA image classiﬁcation by CNN,3415,1350,150,False,13
+12187,Accuracy,CS 4740 Project 4 Revised,1086,N/A,N/A,False,13
+12349,Accuracy,2019 1st ML month with KaKR,3307,209,209,False,13
+12357,Accuracy,UC Berkeley CS189 HW1 (MNIST),1480,3000,7000,False,13
+12358,Accuracy,UC Berkeley CS189 HW1 (SPAM),1527,1757,4100,False,13
+12359,Accuracy,UC Berkeley CS189 HW1 (CIFAR-10),1336,3000,7000,False,13
+12598,Accuracy,TAU Robot Surface Detection,1574,852,853,False,13
+12681,Accuracy,PadhAI: Text - Non Text Classiﬁcation Level 2,1185,90,210,False,13
+13034,Accuracy,UC Berkeley CS189 HW3 (MNIST),1193,3000,7000,False,13
+13036,Accuracy,UC Berkeley CS189 HW3 (SPAM),1080,1757,4100,False,13
+13078,Accuracy,Homework 2 Part 2 - Classiﬁcation,2245,N/A,N/A,False,13
+13383,Accuracy,ML2019spring-hw2,2802,8141,8141,False,13
+2439,AUC,INFORMS Data Mining Contest 2010,1483,254,2285,False,23
+2445,AUC,Predict Grant Applications,2800,544,1632,False,23
+2464,AUC,IJCNN Social Network Challenge,1124,1792,7168,False,23
+2478,AUC,Stay Alert! The Ford Challenge,1402,36252,84588,False,23
+2489,AUC,Don’t Overﬁt!,3775,1975,17775,False,23
+2551,AUC,Give Me Some Credit,7724,30451,71052,False,23
+3338,AUC,Amazon.com - Employee Access Challenge,16896,17676,41245,False,23
+3353,AUC,The Marinexplore and Cornell Univ. Whale Detection*,3295,16351,38152,False,23
+3469,AUC,Inﬂuencers in Social Networks,2109,2976,2976,False,23
+3509,AUC,The ICML 2013 Whale Challenge - Right Whale Redux,1005,7641,17828,False,23
+3524,AUC,Accelerometer Biometric Competition,7130,8102160,18905040,False,23
+3526,AUC,StumbleUpon Evergreen Classiﬁcation Challenge,7509,634,2537,False,23
+3774,AUC,CONNECTOMICS,1458,75742,75743,False,23
+3897,AUC,Acquire Valued Shoppers Challenge,25205,N/A,N/A,False,23
+3926,AUC,Predicting Excitement at DonorsChoose.org*,12530,11193,33579,False,23
+3933,AUC,MLSP 2014 Schizophrenia Classiﬁcation Challenge,2246,0,119749,False,23
+3960,AUC,American Epilepsy Society Seizure Prediction Challenge,17782,1574,2361,False,23
+4031,AUC,Driver Telematics Analysis,36072,N/A,N/A,False,23
+4043,AUC,BCI Challenge @ NER 2015,4348,680,2721,False,23
+4294,AUC,Facebook Recruiting IV: Human or Robot?,13559,1410,3290,False,23
+4366,AUC,West Nile Virus Prediction,29963,2326,113967,False,23
+4487,AUC,Springleaf Marketing Response,39439,43570,101662,False,23
+4493,AUC,Truly Native?,3224,1360,2040,False,23
+4657,AUC,Homesite Quote Conversion,36387,52151,121685,False,23
+4986,AUC,Santander Customer Satisfaction,93584,37909,37909,False,23
+5167,AUC,PRED 411-2016_04-U2-INSURANCE-A*,1436,1070,1071,False,23
+5174,AUC,Avito Duplicate Ads Detection,8157,657602,657603,False,23
+5261,AUC,Predicting Red Hat Business Value,33696,149606,349081,False,23
+5390,AUC,Melbourne Univ. Seizure Prediction*,10083,N/A,N/A,False,23
+6242,AUC,Catch Me If You Can: Intruder Detection*,2479,41398,41399,False,23
+7162,AUC,WSDM - KKBox’s Music Recommendation Challenge,15555,1278396,1278395,False,23
+8227,AUC,2018 Spring CSE6250 HW1,1170,244173,244173,False,23
+8540,AUC,TalkingData AdTracking Fraud Detection Challenge,68594,3382284,15408185,False,23
+9120,AUC,Home Credit Default Risk,132097,9749,38995,False,23
+10683,AUC,Microsoft Malware Prediction,43702,4947549,2905704,False,23
+11803,AUC,BGU - Machine Learning,2079,6849,5603,False,23
+11848,AUC,Histopathologic Cancer Detection,20352,28154,29304,False,23
+12512,AUC,2019 Spring CSE6250 BDH,1396,244173,244173,False,23
+12558,AUC,WiDS Datathon 2019,3021,4312,2222,False,23
+12904,AUC,Caltech CS 155 2019 Part 1,1078,1264122,1264122,False,23
+2748,MAP@K,"KDD Cup 2012, Track 1",13077,710267,629860,False,30
+2947,MAP@K,Facebook Recruiting Competition,3554,65647,196941,False,30
+3288,MAP@K,Event Recommendation Engine Challenge,3021,10238,10238,True,30
+3445,MAP@K,KDD Cup 2013 (Track 1)*,9426,2244,2244,True,30
+3929,MAP@K,The Hunt for Prohibited Content,5001,675622,675621,False,30
+4481,MAP@K,Coupon Purchase Prediction,18487,6870,16030,False,30
+5056,MAP@K,Expedia Hotel Recommendations,22713,834321,1693923,False,30
+5186,MAP@K,Facebook V: Predicting Check Ins,15127,4445370,4445369,False,30
+5497,MAP@K,Outbrain Click Prediction,6654,9667549,22557613,False,30
+5558,MAP@K,Santander Product Recommendation,28773,278884,650731,False,30
+6818,MAP@K,Humpback Whale Identiﬁcation,37529,1592,6368,False,30
+7666,MAP@K,CS5785 Fall 2017 Final Exam,3898,1000,1000,False,30
+8396,MAP@K,Google Landmark Retrieval Challenge,3123,40019,77685,False,30
+8857,MAP@K,Recipient prediction 2018,1154,1000,1000,False,30
+8900,MAP@K,Freesound Audio Tagging Challenge*,5684,282,9118,False,30
+10200,MAP@K,"Quick, Draw! Doodle Recognition Challenge",21407,10098,102101,False,30
+12088,MAP@K,CS5785 Fall 2018 Final,1877,1000,1000,False,30
+3043,MulticlassLoss,Predict Closed Questions on Stack Overﬂow,1431,0,81686,False,34
+3978,MulticlassLoss,National Data Science Bowl,15121,9128,121273,False,34
+4117,MulticlassLoss,Microsoft Malware Classiﬁcation Challenge (BIG 2015),7670,3262,7611,False,34
+4280,MulticlassLoss,Otto Group Product Classiﬁcation Challenge,43524,101058,43310,False,34
+4521,MulticlassLoss,Right Whale Recognition,4789,2424,4501,False,34
+4588,MulticlassLoss,Telstra Network Disruptions,19603,3240,7931,False,34
+4654,MulticlassLoss,Walmart Recruiting: Trip Type Classiﬁcation,13135,28702,66972,False,34
+5048,MulticlassLoss,State Farm Distracted Driver Detection,25591,15148,64579,False,34
+5340,MulticlassLoss,TalkingData Mobile User Demographics,24631,33621,78450,False,34
+5568,MulticlassLoss,The Nature Conservancy Fisheries Monitoring,2100,1132,13021,False,34
+5590,MulticlassLoss,Two Sigma Connect: Rental Listing Inquiries,47044,29864,44796,False,34
+6243,MulticlassLoss,Intel & MobileODT Cervical Cancer Screening,1367,589,3943,False,34
+6841,MulticlassLoss,Personalized Medicine: Redeﬁning Cancer Treatment,3056,2267,3401,False,34
+7516,MulticlassLoss,Spooky Author Identiﬁcation,10640,2518,5874,False,34
+2780,LogLoss,Predicting a Biological Response,8843,625,1876,False,37
+2984,LogLoss,Practice Fusion Diabetes Classiﬁcation,2200,1245,3734,False,37
+3377,LogLoss,ICDAR2013 - Gender Prediction from Handwriting,1884,286,486,False,37
+3934,LogLoss,Display Advertising Challenge,8640,1208427,4833708,False,37
+3984,LogLoss,Tradeshift Text Classiﬁcation,5659,163525,381557,False,37
+4120,LogLoss,Click-Through Rate Prediction,31019,915493,3661972,False,37
+4438,LogLoss,Avito Context Ad Clicks,5951,4788454,11173061,False,37
+4852,LogLoss,BNP Paribas Cardif Claims Management,54519,37750,76643,False,37
+4862,LogLoss,March Machine Learning Mania 2016,1054,68,2210,False,37
+6004,LogLoss,Data Science Bowl 2017,1694,N/A,N/A,False,37
+6277,LogLoss,Quora Question Pairs,53927,140748,2205048,False,37
+7163,LogLoss,WSDM - KKBox’s Churn Prediction Challenge,6256,361788,542683,False,37
+7380,LogLoss,Statoil/C-CORE Iceberg Classiﬁer Challenge,42936,674,7750,False,37
+7823,LogLoss,Attrition de clientes,1911,15000,15000,False,37
+8310,LogLoss,Google Cloud & NCAA R⃝ ML Competition 2018*,1660,342,11049,False,37

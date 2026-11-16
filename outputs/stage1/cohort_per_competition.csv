@@ -1,0 +1,895 @@
+CompetitionId,Slug,HostSegmentTitle,Deadline,DeadlineYear,Metric,MetricName,MetricGroup,CodeOnly,LeaderboardPercentage,n_pre,n_pre_both_nonbench,n_teams_nonbench,Cohort
+2439,informs2010,Featured,2010-10-10 02:28:00,2010,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,10,1483,1483,145,original_120
+2447,chess,Featured,2010-11-17 20:00:00,2010,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,3228,3228,252,in_window_not_in_original
+2464,socialNetwork,Featured,2011-01-11 22:00:00,2011,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,1124,1124,117,original_120
+2467,RTA,Featured,2011-02-13 22:00:00,2011,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,3114,3114,354,in_window_not_in_original
+2445,unimelb,Featured,2011-02-20 22:00:00,2011,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,2792,2792,203,original_120
+2478,stayalert,Featured,2011-03-09 13:00:00,2011,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1402,1402,176,original_120
+2555,stat331w11,Community,2011-04-08 16:00:00,2011,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,1959,1959,322,in_window_not_in_original
+2479,ChessRatings2,Featured,2011-05-04 15:00:00,2011,CappedBinomialDeviance,Capped Binomial Deviance,Other named metric,false,30,1563,1563,181,in_window_not_in_original
+2489,overfitting,Featured,2011-05-15 00:00:00,2011,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,10,3775,3775,259,original_120
+2499,wikichallenge,Featured,2011-09-20 23:59:59,2011,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1024,1020,90,in_window_not_in_original
+2518,dunnhumbychallenge,Featured,2011-09-30 23:59:59,2011,PercentCorrectVisits,% Correct Visits,Other named metric,false,30,1873,1871,276,in_window_not_in_original
+2509,ClaimPredictionChallenge,Featured,2011-10-12 23:59:59,2011,NormalizedGini,Normalized Gini Index,Other named metric,false,50,1281,1278,102,in_window_not_in_original
+2609,PhotoQualityPrediction,Featured,2011-11-20 23:59:59,2011,CappedBinomialDeviance,Capped Binomial Deviance,Other named metric,false,30,1362,1356,200,in_window_not_in_original
+2551,GiveMeSomeCredit,Featured,2011-12-15 23:59:59,2011,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,7724,7723,925,original_120
+2564,DontGetKicked,Featured,2012-01-05 23:59:59,2012,Gini,Gini Index,Other named metric,false,30,7421,7419,622,in_window_not_in_original
+2589,AlgorithmicTradingChallenge,Featured,2012-01-08 23:59:59,2012,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1408,1406,111,in_window_not_in_original
+2606,WhatDoYouKnow,Featured,2012-02-29 23:59:59,2012,CappedBinomialDeviance,Capped Binomial Deviance,Other named metric,false,40,1748,1746,238,in_window_not_in_original
+2732,benchmark-bond-trade-price-challenge,Featured,2012-04-30 23:59:59,2012,WMAE,Weighted Mean Absolute Error,Other named metric,false,30,2779,2778,263,in_window_not_in_original
+2667,asap-aes,Featured,2012-04-30 23:59:59,2012,WeightedMeanQuadraticWeightedKappa,WeightedMeanQuadraticWeightedKappa,Other named metric,false,50,2494,2493,153,in_window_not_in_original
+2748,kddcup2012-track1,Featured,2012-06-01 23:59:59,2012,MAP@3,MAP@3,MAP@K,false,53,13076,13075,656,original_120
+2749,kddcup2012-track2,Featured,2012-06-01 23:59:59,2012,KddCtrAuc,KddCtrAuc,Other named metric,false,42,5284,5276,163,in_window_not_in_original
+2780,bioresponse,Featured,2012-06-15 23:59:59,2012,LogLoss,Log Loss,LogLoss,false,25,8825,8820,699,original_120
+2860,twitter-psychopathy-prediction,Research,2012-06-29 23:59:59,2012,MCAP,Mean Columnwise Average Precision,Other named metric,false,30,1071,1069,111,in_window_not_in_original
+2840,online-sales,Featured,2012-07-03 23:59:00,2012,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,37,3757,3755,363,in_window_not_in_original
+2947,FacebookRecruiting,Recruitment,2012-07-10 23:59:59,2012,MAP@k,Mean Average Precision at K,MAP@K,false,25,3554,3550,418,original_120
+2963,MusicHackathon,Featured,2012-07-22 12:00:00,2012,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,1323,1319,133,in_window_not_in_original
+2959,asap-sas,Featured,2012-09-05 23:59:00,2012,WeightedMeanQuadraticWeightedKappa,WeightedMeanQuadraticWeightedKappa,Other named metric,false,0,1882,1879,151,in_window_not_in_original
+2984,pf2012-diabetes,Research,2012-09-10 23:59:59,2012,LogLoss,Log Loss,LogLoss,false,25,2163,2161,145,original_120
+2975,MerckActivity,Featured,2012-10-16 23:59:00,2012,WeightedR2,DataSetWeightedRSquared,Other named metric,false,25,2981,2979,236,in_window_not_in_original
+3066,GEF2012-wind-forecasting,Research,2012-10-31 00:00:00,2012,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,1397,1396,133,in_window_not_in_original
+3043,predict-closed-questions-on-stack-overflow,Featured,2012-11-03 23:59:00,2012,MulticlassLossOld,Multiclass Loss (Deprecated),MulticlassLoss,false,0,1431,1425,161,original_120
+3126,algorithmic-composition,Community,2012-11-09 00:00:00,2012,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,1547,1545,95,in_window_not_in_original
+3108,us-census-challenge,Featured,2012-11-11 00:00:00,2012,NWMAE,Normalized Weighted Mean Absolute Error,Other named metric,false,25,2667,2666,243,in_window_not_in_original
+3084,DarkWorlds,Recruitment,2012-12-16 23:59:00,2012,DarkWorldsMetric,DarkWorldsMetric,Other named metric,false,25,3539,3535,351,in_window_not_in_original
+3294,traveling-santa-problem,Featured,2013-01-19 00:00:00,2013,TravelingSanta,Traveling Santa Metric,Other named metric,false,100,3596,3595,353,in_window_not_in_original
+3288,event-recommendation-engine-challenge,Featured,2013-02-20 23:59:00,2013,MAP@k,Mean Average Precision at K,MAP@K,false,0,3021,3019,223,original_120
+3209,flight,Featured,2013-03-11 23:59:00,2013,MWCRMSE,Mean Weighted Columnwise Root Mean Squared Error,Other named metric,false,0,3058,3052,172,in_window_not_in_original
+3342,job-salary-prediction,Featured,2013-04-03 23:59:00,2013,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,0,2868,2863,289,in_window_not_in_original
+2496,hhp,Featured,2013-04-04 07:00:00,2013,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,25313,25308,1350,in_window_not_in_original
+3353,whale-detection-challenge,Featured,2013-04-08 00:00:00,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,3295,3293,245,original_120
+3469,predict-who-is-more-influential-in-a-social-network,Featured,2013-04-14 12:00:00,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,2109,2106,133,original_120
+3377,icdar2013-gender-prediction-from-handwriting,Research,2013-04-15 00:00:00,2013,LogLoss,Log Loss,LogLoss,false,37,1881,1877,189,original_120
+3316,bluebook-for-bulldozers,Featured,2013-04-17 23:59:00,2013,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,0,4855,4852,474,in_window_not_in_original
+3497,missing-and-imbalanced-data,Community,2013-05-13 00:00:00,2013,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1134,1132,66,in_window_not_in_original
+3366,challenges-in-representation-learning-the-black-box-learning-challenge,Research,2013-05-24 23:59:00,2013,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1924,1919,211,original_120
+3446,kdd-cup-2013-author-disambiguation,Featured,2013-06-12 23:59:00,2013,FScoreMicro,F-Score (Micro),Other named metric,false,20,2309,2307,238,in_window_not_in_original
+3509,the-icml-2013-whale-challenge-right-whale-redux,Research,2013-06-17 23:59:59,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1005,1005,129,original_120
+3445,kdd-cup-2013-author-paper-identification-challenge,Featured,2013-06-26 23:59:00,2013,MAP@{K}_OLD,MAP@{K}_OLD,MAP@K,false,0,9425,9420,552,original_120
+3198,yelp-recruiting,Recruitment,2013-06-30 23:59:00,2013,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,3850,3847,359,in_window_not_in_original
+3338,amazon-employee-access-challenge,Featured,2013-07-31 23:59:00,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,16894,16891,1698,original_120
+3477,yelp-recsys-2013,Research,2013-08-31 23:59:59,2013,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,10,2109,2108,158,in_window_not_in_original
+3370,cause-effect-pairs,Research,2013-09-02 23:59:00,2013,CauseEffectBidirectionalAuc,Bidirectional AUC for Cause Effect Pairs,Other named metric,false,0,4579,4576,266,in_window_not_in_original
+3521,flight2-milestone,Featured,2013-09-25 23:59:00,2013,GE-FQ2,GE Flight Quest 2,Other named metric,false,50,1693,1681,129,in_window_not_in_original
+3403,the-seeclickfix-311-challenge,Featured,2013-09-29 01:00:00,2013,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1053,1051,80,in_window_not_in_original
+3540,battlefin-s-big-data-combine-forecasting-challenge,Research,2013-10-01 23:59:00,2013,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,8922,8915,424,in_window_not_in_original
+3582,nu-cs6220-assignment-1,Community,2013-10-15 03:59:59,2013,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1555,1550,85,in_window_not_in_original
+2969,belkin-energy-disaggregation-competition,Featured,2013-10-30 23:59:00,2013,BelkinHammingLoss,BelkinHammingLoss,Other named metric,false,50,1530,1526,165,in_window_not_in_original
+3526,stumbleupon,Featured,2013-10-31 23:59:59,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,7500,7494,627,original_120
+3504,expedia-personalized-sort,Featured,2013-11-04 23:59:00,2013,NDCG@{K},NDCG@{K},Other named metric,false,25,3499,3495,340,in_window_not_in_original
+3354,ams-2014-solar-energy-prediction-contest,Research,2013-11-15 23:59:00,2013,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,41,2510,2507,161,in_window_not_in_original
+3524,accelerometer-biometric-competition,Research,2013-11-22 23:59:00,2013,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,7121,7118,632,original_120
+3599,see-click-predict-fix,Featured,2013-11-27 23:59:00,2013,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,5548,5544,531,in_window_not_in_original
+3586,crowdflower-weather-twitter,Playground,2013-12-01 23:59:00,2013,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,3592,3591,259,in_window_not_in_original
+3539,facebook-recruiting-iii-keyword-extraction,Recruitment,2013-12-20 23:59:00,2013,FScoreMicro,F-Score (Micro),Other named metric,false,30,2671,2663,366,in_window_not_in_original
+3532,yandex-personalized-web-search-challenge,Featured,2014-01-10 23:59:00,2014,NDCG@{K},NDCG@{K},Other named metric,false,50,3588,3570,194,in_window_not_in_original
+3611,flight2-main,Featured,2014-01-18 23:59:00,2014,GE-FQ2,GE Flight Quest 2,Other named metric,false,50,2110,2107,121,in_window_not_in_original
+3670,packing-santas-sleigh,Featured,2014-01-26 23:59:00,2014,PackingSantasSleigh,Packing Santas Sleigh Metric,Other named metric,false,100,1949,1940,361,in_window_not_in_original
+3362,dogs-vs-cats,Playground,2014-02-01 23:59:00,2014,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1219,1219,214,original_120
+3638,conway-s-reverse-game-of-life,Playground,2014-03-02 23:59:00,2014,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,1324,1321,141,in_window_not_in_original
+3756,loan-default-prediction,Research,2014-03-14 23:59:00,2014,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,10,10671,10670,672,in_window_not_in_original
+3772,pakdd-cup-2014,Research,2014-04-01 04:00:00,2014,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,7467,7466,609,in_window_not_in_original
+3867,random-number-grand-challenge,Featured,2014-04-01 23:59:00,2014,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,0,7226,7223,205,in_window_not_in_original
+3175,galaxy-zoo-the-galaxy-challenge,Research,2014-04-04 23:59:00,2014,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,3159,3155,326,in_window_not_in_original
+3634,lshtc,Research,2014-04-22 23:59:00,2014,FScoreMacro,F-Score (Macro),Other named metric,false,50,1169,1162,119,in_window_not_in_original
+3774,connectomics,Research,2014-05-05 23:59:00,2014,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1458,1453,143,original_120
+3816,walmart-recruiting-store-sales-forecasting,Recruitment,2014-05-05 23:59:00,2014,WMAE,Weighted Mean Absolute Error,Other named metric,false,30,12258,12257,693,in_window_not_in_original
+3788,allstate-purchase-prediction-challenge,Featured,2014-05-19 23:59:00,2014,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,24523,24518,1567,original_120
+3897,acquire-valued-shoppers-challenge,Featured,2014-07-14 23:59:00,2014,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,25202,25193,950,original_120
+3926,kdd-cup-2014-predicting-excitement-at-donors-choose,Research,2014-07-15 23:59:00,2014,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,12530,12525,474,original_120
+3928,wise-2014,Research,2014-07-15 23:59:00,2014,FScoreMicro,F-Score (Micro),Other named metric,false,70,1209,1207,120,in_window_not_in_original
+3933,mlsp-2014-mri,Research,2014-07-20 23:59:00,2014,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,1,2246,2244,313,original_120
+3641,decoding-the-human-brain,Research,2014-07-27 23:59:00,2014,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,43,4507,4505,267,original_120
+3800,seizure-detection,Research,2014-08-19 23:59:00,2014,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,15,4506,4503,200,in_window_not_in_original
+3929,avito-prohibited-content,Featured,2014-08-31 23:59:00,2014,AP@{K},AP@{K},MAP@K,false,50,5000,4991,284,original_120
+3951,liberty-mutual-fire-peril,Featured,2014-09-02 23:59:00,2014,NormalizedWeightedGini,Weighted Gini,Other named metric,false,50,14765,14759,633,in_window_not_in_original
+3887,higgs-boson,Featured,2014-09-15 23:59:00,2014,HiggsBosonApproximateMedianSignificance,Higgs Boson Approximate Median Significance,Other named metric,false,18,35785,35770,1784,in_window_not_in_original
+3934,criteo-display-ad-challenge,Research,2014-09-23 23:59:00,2014,LogLoss,Log Loss,LogLoss,false,20,8639,8636,718,original_120
+3649,cifar-10,Playground,2014-10-18 23:59:00,2014,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,3,1634,1633,232,original_120
+3966,afsis-soil-properties,Research,2014-10-21 23:59:00,2014,MCRMSE,Mean Columnwise Root Mean Squared Error,Other named metric,false,13,18285,18281,1234,in_window_not_in_original
+3535,learning-social-circles,Playground,2014-10-28 23:59:00,2014,FacebookCircles,FacebookCircles,Other named metric,false,34,1761,1752,202,in_window_not_in_original
+3984,tradeshift-text-classification,Featured,2014-11-10 23:59:00,2014,LogLoss,Log Loss,LogLoss,false,30,5648,5637,374,original_120
+3960,seizure-prediction,Research,2014-11-17 23:59:00,2014,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,40,17781,17779,505,original_120
+3428,data-science-london-scikit-learn,Getting Started,2014-12-31 23:59:00,2014,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1472,1472,190,original_120
+3973,helping-santas-helpers,Featured,2015-01-07 23:59:00,2015,SantaJobScheduling,Packing Santas Sleigh Metric,Other named metric,false,100,2125,2124,437,in_window_not_in_original
+4120,avazu-ctr-prediction,Featured,2015-02-09 23:59:00,2015,LogLoss,Log Loss,LogLoss,false,20,30983,30980,1603,original_120
+4043,inria-bci-challenge,Research,2015-02-24 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,4348,4344,260,original_120
+3810,sentiment-analysis-on-movie-reviews,Playground,2015-02-28 23:59:00,2015,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,6814,6813,860,in_window_not_in_original
+3978,datasciencebowl,Featured,2015-03-16 23:59:00,2015,MulticlassLossOld,Multiclass Loss (Deprecated),MulticlassLoss,false,7,15121,15120,1049,original_120
+4031,axa-driver-telematics-analysis,Featured,2015-03-16 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,35969,35963,1525,original_120
+4032,finding-elo,Playground,2015-03-23 23:59:00,2015,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1874,1873,157,in_window_not_in_original
+4117,malware-classification,Research,2015-04-17 23:59:00,2015,MulticlassLossOld,Multiclass Loss (Deprecated),MulticlassLoss,false,30,7670,7669,377,original_120
+4272,restaurant-revenue-prediction,Featured,2015-05-04 23:59:00,2015,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,1,32747,32745,2257,in_window_not_in_original
+4360,mlds-hw2-b,Community,2015-05-08 14:00:00,2015,LevenshteinMean,Levenshtein Mean,Other named metric,false,50,1076,1058,49,in_window_not_in_original
+3936,forest-cover-type-prediction,Playground,2015-05-11 23:59:00,2015,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,15405,15404,1692,in_window_not_in_original
+4195,how-much-did-it-rain,Research,2015-05-15 23:59:00,2015,CRPS,Continuous Rank Probability Score,Other named metric,false,70,2218,2216,319,in_window_not_in_original
+4280,otto-group-product-classification-challenge,Featured,2015-05-18 23:59:00,2015,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,70,43415,43398,3507,original_120
+4332,walmart-recruiting-sales-in-stormy-weather,Recruitment,2015-05-25 23:59:00,2015,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,8245,8243,484,in_window_not_in_original
+3948,bike-sharing-demand,Playground,2015-05-29 23:59:00,2015,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,100,32811,32809,3242,in_window_not_in_original
+3949,random-acts-of-pizza,Playground,2015-06-01 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,3570,3570,462,in_window_not_in_original
+4294,facebook-recruiting-iv-human-or-bot,Recruitment,2015-06-08 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,13547,13546,983,original_120
+4366,predict-west-nile-virus,Featured,2015-06-17 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,2,29884,29882,1304,original_120
+3971,word2vec-nlp-tutorial,Getting Started,2015-06-30 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,4277,4271,577,in_window_not_in_original
+4383,pkdd-15-taxi-trip-time-prediction-ii,Research,2015-07-01 23:59:00,2015,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,3299,3297,345,in_window_not_in_original
+4378,pkdd-15-predict-taxi-service-trajectory-i,Research,2015-07-01 23:59:00,2015,AHD@{Type},Averaged Haversine Distance,Other named metric,false,50,3033,3031,381,in_window_not_in_original
+4456,leehungyi-gi-bong,Community,2015-07-02 15:59:59,2015,LevenshteinMean,Levenshtein Mean,Other named metric,false,50,1516,1486,53,in_window_not_in_original
+4407,crowdflower-search-relevance,Featured,2015-07-06 23:59:00,2015,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,false,19,23179,23177,1324,in_window_not_in_original
+4104,diabetic-retinopathy-detection,Featured,2015-07-27 23:59:00,2015,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,false,20,6997,6993,660,in_window_not_in_original
+4438,avito-context-ad-clicks,Featured,2015-07-28 23:59:00,2015,LogLoss,Log Loss,LogLoss,false,30,5941,5939,413,original_120
+4453,icdm-2015-drawbridge-cross-device-connections,Featured,2015-08-24 23:59:00,2015,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,false,30,2360,2353,338,in_window_not_in_original
+4471,liberty-mutual-group-property-inspection-prediction,Featured,2015-08-28 23:59:00,2015,NormalizedGini,Normalized Gini Index,Other named metric,false,30,45789,45786,2232,in_window_not_in_original
+4477,grasp-and-lift-eeg-detection,Research,2015-08-31 23:59:00,2015,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,50,4399,4399,378,in_window_not_in_original
+4467,machinery-tube-pricing,Featured,2015-08-31 23:59:00,2015,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,26240,26239,1320,in_window_not_in_original
+4481,coupon-purchase-prediction,Featured,2015-09-30 23:59:00,2015,MAP@{K},MAP@{K},MAP@K,false,30,18400,18390,1072,original_120
+4488,flavours-of-physics,Featured,2015-10-12 23:59:00,2015,CernWeightedAuc,"Weighted AUC, with agreement check and correlation check",Other named metric,false,1,10151,10124,673,in_window_not_in_original
+4493,dato-native,Featured,2015-10-14 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,40,3221,3220,273,original_120
+4487,springleaf-marketing-response,Featured,2015-10-19 23:59:00,2015,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,39299,39297,2221,original_120
+4495,how-much-did-it-rain-ii,Research,2015-12-07 23:59:00,2015,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,8108,8105,587,in_window_not_in_original
+4594,rossmann-store-sales,Featured,2015-12-14 23:59:00,2015,RootMeanSquarePercentageError,Root Mean Square Percentage Error,Other named metric,false,33,70187,70114,3298,in_window_not_in_original
+4526,whats-cooking,Playground,2015-12-20 23:59:00,2015,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,14295,14294,1387,in_window_not_in_original
+4654,walmart-recruiting-trip-type-classification,Recruitment,2015-12-27 23:59:00,2015,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,30,13062,13058,1043,original_120
+4554,msuvisits,Community,2016-01-03 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,10,1255,1249,52,original_120
+4521,noaa-right-whale-recognition,Research,2016-01-07 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,35,4789,4788,364,original_120
+4704,santas-stolen-sleigh,Featured,2016-01-08 23:59:00,2016,SantaRideShare,SantaRideShare,Other named metric,false,100,10545,10540,1126,in_window_not_in_original
+4818,cs-hse-ml-15,Community,2016-01-16 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1080,1078,34,in_window_not_in_original
+4821,104-1-mlds-final-project,Community,2016-01-20 15:59:59,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1060,1056,36,original_120
+4504,the-winton-stock-market-challenge,Featured,2016-01-26 23:59:00,2016,WMAE,Weighted Mean Absolute Error,Other named metric,false,17,10718,10717,829,in_window_not_in_original
+4657,homesite-quote-conversion,Featured,2016-02-08 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,36283,36264,1755,original_120
+4651,airbnb-recruiting-new-user-bookings,Recruitment,2016-02-11 23:59:00,2016,NDCG@{K},NDCG@{K},Other named metric,false,30,20756,20753,1458,in_window_not_in_original
+4699,prudential-life-insurance-assessment,Featured,2016-02-15 23:59:00,2016,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,false,30,45500,45348,2610,in_window_not_in_original
+4588,telstra-recruiting-network,Recruitment,2016-02-29 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,29,19549,19548,971,original_120
+4862,march-machine-learning-mania-2016,Featured,2016-04-05 06:00:00,2016,LogLoss,Log Loss,LogLoss,false,3,1050,1045,596,original_120
+4829,yelp-restaurant-photo-classification,Recruitment,2016-04-12 23:59:00,2016,FScoreMicro,F-Score (Micro),Other named metric,false,6,4514,4509,355,in_window_not_in_original
+4852,bnp-paribas-cardif-claims-management,Featured,2016-04-18 23:59:00,2016,LogLoss,Log Loss,LogLoss,false,33,54340,54337,2920,original_120
+4853,home-depot-product-search-relevance,Featured,2016-04-25 23:59:00,2016,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,35494,35492,2123,in_window_not_in_original
+4986,santander-customer-satisfaction,Featured,2016-05-02 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,93359,93333,5115,original_120
+5200,melbourne-datathon-2016,Community,2016-05-06 08:00:00,2016,NormalizedGini,Normalized Gini Index,Other named metric,false,50,1246,1237,58,in_window_not_in_original
+4857,let-s-overfit,Community,2016-05-07 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1080,1080,25,original_120
+4458,sf-crime,Playground,2016-06-06 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,100,18371,18370,2331,in_window_not_in_original
+5056,expedia-hotel-recommendations,Featured,2016-06-10 23:59:00,2016,MAP@{K},MAP@{K},MAP@K,false,33,22636,22632,1971,original_120
+5275,can-we-predict-voting-outcomes,Community,2016-06-13 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,35141,35141,2871,original_120
+5185,kobe-bryant-shot-selection,Playground,2016-06-13 23:59:00,2016,LogLoss,Log Loss,LogLoss,false,100,10390,10389,1117,in_window_not_in_original
+5229,draper-satellite-image-chronology,Featured,2016-06-27 23:59:00,2016,MASpearmanR,MASpearmanR,Other named metric,false,10,2680,2676,399,in_window_not_in_original
+5186,facebook-v-predicting-check-ins,Recruitment,2016-07-06 23:59:00,2016,MAP@{K},MAP@{K},MAP@K,false,50,15038,15035,1209,original_120
+5174,avito-duplicate-ads-detection,Featured,2016-07-11 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,8151,8147,546,original_120
+5039,shelter-animal-outcomes,Playground,2016-07-31 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,100,15597,15596,1599,in_window_not_in_original
+5048,state-farm-distracted-driver-detection,Featured,2016-08-01 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,19,25572,25571,1438,original_120
+5144,ultrasound-nerve-segmentation,Featured,2016-08-18 23:59:00,2016,Dice,Dice,Other named metric,false,20,14323,14316,922,in_window_not_in_original
+5260,grupo-bimbo-inventory-demand,Featured,2016-08-30 23:59:00,2016,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,51,21743,21739,1963,in_window_not_in_original
+5340,talkingdata-mobile-user-demographics,Featured,2016-09-05 23:59:00,2016,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,30,24462,24460,1680,original_120
+5261,predicting-red-hat-business-value,Featured,2016-09-19 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,33555,33554,2260,original_120
+5520,ml2016-pm2-5-prediction,Community,2016-10-14 01:00:00,2016,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,5386,5382,348,in_window_not_in_original
+5314,integer-sequence-learning,Playground,2016-10-31 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1371,1368,284,in_window_not_in_original
+5357,bosch-production-line-performance,Featured,2016-11-11 23:59:00,2016,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,false,30,26129,26126,1370,in_window_not_in_original
+5735,harvard-data-science-course-competition,Community,2016-11-18 04:59:00,2016,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,50,2404,2403,97,in_window_not_in_original
+5390,melbourne-university-seizure-prediction,Research,2016-12-01 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,10048,10047,477,original_120
+5708,ghouls-goblins-and-ghosts-boo,Playground,2016-12-01 23:59:00,2016,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,7522,7522,763,in_window_not_in_original
+5325,allstate-claims-severity,Recruitment,2016-12-12 23:59:00,2016,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,52383,52353,3045,in_window_not_in_original
+5558,santander-product-recommendation,Featured,2016-12-21 23:59:00,2016,MAP@{K},MAP@{K},MAP@K,false,30,28735,28733,1779,original_120
+5167,pred-411-2016-04-u2-insurance-a,Community,2016-12-31 23:59:00,2016,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1436,1430,127,original_120
+3486,facial-keypoints-detection,Getting Started,2017-01-07 00:00:00,2017,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1220,1220,175,in_window_not_in_original
+5497,outbrain-click-prediction,Featured,2017-01-18 23:59:00,2017,MAP@{K},MAP@{K},MAP@K,false,30,6648,6642,978,original_120
+5977,santas-uncertain-bags,Playground,2017-01-30 23:59:00,2017,SantaWeightedBins,SantaWeightedBins,Other named metric,false,100,18386,18383,692,in_window_not_in_original
+5408,leaf-classification,Playground,2017-02-28 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,100,13066,13060,1595,in_window_not_in_original
+5874,two-sigma-financial-modeling,Featured,2017-03-01 23:59:00,2017,RValue,R Value,Other named metric,true,37,24574,24573,2063,in_window_not_in_original
+5441,dogs-vs-cats-redux-kernels-edition,Playground,2017-03-02 23:59:00,2017,LogLoss,Log Loss,LogLoss,false,100,9450,9449,1314,in_window_not_in_original
+5916,dstl-satellite-imagery-feature-detection,Featured,2017-03-07 23:59:00,2017,JaccardDSTLParallel,JaccardDSTLParallel,Other named metric,false,1,5543,5542,419,in_window_not_in_original
+5693,transfer-learning-on-stack-exchange-tags,Playground,2017-03-25 23:59:00,2017,FScoreMicro,F-Score (Micro),Other named metric,false,100,3515,3514,380,in_window_not_in_original
+6004,data-science-bowl-2017,Featured,2017-04-12 23:59:00,2017,LogLoss,Log Loss,LogLoss,false,1,1694,1693,399,original_120
+5568,the-nature-conservancy-fisheries-monitoring,Featured,2017-04-12 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,8,2085,2084,392,original_120
+5590,two-sigma-connect-rental-listing-inquiries,Recruitment,2017-04-25 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,40,46857,46856,2480,original_120
+6242,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking,Community,2017-05-29 20:59:00,2017,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,2479,2459,205,original_120
+6049,youtube8m,Featured,2017-06-02 23:59:00,2017,GoogleGlobalAP,GoogleGlobalAP,Other named metric,false,50,6919,6911,655,in_window_not_in_original
+6277,quora-question-pairs,Featured,2017-06-06 23:59:00,2017,LogLoss,Log Loss,LogLoss,false,6,53814,53687,3295,original_120
+6747,ml2017-hw6,Community,2017-06-08 15:59:00,2017,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,4856,4854,260,in_window_not_in_original
+6243,intel-mobileodt-cervical-cancer-screening,Featured,2017-06-21 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,13,1365,1365,260,original_120
+6116,noaa-fisheries-steller-sea-lion-population-count,Featured,2017-06-27 23:59:00,2017,MCRMSE,Mean Columnwise Root Mean Squared Error,Other named metric,false,12,6017,6015,385,in_window_not_in_original
+6392,sberbank-russian-housing-market,Featured,2017-06-29 23:59:00,2017,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,35,67597,67594,3264,in_window_not_in_original
+5686,swimming-pool-visitor-forecasting,Community,2017-07-07 23:59:00,2017,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,2606,2602,28,in_window_not_in_original
+6834,human-activity-recognition,Community,2017-07-09 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1352,1351,109,in_window_not_in_original
+6565,mercedes-benz-greener-manufacturing,Featured,2017-07-10 23:59:00,2017,R2Score,R^2 score (coefficient of determination),Other named metric,false,19,75159,75157,3823,in_window_not_in_original
+6322,planet-understanding-the-amazon-from-space,Featured,2017-07-20 23:59:00,2017,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,false,66,20667,20666,936,in_window_not_in_original
+6644,basket-analysis,Featured,2017-08-14 23:59:00,2017,FScoreMicro,F-Score (Micro),Other named metric,false,33,39867,39863,2621,in_window_not_in_original
+6469,invasive-species-monitoring,Playground,2017-08-15 23:59:00,2017,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,4240,4239,511,in_window_not_in_original
+6960,nyc-taxi-trip-duration,Playground,2017-09-15 23:59:00,2017,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,11194,11193,1254,in_window_not_in_original
+6927,carvana-image-masking-challenge,Featured,2017-09-27 23:59:00,2017,Dice,Dice,Other named metric,false,1,6880,6878,734,in_window_not_in_original
+6841,msk-redefining-cancer-treatment,Research,2017-10-02 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,40,3053,3032,355,original_120
+7328,cs-4740-project-2,Community,2017-10-23 04:59:00,2017,FScoreMicro,F-Score (Micro),Other named metric,false,50,1089,1088,103,in_window_not_in_original
+7574,habr-num-bookmarks,Community,2017-11-02 20:59:00,2017,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,2221,2218,271,in_window_not_in_original
+7563,forest-prediction,Community,2017-11-10 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,3077,3076,65,original_120
+7693,flight-delays-2017,Community,2017-11-14 20:59:00,2017,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,1009,997,211,in_window_not_in_original
+7042,text-normalization-challenge-english-language,Research,2017-11-20 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,1,1834,1833,260,original_120
+7082,porto-seguro-safe-driver-prediction,Featured,2017-11-29 23:59:00,2017,NormalizedGini,Normalized Gini Index,Other named metric,false,30,95054,93568,5156,in_window_not_in_original
+7181,properati,Community,2017-12-01 23:59:00,2017,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1027,1027,98,in_window_not_in_original
+7666,cs5785-fall-2017-final,Community,2017-12-06 04:59:00,2017,MAP@{K},MAP@{K},MAP@K,false,50,3898,3896,83,original_120
+7115,cdiscount-image-classification-challenge,Featured,2017-12-14 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,5851,5848,626,original_120
+7516,spooky-author-identification,Playground,2017-12-15 23:59:00,2017,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,30,10631,10628,1242,original_120
+7163,kkbox-churn-prediction-challenge,Research,2017-12-17 23:59:00,2017,LogLoss,Log Loss,LogLoss,false,40,6252,6251,574,original_120
+7162,kkbox-music-recommendation-challenge,Research,2017-12-17 23:59:00,2017,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,15552,15250,1081,original_120
+7941,ml2017-fall-hw5,Community,2017-12-21 15:59:00,2017,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,4373,4368,336,in_window_not_in_original
+5942,identify-me-if-you-can-yandex-mipt,Community,2017-12-31 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1242,1211,86,original_120
+6109,identify-me-if-you-can4,Community,2017-12-31 23:59:00,2017,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1819,1804,121,original_120
+6649,zillow-prize-1,Featured,2018-01-10 15:59:00,2018,ZillowMAE,ZillowMAE,Other named metric,false,51,68779,68053,3770,in_window_not_in_original
+8011,santa-gift-matching,Featured,2018-01-12 23:59:00,2018,SantaResident,Average Normalized Happiness,Other named metric,false,100,5280,5278,428,in_window_not_in_original
+7391,favorita-grocery-sales-forecasting,Featured,2018-01-15 23:59:00,2018,NWRMSLE,Normalized Weighted Root Mean Squared Logarithmic Error,Other named metric,false,31,31255,31241,1671,in_window_not_in_original
+7823,fuga-de-clientes,Community,2018-01-16 05:00:00,2018,LogLoss,Log Loss,LogLoss,false,50,1905,1904,109,original_120
+7634,tensorflow-speech-recognition-challenge,Featured,2018-01-16 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,2,24246,24245,1313,original_120
+7380,statoil-iceberg-classifier-challenge,Featured,2018-01-23 23:59:00,2018,LogLoss,Log Loss,LogLoss,false,8,42796,40716,3330,original_120
+8227,2018-spring-cse6250-hw1,Community,2018-01-26 07:00:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1170,1168,171,original_120
+7277,recruit-restaurant-visitor-forecasting,Featured,2018-02-06 23:59:00,2018,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,13,40683,39869,2148,in_window_not_in_original
+8078,sp-society-camera-model-identification,Featured,2018-02-08 23:59:00,2018,WeightedCategorizationAccuracy,Weighted Categorization Accuracy,Other named metric,false,36,10801,10798,580,in_window_not_in_original
+7299,nomad2018-predict-transparent-conductors,Research,2018-02-15 23:59:00,2018,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,false,17,13196,13192,878,in_window_not_in_original
+8307,dsntelecomschurn2018,Community,2018-02-20 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1259,1256,179,original_120
+7559,mercari-price-suggestion-challenge,Featured,2018-02-21 20:03:00,2018,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),true,20,36712,36709,2380,in_window_not_in_original
+7327,dog-breed-identification,Playground,2018-02-26 23:59:00,2018,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,100,8709,8708,1280,in_window_not_in_original
+7880,plant-seedlings-classification,Playground,2018-03-12 23:59:00,2018,FScoreMicro,F-Score (Micro),Other named metric,false,100,7391,7386,834,in_window_not_in_original
+8076,jigsaw-toxic-comment-classification-challenge,Featured,2018-03-20 23:59:00,2018,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,10,93356,92230,4539,in_window_not_in_original
+8857,recipient-prediction-2018,Community,2018-04-02 23:59:00,2018,MAP@{K},MAP@{K},MAP@K,false,50,1154,1153,59,original_120
+8310,mens-machine-learning-competition-2018,Featured,2018-04-02 23:59:00,2018,LogLoss,Log Loss,LogLoss,false,2,1659,1657,934,original_120
+8089,data-science-bowl-2018,Featured,2018-04-16 23:59:00,2018,IntersectionOverUnionObjectSegmentation,IntersectionOverUnionObjectSegmentation,Other named metric,false,0,2071,1909,742,in_window_not_in_original
+9300,flight-delays-spring-2018,Community,2018-04-22 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,2070,2063,369,in_window_not_in_original
+8426,donorschoose-application-screening,Playground,2018-04-25 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,6407,6401,580,in_window_not_in_original
+8540,talkingdata-adtracking-fraud-detection,Featured,2018-05-07 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,18,68464,68452,3943,original_120
+7456,landmark-recognition-challenge,Research,2018-05-29 23:59:00,2018,GoogleGlobalAP,GoogleGlobalAP,Other named metric,false,33,8118,8074,476,in_window_not_in_original
+8396,landmark-retrieval-challenge,Research,2018-05-29 23:59:00,2018,MAP@{K},MAP@{K},MAP@K,false,1,3123,3116,209,original_120
+8219,imaterialist-challenge-fashion-2018,Research,2018-05-30 23:59:00,2018,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,false,22,2256,2253,212,in_window_not_in_original
+8220,imaterialist-challenge-furniture-2018,Research,2018-05-30 23:59:00,2018,MeanBestErrorAtK,MeanBestErrorAtK,Other named metric,false,29,5216,5214,426,in_window_not_in_original
+9051,digitrecognizer1438,Community,2018-05-31 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1640,1638,85,original_120
+9491,ml-2018spring-hw5,Community,2018-06-06 15:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2247,2244,116,original_120
+8899,cvpr-2018-autonomous-driving,Research,2018-06-11 23:59:00,2018,CVPRAutoDrivingAveragePrecision,CVPRAutoDrivingAveragePrecision,Other named metric,false,1,1214,1210,141,in_window_not_in_original
+8586,avito-demand-prediction,Featured,2018-06-27 23:59:00,2018,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,31,43517,43510,1869,in_window_not_in_original
+9748,ubaar-competition,Community,2018-06-30 23:59:00,2018,MAPE,MAPE,Other named metric,false,67,1383,1379,59,in_window_not_in_original
+6961,whale-categorization-playground,Playground,2018-07-09 23:59:00,2018,MAP@{K},MAP@{K},MAP@K,false,100,5010,5005,527,in_window_not_in_original
+8900,freesound-audio-tagging,Research,2018-08-01 11:59:00,2018,MAP@{K},MAP@{K},MAP@K,false,3,5681,5671,556,original_120
+9301,youtube8m-2018,Featured,2018-08-06 23:59:00,2018,GoogleGlobalAP,GoogleGlobalAP,Other named metric,false,25,2570,2554,312,in_window_not_in_original
+10228,anu-comp4650-hw1,Community,2018-08-13 13:59:00,2018,Precision@{K},Precision@{K},Other named metric,false,50,2970,2959,290,in_window_not_in_original
+7878,trackml-particle-identification,Featured,2018-08-13 23:59:00,2018,TrackML,TrackML,Other named metric,false,29,5813,5776,651,in_window_not_in_original
+9717,santander-value-prediction-challenge,Featured,2018-08-20 23:59:00,2018,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,9,54766,54750,4463,in_window_not_in_original
+9120,home-credit-default-risk,Featured,2018-08-29 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,132029,131888,7176,original_120
+9949,google-ai-open-images-object-detection-track,Featured,2018-08-30 23:59:00,2018,OpenImagesObjectDetectionAP,OpenImagesObjectDetectionAP,Other named metric,false,20,3617,3614,452,in_window_not_in_original
+9951,google-ai-open-images-visual-relationship-track,Featured,2018-08-30 23:59:00,2018,OpenImagesVisualRelations,OpenImagesVisualRelations,Other named metric,false,30,1636,1633,231,in_window_not_in_original
+9840,costa-rican-household-poverty-prediction,Playground,2018-09-19 23:59:00,2018,FScoreMacro,F-Score (Macro),Other named metric,true,31,6511,6496,617,in_window_not_in_original
+10012,whats-cooking-kernels-only,Playground,2018-09-24 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,true,100,4950,4949,520,in_window_not_in_original
+10025,movie-review-sentiment-analysis-kernels-only,Playground,2018-09-24 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,true,100,3809,3806,409,in_window_not_in_original
+9985,forest-cover-type-kernels-only,Playground,2018-09-24 23:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,true,100,3503,3501,359,in_window_not_in_original
+9999,demand-forecasting-kernels-only,Playground,2018-09-24 23:59:00,2018,SMAPE,SMAPE,Other named metric,true,34,6138,6135,459,in_window_not_in_original
+10170,new-york-city-taxi-fare-prediction,Playground,2018-09-25 23:59:00,2018,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,100,20092,20089,1484,in_window_not_in_original
+10755,589-hw1-indoor-localization,Community,2018-10-01 03:55:00,2018,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1208,1205,145,in_window_not_in_original
+10757,589-hw1-regression-power-plant,Community,2018-10-01 03:55:00,2018,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1755,1753,146,in_window_not_in_original
+10599,bbvadatachallenge-recomendador,Community,2018-10-04 04:59:00,2018,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1379,1378,118,in_window_not_in_original
+10151,tgs-salt-identification-challenge,Featured,2018-10-19 23:59:00,2018,IntersectionOverUnionObjectSegmentation,IntersectionOverUnionObjectSegmentation,Other named metric,false,33,76192,76187,3220,in_window_not_in_original
+10270,scc5966-2018-2o,Community,2018-10-31 23:59:00,2018,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1119,1118,18,in_window_not_in_original
+10338,rsna-pneumonia-detection-challenge,Featured,2018-10-31 23:59:00,2018,RSNAObjectDetectionAP,RSNAObjectDetectionAP,Other named metric,false,1,2008,2003,345,in_window_not_in_original
+10192,Fall-11-785-homework-3-part-2,Community,2018-11-09 06:59:00,2018,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,3137,3126,216,in_window_not_in_original
+9988,airbus-ship-detection,Featured,2018-11-14 23:59:00,2018,IntersectionOverUnionObjectSegmentationBeta,IntersectionOverUnionObjectSegmentationBeta,Other named metric,false,7,12477,12475,878,in_window_not_in_original
+10851,cse158-fa18-category-prediction,Community,2018-11-20 01:00:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,3869,3842,354,original_120
+11880,dont-call-me-turkey,Playground,2018-11-26 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,1004,1001,266,in_window_not_in_original
+11842,whereami,Community,2018-11-29 16:00:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,90,3415,3413,212,original_120
+10200,quickdraw-doodle-recognition,Featured,2018-12-04 23:59:00,2018,MAP@{K},MAP@{K},MAP@K,false,9,21325,21314,1309,original_120
+12187,cornellcs4740p4,Community,2018-12-06 16:59:00,2018,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1082,1079,94,original_120
+11960,bdma2018-house-prices,Community,2018-12-07 23:59:00,2018,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1197,1196,61,in_window_not_in_original
+12088,cs5785-fall-2018-final,Community,2018-12-11 03:00:00,2018,MAP@{K},MAP@{K},MAP@K,false,50,1877,1876,64,original_120
+12236,utartu-ml2018fall-competition,Community,2018-12-16 21:59:00,2018,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1108,1068,65,in_window_not_in_original
+10384,PLAsTiCC-2018,Featured,2018-12-17 23:59:00,2018,WeightedMulticlassLoss,Weighted Multiclass Loss,Other named metric,false,33,22857,22851,1089,in_window_not_in_original
+11803,bgu2018,Community,2018-12-31 23:59:00,2018,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,55,2079,2078,35,original_120
+11851,inf131-data-mining,Community,2019-01-06 23:59:00,2019,FScoreMicro,F-Score (Micro),Other named metric,false,30,4925,4879,54,in_window_not_in_original
+10733,traveling-santa-2018-prime-paths,Featured,2019-01-10 23:59:00,2019,TravelingSanta2,Traveling Santa Metric 2 - Prime Edition,Other named metric,false,100,21241,21235,1867,in_window_not_in_original
+10418,human-protein-atlas-image-classification,Featured,2019-01-10 23:59:00,2019,FScoreMacro,F-Score (Macro),Other named metric,false,29,54939,54934,2160,in_window_not_in_original
+12133,20-newsgroups-ciphertext-challenge,Playground,2019-01-16 23:59:00,2019,FScoreMacro,F-Score (Macro),Other named metric,false,100,1150,1139,142,in_window_not_in_original
+12512,2019-spring-cse6250-bdh,Community,2019-01-21 12:30:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1387,1386,165,original_120
+10335,pubg-finish-placement-prediction,Playground,2019-01-30 23:59:00,2019,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),true,100,12751,12747,1528,in_window_not_in_original
+12357,cs189-hw1-mnist,Community,2019-02-05 07:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1475,1474,827,original_120
+12359,cs189-hw1-cifar10,Community,2019-02-05 07:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1331,1330,803,original_120
+12358,cs189-hw1-spam,Community,2019-02-05 07:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1522,1521,828,original_120
+12904,caltech-cs-155-2019-part-1,Community,2019-02-12 21:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1078,1072,80,original_120
+5896,product-reviews-sentiment-analysis,Community,2019-02-12 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1770,1769,264,original_120
+11835,reducing-commercial-aviation-fatalities,Playground,2019-02-12 23:59:00,2019,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,51,1338,1333,178,in_window_not_in_original
+10737,quora-insincere-questions-classification,Featured,2019-02-13 23:09:00,2019,FScore_1 (deprecated),F-Score (deprecated),Other named metric,true,15,2506,2506,1396,in_window_not_in_original
+12349,2019-1st-ml-month-with-kakr,Community,2019-02-13 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,3283,3277,351,original_120
+10038,ga-customer-revenue-prediction,Featured,2019-02-21 20:04:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,0,4184,4171,1084,in_window_not_in_original
+10445,elo-merchant-category-recommendation,Featured,2019-02-26 23:59:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,81781,81772,4110,in_window_not_in_original
+12558,widsdatathon2019,Community,2019-02-27 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,66,3021,3014,203,original_120
+6818,humpback-whale-identification,Featured,2019-02-28 23:59:00,2019,MAP@{K},MAP@{K},MAP@K,false,20,37470,37466,2120,original_120
+12598,robotsurface,Community,2019-03-03 21:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1546,1529,105,original_120
+13036,cs189-hw3-spam,Community,2019-03-05 07:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1075,1073,611,original_120
+13034,cs189-hw3-mnist,Community,2019-03-05 07:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1190,1189,617,original_120
+13125,ml2019spring-hw1,Community,2019-03-07 03:59:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,3426,3417,176,in_window_not_in_original
+13078,11785-s19-hw2p2-classification,Community,2019-03-11 04:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2245,2222,179,original_120
+10683,microsoft-malware-prediction,Research,2019-03-13 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,63,43412,43406,2410,original_120
+12681,padhai-module1-level2,Community,2019-03-17 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1184,1183,676,original_120
+13481,caltech-cs-155-2019-final,Community,2019-03-20 20:59:00,2019,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,2560,2556,178,in_window_not_in_original
+10684,vsb-power-line-fault-detection,Featured,2019-03-21 23:59:00,2019,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,false,57,19489,19481,1445,in_window_not_in_original
+13383,ml2019spring-hw2,Community,2019-03-23 04:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2802,2782,166,original_120
+11848,histopathologic-cancer-detection,Playground,2019-03-30 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,49,20134,20132,1149,original_120
+13567,11785-s19-hw3p2v2,Community,2019-04-01 04:19:00,2019,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,2206,2194,172,in_window_not_in_original
+5903,product-reviews-sentiment-analysis-light,Community,2019-04-04 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,3528,3526,402,original_120
+11999,mens-machine-learning-competition-2019,Featured,2019-04-09 06:00:00,2019,LogLoss,Log Loss,LogLoss,false,3,1574,1545,862,extension_candidate
+13876,dlschool-fashionmnist3,Community,2019-04-09 22:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1367,1365,373,extension_candidate
+10686,petfinder-adoption-prediction,Featured,2019-04-10 01:09:00,2019,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,true,0,3144,3136,1788,extension_candidate
+13646,competition-2-yandex-shad-spring-2019,Community,2019-04-10 09:00:00,2019,LogLoss,Log Loss,LogLoss,false,30,1558,1553,157,extension_candidate
+10385,santander-customer-transaction-prediction,Featured,2019-04-10 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,104132,104129,8751,extension_candidate
+13339,ml2019spring-hw3,Community,2019-04-11 04:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2474,2435,147,extension_candidate
+13242,career-con-2019,Recruitment,2019-04-11 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,44,17181,17165,1443,extension_candidate
+12727,cs5228-knowledge-discovery-and-data-mining,Community,2019-04-16 15:59:00,2019,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,false,50,2317,2314,107,extension_candidate
+13441,cs420-2019-ctr-prediction,Community,2019-04-23 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1224,1196,42,extension_candidate
+13720,11785-s19-hw4p2,Community,2019-04-29 04:00:00,2019,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1516,1432,166,extension_candidate
+10610,carseats-sales,Community,2019-05-01 23:59:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1029,1028,121,extension_candidate
+14065,cs-543-deep-conv-nets,Community,2019-05-02 11:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,10,1205,1203,237,extension_candidate
+13999,nthuds2019hw3,Community,2019-05-07 23:59:00,2019,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,50,1377,1336,59,extension_candidate
+12896,dont-overfit-ii,Playground,2019-05-07 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,10,35283,35266,2316,extension_candidate
+14282,ml2019spring-hw6,Community,2019-05-09 03:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2217,2206,122,extension_candidate
+14389,11785-s19-hw4p2-slack,Community,2019-05-11 11:59:00,2019,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1346,1345,124,extension_candidate
+14486,ds2019hw4,Community,2019-05-21 23:59:00,2019,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,49,1367,1356,57,extension_candidate
+14497,ml2019spring-hw7,Community,2019-05-23 04:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2356,2347,123,extension_candidate
+10300,tmdb-box-office-prediction,Playground,2019-05-30 23:59:00,2019,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,100,18976,18974,1395,extension_candidate
+13277,cassava-disease,Community,2019-06-01 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,40,1366,1364,86,extension_candidate
+14666,machine-learning-project-2,Community,2019-06-02 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2686,2684,277,extension_candidate
+13773,imaterialist-product-2019,Community,2019-06-02 23:59:00,2019,MeanBestErrorAtK,MeanBestErrorAtK,Other named metric,false,40,1576,1570,95,extension_candidate
+11000,LANL-Earthquake-Prediction,Research,2019-06-03 23:59:00,2019,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,13,59949,59893,4517,extension_candidate
+11836,landmark-recognition-2019,Research,2019-06-03 23:59:00,2019,GoogleGlobalAP,GoogleGlobalAP,Other named metric,false,35,1744,1743,176,extension_candidate
+14496,ml2019spring-hw8,Community,2019-06-06 04:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1113,1106,118,extension_candidate
+12961,iwildcam-2019-fgvc6,Playground,2019-06-07 23:59:00,2019,FScoreMacro,F-Score (Macro),Other named metric,false,31,2206,2201,336,extension_candidate
+13747,inaturalist-2019-fgvc6,Research,2019-06-10 23:59:00,2019,MeanBestErrorAtK,MeanBestErrorAtK,Other named metric,false,49,1463,1457,213,extension_candidate
+13032,imaterialist-fashion-2019-FGVC6,Research,2019-06-10 23:59:00,2019,IntersectionOverUnionObjectSegmentationWithClassification,IntersectionOverUnionObjectSegmentationWithClassification,Other named metric,false,35,3501,3494,241,extension_candidate
+13722,bring-back-the-sun,Community,2019-06-14 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,25,3935,3929,208,extension_candidate
+14239,instant-gratification,Featured,2019-06-20 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,true,50,35846,33802,1844,extension_candidate
+14101,dap-ca-home-assignment,Community,2019-06-21 13:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1192,1189,58,extension_candidate
+14828,titanic2019,Community,2019-06-24 08:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1916,1912,169,extension_candidate
+13435,aerial-cactus-identification,Playground,2019-07-08 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,true,100,6777,6776,1221,extension_candidate
+12500,jigsaw-unintended-bias-in-toxicity-classification,Featured,2019-07-18 19:35:00,2019,JigsawBiasAUC,Jigsaw Bias AUC,Other named metric,true,0,4377,4377,2634,extension_candidate
+9933,two-sigma-financial-news,Featured,2019-08-05 23:59:00,2019,TwoSigmaNews,Two Sigma News,Other named metric,true,0,1138,1138,663,extension_candidate
+9992,recognizing-faces-in-the-wild,Playground,2019-08-08 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,6917,6911,522,extension_candidate
+14724,2019-3rd-ml-month-with-kakr,Community,2019-08-16 15:00:00,2019,FScoreMicro,F-Score (Micro),Other named metric,false,34,2518,2485,154,extension_candidate
+15062,generative-dog-images,Research,2019-08-28 19:23:00,2019,PostProcessorKernel,PostProcessorKernel,Other named metric,true,50,12346,11192,940,extension_candidate
+14313,champs-scalar-coupling,Featured,2019-08-28 23:59:00,2019,GroupMeanLogMAE,Group Mean Log MAE,Other named metric,false,28,47729,47719,2737,extension_candidate
+12633,bigdata2019-flare-prediction,Community,2019-09-01 23:59:00,2019,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,39,1585,1583,86,extension_candidate
+15733,2019-fall-cse6250-bdh,Community,2019-09-02 16:00:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1277,1275,177,extension_candidate
+14652,siim-acr-pneumothorax-segmentation,Featured,2019-09-04 23:59:00,2019,SIIMDice,SIIMDice,Other named metric,false,1,1972,1969,350,extension_candidate
+14774,aptos2019-blindness-detection,Featured,2019-09-07 23:59:00,2019,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,true,15,72135,60540,3115,extension_candidate
+15128,banco-galicia-dataton-2019,Community,2019-09-15 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,4890,4864,224,extension_candidate
+16018,hackstat2k19,Community,2019-09-21 18:29:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1193,1193,143,extension_candidate
+14420,recursion-cellular-image-classification,Research,2019-09-26 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,22,13260,13232,865,extension_candidate
+14350,11785-hw1-fall2019,Community,2019-09-29 04:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2222,2166,243,extension_candidate
+15043,open-images-2019-instance-segmentation,Research,2019-10-01 23:59:00,2019,OpenImagesObjDetectionSegmentationAP,OpenImagesObjDetectionSegmentationAP,Other named metric,false,20,1573,1566,193,extension_candidate
+14315,open-images-2019-object-detection,Research,2019-10-01 23:59:00,2019,OpenImagesObjectDetectionAP,OpenImagesObjectDetectionAP,Other named metric,false,20,7377,7375,558,extension_candidate
+14316,open-images-2019-visual-relationship,Research,2019-10-01 23:59:00,2019,OpenImagesVisualRelations,OpenImagesVisualRelations,Other named metric,false,30,2200,2198,200,extension_candidate
+14242,ieee-fraud-detection,Research,2019-10-03 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,125271,125219,6351,extension_candidate
+12716,youtube8m-2019,Research,2019-10-11 23:59:00,2019,YT8M_MeanAveragePrecisionAtK,YT8M_MAP@{K},Other named metric,false,20,3770,3747,282,extension_candidate
+16208,108-1-dl-app-hw1,Community,2019-10-13 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,0,1022,1020,92,extension_candidate
+13578,kuzushiji-recognition,Playground,2019-10-14 23:59:00,2019,KNISTMicroF1,KNISTMicroF1,Other named metric,false,13,2659,2652,293,extension_candidate
+16451,ntust-ir-2019-hw2,Community,2019-10-17 15:59:00,2019,MAP@{K},MAP@{K},MAP@K,false,100,2730,2729,77,extension_candidate
+15217,11785-f19-hw2p2-classification,Community,2019-10-21 03:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2077,2047,206,extension_candidate
+16211,intercampusai2019,Community,2019-10-23 23:59:00,2019,FScoreMicro,F-Score (Micro),Other named metric,false,30,12960,12949,528,extension_candidate
+14241,severstal-steel-defect-detection,Featured,2019-10-24 23:59:00,2019,Dice,Dice,Other named metric,true,32,52392,46559,2560,extension_candidate
+16520,nyucvfall2019,Community,2019-11-01 05:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1504,1503,105,extension_candidate
+16787,homework-3-part-2-11-785-fall-2019,Community,2019-11-10 04:59:00,2019,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,2034,2006,202,extension_candidate
+15768,3d-object-detection-for-autonomous-vehicles,Featured,2019-11-12 23:59:00,2019,Lyft3DObjectDetectionAP,Lyft3DObjectDetectionAP,Other named metric,false,30,5703,5697,546,extension_candidate
+13451,rsna-intracranial-hemorrhage-detection,Featured,2019-11-13 23:59:00,2019,WeightedMeanColumnwiseLogLoss,Weighted Mean Columnwise Log Loss,Other named metric,false,1,2556,2553,432,extension_candidate
+13333,understanding_cloud_organization,Research,2019-11-18 23:59:00,2019,Dice,Dice,Other named metric,false,25,29181,29163,1531,extension_candidate
+16800,cse158-fa19-category-prediction,Community,2019-11-19 01:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,3132,3109,384,extension_candidate
+16797,cse258-fa19-rating-prediction,Community,2019-11-19 01:00:00,2019,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,6571,6533,421,extension_candidate
+16795,cse158258-fa19-read-prediction,Community,2019-11-19 01:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,16653,16640,844,extension_candidate
+8673,how-good-is-your-medium-article,Community,2019-11-25 21:59:00,2019,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,10863,10799,1133,extension_candidate
+17077,ml-f19,Community,2019-11-26 23:59:00,2019,FScoreMicro,F-Score (Micro),Other named metric,false,30,1024,1022,32,extension_candidate
+17216,ds100fa19,Community,2019-12-01 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,3229,3227,967,extension_candidate
+16847,Inmuebles24,Community,2019-12-05 23:59:00,2019,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1475,1474,37,extension_candidate
+14999,cat-in-the-dat,Playground,2019-12-09 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,13537,13528,1339,extension_candidate
+17593,cs5785-fall-2019-final,Community,2019-12-12 04:59:00,2019,MAP@{K},MAP@{K},MAP@K,false,50,1213,1212,45,extension_candidate
+14859,bigquery-geotab-intersection-congestion,Playground,2019-12-12 23:59:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,49,3379,3372,432,extension_candidate
+17227,homework-4-part-2-11-785-fall-2019-slack-or-late,Community,2019-12-13 04:59:00,2019,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1232,1231,129,extension_candidate
+17510,mai-ml-hw-models,Community,2019-12-13 23:59:00,2019,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1029,1024,40,extension_candidate
+16017,Kannada-MNIST,Playground,2019-12-17 23:59:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,true,50,11492,9298,1319,extension_candidate
+9994,ashrae-energy-prediction,Featured,2019-12-19 23:59:00,2019,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,49,39404,39402,3591,extension_candidate
+17572,2019-intro-to-ml-and-dl-final-task2,Community,2019-12-24 14:00:00,2019,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1095,1089,32,extension_candidate
+17575,2019-intro-to-ml-and-dl-final-task1,Community,2019-12-24 14:00:00,2019,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,48,1919,1912,31,extension_candidate
+16838,sjtu-m3dv-medical-3d-voxel-classification,Community,2019-12-25 23:59:00,2019,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,2160,2149,305,extension_candidate
+17040,inf131-2019,Community,2019-12-26 23:59:00,2019,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,3416,3357,69,extension_candidate
+17455,link-prediction-data-challenge-2019,Community,2019-12-30 23:59:00,2019,FScoreMicro,F-Score (Micro),Other named metric,false,70,1056,1044,53,extension_candidate
+5833,yellowtaxi,Community,2020-01-01 12:00:00,2020,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,100,1074,1074,158,extension_candidate
+15696,nfl-big-data-bowl-2020,Featured,2020-01-06 23:59:00,2020,CRPS,Continuous Rank Probability Score,Other named metric,true,100,3097,3097,1817,extension_candidate
+17804,simpsons4,Community,2020-01-08 23:59:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,30,2174,2173,231,extension_candidate
+17928,house-price-prediction-final-test,Community,2020-01-10 23:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,2550,2547,71,extension_candidate
+17941,2el1730-machinelearning,Community,2020-01-14 23:59:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,20,3210,3208,72,extension_candidate
+17233,santa-workshop-tour-2019,Featured,2020-01-15 23:59:00,2020,SantaWorkshopSchedule2019,Santa's Workshop Scheduling 2019,Other named metric,false,100,13791,13783,1618,extension_candidate
+18233,2020-spring-cse6250-bdh,Community,2020-01-20 12:00:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1101,1100,171,extension_candidate
+9993,pku-autonomous-driving,Featured,2020-01-21 23:59:00,2020,PKUAutoDrivingAP,PKUAutoDrivingAP,Other named metric,false,5,10006,10001,864,extension_candidate
+12863,tensorflow2-question-answering,Featured,2020-01-22 23:59:00,2020,NQMicroF1,NQMicroF1,Other named metric,true,12,9947,8861,1267,extension_candidate
+16531,data-science-bowl-2019,Featured,2020-01-22 23:59:00,2020,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,true,14,82330,73638,3647,extension_candidate
+17722,11-785-s20-hw1p2,Community,2020-02-09 05:30:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,3650,3615,318,extension_candidate
+7968,google-quest-challenge,Featured,2020-02-10 23:59:00,2020,MCSpearmanR,Mean Columnwise Spearman's r (rank correlation  coefficient),Other named metric,true,13,28120,21869,1667,extension_candidate
+18789,caltech-cs155-2020,Community,2020-02-13 22:00:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,57,1766,1744,72,extension_candidate
+17807,widsdatathon2020,Community,2020-02-24 23:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,12649,12644,951,extension_candidate
+18631,s20-589-hw1-dataa,Community,2020-02-26 23:59:00,2020,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1771,1770,162,extension_candidate
+18632,s20-589-hw1-datab,Community,2020-02-26 23:59:00,2020,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1622,1619,159,extension_candidate
+18767,ml2-usf-2020,Community,2020-02-29 23:59:00,2020,R2Score,R^2 score (coefficient of determination),Other named metric,false,30,1124,1123,43,extension_candidate
+19112,data-science-lab-kaggle-sp2020,Community,2020-03-03 23:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1445,1444,82,extension_candidate
+14897,bengaliai-cv19,Research,2020-03-16 23:59:00,2020,WeightedCategorizationAccuracy,Weighted Categorization Accuracy,Other named metric,true,46,39475,31009,2181,extension_candidate
+18005,fifa2019wages,Community,2020-03-23 03:00:00,2020,R2Score,R^2 score (coefficient of determination),Other named metric,false,50,2492,2470,132,extension_candidate
+19539,covid19-global-forecasting-week-1,Research,2020-03-25 23:59:00,2020,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,true,30,2967,2914,546,extension_candidate
+18455,ml2020spring-hw1,Community,2020-03-26 15:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,4908,4855,423,extension_candidate
+18458,ml2020spring-hw2,Community,2020-03-26 15:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,3905,3888,285,extension_candidate
+19175,cs589s20hw2,Community,2020-03-26 17:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,40,1538,1537,156,extension_candidate
+17000,cat-in-the-dat-ii,Playground,2020-03-31 23:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,13841,13837,1161,extension_candidate
+19702,covid19-global-forecasting-week-2,Research,2020-04-06 03:56:00,2020,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,true,33,1456,1371,216,extension_candidate
+18423,11-785-s20-hw2p2-verification,Community,2020-04-06 04:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1410,1406,293,extension_candidate
+17723,11-785-s20-hw2p2-classification,Community,2020-04-06 04:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2981,2963,302,extension_candidate
+19853,covid19-global-forecasting-week-3,Research,2020-04-08 23:59:00,2020,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,true,33,1454,1408,244,extension_candidate
+14070,aia-dnn-classification-pokemongo-fourth,Community,2020-04-09 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,90,2463,2459,185,extension_candidate
+19396,competition-2-yandex-shad-spring-2020,Community,2020-04-14 06:00:00,2020,LogLoss,Log Loss,LogLoss,false,30,1747,1725,128,extension_candidate
+20010,covid19-global-forecasting-week-4,Research,2020-04-15 23:59:00,2020,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,true,33,1963,1925,313,extension_candidate
+19839,wm-2020-vsm-model,Community,2020-04-19 23:59:00,2020,MAP@{K},MAP@{K},MAP@K,false,50,1188,1181,90,extension_candidate
+16880,deepfake-detection-challenge,Featured,2020-04-23 22:17:00,2020,LogLoss,Log Loss,LogLoss,true,100,9348,3566,2321,extension_candidate
+18461,ml2020spring-hw4,Community,2020-04-30 15:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2563,2553,216,extension_candidate
+18459,ml2020spring-hw3,Community,2020-04-30 15:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,3381,3357,293,extension_candidate
+20358,enigma-day-1000,Community,2020-04-30 18:29:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1284,1283,85,extension_candidate
+17724,11-785-s20-hw3p2,Community,2020-05-08 03:59:00,2020,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,3348,3331,289,extension_candidate
+18278,flower-classification-with-tpus,Playground,2020-05-11 23:59:00,2020,FScoreMacro,F-Score (Macro),Other named metric,true,70,10413,10394,850,extension_candidate
+20439,cs4670spring2020pa3,Community,2020-05-18 02:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1163,1154,140,extension_candidate
+18807,ml2020spring-hw7,Community,2020-05-21 15:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1121,1114,147,extension_candidate
+18808,ml2020spring-hw9,Community,2020-05-21 16:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2473,2462,175,extension_candidate
+18045,liverpool-ion-switching,Research,2020-05-25 23:59:00,2020,FScoreMacro,F-Score (Macro),Other named metric,false,30,53547,53547,2618,extension_candidate
+18648,plant-pathology-2020-fgvc7,Research,2020-05-26 23:59:00,2020,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,50,21796,21784,1317,extension_candidate
+18627,herbarium-2020-fgvc7,Research,2020-05-26 23:59:00,2020,FScoreMacro,F-Score (Macro),Other named metric,false,30,1412,1386,153,extension_candidate
+18629,semi-inat-2020,Community,2020-05-26 23:59:00,2020,MeanBestErrorAtK,MeanBestErrorAtK,Other named metric,false,50,1209,1173,31,extension_candidate
+18294,iwildcam-2020-fgvc7,Research,2020-05-26 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,52,1460,1449,121,extension_candidate
+18329,abstraction-and-reasoning-challenge,Research,2020-05-27 23:59:00,2020,MeanBestErrorAtK,MeanBestErrorAtK,Other named metric,true,100,13116,10977,948,extension_candidate
+18626,imet-2020-fgvc7,Research,2020-05-28 23:59:00,2020,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,true,32,1011,835,105,extension_candidate
+18809,ml2020spring-hw10,Community,2020-06-11 15:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,3701,3693,170,extension_candidate
+18810,ml2020spring-hw12,Community,2020-06-11 15:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1935,1931,159,extension_candidate
+20850,wm-2020-personalized-recommendation,Community,2020-06-14 15:59:00,2020,MAP@{K},MAP@{K},MAP@K,false,50,1676,1663,97,extension_candidate
+16295,tweet-sentiment-extraction,Featured,2020-06-16 23:59:00,2020,Jaccard,Jaccard,Other named metric,true,30,38187,35729,2315,extension_candidate
+19474,til2020,Community,2020-06-20 06:00:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,20,1747,1704,100,extension_candidate
+19018,jigsaw-multilingual-toxic-comment-classification,Featured,2020-06-22 23:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,true,30,36075,36072,1621,extension_candidate
+21424,dl-course-final-competition,Community,2020-06-28 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1553,1550,146,extension_candidate
+16245,trends-assessment-prediction,Research,2020-06-29 23:59:00,2020,WMAE,Weighted Mean Absolute Error,Other named metric,false,48,14331,14309,1047,extension_candidate
+18599,m5-forecasting-accuracy,Featured,2020-06-30 23:59:00,2020,M5_WRMSSE,M5 Weighted (Rowwise) Root Mean Squared Scaled Error,Other named metric,false,50,88775,88741,5558,extension_candidate
+18600,m5-forecasting-uncertainty,Featured,2020-06-30 23:59:00,2020,WeightedRowwisePinballLoss,Weighted Rowwise Pinball Loss,Other named metric,false,50,10087,10075,909,extension_candidate
+17725,11-785-s20-hw4p2,Community,2020-07-01 04:00:00,2020,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,3680,3658,279,extension_candidate
+21100,nju-introdm20,Community,2020-07-02 23:59:00,2020,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,30,1698,1692,195,extension_candidate
+19991,alaska2-image-steganalysis,Research,2020-07-20 23:59:00,2020,WeightedAUC,Weighted Area Under Receiver Operating Characteristic Curve,Other named metric,false,20,20922,20918,1095,extension_candidate
+18647,prostate-cancer-grade-assessment,Featured,2020-07-22 23:59:00,2020,QuadraticWeightedKappa,QuadraticWeightedKappa,Other named metric,true,42,19900,17421,1070,extension_candidate
+19995,prml20,Community,2020-08-10 23:59:00,2020,WeightedCategorizationAccuracy,Weighted Categorization Accuracy,Other named metric,false,50,1478,1453,56,extension_candidate
+20270,siim-isic-melanoma-classification,Featured,2020-08-17 23:59:00,2020,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,30,101848,101845,3308,extension_candidate
+19233,landmark-retrieval-2020,Research,2020-08-17 23:59:00,2020,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,5077,4203,566,extension_candidate
+19989,global-wheat-detection,Research,2020-08-19 01:59:00,2020,RSNAObjectDetectionAP,RSNAObjectDetectionAP,Other named metric,true,62,10097,2966,2168,extension_candidate
+19596,birdsong-recognition,Research,2020-09-15 23:59:00,2020,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,true,27,17987,16629,1413,extension_candidate
+18011,halite,Featured,2020-09-22 23:59:00,2020,halite,Halite,Other named metric,false,100,15037,15037,1139,extension_candidate
+22607,whoisshe,Community,2020-09-25 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1168,1125,70,extension_candidate
+22378,11-785-fall-20-homework-1-part-2,Community,2020-09-28 04:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1599,1594,265,extension_candidate
+19231,landmark-recognition-2020,Research,2020-09-29 23:59:00,2020,GoogleGlobalAP,GoogleGlobalAP,Other named metric,true,34,19013,15075,836,extension_candidate
+20604,osic-pulmonary-fibrosis-progression,Featured,2020-10-06 23:59:00,2020,LaplaceLogLikelihood,Laplace Log Likelihood,Other named metric,true,1,44827,39082,2195,extension_candidate
+22111,stanford-covid-vaccine,Research,2020-10-06 23:59:00,2020,MWCRMSE,Mean Weighted Columnwise Root Mean Squared Error,Other named metric,false,9,35825,35806,1636,extension_candidate
+22881,11-785-fall-20-homework-2-part-2,Community,2020-10-19 04:00:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1441,1438,233,extension_candidate
+23166,stat441datachallenge1,Community,2020-10-24 04:00:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,2032,2030,132,extension_candidate
+22936,sfu-cmpt-image-classification-2020-fall,Community,2020-10-25 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,10,1244,1243,111,extension_candidate
+22307,rsna-str-pulmonary-embolism-detection,Featured,2020-10-26 23:59:00,2020,WeightedMeanColumnwiseLogLoss,Weighted Mean Columnwise Log Loss,Other named metric,true,28,11500,8683,822,extension_candidate
+22720,sysu-dmml-1,Community,2020-10-30 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1395,1392,79,extension_candidate
+23478,ai-club-inductions,Community,2020-11-02 11:30:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,60,1041,1024,69,extension_candidate
+23367,gt-cse6250-fall-2020-hw5,Community,2020-11-02 21:59:00,2020,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1074,1071,160,extension_candidate
+23450,si670fall2020,Community,2020-11-03 04:59:00,2020,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,100,1229,1228,49,extension_candidate
+23382,11-785-fall-20-homework-3,Community,2020-11-09 05:00:00,2020,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1501,1500,225,extension_candidate
+23341,cs725-autumn-2020-programming-assignment-2,Community,2020-11-10 18:29:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,70,1081,1078,145,extension_candidate
+23088,iitmee4708,Community,2020-11-11 18:30:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,100,1046,1044,90,extension_candidate
+23486,made-hw-2,Community,2020-11-13 23:59:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,30,2533,2527,258,extension_candidate
+24107,sweettv-movie-recommender,Community,2020-11-18 23:59:00,2020,MAP@{K},MAP@{K},MAP@K,false,50,1425,1423,68,extension_candidate
+23764,2020-intro-to-ml-and-dl-midterm-project,Community,2020-11-23 22:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,5340,5115,114,extension_candidate
+23548,cse158258-fa20-play-prediction,Community,2020-11-24 01:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,13290,13287,672,extension_candidate
+23550,cse258-fa20-time-played-prediction,Community,2020-11-24 01:00:00,2020,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,4129,4126,250,extension_candidate
+23549,cse158-fa20-category-prediction,Community,2020-11-24 01:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,3979,3977,401,extension_candidate
+19990,lyft-motion-prediction-autonomous-vehicles,Featured,2020-11-25 23:59:00,2020,PostProcessorKernel,PostProcessorKernel,Other named metric,true,50,14924,14214,949,extension_candidate
+23585,sysu-dmml-2,Community,2020-11-30 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1598,1597,78,extension_candidate
+19988,lish-moa,Research,2020-11-30 23:59:00,2020,MeanColumnwiseLogLoss,Mean Columnwise Log Loss,Other named metric,true,25,89016,81894,4477,extension_candidate
+22122,conways-reverse-game-of-life-2020,Playground,2020-11-30 23:59:00,2020,PostProcessorKernel,PostProcessorKernel,Other named metric,true,50,1475,1302,196,extension_candidate
+20627,labdata-churn-challenge-2020,Community,2020-12-01 22:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2536,2532,82,extension_candidate
+24235,stat441datachallenge2,Community,2020-12-05 04:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1357,1356,123,extension_candidate
+24373,hrpred,Community,2020-12-05 23:59:00,2020,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,false,50,1949,1948,376,extension_candidate
+23675,dsba-fml-foundations-of-machine-learning,Community,2020-12-06 23:59:00,2020,FScoreMicro,F-Score (Micro),Other named metric,false,30,1134,1130,22,extension_candidate
+23985,2020-data-science-hw1,Community,2020-12-07 01:00:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,60,2958,2957,110,extension_candidate
+23415,eecs545f20aq,Community,2020-12-08 04:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,4796,4793,161,extension_candidate
+24464,cse464-introduction-to-data-mining-challenge-2,Community,2020-12-08 23:59:00,2020,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,4297,4294,112,extension_candidate
+21723,google-football,Featured,2020-12-11 23:59:00,2020,football,Football,Other named metric,false,30,14022,14020,1139,extension_candidate
+23946,11-785-fall-20-homework-4-part-2,Community,2020-12-12 04:59:00,2020,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,2349,2348,219,extension_candidate
+22040,hashcode-drone-delivery,Playground,2020-12-14 23:59:00,2020,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,1301,1298,131,extension_candidate
+23661,2020-10-29,Community,2020-12-23 23:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,6066,6063,291,extension_candidate
+23847,2020-11-05,Community,2020-12-23 23:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,3592,3591,268,extension_candidate
+24263,2020-11-20,Community,2020-12-23 23:59:00,2020,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,2593,2592,268,extension_candidate
+22804,nfl-impact-detection,Featured,2021-01-04 23:59:00,2021,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,7863,7429,473,extension_candidate
+19059,predict-volcanic-eruptions-ingv-oe,Playground,2021-01-06 23:59:00,2021,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,9204,9202,620,extension_candidate
+21651,riiid-test-answer-prediction,Featured,2021-01-07 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,true,20,64871,48784,3538,extension_candidate
+24280,prml-data-contest-nov-2020,Community,2021-01-31 05:30:00,2021,MAP@{K},MAP@{K},MAP@K,false,30,3683,3587,150,extension_candidate
+24907,upv-sie-20,Community,2021-01-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1233,1226,49,extension_candidate
+24673,tabular-playground-series-jan-2021,Playground,2021-01-31 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,16141,16139,1729,extension_candidate
+25348,spring21-cs189-hw1-mnist,Community,2021-02-02 07:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1376,1375,672,extension_candidate
+25347,spring21-cs189-hw1-cifar10,Community,2021-02-02 07:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1112,1108,669,extension_candidate
+25349,spring21-cs189-hw1-spam,Community,2021-02-02 07:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1467,1466,673,extension_candidate
+24652,interbank20,Community,2021-02-12 04:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,3929,3916,229,extension_candidate
+21669,rfcx-species-audio-detection,Research,2021-02-17 23:59:00,2021,WeightedLabelRankingAveragePrecision,Weighted Label Ranking Average Precision,Other named metric,false,21,33343,33339,1143,extension_candidate
+13836,cassava-leaf-disease-classification,Research,2021-02-18 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,true,31,81925,74294,4074,extension_candidate
+25232,mgta415-data-driven-text-mining,Community,2021-02-19 08:00:00,2021,FScoreMicro,F-Score (Micro),Other named metric,false,50,1173,1171,90,extension_candidate
+22838,rock-paper-scissors,Playground,2021-02-22 23:59:00,2021,rps,"Rock, Paper, Scissors",Other named metric,false,30,48237,48237,1663,extension_candidate
+24539,santa-2020,Featured,2021-02-22 23:59:00,2021,mab,Santa 2020 Beta,Other named metric,false,30,24724,24724,788,extension_candidate
+25225,tabular-playground-series-feb-2021,Playground,2021-02-28 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,12555,12554,1434,extension_candidate
+25722,11785-spring2021-hw1p2,Community,2021-03-01 04:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2039,2038,260,extension_candidate
+22359,widsdatathon2021,Community,2021-03-01 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,70,20855,20853,762,extension_candidate
+25828,spring21-cs189-hw3-mnist,Community,2021-03-02 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1125,1123,516,extension_candidate
+25829,spring21-cs189-hw3-spam,Community,2021-03-02 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1102,1100,506,extension_candidate
+24691,friofrio,Community,2021-03-04 20:00:00,2021,LogLoss,Log Loss,LogLoss,false,50,1434,1433,38,extension_candidate
+26124,bankdirectmarketing,Community,2021-03-10 23:59:00,2021,FScoreMicro,F-Score (Micro),Other named metric,false,70,1218,1217,54,extension_candidate
+26132,minor-project-2021,Community,2021-03-11 18:29:00,2021,FScoreMacro,F-Score (Macro),Other named metric,false,67,1278,1274,82,extension_candidate
+23870,ranzcr-clip-catheter-line-classification,Featured,2021-03-16 23:59:00,2021,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,true,25,28204,26762,1588,extension_candidate
+26002,spring21-cs189-hw4-wine,Community,2021-03-16 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1131,1128,549,extension_candidate
+26169,11785-spring2021-hw2p2s1-face-classification,Community,2021-03-22 03:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1603,1602,239,extension_candidate
+26376,4771-sp21-regression,Community,2021-03-23 05:59:00,2021,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,1307,1306,174,extension_candidate
+25737,ml2021spring-hw1,Community,2021-03-26 16:00:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,44217,44000,2032,extension_candidate
+24800,vinbigdata-chest-xray-abnormalities-detection,Featured,2021-03-30 23:59:00,2021,OpenImagesObjectDetectionAP,OpenImagesObjectDetectionAP,Other named metric,false,10,29250,29249,1275,extension_candidate
+25657,nlp-intro-to-dl-2021,Community,2021-03-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1997,1994,130,extension_candidate
+25226,tabular-playground-series-mar-2021,Playground,2021-03-31 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,12948,12947,1496,extension_candidate
+26319,ml2021spring-hw2,Community,2021-04-02 15:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,18528,18499,1522,extension_candidate
+26475,classification-with-non-deep-classifiers,Community,2021-04-05 03:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1329,1328,130,extension_candidate
+26079,ncaam-march-mania-2021,Playground,2021-04-06 04:00:00,2021,LogLoss,Log Loss,LogLoss,false,3,1243,1242,707,extension_candidate
+26447,spring21-cs189-hw5-titanic,Community,2021-04-06 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1375,1374,553,extension_candidate
+26448,spring21-cs189-hw5-spam,Community,2021-04-06 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,80,1237,1236,558,extension_candidate
+26579,competition-2-yandex-shad-spring-2021,Community,2021-04-08 06:00:00,2021,LogLoss,Log Loss,LogLoss,false,30,1165,1161,122,extension_candidate
+24764,actuarial-loss-estimation,Community,2021-04-11 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,3635,3633,140,extension_candidate
+26555,11785-spring2021-hw3p2,Community,2021-04-12 03:59:00,2021,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1581,1562,221,extension_candidate
+27169,datamining-2021-2,Community,2021-04-28 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1797,1795,173,extension_candidate
+25123,permuted-animal-faces,Community,2021-04-30 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1496,1493,134,extension_candidate
+26478,tabular-playground-series-apr-2021,Playground,2021-04-30 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,25,15346,15345,1244,extension_candidate
+26688,california-house-prices,Community,2021-05-09 04:00:00,2021,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,2295,2288,172,extension_candidate
+19820,shipsmano2021,Community,2021-05-09 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1476,1471,78,extension_candidate
+24286,shopee-product-matching,Featured,2021-05-10 23:59:00,2021,FScoreMicro,F-Score (Micro),Other named metric,true,40,51360,44968,2522,extension_candidate
+22990,hubmap-kidney-segmentation,Research,2021-05-10 23:59:00,2021,Dice,Dice,Other named metric,true,33,35352,30952,1438,extension_candidate
+23823,hpa-single-cell-image-classification,Featured,2021-05-11 23:59:00,2021,OpenImagesObjDetectionSegmentationAP,OpenImagesObjDetectionSegmentationAP,Other named metric,true,31,19155,17349,794,extension_candidate
+22559,indoor-location-navigation,Research,2021-05-17 23:59:00,2021,IndoorLocalization,Indoor Localization Mean Position Error,Other named metric,false,15,28020,28009,1170,extension_candidate
+27753,spotoroo,Community,2021-05-21 13:55:00,2021,WeightedCategorizationAccuracy,Weighted Categorization Accuracy,Other named metric,false,50,3085,3082,282,extension_candidate
+27644,ml2021-spring-hw7,Community,2021-05-21 15:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,11751,11742,1263,extension_candidate
+27370,ml2021spring-hw8,Community,2021-05-21 16:00:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,10069,10063,1193,extension_candidate
+25563,plant-pathology-2021-fgvc8,Research,2021-05-26 23:59:00,2021,FScoreMicro,F-Score (Micro),Other named metric,true,19,10574,9510,662,extension_candidate
+25980,hotel-id-2021-fgvc8,Research,2021-05-26 23:59:00,2021,MAP@{K},MAP@{K},MAP@K,true,35,1106,956,98,extension_candidate
+26479,tabular-playground-series-may-2021,Playground,2021-05-31 23:59:00,2021,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,25,11615,11614,1097,extension_candidate
+25944,arabic-sentiment-analysis-2021-kaust,Community,2021-06-01 02:59:00,2021,FScoreMacro,F-Score (Macro),Other named metric,false,100,1258,1247,74,extension_candidate
+27467,prml-data-contest-jan-2021,Community,2021-06-01 18:29:00,2021,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1162,1156,44,extension_candidate
+25954,birdclef-2021,Research,2021-06-01 23:59:00,2021,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,true,35,9356,8752,834,extension_candidate
+22422,bms-molecular-translation,Featured,2021-06-03 23:59:00,2021,LevenshteinMean,Levenshtein Mean,Other named metric,false,25,10250,10237,874,extension_candidate
+26775,cse151b-spring,Community,2021-06-04 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,80,1966,1964,58,extension_candidate
+29041,fit5149-2021-a2,Community,2021-06-05 23:59:00,2021,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,100,2435,2429,110,extension_candidate
+27751,mgtf495,Community,2021-06-10 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1015,1011,31,extension_candidate
+29066,ml2021spring-hw11,Community,2021-06-11 15:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,7246,7235,1061,extension_candidate
+29174,eco3119-final-competition,Community,2021-06-20 14:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1829,1828,305,extension_candidate
+25925,coleridgeinitiative-show-us-the-data,Featured,2021-06-22 23:59:00,2021,JaccardFbeta,JaccardFbeta,Other named metric,true,12,26146,22805,1660,extension_candidate
+29193,classify-leaves,Community,2021-06-26 04:00:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1807,1806,165,extension_candidate
+27655,computer2021-hw5,Community,2021-06-28 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1170,1096,125,extension_candidate
+26480,tabular-playground-series-jun-2021,Playground,2021-06-30 23:59:00,2021,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,25,11890,11888,1171,extension_candidate
+27969,econometriaenr2021,Community,2021-07-01 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,85,1236,1234,59,extension_candidate
+28007,tabular-playground-series-jul-2021,Playground,2021-07-31 23:59:00,2021,MCRMSLE,Mean Columnwise Root Mean Squared Logarithmic Error,Other named metric,false,48,13537,13534,1293,extension_candidate
+25914,commonlitreadabilityprize,Featured,2021-08-02 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),true,30,72556,66477,3779,extension_candidate
+26933,google-smartphone-decimeter-challenge,Research,2021-08-04 23:59:00,2021,SmartphoneDecimeter,SmartphoneDecimeter,Other named metric,false,53,16807,16802,810,extension_candidate
+25401,hungry-geese,Playground,2021-08-09 23:59:00,2021,hungry_geese,Hungry Geese,Other named metric,false,30,33296,33296,875,extension_candidate
+26680,siim-covid19-detection,Featured,2021-08-09 23:59:00,2021,OpenImagesObjectDetectionAP,OpenImagesObjectDetectionAP,Other named metric,true,29,32551,28643,1386,extension_candidate
+23652,seti-breakthrough-listen,Research,2021-08-18 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,17368,17367,768,extension_candidate
+23304,jane-street-market-prediction,Featured,2021-08-23 23:59:00,2021,JaneStreetPnl,Jane Street Trading,Other named metric,true,0,7213,7213,4086,extension_candidate
+28008,tabular-playground-series-aug-2021,Playground,2021-08-31 23:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,33,16698,16696,1753,extension_candidate
+27994,largefinefoodai-iccv-recognition,Community,2021-08-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2146,2144,116,extension_candidate
+30591,beyond-analysis,Community,2021-09-01 18:59:00,2021,MCRMSE,Mean Columnwise Root Mean Squared Error,Other named metric,false,52,1914,1912,139,extension_candidate
+30907,computer-vision-training-fcis-21,Community,2021-09-23 22:00:00,2021,IntersectionOverUnionObjectSegmentationBeta,IntersectionOverUnionObjectSegmentationBeta,Other named metric,false,30,1266,1262,60,extension_candidate
+23249,g2net-gravitational-wave-detection,Research,2021-09-29 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,16,28226,28222,1219,extension_candidate
+28009,tabular-playground-series-sep-2021,Playground,2021-09-30 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,18396,18394,1942,extension_candidate
+30821,nyu-computer-vision-csci-ga2271-2021,Community,2021-09-30 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1806,1805,137,extension_candidate
+30749,idl-fall2021-hw1p2,Community,2021-10-01 03:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,2027,2026,316,extension_candidate
+29762,landmark-recognition-2021,Research,2021-10-01 23:59:00,2021,GoogleGlobalAP,GoogleGlobalAP,Other named metric,true,48,8841,6486,441,extension_candidate
+29761,landmark-retrieval-2021,Research,2021-10-01 23:59:00,2021,MAP@{K},MAP@{K},MAP@K,true,33,6828,5461,285,extension_candidate
+30103,porto-seguro-data-challenge,Community,2021-10-04 19:00:00,2021,F_{Beta} (deprecated),FScoreBeta (deprecated),Other named metric,false,50,3128,3123,174,extension_candidate
+30874,cmpe257-lab1,Community,2021-10-15 10:30:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1079,1078,62,extension_candidate
+29653,rsna-miccai-brain-tumor-radiogenomic-classification,Featured,2021-10-15 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,true,22,27720,23889,1635,extension_candidate
+31382,idl-fall21-hw2p2s2-face-verification,Community,2021-10-22 03:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1196,1195,300,extension_candidate
+31379,idl-fall21-hw2p2s1-face-classification,Community,2021-10-22 03:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2084,2083,302,extension_candidate
+31334,sfu-cmpt-image-classification-2021-fall,Community,2021-10-22 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,10,1112,1111,86,extension_candidate
+31710,ut-in-class-challenge-f21,Community,2021-10-25 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,0,1162,1117,49,extension_candidate
+31707,dslab-kaggle-competition-fall-21,Community,2021-10-25 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,1137,1135,69,extension_candidate
+31250,nlp-2021-hw1,Community,2021-10-29 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,1136,1126,73,extension_candidate
+28010,tabular-playground-series-oct-2021,Playground,2021-10-31 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,10121,10119,1089,extension_candidate
+30198,nfl-health-and-safety-helmet-assignment,Featured,2021-11-02 23:59:00,2021,NFLHelmetIdentification,NFL Helmet Identification,Other named metric,true,23,13036,10427,853,extension_candidate
+29594,ventilator-pressure-prediction,Research,2021-11-03 23:59:00,2021,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,19,47964,47951,2659,extension_candidate
+31421,bt4012-in-class-kaggle-competition-2021-october,Community,2021-11-08 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,2444,2442,122,extension_candidate
+31820,11785-fall2021-hw3p2,Community,2021-11-12 04:59:00,2021,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1937,1933,283,extension_candidate
+31862,prml-data-contest-jul-2021-rb-section,Community,2021-11-12 23:59:00,2021,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,false,30,2508,2500,84,extension_candidate
+30060,chaii-hindi-and-tamil-question-answering,Research,2021-11-15 23:59:00,2021,Jaccard,Jaccard,Other named metric,true,40,19329,17357,1017,extension_candidate
+31405,cse158-cook-time-prediction,Community,2021-11-16 01:00:00,2021,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,4905,4902,522,extension_candidate
+31406,cse258-recipe-rating-prediction,Community,2021-11-16 01:00:00,2021,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,11180,11177,552,extension_candidate
+31404,cse158258-cooking-prediction,Community,2021-11-16 01:00:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,21912,21909,1121,extension_candidate
+30567,iiitd-abuse-detection-challenge,Community,2021-11-17 23:59:00,2021,FScoreMicro,F-Score (Micro),Other named metric,false,100,2893,2889,54,extension_candidate
+30445,xenophobic-tweets-tc2011,Community,2021-11-23 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,1240,1239,19,extension_candidate
+28011,tabular-playground-series-nov-2021,Playground,2021-11-30 23:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,19,14714,14710,1362,extension_candidate
+32698,rutgers-data101-fall2021-assignment-12,Community,2021-12-07 05:00:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,1214,1208,167,extension_candidate
+32349,uci-cs178-f21,Community,2021-12-07 07:59:00,2021,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1817,1816,101,extension_candidate
+32827,ucla-stats-101c-2021-lec3-new,Community,2021-12-08 07:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,40,1243,1236,72,extension_candidate
+32826,ucla-stats-101c-2021-lec4-new,Community,2021-12-08 07:59:00,2021,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,40,1046,1031,65,extension_candidate
+32373,iml2021,Community,2021-12-08 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,10,1204,1188,45,extension_candidate
+32802,deeplearning2021competition,Community,2021-12-09 15:00:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1460,1457,32,extension_candidate
+30067,lux-ai-2021,Featured,2021-12-20 23:59:00,2021,lux_ai_2021,Lux AI 2021,Other named metric,false,30,22507,22507,1186,extension_candidate
+32465,int303-big-data-analysis,Community,2021-12-25 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,28,3358,3355,416,extension_candidate
+32941,2021-nycu-ml-hw5,Community,2021-12-28 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,1462,1456,156,extension_candidate
+30201,sartorius-cell-instance-segmentation,Featured,2021-12-30 23:59:00,2021,IntersectionOverUnionObjectSegmentation,IntersectionOverUnionObjectSegmentation,Other named metric,true,41,34666,29941,1665,extension_candidate
+33120,nycupython,Community,2021-12-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1126,1124,64,extension_candidate
+28012,tabular-playground-series-dec-2021,Playground,2021-12-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,12525,12524,1188,extension_candidate
+30422,signverification21,Community,2021-12-31 23:59:00,2021,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1092,1082,21,extension_candidate
+32892,dm2021-lab2-hw2,Community,2022-01-07 23:59:00,2022,FScoreMicro,F-Score (Micro),Other named metric,false,60,1121,1120,95,extension_candidate
+27233,optiver-realized-volatility-prediction,Featured,2022-01-10 18:36:00,2022,RootMeanSquarePercentageError,Root Mean Square Percentage Error,Other named metric,true,0,6683,6670,3809,extension_candidate
+31644,santa-2021,Featured,2022-01-12 23:59:00,2022,SantasSuperpermutations2021,Santa's Superpermutations 2021,Other named metric,false,100,6851,6849,867,extension_candidate
+25383,petfinder-pawpularity-score,Research,2022-01-14 23:59:00,2022,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),true,25,48450,40543,3857,extension_candidate
+33101,tabular-playground-series-jan-2022,Playground,2022-01-31 23:59:00,2022,SMAPE,SMAPE,Other named metric,false,25,16158,16152,1592,extension_candidate
+33903,hw1-spam-competition-cs189sp22,Community,2022-02-05 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,2049,2048,693,extension_candidate
+33904,hw1-cifar-10-competitioncs189sp22,Community,2022-02-05 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1287,1286,672,extension_candidate
+33905,hw1-mnist-competition-cs189sp22,Community,2022-02-05 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1559,1558,685,extension_candidate
+27935,jigsaw-toxic-severity-rating,Featured,2022-02-07 23:59:00,2022,JigsawAgreementWithAnnotators,Jigsaw Agreement with Annotators,Other named metric,true,5,50238,45058,2413,extension_candidate
+34224,caltech-cs155-2022-mp1,Community,2022-02-09 22:00:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,47,1105,1101,57,extension_candidate
+33611,kaggle-pog-series-s01e01,Community,2022-02-10 23:59:00,2022,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,40,1037,1033,89,extension_candidate
+31703,tensorflow-great-barrier-reef,Research,2022-02-14 23:59:00,2022,CSIROObjectDetectionFBeta,CSIROObjectDetectionFBeta,Other named metric,true,25,66814,59508,2241,extension_candidate
+33349,11-785-s22-hw1p2,Community,2022-02-18 04:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,4772,4639,372,extension_candidate
+33060,widsdatathon2022,Community,2022-02-26 23:59:00,2022,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,51,25886,25883,829,extension_candidate
+33102,tabular-playground-series-feb-2022,Playground,2022-02-28 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,20,11793,11787,1259,extension_candidate
+34342,hw3-spam-competition-cs189sp22,Community,2022-03-01 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1171,1168,529,extension_candidate
+34341,hw3-mnist-competition-cs189sp22,Community,2022-03-01 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1084,1082,529,extension_candidate
+34277,predicting-implicit-ratings-usfca-2022,Community,2022-03-05 07:59:00,2022,LogLoss,Log Loss,LogLoss,false,40,1851,1850,55,extension_candidate
+34093,autism-prediction,Community,2022-03-09 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,80,1275,1273,110,extension_candidate
+31779,feedback-prize-2021,Featured,2022-03-15 23:59:00,2022,TextOverlapFBeta,TextOverlapFBeta,Other named metric,true,39,34137,28931,2148,extension_candidate
+33351,11-785-s22-hw2p2-verification,Community,2022-03-18 03:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,2426,2413,345,extension_candidate
+33350,11-785-s22-hw2p2-classification,Community,2022-03-18 03:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,2487,2472,354,extension_candidate
+34361,ml2022spring-hw2,Community,2022-03-18 15:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,5749,5736,615,extension_candidate
+34790,cs189-sp22-hw4-wine-competition,Community,2022-03-23 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1192,1191,568,extension_candidate
+35074,cisc-873-dm-f22-a4,Community,2022-03-24 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1312,1310,65,extension_candidate
+34954,ml2022spring-hw3b,Community,2022-03-25 16:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,30,5055,5040,550,extension_candidate
+34038,netflix-appetency,Community,2022-03-31 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,2049,2046,210,extension_candidate
+33103,tabular-playground-series-mar-2022,Playground,2022-03-31 23:59:00,2022,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,25,9976,9971,956,extension_candidate
+34762,ml2022spring-hw4,Community,2022-04-01 15:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,6457,6374,518,extension_candidate
+34542,womens-march-mania-2022,Featured,2022-04-04 15:00:00,2022,LogLoss,Log Loss,LogLoss,false,3,1260,1217,659,extension_candidate
+34538,mens-march-mania-2022,Featured,2022-04-05 04:00:00,2022,LogLoss,Log Loss,LogLoss,false,3,1742,1693,938,extension_candidate
+33352,11-785-s22-hw3p2,Community,2022-04-08 03:59:00,2022,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,3322,3287,313,extension_candidate
+35420,congressionaltweetcompetitionspring2022,Community,2022-04-09 05:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1695,1694,85,extension_candidate
+35439,coms4771-spring-2022-regression-competition,Community,2022-04-11 05:00:00,2022,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,2427,2409,167,extension_candidate
+34534,CS98-22-DL-Task1,Community,2022-04-11 23:59:00,2022,LogLoss,Log Loss,LogLoss,false,50,1173,1170,38,extension_candidate
+35321,predictingproductivity,Community,2022-04-13 23:59:00,2022,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,1401,1399,66,extension_candidate
+22962,happy-whale-and-dolphin,Research,2022-04-18 23:59:00,2022,MAP@{K},MAP@{K},MAP@K,false,24,40305,40298,1613,extension_candidate
+33353,11-785-s22-hw4p2,Community,2022-04-29 03:59:00,2022,LevenshteinMean,Levenshtein Mean,Other named metric,false,30,1843,1805,180,extension_candidate
+33104,tabular-playground-series-apr-2022,Playground,2022-04-30 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,25,7238,7235,816,extension_candidate
+30894,g-research-crypto-forecasting,Featured,2022-05-03 23:59:00,2022,WeightedCorrelationCoefficient,Weighted Correlation Coefficient,Other named metric,true,0,3195,3174,1965,extension_candidate
+33607,nbme-score-clinical-patient-notes,Featured,2022-05-03 23:59:00,2022,MedicalBoardFBeta,Medical Board F-Beta,Other named metric,true,33,29169,24528,1581,extension_candidate
+34564,2022-ucs654-Lab-2-Exam,Community,2022-05-05 02:48:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,23794,23791,746,extension_candidate
+35999,ml2022spring-hw7,Community,2022-05-06 15:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,5556,5550,491,extension_candidate
+34189,football-match-probability-prediction,Community,2022-05-06 23:59:00,2022,MulticlassLoss,Multiclass Loss,MulticlassLoss,false,47,2548,2532,383,extension_candidate
+31254,h-and-m-personalized-fashion-recommendations,Featured,2022-05-09 23:59:00,2022,MAP@{K},MAP@{K},MAP@K,false,1,39695,39666,3007,extension_candidate
+35909,vkcv2022-contest-01-facial-landmarks,Community,2022-05-10 20:59:00,2022,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,1566,1557,66,extension_candidate
+35684,ml2022spring-hw8,Community,2022-05-13 15:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,7187,7166,495,extension_candidate
+35894,deeplearning-hw2-transformer,Community,2022-05-13 15:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,45,1299,1284,58,extension_candidate
+35763,cs189-hw6-cifar10-sp2022,Community,2022-05-17 06:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1104,1102,434,extension_candidate
+33246,birdclef-2022,Research,2022-05-24 23:59:00,2022,WeightedCategorizationAccuracy,Weighted Categorization Accuracy,Other named metric,true,16,24250,21394,879,extension_candidate
+33679,herbarium-2022-fgvc9,Research,2022-05-30 23:59:00,2022,FScoreMacro,F-Score (Macro),Other named metric,false,30,1820,1765,136,extension_candidate
+35150,hotel-id-to-combat-human-trafficking-2022-fgvc9,Research,2022-05-30 23:59:00,2022,MAP@{K},MAP@{K},MAP@K,true,35,1801,1478,91,extension_candidate
+34375,sorghum-id-fgvc-9,Research,2022-05-30 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,4607,4604,272,extension_candidate
+33105,tabular-playground-series-may-2022,Playground,2022-05-31 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,29,8907,8902,1151,extension_candidate
+34738,teenmagi-2022,Community,2022-05-31 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1523,1522,156,extension_candidate
+34970,image-matching-challenge-2022,Research,2022-06-02 23:59:00,2022,ImageMatchingChallengeMaa,Image Matching Challenge pose mAA,Other named metric,true,51,14607,11591,685,extension_candidate
+35092,hw5-spam-competition-cs189sp22,Community,2022-06-14 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1180,1178,529,extension_candidate
+35978,autismdiagnosis,Community,2022-06-15 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,80,2483,2482,118,extension_candidate
+33657,us-patent-phrase-to-phrase-matching,Featured,2022-06-20 23:59:00,2022,PearsonCorrelationCoefficient,PearsonCorrelationCoefficient,Other named metric,true,24,45566,41068,2092,extension_candidate
+33106,tabular-playground-series-jun-2022,Playground,2022-06-30 23:59:00,2022,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,30,5990,5984,844,extension_candidate
+36060,bgudrugchallenge2022,Community,2022-06-30 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,2503,2501,45,extension_candidate
+35476,foursquare-location-matching,Featured,2022-07-07 23:59:00,2022,Jaccard,Jaccard,Other named metric,true,25,22650,15982,1173,extension_candidate
+27923,uw-madison-gi-tract-image-segmentation,Research,2022-07-14 23:59:00,2022,Dice3DHausdorff,Dice3DHausdorff,Other named metric,true,49,42049,35848,1661,extension_candidate
+32053,ubiquant-market-prediction,Featured,2022-07-19 17:04:33,2022,MeanPearson,MeanPearson,Other named metric,true,0,4177,4159,2435,extension_candidate
+34419,kore-2022,Featured,2022-07-26 23:59:00,2022,kore_fleets,kore_fleets,Other named metric,false,30,12037,12037,469,extension_candidate
+35779,smartphone-decimeter-2022,Research,2022-07-29 23:59:00,2022,SmartphoneDecimeter,SmartphoneDecimeter,Other named metric,false,80,10570,10566,582,extension_candidate
+35429,unifesp-x-ray-body-part-classifier,Community,2022-07-31 23:59:00,2022,FScoreMicro,F-Score (Micro),Other named metric,false,40,1197,1192,115,extension_candidate
+33107,tabular-playground-series-jul-2022,Playground,2022-07-31 23:59:00,2022,AdjustedRandIndex,Adjusted Rand Index,Other named metric,false,33,16356,16346,1253,extension_candidate
+35308,feedback-prize-effectiveness,Featured,2022-08-23 23:59:00,2022,MulticlassLoss,Multiclass Loss,MulticlassLoss,true,40,29976,25135,1698,extension_candidate
+35332,amex-default-prediction,Featured,2022-08-24 23:59:00,2022,AmexGiniAndPercentageCaptureX,Amex Custom Gini And X% Percentage Capture,Other named metric,false,51,93103,93068,4935,extension_candidate
+35325,paddy-disease-classification,Community,2022-08-31 23:59:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,75,6521,6513,657,extension_candidate
+33108,tabular-playground-series-aug-2022,Playground,2022-08-31 23:59:00,2022,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,26,21851,21845,1896,extension_candidate
+37381,ai-village-ctf,Research,2022-09-12 00:00:00,2022,NvidiaDefconWeightedCategorizationAccuracy,Nvidia Defcon,Other named metric,false,100,4304,4295,677,extension_candidate
+34683,predict-potential-spammers-on-fiverr,Community,2022-09-16 04:00:00,2022,FScoreMacro,F-Score (Macro),Other named metric,false,40,2161,2159,176,extension_candidate
+34547,hubmap-organ-segmentation,Research,2022-09-22 23:59:00,2022,Dice,Dice,Other named metric,true,55,44418,39593,1356,extension_candidate
+33109,tabular-playground-series-sep-2022,Playground,2022-09-30 23:59:00,2022,SMAPE,SMAPE,Other named metric,false,25,13088,13085,1381,extension_candidate
+37333,mayo-clinic-strip-ai,Research,2022-10-05 23:59:00,2022,WeightedMulticlassLoss,Weighted Multiclass Loss,Other named metric,true,7,7541,4862,1123,extension_candidate
+34349,jpx-tokyo-stock-exchange-prediction,Featured,2022-10-07 23:59:00,2022,JPXSharpe,JPXSharpe,Other named metric,true,99,1594,1576,1041,extension_candidate
+36414,google-universal-image-embedding,Research,2022-10-10 23:59:00,2022,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,22299,18629,1123,extension_candidate
+35126,hw5-titantic-competition-cs189sp22,Community,2022-10-12 02:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,100,1129,1128,516,extension_candidate
+36363,rsna-2022-cervical-spine-fracture-detection,Featured,2022-10-27 23:59:00,2022,WeightedMeanColumnwiseLogLoss,Weighted Mean Columnwise Log Loss,Other named metric,true,28,13225,10203,979,extension_candidate
+33110,tabular-playground-series-oct-2022,Playground,2022-10-31 23:59:00,2022,MeanColumnwiseLogLoss,Mean Columnwise Log Loss,Other named metric,false,24,4820,4812,468,extension_candidate
+35887,AI4Code,Featured,2022-11-10 23:59:00,2022,AI4CodeKendallTau,AI4CodeKendallTau,Other named metric,true,80,1675,1659,1030,extension_candidate
+38128,open-problems-multimodal,Featured,2022-11-15 23:59:00,2022,MeanPearsonOld,MeanPearsonOld,Other named metric,false,42,31477,31472,1266,extension_candidate
+38321,feedback-prize-english-language-learning,Featured,2022-11-29 23:59:00,2022,MWCRMSE,Mean Weighted Columnwise Root Mean Squared Error,Other named metric,true,26,54138,45523,2914,extension_candidate
+33111,tabular-playground-series-nov-2022,Playground,2022-11-30 23:59:00,2022,LogLoss,Log Loss,LogLoss,false,25,7756,7747,701,extension_candidate
+26941,ai-contest-for-all,Community,2022-12-06 01:00:00,2022,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,70,1219,1217,29,extension_candidate
+39222,scrabble-player-rating,Playground,2022-12-15 23:59:00,2022,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,70,1673,1667,301,extension_candidate
+37190,novozymes-enzyme-stability-prediction,Featured,2023-01-03 23:59:00,2023,SpearmanR,SpearmanR,Other named metric,false,50,48416,48398,2544,extension_candidate
+37077,g2net-detecting-continuous-gravitational-waves,Research,2023-01-03 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,24,30870,30869,949,extension_candidate
+44629,playground-series-s3e1,Playground,2023-01-09 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,5184,5182,694,extension_candidate
+44630,playground-series-s3e2,Playground,2023-01-16 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,6256,6254,770,extension_candidate
+41879,santa-2022,Featured,2023-01-17 23:59:00,2023,SantasPrintShop2022,Santa's Print Shop 2022,Other named metric,false,100,11382,11375,875,extension_candidate
+44631,playground-series-s3e3,Playground,2023-01-23 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,5401,5397,665,extension_candidate
+44632,playground-series-s3e4,Playground,2023-01-30 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,4923,4919,641,extension_candidate
+38760,otto-recommender-system,Featured,2023-01-31 23:59:00,2023,WeightedRecall@{K},WeightedRecall@{K},Other named metric,false,33,36979,36975,2615,extension_candidate
+45890,playground-series-s3e5,Playground,2023-02-13 23:59:00,2023,39243606,Cohen Kappa Score,Numeric-ID metric (unmapped),false,20,8650,8644,901,extension_candidate
+45891,playground-series-s3e6,Playground,2023-02-20 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,5801,5797,703,extension_candidate
+39272,rsna-breast-cancer-detection,Featured,2023-02-27 23:59:00,2023,ProbFScoreBetaMicro,Probabilistic F-Score Beta (Micro),Other named metric,true,28,48463,34144,2054,extension_candidate
+45892,playground-series-s3e7,Playground,2023-02-27 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,20,5294,5288,678,extension_candidate
+43454,widsdatathon2023,Community,2023-03-01 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,50,24931,24925,709,extension_candidate
+40277,nfl-player-contact-detection,Featured,2023-03-01 23:59:00,2023,MatthewsCorrelationCoefficient,Matthews correlation coefficient,Other named metric,true,45,13390,10694,1025,extension_candidate
+45893,playground-series-s3e8,Playground,2023-03-06 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,5795,5789,734,extension_candidate
+45894,playground-series-s3e9,Playground,2023-03-13 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,7006,6998,765,extension_candidate
+39585,learning-equality-curriculum-recommendations,Featured,2023-03-14 23:59:00,2023,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,true,30,26587,21868,1161,extension_candidate
+47789,playground-series-s3e10,Playground,2023-03-20 23:59:00,2023,LogLoss,Log Loss,LogLoss,false,20,6329,6319,807,extension_candidate
+33579,goodreads-books-reviews-290312,Community,2023-04-01 23:59:00,2023,FScoreMicro,F-Score (Micro),Other named metric,false,80,1299,1295,261,extension_candidate
+47790,playground-series-s3e11,Playground,2023-04-03 23:59:00,2023,35895758,Mean Squared Log Error,Numeric-ID metric (unmapped),false,20,7460,7443,952,extension_candidate
+46801,march-machine-learning-mania-2023,Featured,2023-04-04 16:00:00,2023,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,1,1891,1866,1058,extension_candidate
+49200,playground-series-s3e12,Playground,2023-04-17 23:59:00,2023,34949109,sklearn_roc_auc_score,Numeric-ID metric (unmapped),false,20,8789,8778,1088,extension_candidate
+38257,icecube-neutrinos-in-deep-ice,Research,2023-04-19 23:59:00,2023,MeanAngularError,MeanAngularError,Other named metric,true,43,11672,8633,916,extension_candidate
+49201,playground-series-s3e13,Playground,2023-05-01 23:59:00,2023,MAP@{K},MAP@{K},MAP@K,false,50,7780,7765,934,extension_candidate
+46105,asl-signs,Research,2023-05-01 23:59:00,2023,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,20873,16812,1241,extension_candidate
+45040,lux-ai-season-2,Featured,2023-05-08 23:59:00,2023,lux_ai_s2,lux_ai_s2,Other named metric,false,30,1481,1481,651,extension_candidate
+45917,stable-diffusion-image-to-prompts,Featured,2023-05-15 23:59:00,2023,MeanCosineSimilarity,MeanCosineSimilarity,Other named metric,true,20,33268,29149,1393,extension_candidate
+51959,playground-series-s3e14,Playground,2023-05-15 23:59:00,2023,39243586,Mean Absolute Error,Numeric-ID metric (unmapped),false,20,12580,12567,1967,extension_candidate
+37794,amp-parkinsons-disease-progression-prediction,Featured,2023-05-18 23:59:00,2023,36031993,smape_plus_1,Numeric-ID metric (unmapped),true,13,42037,35570,1962,extension_candidate
+44224,birdclef-2023,Research,2023-05-24 23:59:00,2023,39078087,buffered_cmAP,Numeric-ID metric (unmapped),true,35,22399,17578,1330,extension_candidate
+51982,playground-series-s3e15,Playground,2023-05-29 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,5864,5853,693,extension_candidate
+41880,tlvmc-parkinsons-freezing-gait-prediction,Research,2023-06-08 23:59:00,2023,34817366,sklearn_average_precision_score,Numeric-ID metric (unmapped),true,32,29003,22686,1543,extension_candidate
+51983,playground-series-s3e16,Playground,2023-06-12 23:59:00,2023,39243586,Mean Absolute Error,Numeric-ID metric (unmapped),false,20,10543,10531,1429,extension_candidate
+49349,image-matching-challenge-2023,Research,2023-06-12 23:59:00,2023,37085174,imc2023,Numeric-ID metric (unmapped),true,44,14453,10563,559,extension_candidate
+47317,vesuvius-challenge-ink-detection,Featured,2023-06-14 23:59:00,2023,DiceFBeta,DiceFBeta,Other named metric,true,50,27731,22693,1546,extension_candidate
+41881,godaddy-microbusiness-density-forecasting,Featured,2023-06-16 23:59:00,2023,SMAPE,SMAPE,Other named metric,false,12,6311,6303,3501,extension_candidate
+43873,benetech-making-graphs-accessible,Featured,2023-06-19 23:59:00,2023,BenetechMixedMatch,Benetech Mixed Data Type Matching Score,Other named metric,true,39,10428,8036,674,extension_candidate
+53376,playground-series-s3e17,Playground,2023-06-26 23:59:00,2023,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,11722,11708,1502,extension_candidate
+45533,predict-student-performance-from-game-play,Featured,2023-06-28 23:59:00,2023,FScoreMacro,F-Score (Macro),Other named metric,true,41,61492,40391,2955,extension_candidate
+23684,classification-data-challenge,Community,2023-06-30 23:59:00,2023,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,3051,3048,232,extension_candidate
+35340,2022-regression-data-challenge,Community,2023-06-30 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,70,1402,1401,163,extension_candidate
+53377,playground-series-s3e18,Playground,2023-07-10 23:59:00,2023,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,8856,8844,1056,extension_candidate
+57094,playground-series-s3e19,Playground,2023-07-31 23:59:00,2023,SMAPE,SMAPE,Other named metric,false,25,10084,10068,1173,extension_candidate
+52279,hubmap-hacking-the-human-vasculature,Research,2023-07-31 23:59:00,2023,OpenImagesObjDetectionSegmentationAP,OpenImagesObjDetectionSegmentationAP,Other named metric,true,28,33842,27848,1226,extension_candidate
+51753,google-research-identify-contrails-reduce-global-warming,Research,2023-08-09 23:59:00,2023,38195349,contrails_global_dice,Numeric-ID metric (unmapped),true,15,24638,21754,1019,extension_candidate
+52784,icr-identify-age-related-conditions,Featured,2023-08-10 23:59:00,2023,WeightedMulticlassLoss,Weighted Multiclass Loss,Other named metric,true,42,61769,52080,7609,extension_candidate
+57095,playground-series-s3e20,Playground,2023-08-21 23:59:00,2023,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,41,11453,11437,1444,extension_candidate
+52950,asl-fingerspelling,Research,2023-08-24 23:59:00,2023,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,20193,16099,1384,extension_candidate
+59109,playground-series-s3e21,Playground,2023-09-11 23:59:00,2023,42104860,59109-datacentric-playground,Numeric-ID metric (unmapped),false,25,10347,10344,955,extension_candidate
+59110,playground-series-s3e22,Playground,2023-10-02 23:59:00,2023,39244216,F1 Score,Numeric-ID metric (unmapped),false,20,12341,12321,1545,extension_candidate
+54662,kaggle-llm-science-exam,Featured,2023-10-10 23:59:00,2023,MAP@{K},MAP@{K},MAP@K,true,20,62524,49174,2911,extension_candidate
+53482,commonlit-evaluate-student-summaries,Featured,2023-10-11 23:59:00,2023,MWCRMSE,Mean Weighted Columnwise Root Mean Squared Error,Other named metric,true,13,46957,37022,2297,extension_candidate
+52254,rsna-2023-abdominal-trauma-detection,Featured,2023-10-15 23:59:00,2023,41308515,RSNA Trauma Metric,Numeric-ID metric (unmapped),true,36,20993,14553,1331,extension_candidate
+52324,bengaliai-speech,Research,2023-10-17 23:59:00,2023,40581166,Word Error Rate,Numeric-ID metric (unmapped),true,46,12956,10406,826,extension_candidate
+60890,playground-series-s3e23,Playground,2023-10-23 23:59:00,2023,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,14029,14011,1702,extension_candidate
+57818,ai-village-capture-the-flag-defcon31,Featured,2023-11-09 23:59:00,2023,43391374,Flag_Metric,Numeric-ID metric (unmapped),false,100,9026,9020,1360,extension_candidate
+60891,playground-series-s3e24,Playground,2023-11-13 23:59:00,2023,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,14260,14242,1909,extension_candidate
+58266,predict-ai-model-runtime,Research,2023-11-17 23:59:00,2023,42603795,58266_TpuGraphsEval,Numeric-ID metric (unmapped),false,50,11076,11072,638,extension_candidate
+56167,neurips-2023-machine-unlearning,Research,2023-11-29 23:59:00,2023,42009344,56167-unlearn-metric,Numeric-ID metric (unmapped),true,0,1997,1992,1157,extension_candidate
+59094,open-problems-single-cell-perturbations,Featured,2023-11-30 23:59:00,2023,WRRMSE,Weighted Rowwise Root Mean Squared Error,Other named metric,false,39,28822,28813,1168,extension_candidate
+60892,playground-series-s3e25,Playground,2023-12-04 23:59:00,2023,39243604,Median Absolute Error,Numeric-ID metric (unmapped),false,20,12644,12626,1634,extension_candidate
+53666,child-mind-institute-detect-sleep-states,Featured,2023-12-05 23:59:00,2023,42595776,Event Detection AP,Numeric-ID metric (unmapped),true,25,40917,28911,2159,extension_candidate
+51294,stanford-ribonanza-rna-folding,Research,2023-12-07 23:59:00,2023,39243586,Mean Absolute Error,Numeric-ID metric (unmapped),false,2,10225,10195,776,extension_candidate
+41875,cafa-5-protein-function-prediction,Research,2023-12-20 15:39:00,2023,PostProcessorKernelDesc,PostProcessorKernelDesc,Other named metric,true,50,2872,2870,1635,extension_candidate
+24105,opencv-pytorch-dl-course-classification,Community,2023-12-31 23:59:00,2023,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,50,1076,1072,118,extension_candidate
+60893,playground-series-s3e26,Playground,2024-01-01 23:59:00,2024,39244296,Log Loss,Numeric-ID metric (unmapped),false,20,15269,15251,1673,extension_candidate
+45867,UBC-OCEAN,Research,2024-01-03 23:59:00,2024,39244032,Balanced Accuracy Score,Numeric-ID metric (unmapped),true,22,38086,27319,1594,extension_candidate
+59291,linking-writing-processes-to-writing-quality,Featured,2024-01-09 23:59:00,2024,39243534,Mean Squared Error,Numeric-ID metric (unmapped),true,50,48379,42719,2016,extension_candidate
+61542,llm-detect-ai-generated-text,Featured,2024-01-22 23:59:00,2024,39244492,Roc Auc Score,Numeric-ID metric (unmapped),true,46,116668,91414,4791,extension_candidate
+65711,playground-series-s4e1,Playground,2024-01-31 23:59:00,2024,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,28569,28549,3648,extension_candidate
+65704,santa-2023,Featured,2024-01-31 23:59:00,2024,48030576,Santa 2023 Metric,Numeric-ID metric (unmapped),false,100,12351,12341,1067,extension_candidate
+61446,blood-vessel-segmentation,Research,2024-02-06 23:59:00,2024,45372968,Surface Dice Metric,Numeric-ID metric (unmapped),true,67,33722,25708,1384,extension_candidate
+68479,playground-series-s4e2,Playground,2024-02-29 23:59:00,2024,39243584,Accuracy Score,Numeric-ID metric (unmapped),false,20,29772,29751,3616,extension_candidate
+65862,widsdatathon2024-challenge1,Community,2024-03-01 23:59:00,2024,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,52,25618,25616,707,extension_candidate
+57891,optiver-trading-at-the-close,Featured,2024-03-22 17:20:00,2024,MeanColumnwiseMAE,Mean Columnwise Mean Absolute Error,Other named metric,true,0,5247,5229,3266,extension_candidate
+68699,playground-series-s4e3,Playground,2024-03-31 23:59:00,2024,MCAUC,Mean Columnwise Area Under Receiver Operating Characteristic Curve,Other named metric,false,20,17405,17384,2207,extension_candidate
+59093,hms-harmful-brain-activity-classification,Research,2024-04-08 23:59:00,2024,47852869,Kullback Leibler Divergence,Numeric-ID metric (unmapped),true,35,65478,55865,3000,extension_candidate
+70068,march-machine-learning-mania-2024,Featured,2024-04-09 23:59:00,2024,51183962,March Mania 2024 Metric,Numeric-ID metric (unmapped),true,100,1410,1379,820,extension_candidate
+67121,llm-prompt-recovery,Featured,2024-04-16 23:59:00,2024,38445762,LLM Nerd-Off Sharpened Cosine Similarity,Numeric-ID metric (unmapped),true,15,45457,37190,2353,extension_candidate
+66653,pii-detection-removal-from-educational-data,Featured,2024-04-23 23:59:00,2024,48933658,TLAL_F_beta,Numeric-ID metric (unmapped),true,25,57103,49400,2206,extension_candidate
+57236,predict-energy-behavior-of-prosumers,Featured,2024-04-30 23:59:00,2024,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),true,0,3966,3955,2293,extension_candidate
+72489,playground-series-s4e4,Playground,2024-04-30 23:59:00,2024,35895758,Mean Squared Log Error,Numeric-ID metric (unmapped),false,20,21605,21583,2613,extension_candidate
+64733,geolifeclef-2024,Research,2024-05-24 23:59:00,2024,FScoreBetaMicro,F-Score Beta (Micro),Other named metric,false,30,1520,1349,106,extension_candidate
+50160,home-credit-credit-risk-model-stability,Featured,2024-05-27 23:59:00,2024,47057943,Home Credit 2023 - Gini Stability,Numeric-ID metric (unmapped),true,30,95291,70258,4139,extension_candidate
+73278,playground-series-s4e5,Playground,2024-05-31 23:59:00,2024,39243596,R2 Score,Numeric-ID metric (unmapped),false,20,21686,21659,2807,extension_candidate
+65626,planttraits2024,Research,2024-06-02 22:00:00,2024,39243596,R2 Score,Numeric-ID metric (unmapped),false,59,5439,5438,398,extension_candidate
+71885,image-matching-challenge-2024,Research,2024-06-03 23:59:00,2024,53070826,mAA-on-camera-centers-with-registration,Numeric-ID metric (unmapped),true,32,20906,16645,1040,extension_candidate
+70203,birdclef-2024,Research,2024-06-10 23:59:00,2024,52665836,Birdclef ROC AUC,Numeric-ID metric (unmapped),true,35,31446,25406,1150,extension_candidate
+73231,ai-mathematical-olympiad-prize,Featured,2024-06-27 23:59:00,2024,39243584,Accuracy Score,Numeric-ID metric (unmapped),true,0,1838,1831,1161,extension_candidate
+73290,playground-series-s4e6,Playground,2024-06-30 23:59:00,2024,39243584,Accuracy Score,Numeric-ID metric (unmapped),false,20,21661,21634,2739,extension_candidate
+71485,learning-agency-lab-automated-essay-scoring-2,Featured,2024-07-02 23:59:00,2024,39243606,Cohen Kappa Score,Numeric-ID metric (unmapped),true,30,62629,53004,2916,extension_candidate
+67356,leash-BELKA,Featured,2024-07-08 23:59:00,2024,57273273,Leash Average mAP,Numeric-ID metric (unmapped),false,35,38473,38468,1984,extension_candidate
+56537,leap-atmospheric-physics-ai-climsim,Research,2024-07-15 23:59:00,2024,39243596,R2 Score,Numeric-ID metric (unmapped),false,20,11100,11087,694,extension_candidate
+59575,uspto-explainable-ai,Featured,2024-07-24 23:59:00,2024,52119059,USPTO 59575,Numeric-ID metric (unmapped),true,28,10955,7137,595,extension_candidate
+73291,playground-series-s4e7,Playground,2024-07-31 23:59:00,2024,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,15914,15892,2246,extension_candidate
+66631,lmsys-chatbot-arena,Research,2024-08-12 21:30:00,2024,39244296,Log Loss,Numeric-ID metric (unmapped),true,55,2972,2942,1695,extension_candidate
+61247,llm-20-questions,Featured,2024-08-29 23:59:00,2024,llm_20_questions,llm_20_questions,Other named metric,false,30,1416,1416,838,extension_candidate
+76727,playground-series-s4e8,Playground,2024-08-31 23:59:00,2024,39244305,Matthews Corrcoef,Numeric-ID metric (unmapped),false,20,18197,18175,2432,extension_candidate
+63056,isic-2024-challenge,Research,2024-09-06 23:59:00,2024,59742463,ISIC pAUC-aboveTPR,Numeric-ID metric (unmapped),true,28,82488,68136,3011,extension_candidate
+76728,playground-series-s4e9,Playground,2024-09-30 23:59:00,2024,39243534,Mean Squared Error,Numeric-ID metric (unmapped),false,20,28621,28599,3083,extension_candidate
+71549,rsna-2024-lumbar-spine-degenerative-classification,Featured,2024-10-08 23:59:00,2024,57120817,RSNA Lumbar Metric 71549,Numeric-ID metric (unmapped),true,38,24315,19760,2096,extension_candidate
+84894,playground-series-s4e10,Playground,2024-10-31 23:59:00,2024,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,29650,29624,3858,extension_candidate
+70367,ariel-data-challenge-2024,Featured,2024-10-31 23:59:00,2024,62368338,Ariel Gaussian Log Likelihood,Numeric-ID metric (unmapped),true,35,23742,19699,1274,extension_candidate
+67357,arc-prize-2024,Featured,2024-11-10 23:59:00,2024,58528658,Abstraction and Reasoning Challenge,Numeric-ID metric (unmapped),true,100,20106,14050,1709,extension_candidate
+84895,playground-series-s4e11,Playground,2024-11-30 23:59:00,2024,39243584,Accuracy Score,Numeric-ID metric (unmapped),false,20,23284,23260,2701,extension_candidate
+70089,um-game-playing-strength-of-mcts-variants,Research,2024-12-02 23:59:00,2024,39243534,Mean Squared Error,Numeric-ID metric (unmapped),true,35,44471,36380,1728,extension_candidate
+82695,eedi-mining-misconceptions-in-mathematics,Featured,2024-12-12 23:59:00,2024,MAP@{K},MAP@{K},MAP@K,true,28,43668,35992,1600,extension_candidate
+81933,child-mind-institute-problematic-internet-use,Featured,2024-12-19 23:59:00,2024,39243606,Cohen Kappa Score,Numeric-ID metric (unmapped),true,38,87755,77576,3772,extension_candidate
+30892,bkai-igh-neopolyp,Community,2024-12-31 23:59:00,2024,Dice,Dice,Other named metric,false,100,3764,3752,323,extension_candidate
+84896,playground-series-s4e12,Playground,2024-12-31 23:59:00,2024,RMSLE,Root Mean Squared Logarithmic Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,17903,17871,2399,extension_candidate
+14038,telecom-clients-prediction2,Community,2025-01-01 23:59:00,2025,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,3745,3744,233,extension_candidate
+85723,playground-series-s5e1,Playground,2025-01-31 23:59:00,2025,39244328,Mean Absolute Percentage Error,Numeric-ID metric (unmapped),false,33,22863,22860,2738,extension_candidate
+88046,santa-2024,Featured,2025-01-31 23:59:00,2025,71069344,Santa 2024 Metric,Numeric-ID metric (unmapped),false,100,23910,23907,1525,extension_candidate
+84969,czii-cryo-et-object-identification,Featured,2025-02-05 23:59:00,2025,69532748,CZI_CryoET_ 84969,Numeric-ID metric (unmapped),true,26,28413,24241,1079,extension_candidate
+90274,playground-series-s5e2,Playground,2025-02-28 23:59:00,2025,39243534,Mean Squared Error,Numeric-ID metric (unmapped),false,20,23662,23660,3408,extension_candidate
+83035,llms-you-cant-please-them-all,Featured,2025-03-04 23:59:00,2025,72209307,LLMYCPTA metric 20241120,Numeric-ID metric (unmapped),true,30,62450,57869,1875,extension_candidate
+70942,equity-post-HCT-survival-predictions,Research,2025-03-05 23:59:41,2025,70384193,eefs_concordance_index,Numeric-ID metric (unmapped),true,25,82705,70516,3526,extension_candidate
+86524,fide-google-efficiency-chess-ai-challenge,Featured,2025-03-06 23:59:00,2025,chess,Chess,Other named metric,false,30,1910,1910,1127,extension_candidate
+86946,wsdm-cup-multilingual-chatbot-arena,Featured,2025-03-10 23:59:00,2025,39243584,Accuracy Score,Numeric-ID metric (unmapped),true,0,1612,1575,903,extension_candidate
+14036,simplesentiment,Community,2025-03-21 23:59:00,2025,CategorizationAccuracy,Categorization Accuracy,Accuracy,false,90,2251,2250,332,extension_candidate
+86411,lux-ai-season-3,Featured,2025-03-24 23:59:00,2025,lux_ai_s3,Lux AI Season 3,Other named metric,false,30,1207,1207,704,extension_candidate
+91714,playground-series-s5e3,Playground,2025-03-31 23:59:00,2025,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,38844,38842,4405,extension_candidate
+86023,ai-mathematical-olympiad-progress-prize-2,Featured,2025-04-01 23:59:00,2025,39243584,Accuracy Score,Numeric-ID metric (unmapped),true,0,4034,4017,2279,extension_candidate
+91497,march-machine-learning-mania-2025,Featured,2025-04-08 16:00:00,2025,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,1,3065,3038,1746,extension_candidate
+91715,playground-series-s5e4,Playground,2025-04-30 23:59:00,2025,39243534,Mean Squared Error,Numeric-ID metric (unmapped),false,20,26162,26160,3319,extension_candidate
+89659,drawing-with-llms,Featured,2025-05-27 23:59:00,2025,77383037,SVG Image Fidelity,Numeric-ID metric (unmapped),true,52,41242,32670,1431,extension_candidate
+91716,playground-series-s5e5,Playground,2025-05-31 23:59:00,2025,35895758,Mean Squared Log Error,Numeric-ID metric (unmapped),false,20,37414,37412,4349,extension_candidate
+91498,image-matching-challenge-2025,Research,2025-06-02 23:59:00,2025,79323862,IMC 2025 Metric,Numeric-ID metric (unmapped),true,50,22835,19428,1067,extension_candidate
+91249,byu-locating-bacterial-flagellar-motors-2025,Research,2025-06-04 23:59:00,2025,76043442,BYU_BioPhysics_91249,Numeric-ID metric (unmapped),true,28,49239,43693,1304,extension_candidate
+91844,birdclef-2025,Research,2025-06-05 23:59:00,2025,52665836,Birdclef ROC AUC,Numeric-ID metric (unmapped),true,34,76981,64400,2363,extension_candidate
+9847,udacity-mlcharity-competition,Community,2025-06-30 23:59:00,2025,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,30,1033,1031,337,extension_candidate
+39763,waveform-inversion,Research,2025-06-30 23:59:00,2025,39243586,Mean Absolute Error,Numeric-ID metric (unmapped),false,25,23275,23268,1388,extension_candidate
+91717,playground-series-s5e6,Playground,2025-06-30 23:59:00,2025,MAP@{K},MAP@{K},MAP@K,false,20,20009,20007,2657,extension_candidate
+84493,jane-street-real-time-market-data-forecasting,Featured,2025-07-12 23:59:00,2025,66734602,Jane Street Zero-Mean R2,Numeric-ID metric (unmapped),true,33,4351,4324,2800,extension_candidate
+91718,playground-series-s5e7,Playground,2025-07-31 23:59:00,2025,39243584,Accuracy Score,Numeric-ID metric (unmapped),false,20,29367,29364,4346,extension_candidate
+91719,playground-series-s5e8,Playground,2025-08-31 23:59:00,2025,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,24676,24671,3375,extension_candidate
+102335,cmi-detect-behavior-with-sensor-data,Featured,2025-09-02 23:59:00,2025,83896558,CMI_2025,Numeric-ID metric (unmapped),true,42,78655,65567,2997,extension_candidate
+82370,make-data-count-finding-data-references,Research,2025-09-09 23:59:00,2025,84751785,82370_MDC_Global_F1,Numeric-ID metric (unmapped),true,30,39454,33981,1454,extension_candidate
+74608,neurips-open-polymer-prediction-2025,Featured,2025-09-15 23:59:00,2025,84603218,open_polymer_2025,Numeric-ID metric (unmapped),true,8,54613,42134,2577,extension_candidate
+101849,ariel-data-challenge-2025,Featured,2025-09-24 23:59:00,2025,62368338,Ariel Gaussian Log Likelihood,Numeric-ID metric (unmapped),true,33,15594,12321,1017,extension_candidate
+87793,stanford-rna-3d-folding,Featured,2025-09-24 23:59:00,2025,77405771,Ribonanza TM-Score,Numeric-ID metric (unmapped),true,34,2532,2437,1410,extension_candidate
+105802,dig-4-bio-raman-transfer-learning-challenge,Community,2025-09-26 10:00:00,2025,39243596,R2 Score,Numeric-ID metric (unmapped),false,14,1775,1774,172,extension_candidate
+91720,playground-series-s5e9,Playground,2025-09-30 23:59:00,2025,39243534,Mean Squared Error,Numeric-ID metric (unmapped),false,20,21127,21123,2592,extension_candidate
+99552,rsna-intracranial-aneurysm-detection,Featured,2025-10-14 23:59:00,2025,86873747,Mean Weighted Columnwise AUCROC,Numeric-ID metric (unmapped),true,32,17018,14040,1261,extension_candidate
+104383,map-charting-student-math-misunderstandings,Featured,2025-10-15 23:59:00,2025,MAP@{K},MAP@{K},MAP@K,true,50,41566,34952,2047,extension_candidate
+94635,jigsaw-agile-community-rules,Featured,2025-10-23 23:59:00,2025,87546856,94635_Jigsaw_Rules_AUC,Numeric-ID metric (unmapped),true,29,69363,51397,2757,extension_candidate
+95282,google-code-golf-2025,Research,2025-10-30 23:59:00,2025,81376142,Code Golf Metric,Numeric-ID metric (unmapped),false,100,41979,41748,1151,extension_candidate
+91721,playground-series-s5e10,Playground,2025-10-31 23:59:00,2025,39243534,Mean Squared Error,Numeric-ID metric (unmapped),false,20,28834,28832,4105,extension_candidate
+91496,arc-prize-2025,Featured,2025-11-03 23:59:00,2025,58528658,Abstraction and Reasoning Challenge,Numeric-ID metric (unmapped),true,50,17724,10616,2345,extension_candidate
+91722,playground-series-s5e11,Playground,2025-11-30 23:59:00,2025,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,31863,31858,3741,extension_candidate
+59156,MABe-mouse-behavior-detection,Research,2025-12-15 23:59:00,2025,88245199,MABe F Beta,Numeric-ID metric (unmapped),true,32,31969,25886,1558,extension_candidate
+91723,playground-series-s5e12,Playground,2025-12-31 23:59:00,2025,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,34473,34468,4238,extension_candidate
+12176,flight-delays-fall-2018,Community,2025-12-31 23:59:00,2025,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,21653,21620,2262,extension_candidate
+27524,tutorial-competition-for-beginners,Community,2025-12-31 23:59:00,2025,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,100,3608,3607,686,extension_candidate
+7173,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking2,Community,2025-12-31 23:59:00,2025,AUC,Area Under Receiver Operating Characteristic Curve,AUC,false,50,68671,68518,5731,extension_candidate
+114239,nfl-big-data-bowl-2026-prediction,Featured,2026-01-06 23:59:00,2026,92925683,NFL_2025,Numeric-ID metric (unmapped),true,0,1257,1247,771,extension_candidate
+94771,mitsui-commodity-prediction-challenge,Featured,2026-01-16 23:59:00,2026,87233352,MITSUI&CO. Commodity Prediction Metric,Numeric-ID metric (unmapped),true,0,1741,1730,1126,extension_candidate
+97984,physionet-ecg-image-digitization,Research,2026-01-22 23:59:00,2026,92927228,Physionet ECG Signal Extraction Metric,Numeric-ID metric (unmapped),true,20,25048,20829,1614,extension_candidate
+112509,csiro-biomass,Research,2026-01-28 23:59:00,2026,39243596,R2 Score,Numeric-ID metric (unmapped),true,53,105017,87182,4368,extension_candidate
+119106,santa-2025,Featured,2026-01-30 23:59:00,2026,97141239,Santa 2025 Metric,Numeric-ID metric (unmapped),false,100,104596,104551,3396,extension_candidate
+119082,playground-series-s6e1,Playground,2026-01-31 23:59:00,2026,RMSE,Root Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,20,32188,32184,4338,extension_candidate
+26145,mmp2021,Community,2026-02-24 23:59:00,2026,MAE,Mean Absolute Error,Regression (RMSE/MAE/MSE/RMSLE),false,5,1904,1902,161,extension_candidate
+117682,vesuvius-challenge-surface-detection,Research,2026-02-27 23:59:00,2026,96973679,Vesuvius 2025 Metric,Numeric-ID metric (unmapped),true,20,32213,25369,1660,extension_candidate
+125192,playground-series-s6e2,Playground,2026-02-28 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,44064,44057,4380,extension_candidate
+121150,deep-past-initiative-machine-translation,Featured,2026-03-23 23:59:00,2026,104289443,DPI BLEU / chrF++,Numeric-ID metric (unmapped),true,34,72375,62622,3350,extension_candidate
+118765,stanford-rna-3d-folding-2,Featured,2026-03-25 23:59:00,2026,106017268,Ribonanza TM-Score PermuteChains,Numeric-ID metric (unmapped),true,48,3506,3396,1877,extension_candidate
+125197,playground-series-s6e3,Playground,2026-03-31 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,42654,42649,4148,extension_candidate
+130469,march-machine-learning-mania-2026,Featured,2026-04-07 16:00:00,2026,MSE,Mean Squared Error,Regression (RMSE/MAE/MSE/RMSLE),false,1,3548,3485,3483,extension_candidate
+118448,ai-mathematical-olympiad-progress-prize-3,Featured,2026-04-15 23:59:00,2026,98321148,118448 AIMO 3 Multirun-Accuracy,Numeric-ID metric (unmapped),true,0,3480,3452,3452,extension_candidate
+113558,recodai-luc-scientific-image-forgery-detection,Research,2026-04-22 18:00:00,2026,95195884,RecodAI F1,Numeric-ID metric (unmapped),true,48,2089,2081,1192,extension_candidate
+125220,playground-series-s6e4,Playground,2026-04-30 23:59:00,2026,39244032,Balanced Accuracy Score,Numeric-ID metric (unmapped),false,20,44447,44443,4325,extension_candidate
+125681,WiDSWorldWide_GlobalDathon26,Community,2026-05-01 23:59:00,2026,107559884,wildfire_time_to_hit_metric,Numeric-ID metric (unmapped),false,54,27178,27177,2090,extension_candidate
+125221,playground-series-s6e5,Playground,2026-05-31 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,36448,36441,3027,extension_candidate
+116062,cafa-6-protein-function-prediction,Research,2026-06-01 23:59:00,2026,93455158,cafa6_metric_final,Numeric-ID metric (unmapped),false,50,3992,3869,2235,extension_candidate
+129329,birdclef-2026,Research,2026-06-03 23:59:00,2026,52665836,Birdclef ROC AUC,Numeric-ID metric (unmapped),true,34,160079,131336,4609,extension_candidate
+129716,nvidia-nemotron-model-reasoning-challenge,Featured,2026-06-15 23:59:00,2026,109982711,NVIDIA Nemotron Metric,Numeric-ID metric (unmapped),false,50,74851,74846,4354,extension_candidate
+111543,hull-tactical-market-prediction,Featured,2026-06-25 23:59:00,2026,92174585,Hull Competition Sharpe,Numeric-ID metric (unmapped),true,0,5623,5612,3293,extension_candidate
+125222,playground-series-s6e6,Playground,2026-06-30 23:59:00,2026,39244032,Balanced Accuracy Score,Numeric-ID metric (unmapped),false,20,33546,33541,2824,extension_candidate
+138420,orbit-wars,Featured,2026-07-07 23:59:00,2026,orbit_wars,orbit_wars,Other named metric,false,30,9208,9207,4810,extension_candidate
+116438,neurogolf-2026,Research,2026-07-15 23:59:00,2026,115666188,NeuroGolf Metric,Numeric-ID metric (unmapped),false,100,523877,523826,3061,extension_candidate
+125223,playground-series-s6e7,Playground,2026-07-31 23:59:00,2026,39244032,Balanced Accuracy Score,Numeric-ID metric (unmapped),false,20,34262,34247,3368,extension_candidate
+132265,rogii-wellbore-geology-prediction,Featured,2026-08-05 23:59:00,2026,39243534,Mean Squared Error,Numeric-ID metric (unmapped),true,26,164719,141934,6458,extension_candidate
+151211,autonomous-agent-prediction-beta,Playground,2026-08-06 23:59:00,2026,126146754,Autonomous Agent Prediction Beta Metric,Numeric-ID metric (unmapped),false,50,2381,2369,570,extension_candidate
+125218,playground-series-s6e8,Playground,2026-08-31 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,34083,34071,3540,extension_candidate
+116727,pokemon-tcg-ai-battle,Featured,2026-08-31 23:59:00,2026,cabt,cabt_bo1,Other named metric,false,30,13125,13123,6889,extension_candidate
+134815,ai-agent-security-multi-step-tool-attacks,Featured,2026-09-01 23:59:00,2026,122642336,Agents Security Metric,Numeric-ID metric (unmapped),true,50,73835,71409,4277,extension_candidate
+136605,biohub-cell-tracking-during-development,Research,2026-09-29 23:59:00,2026,124523554,CZI Biohub Zebrafish 133605,Numeric-ID metric (unmapped),true,29,98252,86535,4272,extension_candidate
+125219,playground-series-s6e9,Playground,2026-09-30 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,38711,38708,3580,extension_candidate
+147734,kaggriculture,Featured,2026-10-14 23:59:00,2026,kaggriculture,kaggriculture,Other named metric,false,30,19602,19602,10246,extension_candidate
+154281,rsna-knee-abnormality-detection,Research,2026-10-22 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),true,30,161894,148123,6664,extension_candidate
+125224,playground-series-s6e10,Playground,2026-10-31 23:59:00,2026,39244492,Roc Auc Score,Numeric-ID metric (unmapped),false,20,44312,44309,3747,extension_candidate

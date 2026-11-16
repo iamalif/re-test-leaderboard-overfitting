@@ -1,0 +1,26 @@
+{
+  "Competitions.csv": {
+    "sha256": "1bbfaf5d754c972a6b441b97dc1e74217e79d9395fc64d182fd14e9e38810a84",
+    "bytes": 186779589
+  },
+  "Teams.csv": {
+    "sha256": "ba4911a2903f65f57f3a3eba4ee831bfc277ebab5142b6135b1e5984f761e067",
+    "bytes": 798320091
+  },
+  "Submissions.csv": {
+    "sha256": "2c4359f1d37fb3047319ee76f9bb3fed4e8e62d9771e5b694d40d9d03f8092b2",
+    "bytes": 2729389325
+  },
+  "original_120_manifest.csv": {
+    "sha256": "ecf4ed09febff438f199b10eaf8ef5227fe0faddf2f1d75d3ba2fdc4fe2f1109",
+    "bytes": 8793
+  },
+  "stage1_reproduce.py": {
+    "sha256": "e3befde24a7367a4a82795c2d60db55a96dd7bee92065472556aee6d47a4fcdc",
+    "bytes": 19045
+  },
+  "test_v2.csv": {
+    "sha256": "9afb8de68728764905a5f1827256a4e423baba0508d7df9d55ea5ca3e73eb458",
+    "bytes": 14129816
+  }
+}

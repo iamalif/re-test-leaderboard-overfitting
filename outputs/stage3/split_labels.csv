@@ -1,0 +1,685 @@
+CompetitionId,cohort,slug,split_label,flagged,label_reason,evidence
+2439,O,informs2010,UNSTATED,False,,"The public leaderboard will be calculated // The datasets are time series, which include 609 explanatory variables."
+2445,O,unimelb,UNSTATED,False,,
+2447,W,chess,UNSTATED,False,,the public leaderboard is calculated based on 20 per cent of the test dataset. // The best entry is the entry that scores highest on the 80 per cent of the test dataset that is used to calculate the final standings (which may different from the best entry on the public leaderboard). // Note: the public leaderboard is calculated based on 20 per cent of the test dataset.
+2464,O,socialNetwork,UNSTATED,False,,
+2467,W,RTA,UNSTATED,False,,"Forecasting travel times helps improve road safety and efficiency. // Participants in this competition are required to forecast the travel time on the M4 freeway for 15 mins, 30 mins, 45 mins, one hour, 90mins, two hours, six hours, 12 hours, 18 hours and 24 hours ahead."
+2478,O,stayalert,UNSTATED,False,,
+2489,O,overfitting,UNSTATED,False,,One of the main objectives of predictive modelling is to build a model that will give accurate predictions on unseen data. // The AUC on the unseen portion of the Leaderboard model will be used to determine those competitors that qualify for the final shootout.
+2496,W,hhp,UNSTATED,False,,All designations for Milestone Prizes Entries must be made by 06:59:59 (UTC) on the following dates:
+2499,W,wikichallenge,UNSTATED,False,,The dataset is randomly sampled from the English Wikipedia dataset // Contestants are expected to build a predictive model that can be reused by the Wikimedia Foundation to forecast long term trends in the number of edits that we can expect.
+2551,O,GiveMeSomeCredit,UNSTATED,False,,
+2555,W,stat331w11,UNSTATED,False,,"When you submit a prediction, a 20% subset of it will be evaluated against the true values and you get a ""public score"" for some feedback. // Your UWID, number of submissions, and best submission score will be displayed on the public leaderboard."
+2589,W,AlgorithmicTradingChallenge,UNSTATED,False,,The Algorithmic Trading Challenge is a forecasting competition which aims to encourage the development of new models to predict the stock market's short-term response following large trades.&nbsp;Contestants are asked to derive em
+2748,O,kddcup2012-track1,TIME,True,public/private divided at a timestamp,"The&nbsp; rec_log_test.txt file contains data for both the public leaderboard set and final evaluation set. // &nbsp;Any data with a timestamp &lt; 1321891200 is used for the public leaderboard set, and&nbsp;&gt;=&nbsp;1321891200 is used for the // &nbsp;Once a file is uploaded, it should take 10-20 seconds for t to be scored, and then you will see your result on the public leaderboard. // Teams’ scores and ranks on the leaderboard are based on a metric calculated from the predicted results in submitted result file and the held out ground truth of a validation dataset whose instances were a fixed set sampled from th"
+2780,O,bioresponse,UNSTATED,False,,
+2840,W,online-sales,UNSTATED,False,,
+2947,O,FacebookRecruiting,UNSTATED,False,,
+2963,W,MusicHackathon,UNSTATED,False,,
+2984,O,pf2012-diabetes,UNSTATED,False,,Note that the test data was NOT released as part of the original data release.
+3066,W,GEF2012-wind-forecasting,UNSTATED,False,,"This is the Wind Forecasting track of Global Energy Forecasting Competition 2012 ( GEFCom2012 ).This competition will bring together state-of-the-art techniques for energy forecasting, serve as the bridge to connect academic // research and industry practice, promote analytics in power engineering education, and prepare the industry to overcome forecasting challenges in the smart grid world."
+3175,W,galaxy-zoo-the-galaxy-challenge,UNSTATED,False,,Winners will be determined by the final standings of the private leaderboard. // We build automated trading systems by analysing large volumes of historical time series data covering everything from currency exchange rates to weather patterns.
+3198,W,yelp-recruiting,UNSTATED,False,,
+3338,O,amazon-employee-access-challenge,UNSTATED,False,,You must create an algorithm capable of learning from this historical data to predict approval/denial for an unseen set of employees.&nbsp;
+3353,O,whale-detection-challenge,UNSTATED,False,,"Transforming the time series into the frequency domain via FFT might be useful.&nbsp; For a quick exploration of the clips, you may find Cornell's&nbsp; RavenLite &nbsp;software useful."
+3354,W,ams-2014-solar-energy-prediction-contest,TIME,True,"public 2008-2009, private a more recent period",Public testing data will be from 2008-2009. // Private testing data for a more recent period will be used for the final evaluation. // Electric utility companies need accurate forecasts of energy production in order to have the right balance of renewable and fossil fuels available.
+3362,O,dogs-vs-cats,UNSTATED,False,,
+3366,O,challenges-in-representation-learning-the-black-box-learning-challenge,UNSTATED,False,,"They are scored based on classification accuracy on a private test set. // The unsupervised data is a CSV file in the same format as the private test set (i.e. // The test set consists of 10,000 examples, split into 5,000 public test and 5,000 private test."
+3377,O,icdar2013-gender-prediction-from-handwriting,UNSTATED,False,,
+3403,W,the-seeclickfix-311-challenge,UNSTATED,False,,id - a randomly assigned id latitude - the lattitude of the issue longitude - the longitude of the issue summary - a short text title description - a longer text explanation num_votes - the number of&nbsp;user-generated votes num_ // The test set contains just the 311 data.
+3428,O,data-science-london-scikit-learn,UNSTATED,False,,
+3469,O,predict-who-is-more-influential-in-a-social-network,UNSTATED,False,,
+3477,W,yelp-recsys-2013,UNSTATED,False,,
+3486,W,facial-keypoints-detection,UNSTATED,False,,"I common approach to overcome this limitation is to split the training data in two sets: one for training (say, 80% of the data, randomly chosen), and another for testing (the rest)."
+3509,O,the-icml-2013-whale-challenge-right-whale-redux,UNSTATED,False,,&nbsp;The task is to assign a probability that each recording in the test set contains a right whale call (1) or noise (0).
+3524,O,accelerometer-biometric-competition,UNSTATED,False,,"The test set is demarcated into 90k sequences of consecutive samples from one device. // The test set was demarcated into 90,000 consecutive sequences of 300 samples each from a same device and each sequence assigned a unique Sequence Id."
+3526,O,stumbleupon,UNSTATED,False,,
+3540,W,battlefin-s-big-data-combine-forecasting-challenge,UNSTATED,False,,
+3586,W,crowdflower-weather-twitter,UNSTATED,False,,"w2,""future (forecast)"""
+3599,W,see-click-predict-fix,UNSTATED,False,,id - a randomly assigned id latitude - the lattitude of the issue longitude - the longitude of the issue summary - a short text title description - a longer text explanation num_votes - the number of&nbsp;user-generated votes num_ // The test set contains just the 311 data.
+3638,W,conway-s-reverse-game-of-life,UNSTATED,False,,
+3641,O,decoding-the-human-brain,GROUP,True,test data organised by subject; host warns public and final scores may differ substantially,For this reason it could happen that the public score on the leaderboard may be substantially different from the final score. // The data of the subjects in the test set are saved in files named test_subjectXX.mat .
+3649,O,cifar-10,UNSTATED,False,,
+3756,W,loan-default-prediction,UNSTATED,False,,
+3772,W,pakdd-cup-2014,UNSTATED,False,,"This data helps us provide even better after-sale services, more accurately forecast sales, and enable precision marketing. // Doing so enables control of product quality at a very early stage, the development of a model based on sales &amp; shipment information, an accurate forecast of product maintenance or repair services, and further strengthening pro"
+3774,O,connectomics,NEWDATA,True,"public leaderboard on validation data, private on separate test data","Your network structure predictions on validation data (valid for short) will be scored on the ""public leaderboard"". // The predictions on test data will remain hidden on the ""private leaderboard"" until they are revealed at the end of the challenge. // The final ranking and determination of the winners will be based on the ""private leaderboard"" test data results. // What you get: Time series of the activity of 1000 neurons."
+3788,O,allstate-purchase-prediction-challenge,UNSTATED,False,,
+3897,O,acquire-valued-shoppers-challenge,UNSTATED,False,,coupons) to a large number of customers and forecasting those who will become loyal to the product. // The test set is offers issued on or after 2013-05-01.
+3926,O,kdd-cup-2014-predicting-excitement-at-donors-choose,UNSTATED,False,,The data is provided in a relational format and split by dates.
+3929,O,avito-prohibited-content,UNSTATED,False,,
+3933,O,mlsp-2014-mri,UNSTATED,False,,"This competition offers waived MLSP 2014 Workshop registration for the top 3 teams who show interest in attending the conference and rank among the top 10 on the private leaderboard. // Preliminary private leaderboard revealed. // Wednesday, August 13, 2014 - Private leaderboard results verified and finalized."
+3934,O,criteo-display-ad-challenge,UNSTATED,False,,test.csv - The test set is computed in the same way as the training set but for events on the day following the training period.
+3960,O,seizure-prediction,UNSTATED,False,,Seizure forecasting systems hold promise for improving the quality of life for patients with epilepsy. // Seizure forecasting systems have the potential to help patients with epilepsy lead more normal lives.
+3978,O,datasciencebowl,UNSTATED,False,,"At each split in the decision tree, a random sample of max_features number of features is chosen and used to make a conditional decision on which of the two nodes that the data will be grouped in."
+3984,O,tradeshift-text-classification,UNSTATED,False,,"The test data is split into public (30%) and private (70%) sets, which are used for the public and private leaderboards."
+4031,O,axa-driver-telematics-analysis,UNSTATED,False,,
+4032,W,finding-elo,UNSTATED,False,,
+4043,O,inria-bci-challenge,UNSTATED,False,,
+4117,O,malware-classification,UNSTATED,False,,
+4120,O,avazu-ctr-prediction,UNSTATED,False,,
+4272,W,restaurant-revenue-prediction,UNSTATED,False,,
+4280,O,otto-group-product-classification-challenge,UNSTATED,False,,
+4294,O,facebook-recruiting-iv-human-or-bot,UNSTATED,False,,
+4332,W,walmart-recruiting-sales-in-stormy-weather,UNSTATED,False,,"You do not need to forecast weather in addition to sales (it's as though you have a perfect weather forecast at your disposal). // Because the storms occur at variable times and in variable locations, use the test set file (or sample submission) as your guide to know which days and stores you must forecast."
+4366,O,predict-west-nile-virus,UNSTATED,False,,
+4383,W,pkdd-15-taxi-trip-time-prediction-ii,UNSTATED,False,,
+4438,O,avito-context-ad-clicks,UNSTATED,False,,trainSearchStream is a random sample of previously selected users' searches on avito.ru during at least 16 consecutive days from April'25 until the target impression.
+4467,W,machinery-tube-pricing,UNSTATED,False,,
+4481,O,coupon-purchase-prediction,UNSTATED,False,,
+4487,O,springleaf-marketing-response,UNSTATED,False,,
+4493,O,dato-native,UNSTATED,False,,
+4495,W,how-much-did-it-rain-ii,UNSTATED,False,,The test data consists of data from the same radars and gauges over the remaining days in that month.
+4521,O,noaa-right-whale-recognition,UNSTATED,False,,
+4554,O,msuvisits,UNSTATED,False,,
+4588,O,telstra-recruiting-network,UNSTATED,False,,
+4654,O,walmart-recruiting-trip-type-classification,UNSTATED,False,,
+4657,O,homesite-quote-conversion,UNSTATED,False,,
+4821,O,104-1-mlds-final-project,UNSTATED,False,,
+4852,O,bnp-paribas-cardif-claims-management,UNSTATED,False,,
+4853,W,home-depot-product-search-relevance,UNSTATED,False,,Note that the test set contains both seen and unseen search terms.
+4857,O,let-s-overfit,UNSTATED,False,,
+4862,O,march-machine-learning-mania-2016,NEWDATA,True,two-stage: stage 2 is the future tournament,"In stage one of this two-stage competition, participants will build and test their models against the previous four tournaments. // In the second stage, participants will predict the outcome of the 2016 tournament. // The file you submit will depend on whether the competition is in stage 1 (historical model building) or stage 2 (the 2016 tournament). // The real competition is forecasting the 2016 results."
+4986,O,santander-customer-satisfaction,UNSTATED,False,,The task is to predict the probability that each customer in the test set is an unsatisfied customer.
+5048,O,state-farm-distracted-driver-detection,UNSTATED,False,,"The train and test data are split on the drivers, such that one driver can only appear on either train or test set."
+5056,O,expedia-hotel-recommendations,TIME,True,public/private split by time,"The data in this competition is a random selection from Expedia and is not representative of the overall statistics. // The data in this competition is a random selection from Expedia and is not representative of the overall statistics. // The train and test datasets are split based on time: training data from 2013 and 2014, while test data are from 2015."
+5167,O,pred-411-2016-04-u2-insurance-a,UNSTATED,False,,
+5174,O,avito-duplicate-ads-detection,UNSTATED,False,,
+5186,O,facebook-v-predicting-check-ins,RANDOM,False,public/private split randomly,"The train and test dataset are split based on time, and the public/private leaderboard in the test data are split randomly."
+5260,W,grupo-bimbo-inventory-demand,TIME,True,public/private split by time,"The train and test dataset are split based on time, as well as the public and private leaderboard dataset split. // In this competition, Grupo Bimbo invites Kagglers to develop a model to accurately forecast inventory demand based on historical sales data."
+5261,O,predicting-red-hat-business-value,UNSTATED,False,,
+5275,O,can-we-predict-voting-outcomes,UNSTATED,False,,
+5325,W,allstate-claims-severity,UNSTATED,False,,
+5340,O,talkingdata-mobile-user-demographics,UNSTATED,False,,
+5390,O,melbourne-university-seizure-prediction,UNSTATED,False,,"Seizure forecasting systems have the potential to help patients with epilepsy lead more normal lives. // In order for electrical brain activity (EEG) based seizure forecasting systems to work effectively, computational algorithms must reliably identify periods of increased probability of seizure occurrence."
+5497,O,outbrain-click-prediction,RANDOM,False,public/private sampling uniformly random,The identities of the clicked recommendations in the test set are not revealed. // Note that test set contains display_ids from the entire dataset timeframe.
+5520,W,ml2016-pm2-5-prediction,UNSTATED,False,,
+5558,O,santander-product-recommendation,RANDOM,False,public/private split randomly,"The test and train sets are split by time, and public and private leaderboard sets are split randomly."
+5568,O,the-nature-conservancy-fisheries-monitoring,NEWDATA,True,second-stage test set,"April 6, 2017 - Second stage starts. // test_stg2.zip - zipped folder of all test images in stage 2 (not available until the second stage of the competition) // sample_submission_stg2.csv - a sample submission file in the correct format (not available until the second stage of the competition) // We will release an unseen test dataset for prediction on this date."
+5590,O,two-sigma-connect-rental-listing-inquiries,UNSTATED,False,,Two Sigma has been at the forefront of applying technology and data science to financial forecasts.
+5686,W,swimming-pool-visitor-forecasting,UNSTATED,False,,"Join us with fellow students for an intense competition full of hacking, machine learning and jointly increasing our knowledge how to build robust forecasting models."
+5896,O,product-reviews-sentiment-analysis,UNSTATED,False,,
+5903,O,product-reviews-sentiment-analysis-light,UNSTATED,False,,
+5942,O,identify-me-if-you-can-yandex-mipt,UNSTATED,False,,
+6004,O,data-science-bowl-2017,NEWDATA,True,stage two data release,"April 7, 2017 - Stage one deadline and stage two data release. // PLEASE NOTE: If you do not make a submission during the second stage of the competition, you will not appear on the final competition leaderboard and you will not receive competition ranking points. // The winner for each of each mini-challenge will be randomly selected via a random drawing on the last day of each mini-challenge: February 15 (#1) , February 28 (#2) , March 15 (#3), 2017 . // After this deadline, the test set is released, the answers to the validation set are released, and participants make predictions on the test set."
+6109,O,identify-me-if-you-can4,UNSTATED,False,,
+6242,O,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking,UNSTATED,False,,
+6243,O,intel-mobileodt-cervical-cancer-screening,NEWDATA,True,second-stage test set,"June 15, 2017 - Second stage starts. // sample_submission_stg2.csv - a sample submission file in the correct format for stage 2. // test_stg2.7z - the 2nd stage test set. // We will release an unseen test dataset for prediction on this date."
+6277,O,quora-question-pairs,UNSTATED,False,,
+6392,W,sberbank-russian-housing-market,UNSTATED,False,,"Although the housing market is relatively stable in Russia, the country’s volatile economy makes forecasting prices as a function of apartment characteristics a unique challenge. // An accurate forecasting model will allow Sberbank to provide more certainty to their customers in an uncertain economy."
+6747,W,ml2017-hw6,UNSTATED,False,,Could you predict the rating of unseen user-movie pair?
+6818,O,humpback-whale-identification,UNSTATED,False,,
+6841,O,msk-redefining-cancer-treatment,NEWDATA,True,stage 2 test set,"September 25th, 2017 - Start of Stage 2. // Leaderboard will be wiped out and you will need to submit the predictions for the stage 2 test set. // Some of the test data is machine-generated to prevent hand labeling."
+6960,W,nyc-taxi-trip-duration,UNSTATED,False,,
+7042,O,text-normalization-challenge-english-language,UNSTATED,False,,
+7115,O,cdiscount-image-classification-challenge,UNSTATED,False,,The category_ids that are present in Private Test split are also all present in the Public Test split.
+7162,O,kkbox-music-recommendation-challenge,UNSTATED,False,,"The train and test sets are split based on time, and the split of public/private are based on unique user/song pairs. // The train and the test data are selected from users listening history in a given time period."
+7163,O,kkbox-churn-prediction-challenge,TIME,True,public/private split by transaction date,"Train and test sets are split by transaction date, as well as the public and private leaderboard data. // Specifically, we want to forecast if a user make a new service subscription transaction within 30 days after the current membership expiration date."
+7173,E,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking2,UNSTATED,False,,
+7181,W,properati,UNSTATED,False,,
+7277,W,recruit-restaurant-visitor-forecasting,TIME,True,"public fold first in time, private following","In this competition, you're challenged to use reservation and visitation data to predict the total number of visitors to a restaurant for future dates. // The test set is split based on time (the public fold coming first, the private fold following the public) and covers a chosen subset of the air restaurants. // This forecast isn't easy to make because many unpredictable factors affect restaurant attendance, like weather and local competition."
+7380,O,statoil-iceberg-classifier-challenge,UNSTATED,False,,
+7516,O,spooky-author-identification,UNSTATED,False,,
+7559,W,mercari-price-suggestion-challenge,NEWDATA,True,stage 2 evaluation on new data,"In the second stage of the challenge, files will only be available through Kernels and you will not be able to modify your approach in response to new data. // This is the last day participants are allowed to modify Kernels, submit to competition, and to select the Kernel version for Stage 2. // February 15, 2018 - Stage 2 evaluation period starts. // You should anticipate there to be unseen data that might break your code."
+7563,O,forest-prediction,UNSTATED,False,,
+7574,W,habr-num-bookmarks,UNSTATED,False,,
+7634,O,tensorflow-speech-recognition-challenge,UNSTATED,False,,"However, the test set is not. // Subject id is not provided for the test data, and you can assume that the majority of commands in the test data were from subjects not seen in train."
+7666,O,cs5785-fall-2017-final,UNSTATED,False,,30% on Kaggle performance (score on the private test set).
+7823,O,fuga-de-clientes,UNSTATED,False,,
+7941,W,ml2017-fall-hw5,UNSTATED,False,,Could you predict the rating of unseen user-movie pair?
+7968,E,google-quest-challenge,UNSTATED,False,,"This is to limit probing the private test set. // Since this is a synchronous re-run competition, you only have access to the Public test set. // Your Notebook will re-run automatically against an unseen test set, and needs to output a file named `submission.csv`."
+8227,O,2018-spring-cse6250-hw1,UNSTATED,False,,"After you submit, your accuracy on 50% of the test dataset will be visible to the class on the public leaderboard. // Once the competition ends, your response will be evaluated on the other 50% of the test data and your accuracies and rank will be displayed on the Private Leaderboard. // 50% of the data is used for the public leaderboard where you can receive feedback on your model.The fi nal private leaderboard will use the remaining 50% of the data and will determine your final class ranking."
+8307,O,dsntelecomschurn2018,UNSTATED,False,,
+8310,O,mens-machine-learning-competition-2018,NEWDATA,True,two-stage: stage 2 is the future tournament,"In the second stage, competitors will forecast outcomes of all possible match-ups in the 2018 NCAA Division I Men’s and Women’s Basketball Championships. // The file you submit will depend on whether the competition is in stage 1 (historical model building) or stage 2 (the 2018 tournament). // Stage 2 is weighted to award 50% of the usual competition points. // Kagglers will join the millions of fans who attempt to forecast the outcomes of March Madness® during this year's NCAA Division I Men’s and Women’s Basketball Championships."
+8396,O,landmark-retrieval-challenge,UNSTATED,False,,* `test.csv` - the test set containing the query images for which you may predict
+8540,O,talkingdata-adtracking-fraud-detection,UNSTATED,False,,"The official test data is a subset of this data. // The test data is similar, with the following differences:"
+8586,W,avito-demand-prediction,UNSTATED,False,,
+8673,E,how-good-is-your-medium-article,UNSTATED,False,,"The test set contains 34645 articles published on Medium from July 1, 2017 till March 3, 2018. // The test set contains 34645 articles published on Medium from July 1, 2017 till March 3, 2018."
+8857,O,recipient-prediction-2018,UNSTATED,False,,An example of submission where recipient are randomly chosen from the set of email addresses
+8900,O,freesound-audio-tagging,UNSTATED,False,,The test set is complemented with ~7.8k *padding* sounds which are not used for scoring the systems.
+9051,O,digitrecognizer1438,UNSTATED,False,,You will be able to see you performance of public leaderboard.
+9120,O,home-credit-default-risk,UNSTATED,False,,
+9491,O,ml-2018spring-hw5,UNSTATED,False,,
+9717,W,santander-value-prediction-challenge,UNSTATED,False,,
+9847,E,udacity-mlcharity-competition,UNSTATED,False,,
+9992,E,recognizing-faces-in-the-wild,UNSTATED,False,,Yet this technology remains largely unseen in practice for a couple of reasons: // * **test-faces.zip** - the test set contains face images of unknown individuals
+9993,E,pku-autonomous-driving,UNSTATED,False,,
+9994,E,ashrae-energy-prediction,UNSTATED,False,,"For both of these competitions, participants were asked to develop empirical models for predicting building energy data from data sets and compare how those models could be used to forecast energy usage (Shootout I) and calculate  // Gaps in the test set are not revealed or scored."
+10200,O,quickdraw-doodle-recognition,UNSTATED,False,,
+10270,W,scc5966-2018-2o,UNSTATED,False,,
+10385,E,santander-customer-transaction-prediction,UNSTATED,False,,The test set contains some rows which are not included in scoring.
+10445,W,elo-merchant-category-recommendation,UNSTATED,False,,
+10599,W,bbvadatachallenge-recomendador,UNSTATED,False,,
+10610,E,carseats-sales,UNSTATED,False,,
+10683,O,microsoft-malware-prediction,TIME,True,data roughly split by time; host warns public and private may disagree,"Teams must provide their report to Competition Sponsor no later than two (2) weeks after the Submission deadline. // While the dataset provided here has been roughly split by time, the complications and sampling requirements mentioned above may mean you may see imperfect agreement between your cross validation, public, and private scores! // Malware detection is inherently a time-series problem, but it is made complicated by the introduction of new machines, machines that come online and offline, machines that receive patches, machines that receive new operating syste"
+10755,W,589-hw1-indoor-localization,UNSTATED,False,,
+10757,W,589-hw1-regression-power-plant,UNSTATED,False,,
+10851,O,cse158-fa18-category-prediction,UNSTATED,False,,
+11000,E,LANL-Earthquake-Prediction,UNSTATED,False,,"Forecasting earthquakes is one of the most important problems in Earth science because of their devastating consequences. // Current scientific studies related to earthquake forecasting focus on three key points: when the event will occur, where it will occur, and how large it will be."
+11803,O,bgu2018,UNSTATED,False,,
+11836,E,landmark-recognition-2019,NEWDATA,True,stage 2,"* **May 28, 2019** - Stage 2 begins. // * **June 3, 2019** - Stage 2 ends & Final submission deadline. // Stage 2 final submissions selection must be completed by this date."
+11842,O,whereami,UNSTATED,False,,
+11848,O,histopathologic-cancer-detection,UNSTATED,False,,
+11960,W,bdma2018-house-prices,UNSTATED,False,,
+11999,E,mens-machine-learning-competition-2019,NEWDATA,True,two-stage: future tournament,"In the second stage, competitors will forecast outcomes of all possible matchups in the 2019 NCAA Division I Men’s and Women’s Basketball Championships. // The file you submit will depend on whether the competition is in stage 1 (historical model building) or stage 2 (the 2019 tournament). // Stage 2 will count toward Kaggle rankings/points. // Kagglers will join the millions of fans who attempt to forecast the outcomes of March Madness during this year's NCAA Division I Men’s and Women’s Basketball Championships."
+12088,O,cs5785-fall-2018-final,UNSTATED,False,,
+12187,O,cornellcs4740p4,UNSTATED,False,,
+12236,W,utartu-ml2018fall-competition,UNSTATED,False,,
+12349,O,2019-1st-ml-month-with-kakr,UNSTATED,False,,Private leaderboard 기준으로 1~200 등에게 구글에서 후원하는 티셔츠를 제공합니다
+12357,O,cs189-hw1-mnist,UNSTATED,False,,
+12358,O,cs189-hw1-spam,UNSTATED,False,,
+12359,O,cs189-hw1-cifar10,UNSTATED,False,,
+12512,O,2019-spring-cse6250-bdh,UNSTATED,False,,"After you submit, your accuracy on 50% of the test dataset will be visible to the class on the public leaderboard. // Once the competition ends, your response will be evaluated on the other 50% of the test data and your accuracies and rank will be displayed on the Private Leaderboard. // 50% of the data is used for the public leaderboard where you can receive feedback on your model.The fi nal private leaderboard will use the remaining 50% of the data and will determine your final class ranking."
+12558,O,widsdatathon2019,UNSTATED,False,,"Labeled training and test datasets are provided for model development; you will then upload your predictions for an unlabeled test set to Kaggle and these predictions will be used to determine the public leaderboard rankings, and  // Labeled training and test datasets are provided for model development; you will then upload your predictions for an unlabeled test set to Kaggle and these predictions will be used to determine the public leaderboard rankings, and "
+12598,O,robotsurface,UNSTATED,False,,"The sensors can acquire time-series data as well as vision data and the problem domain integrates classical signal processing with modern machine learning. // This means that there are 1703 training samples, each represented by 10 measurement time series of length 128 samples."
+12633,E,bigdata2019-flare-prediction,UNSTATED,False,,"After the competition phase is completed, a link for the submission of the accompanying academic paper will be provided to the top 10 participants as ranked by the public/private leaderboard weighting described on the competition  // This competition is part of the Solar Flare Prediction from Time Series of Solar Magnetic Field Parameters in the IEEE Big Data 2019 big Data Cup"
+12681,O,padhai-module1-level2,UNSTATED,False,,
+12716,E,youtube8m-2019,UNSTATED,False,,"The Public/Private Test split is performed at the _Segment_ level, not the _Class_ level. // In other words, all classes (i.e., submission rows) are evaluated for the Public and Private leaderboard, but only segments for the particular split will be used in the prediction and ground truth. // Each of the top 10 ranked teams (on the final private leaderboard) will receive $2,500 per team as a travel award to attend and present at the 3rd YouTube-8M Video Understanding Challenge Workshop at the [ICCV 2019 Conference] . // The training dataset in this competition contains videos and labels that are publicly available on YouTube, while the test data is not publicly available."
+12727,E,cs5228-knowledge-discovery-and-data-mining,UNSTATED,False,,"When you submit, 50% of your predictions will be evaluated to get a ""public score"". // The final 'private score' will be calculated on remaning 50% of your predictions."
+12863,E,tensorflow2-question-answering,UNSTATED,False,,"The dataset is provided by [Google's Natural Questions] , but contains its own unique private test set. // The following prizes will be awarded on the basis of private leaderboard rank. // Note that this competition's private test set is completely different from any of the datasets used by Natural Questions."
+12896,E,dont-overfit-ii,UNSTATED,False,,"At the conclusion of the competition, the top competitor - as determined by private LB score - will receive Kaggle swag (e.g."
+12904,O,caltech-cs-155-2019-part-1,UNSTATED,False,,
+12961,E,iwildcam-2019-fgvc6,UNSTATED,False,,"In order to tackle this problem, we have prepared a challenge where the training data and test data are from different regions, namely The American Southwest and the American Northwest. // The test set contains 153,730 images from 100 locations in Idaho."
+13032,E,imaterialist-fashion-2019-FGVC6,UNSTATED,False,,
+13034,O,cs189-hw3-mnist,UNSTATED,False,,
+13036,O,cs189-hw3-spam,UNSTATED,False,,
+13078,O,11785-s19-hw2p2-classification,UNSTATED,False,,
+13125,W,ml2019spring-hw1,UNSTATED,False,,
+13242,E,career-con-2019,UNSTATED,False,,"The top 100 on the private leaderboard will have the opportunity to send their resumes directly to any hiring company of their choosing that's featured in our 2019 CareerCon Digital Career Fair. // In addition to the prize above, the top 10 on the private leaderboard will win a Kaggle Swag Pack including a special CareerCon t-shirt and Kaggle sweatshirt, water bottle and stickers! // * **X_[train/test].csv** - the input data, covering 10 sensor channels and 128 measurements per time series plus three ID columns:"
+13277,E,cassava-disease,UNSTATED,False,,
+13333,E,understanding_cloud_organization,UNSTATED,False,,
+13339,E,ml2019spring-hw3,UNSTATED,False,,
+13383,O,ml2019spring-hw2,UNSTATED,False,,(8140 in private test set and 8141 in public test set)
+13441,E,cs420-2019-ctr-prediction,UNSTATED,False,,Your final score on the private leaderboard is used to calculate your grade on this course work.
+13451,E,rsna-intracranial-hemorrhage-detection,NEWDATA,True,stage 2,"* **November 5, 2019** - Stage 2 begins. // * **November 13, 2019** - Stage 2 ends & Final submission deadline. // &#42; In order to be eligible for Stage 2, each team's Stage 1 submission must include the model uploaded, via Team -> Your Model, per the [Competition Rules] ."
+13481,W,caltech-cs-155-2019-final,UNSTATED,False,,
+13578,E,kuzushiji-recognition,UNSTATED,False,,
+13646,E,competition-2-yandex-shad-spring-2019,UNSTATED,False,,
+13720,E,11785-s19-hw4p2,UNSTATED,False,,
+13722,E,bring-back-the-sun,RANDOM,False,public/private split randomly,"Public leaderboard will be used to evaluate your current score and ranking till deadline date. // The final rankings will be based on the private leaderboard - so make sure you do not overfit your model to the public leader board. // Might be interesting to note that our training data were collected in the seaside area, while test data were collected in the urban area."
+13747,E,inaturalist-2019-fgvc6,UNSTATED,False,,
+13773,E,imaterialist-product-2019,UNSTATED,False,,
+13836,E,cassava-leaf-disease-classification,UNSTATED,False,,**Leaderboard Prizes**: Awarded based on private leaderboard ranking.
+13876,E,dlschool-fashionmnist3,UNSTATED,False,,
+13999,E,nthuds2019hw3,UNSTATED,False,,
+14036,E,simplesentiment,UNSTATED,False,,
+14038,E,telecom-clients-prediction2,UNSTATED,False,,
+14065,E,cs-543-deep-conv-nets,UNSTATED,False,,
+14070,E,aia-dnn-classification-pokemongo-fourth,UNSTATED,False,,
+14101,E,dap-ca-home-assignment,UNSTATED,False,,A megoldások értékelése a public leaderboardon a teszthalmaz 30%-án történik AUC értéket felhasználva.
+14239,E,instant-gratification,UNSTATED,False,,"We have iterated and tested several Kernels-only (KO) competition formats with a true holdout test set, in particular deploying them when we would have otherwise substituted a [two-stage competition] . // When you submit from a Kernel, Kaggle will run the code against both the public test set and private test set in real time. // - We will be able to offer more varieties of competitions and intend to run many fewer confusing two-stage competitions. // This flow causes heartbreak to participants whose Kernels fail on the unseen test set, leaving them with no way to correct tiny errors that spoil months of hard work."
+14241,E,severstal-steel-defect-detection,UNSTATED,False,,"*Efficiency Prize*: Severstal will choose a winner of the “Efficiency Prize.” Participants who finish in the top 50 on the Kaggle Private Leaderboard will be allowed to submit their inference code via docker containers to Seversta // * **Efficiency Prize**: Severstal will choose a winner of the “Efficiency Prize.” Participants who finish in the top 50 on the Kaggle Private Leaderboard will be allowed to submit their inference code via docker containers to Seve // This is to limit probing the private test set. // Your kernel will re-run automatically against an unseen test set, and needs to output a file named `submission.csv`."
+14242,E,ieee-fraud-detection,UNSTATED,False,,
+14282,E,ml2019spring-hw6,UNSTATED,False,,
+14313,E,champs-scalar-coupling,UNSTATED,False,,
+14315,E,open-images-2019-object-detection,UNSTATED,False,,
+14316,E,open-images-2019-visual-relationship,UNSTATED,False,,
+14350,E,11785-hw1-fall2019,UNSTATED,False,,"(Note2: The score is based on private leaderboard, which will be released after competition deadline.) // (Note3: Try not to overfit the scores on public leaderboard, since it only contains 30% of the test set.) // These numeric grades are upper bounds , the actual score will be interpolated based on your ranking of private leaderboard. // Performance on the task will be measured by classification accuracy on a held out set of labelled mel spectrogram frames."
+14389,E,11785-s19-hw4p2-slack,UNSTATED,False,,
+14420,E,recursion-cellular-image-classification,UNSTATED,False,,"Within the buckets, you'll find the tfrecords structured both by experiment and randomly split within train and test."
+14486,E,ds2019hw4,UNSTATED,False,,
+14496,E,ml2019spring-hw8,UNSTATED,False,,
+14497,E,ml2019spring-hw7,UNSTATED,False,,
+14652,E,siim-acr-pneumothorax-segmentation,NEWDATA,True,stage 2,"* In order to be eligible for Stage 2, each team's Stage 1 submission must include the model uploaded, via Team -&gt; Your Model, per the [Competition Rules] . // This model should match your final submission selected for scoring in Stage 2. // * This requirement is in place for the host team to verify the performance of the uploaded models matches the Stage 2 submission file. // The test set is about 180 MB total."
+14666,E,machine-learning-project-2,UNSTATED,False,,"The train, dev, and test data are available in LMS."
+14724,E,2019-3rd-ml-month-with-kakr,UNSTATED,False,,
+14774,E,aptos2019-blindness-detection,UNSTATED,False,,"Participants with the best scores on the private leaderboard are eligible to receive: // Top performing participants on the private leaderboard are welcome to request a complimentary pass to [APTOS 2019][2] conference. // This is necessary to prevent probing the private test set. // Your kernel will re-run automatically against an unseen test set, and needs to output a file named `submission.csv`."
+14828,E,titanic2019,RANDOM,False,public half randomly assigned,50% of your predictions for the test set have been randomly assigned to the public leaderboard ( the same 50% for all users ). // The test set should be used to see how well your model performs on unseen data.
+14859,E,bigquery-geotab-intersection-congestion,UNSTATED,False,,
+14897,E,bengaliai-cv19,UNSTATED,False,,The test set includes some graphemes that do not exist in train but has no new grapheme components.
+14999,E,cat-in-the-dat,UNSTATED,False,,"Since the purpose of this competition is to explore various encoding strategies, the data has been simplified in that (1) there are no missing values, and (2) the test set does not contain any unseen feature values ([See this] )."
+15043,E,open-images-2019-instance-segmentation,UNSTATED,False,,
+15062,E,generative-dog-images,GROUP,True,public and private scored with different evaluation images and models,"The private leaderboard has been finalized as of 8/28/2019.** // ## Kaggle's workflow calculating MiFID for public and private scores // Once it kicks off, you can close your browser and return to see your standing on the Public Leaderboard when it finishes!"
+15128,E,banco-galicia-dataton-2019,UNSTATED,False,,
+15217,E,11785-f19-hw2p2-classification,UNSTATED,False,,
+15733,E,2019-fall-cse6250-bdh,UNSTATED,False,,"After you submit, your accuracy on 50% of the test dataset will be visible to the class on the public leaderboard. // Once the competition ends, your response will be evaluated on the other 50% of the test data and your accuracies and rank will be displayed on the Private Leaderboard. // 50% of the data is used for the public leaderboard where you can receive feedback on your model.The fi nal private leaderboard will use the remaining 50% of the data and will determine your final class ranking."
+15768,E,3d-object-detection-for-autonomous-vehicles,UNSTATED,False,,Participants with the best score on the private leaderboard are eligible to receive:
+16017,E,Kannada-MNIST,UNSTATED,False,,"You write your code in a Kaggle Notebook, and when you submit the results, your code is scored on both the public test set, as well as a private (unseen) test set. // Your kernel will re-run automatically against an unseen test set."
+16211,E,intercampusai2019,UNSTATED,False,,
+16245,E,trends-assessment-prediction,UNSTATED,False,,
+16295,E,tweet-sentiment-extraction,UNSTATED,False,,
+16520,E,nyucvfall2019,UNSTATED,False,,
+16531,E,data-science-bowl-2019,UNSTATED,False,,Highest placed teams on the private leaderboard at the end of the competition will be considered. // Note that this is a [synchronous rerun code competition] and the private test set has approximately 8MM rows. // The intent of the competition is to use the gameplay data to forecast how many attempts a child will take to pass a given assessment (an incorrect answer is counted as an attempt).
+16787,E,homework-3-part-2-11-785-fall-2019,UNSTATED,False,,
+16795,E,cse158258-fa19-read-prediction,UNSTATED,False,,
+16797,E,cse258-fa19-rating-prediction,UNSTATED,False,,
+16800,E,cse158-fa19-category-prediction,UNSTATED,False,,
+16847,E,Inmuebles24,UNSTATED,False,,
+17000,E,cat-in-the-dat-ii,UNSTATED,False,,
+17040,E,inf131-2019,UNSTATED,False,,
+17077,E,ml-f19,UNSTATED,False,,
+17216,E,ds100fa19,UNSTATED,False,,There is no private test set; all test data are viewable via Kaggle. // This Kaggle submission is for you to see what your accuracy on the test data is.
+17227,E,homework-4-part-2-11-785-fall-2019-slack-or-late,UNSTATED,False,,
+17455,E,link-prediction-data-challenge-2019,UNSTATED,False,,
+17510,E,mai-ml-hw-models,UNSTATED,False,,
+17572,E,2019-intro-to-ml-and-dl-final-task2,UNSTATED,False,,
+17575,E,2019-intro-to-ml-and-dl-final-task1,UNSTATED,False,,
+17593,E,cs5785-fall-2019-final,UNSTATED,False,,
+17722,E,11-785-s20-hw1p2,UNSTATED,False,,"(Note2: The score is based on private leaderboard, which will be released after competition deadline.) // (Note3: Try not to overfit the scores on public leaderboard, since it only contains 30% of the test set.) // These numeric grades are upper bounds, the actual score will be interpolated based on your ranking of private leaderboard. // Performance on the task will be measured by classification accuracy on a held out set of labelled mel spectrogram frames."
+17723,E,11-785-s20-hw2p2-classification,UNSTATED,False,,
+17724,E,11-785-s20-hw3p2,UNSTATED,False,,
+17725,E,11-785-s20-hw4p2,UNSTATED,False,,test_new.npy - The test set contains test utterances each of variable duration and 40 frequency bands.
+17804,E,simpsons4,UNSTATED,False,,
+17807,E,widsdatathon2020,UNSTATED,False,,"Labeled training data are provided for model development; you will then upload your predictions for unlabeled data to Kaggle and these predictions will be used to determine the public leaderboard rankings, as well as the final win"
+17928,E,house-price-prediction-final-test,NO_TEXT,False,,
+17941,E,2el1730-machinelearning,UNSTATED,False,,
+18005,E,fifa2019wages,UNSTATED,False,,"What’s the difference between a private and public leaderboard? // Public Leaderboard // For all participants, the same 50% of predictions from the test set are assigned to the public leaderboard."
+18045,E,liverpool-ion-switching,UNSTATED,False,,"**IMPORTANT:** While the time series appears continuous, the data is from *discrete batches of 50 seconds long 10 kHz samples* (500,000 rows per batch)."
+18233,E,2020-spring-cse6250-bdh,UNSTATED,False,,"After you submit, your accuracy on 50% of the test dataset will be visible to the class on the public leaderboard. // Once the competition ends, your response will be evaluated on the other 50% of the test data and your accuracies and rank will be displayed on the Private Leaderboard. // 50% of the data is used for the public leaderboard where you can receive feedback on your model.The fi nal private leaderboard will use the remaining 50% of the data and will determine your final class ranking."
+18278,E,flower-classification-with-tpus,UNSTATED,False,,
+18294,E,iwildcam-2020-fgvc7,UNSTATED,False,,"However, as we try to expand the scope of these models we are faced with an interesting problem: how do we train models that perform well on new (unseen during training) camera trap locations? // In order to tackle this problem, we have prepared a challenge where the training data and test data are from different cameras spread across the globe."
+18423,E,11-785-s20-hw2p2-verification,UNSTATED,False,,
+18455,E,ml2020spring-hw1,UNSTATED,False,,
+18458,E,ml2020spring-hw2,UNSTATED,False,,There are totally 54256 instances of training data and 27622 instances of test data (13811 in private testing set and 13811 in public testing set).
+18459,E,ml2020spring-hw3,NO_TEXT,False,,
+18461,E,ml2020spring-hw4,UNSTATED,False,,
+18599,E,m5-forecasting-accuracy,TIME,True,"public = validation 28 days, private = later evaluation 28 days","Each row contains an `id` that is a concatenation of an `item_id` and a `store_id`, which is either `validation` (corresponding to the Public leaderboard), or `evaluation` (corresponding to the Private leaderboard). // Participants will be provided with the actual values of the 28 days of data used for scoring performance (Public test set). // The private test set will remain unchanged, and will still be used to determine the winners. // *Note: This is one of the two complementary competitions that together comprise the M5 forecasting challenge."
+18600,E,m5-forecasting-uncertainty,TIME,True,as 18599,"Similar to the point forecast competition, each row contains an `id` that is a concatenation of an `item_id`, a `store_id`, a `quartile`, and the prediction interval, which is either `validation` (corresponding to the Public leade // Participants will be provided with the actual values of the 28 days of data used for scoring performance (Public test set). // The private test set will remain unchanged, and will still be used to determine the winners. // *Note: This is one of the two complementary competitions that together comprise the M5 forecasting challenge."
+18627,E,herbarium-2020-fgvc7,UNSTATED,False,,"The training and test set contain images of herbarium specimens, from over 32,000 species of vascular plants."
+18629,E,semi-inat-2020,UNSTATED,False,,The images in the test set are guaranteed to be one of the 200 categories in the training set.
+18631,E,s20-589-hw1-dataa,UNSTATED,False,,The MAE is one of a number of ways of comparing forecasts with their eventual outcomes.
+18632,E,s20-589-hw1-datab,NO_TEXT,False,,
+18647,E,prostate-cancer-grade-assessment,UNSTATED,False,,"All of the private test set images and most of the public test set images were graded by multiple pathologists, but this was not feasible for the training set. // In the paper, we took a deep dive into the solutions, tested the methods to see if they generalize well to unseen data, and performed a comparison with pathologists."
+18648,E,plant-pathology-2020-fgvc7,UNSTATED,False,,
+18767,E,ml2-usf-2020,UNSTATED,False,,
+18789,E,caltech-cs155-2020,UNSTATED,False,,"However, in the test set, they are scrambled so that you cannot simply use the order book features of future data to make fake ""predictions"" in previous timesteps. // Note that id's in the test set are not chronologically ordered."
+18807,E,ml2020spring-hw7,UNSTATED,False,,
+18808,E,ml2020spring-hw9,UNSTATED,False,,
+18809,E,ml2020spring-hw10,NO_TEXT,False,,
+18810,E,ml2020spring-hw12,UNSTATED,False,,
+19018,E,jigsaw-multilingual-toxic-comment-classification,UNSTATED,False,,
+19059,E,predict-volcanic-eruptions-ingv-oe,UNSTATED,False,,
+19112,E,data-science-lab-kaggle-sp2020,UNSTATED,False,,You will be scored based on your private and public leaderboard score but also on your creativity on trying various ideas.
+19175,E,cs589s20hw2,UNSTATED,False,,
+19231,E,landmark-recognition-2020,UNSTATED,False,,"The provided test set is a representative set of files to demonstrate the format of the private test set. // When you submit your notebook, Kaggle will rerun your code on the private dataset. // This 100k subset contains all of the training set images associated with the landmarks in the private test set."
+19233,E,landmark-retrieval-2020,UNSTATED,False,,"Unlike a traditional Kaggle code competition where notebooks are rerun top-to-bottom on a private test set, in this competition you will be submitting a model file. // Unlike a traditional Kaggle code competition where notebooks are rerun top-to-bottom on a private test set, in this competition you will be submitting a model file that Kaggle will use to: // Extract embeddings for the private test and index sets. // Kaggle will run your model on a held-out test set, perform a k-nearest-neighbors lookup, and score the resulting embedding quality with mean average precision."
+19396,E,competition-2-yandex-shad-spring-2020,UNSTATED,False,,
+19474,E,til2020,UNSTATED,False,,
+19539,E,covid19-global-forecasting-week-1,TIME,True,"public period around launch, private later","##Public and Private Leaderboard // To have a public leaderboard for this forecasting task, we will be using data from 7 days before to 7 days after competition launch. // Only use data on or prior to 2020-03-11 for predictions on the public leaderboard period. // **[This week 1 forecasting task is now closed for submissions."
+19596,E,birdsong-recognition,UNSTATED,False,,
+19702,E,covid19-global-forecasting-week-2,TIME,True,as 19539,"##Public and Private Leaderboard // To have a public leaderboard for this forecasting task, we will be using data from 7 days before to 7 days after competition launch. // Only use data prior to 2020-03-19 for predictions on the public leaderboard period. // **[This week 2 forecasting task is now closed for submissions."
+19820,E,shipsmano2021,UNSTATED,False,,
+19839,E,wm-2020-vsm-model,UNSTATED,False,,
+19853,E,covid19-global-forecasting-week-3,TIME,True,as 19539,"##Public and Private Leaderboard // To have a public leaderboard for this forecasting task, we will be using data from 7 days before to 7 days after competition launch. // Only use data prior to 2020-03-26 for predictions on the public leaderboard period. // **[This week 3 forecasting task is now closed for submissions."
+19988,E,lish-moa,UNSTATED,False,,- the re-run dataset has approximately 4x the number of examples seen in the Public test.
+19989,E,global-wheat-detection,UNSTATED,False,,"Current detection methods involve one- and two-stage detectors (Yolo-V3 and Faster-RCNN), but even when trained with a large dataset, a bias to the training region remains. // To better gauge the performance for unseen genotypes, environments, and observational conditions, the training dataset covers multiple regions."
+19990,E,lyft-motion-prediction-autonomous-vehicles,UNSTATED,False,,Participants with the best score on the private leaderboard are eligible to receive
+19991,E,alaska2-image-steganalysis,UNSTATED,False,,The only available information on the test set is:
+19995,E,prml20,UNSTATED,False,,
+20010,E,covid19-global-forecasting-week-4,TIME,True,as 19539,"##Public and Private Leaderboard // To have a public leaderboard for this forecasting task, we will be using data from 7 days before to 7 days after competition launch. // Only use data prior to 2020-04-1 for predictions on the public leaderboard period. // *This is week 4 of Kaggle's COVID-19 forecasting series, following the [Week 3 competition] ."
+20270,E,siim-isic-melanoma-classification,UNSTATED,False,,**Leaderboard Prizes**: Awarded on the basis of private leaderboard rank. // Only selected submissions will be ranked on the private leaderboard.
+20358,E,enigma-day-1000,UNSTATED,False,,The final standings will be evaluated based on your score on the Public Leaderboard and not on the Private Learderboard.
+20439,E,cs4670spring2020pa3,UNSTATED,False,,
+20604,E,osic-pulmonary-fibrosis-progression,UNSTATED,False,,"There are around 200 cases in the public & private test sets, combined. // The provided test set is a small representative set of files (copied from the training set) to demonstrate the format of the private test set. // The timing of the initial measurement relative to the CT scan and the duration to the forecasted time points may be different for each patient."
+20627,E,labdata-churn-challenge-2020,UNSTATED,False,,
+20850,E,wm-2020-personalized-recommendation,UNSTATED,False,,
+21100,E,nju-introdm20,UNSTATED,False,,
+21424,E,dl-course-final-competition,UNSTATED,False,,The score will base on the result of the private leaderboard
+21651,E,riiid-test-answer-prediction,UNSTATED,False,,"This is a time-series code competition, you will receive test set data and make predictions with Kaggle's time-series API. // Please be sure to review the Time-series API Details section closely."
+21669,E,rfcx-species-audio-detection,UNSTATED,False,,**Leaderboard Prizes**: Awarded based on private leaderboard ranking.
+21723,E,google-football,UNSTATED,False,,
+22040,E,hashcode-drone-delivery,UNSTATED,False,,
+22111,E,stanford-covid-vaccine,GROUP,True,private molecules longer than public ones,"* `seq_scored` - (68 in Train and Public Test, 91 in Private Test) Integer value denoting the number of positions used in scoring with predicted values. // Note that molecules used for the Private Test will be longer than those in the Train and Public Test data, so the size of this vector will be different. // * `seq_length` - (107 in Train and Public Test, 130 in Private Test) Integer values, denotes the length of `sequence`."
+22122,E,conways-reverse-game-of-life-2020,UNSTATED,False,,
+22307,E,rsna-str-pulmonary-embolism-detection,UNSTATED,False,,"Note also that the private test set is approximately 3x larger than the public test set (230GB vs. // The training set includes 7279 studies, the public set 650, and the private set has 1517."
+22359,E,widsdatathon2021,UNSTATED,False,,"Participants will then upload predictions for unlabeled data to Kaggle and these predictions will be used to determine the public leaderboard rankings, as well as the final leaderboard revealed at the close of the competition."
+22378,E,11-785-fall-20-homework-1-part-2,UNSTATED,False,,Performance on the task will be measured by classification accuracy on a held out set of labelled mel spectrogram frames.
+22422,E,bms-molecular-translation,UNSTATED,False,,
+22559,E,indoor-location-navigation,UNSTATED,False,,
+22607,E,whoisshe,UNSTATED,False,,
+22720,E,sysu-dmml-1,UNSTATED,False,,forecast_3_month - Forecast sales for the next 3 months // forecast_6_month - Forecast sales for the next 6 months
+22804,E,nfl-impact-detection,UNSTATED,False,,
+22838,E,rock-paper-scissors,UNSTATED,False,,
+22881,E,11-785-fall-20-homework-2-part-2,UNSTATED,False,,The Area Under the Curve (AUC) for the ROC curve is equal to the probability that a classifier will rank a randomly chosen similar pair (images of same people) higher than a randomly chosen dissimilar one (images from two differen
+22936,E,sfu-cmpt-image-classification-2020-fall,UNSTATED,False,,"Public scores are shown on the public leaderboard, while only the private scores are used to determine the competition winner."
+22962,E,happy-whale-and-dolphin,UNSTATED,False,,
+22990,E,hubmap-kidney-segmentation,UNSTATED,False,,"The training set has 8, and the public test set has 5. // The private test set is larger than the public test set. // Both the training and public test sets also include anatomical structure segmentations."
+23249,E,g2net-gravitational-wave-detection,UNSTATED,False,,"Specifically, you'll build a model to analyze simulated GW time-series data from a network of Earth-based detectors. // In this competition you are provided with a training set of time series data containing simulated gravitational wave measurements from a network of 3 gravitational wave interferometers (LIGO Hanford, LIGO Livingston, and Virgo)."
+23341,E,cs725-autumn-2020-programming-assignment-2,UNSTATED,False,,
+23367,E,gt-cse6250-fall-2020-hw5,UNSTATED,False,,"After you submit, your accuracy on 50% of the test dataset will be visible to the class on the public leaderboard."
+23382,E,11-785-fall-20-homework-3,UNSTATED,False,,
+23415,E,eecs545f20aq,UNSTATED,False,,
+23478,E,ai-club-inductions,UNSTATED,False,,
+23486,E,made-hw-2,UNSTATED,False,,
+23548,E,cse158258-fa20-play-prediction,UNSTATED,False,,
+23549,E,cse158-fa20-category-prediction,UNSTATED,False,,
+23550,E,cse258-fa20-time-played-prediction,UNSTATED,False,,
+23585,E,sysu-dmml-2,UNSTATED,False,,
+23652,E,seti-breakthrough-listen,UNSTATED,False,,
+23661,E,2020-10-29,UNSTATED,False,,
+23675,E,dsba-fml-foundations-of-machine-learning,UNSTATED,False,,
+23764,E,2020-intro-to-ml-and-dl-midterm-project,UNSTATED,False,,
+23823,E,hpa-single-cell-image-classification,UNSTATED,False,,
+23847,E,2020-11-05,UNSTATED,False,,
+23870,E,ranzcr-clip-catheter-line-classification,UNSTATED,False,,
+23946,E,11-785-fall-20-homework-4-part-2,UNSTATED,False,,
+23985,E,2020-data-science-hw1,UNSTATED,False,,Public Leaderboard分數佔40% Private Leaderboard分數佔60%
+24105,E,opencv-pytorch-dl-course-classification,UNSTATED,False,,The data was splitted into public train set and private test set which is used for evaluation of submissions.
+24107,E,sweettv-movie-recommender,UNSTATED,False,,"The task is to predict the user preferences for the next 2 months (1 month - public, 1 month - private leaderboard) taking into account the date and time. // Private/public test data is split BY USERS (50/50) - not by time. // Test data contains user's movie preferences for the next 2 months."
+24263,E,2020-11-20,UNSTATED,False,,
+24280,E,prml-data-contest-nov-2020,UNSTATED,False,,
+24286,E,shopee-product-matching,UNSTATED,False,,"As this is a code competition, only the first few rows/images of the test set are published; the remainder are only available to your notebook when it is submitted."
+24373,E,hrpred,UNSTATED,False,,
+24539,E,santa-2020,UNSTATED,False,,
+24652,E,interbank20,UNSTATED,False,,
+24673,E,tabular-playground-series-jan-2021,UNSTATED,False,,
+24691,E,friofrio,UNSTATED,False,,
+24764,E,actuarial-loss-estimation,UNSTATED,False,,
+24800,E,vinbigdata-chest-xray-abnormalities-detection,UNSTATED,False,,* Awarded to the highest performing team (based on private leaderboard score) whose team members are all Vietnamese citizens.
+25123,E,permuted-animal-faces,UNSTATED,False,,Get the highest accuracy on the private Leaderboard
+25225,E,tabular-playground-series-feb-2021,UNSTATED,False,,
+25226,E,tabular-playground-series-mar-2021,UNSTATED,False,,
+25232,E,mgta415-data-driven-text-mining,UNSTATED,False,,
+25383,E,petfinder-pawpularity-score,UNSTATED,False,,
+25401,E,hungry-geese,UNSTATED,False,,"For the avoidance of doubt, the team at the top of the leaderboard at 11:59pm on the following dates will be awarded Kaggle merchandise."
+25563,E,plant-pathology-2021-fgvc8,UNSTATED,False,,
+25657,E,nlp-intro-to-dl-2021,UNSTATED,False,,
+25722,E,11785-spring2021-hw1p2,UNSTATED,False,,
+25737,E,ml2021spring-hw1,UNSTATED,False,,**Be careful not to overfit the public leaderboard!**
+25828,E,spring21-cs189-hw3-mnist,UNSTATED,False,,
+25829,E,spring21-cs189-hw3-spam,UNSTATED,False,,
+25914,E,commonlitreadabilityprize,UNSTATED,False,,"**Also note that while licensing information is provided for the public test set (because the associated excerpts are available for display / use), the hidden private test set includes only blank license / legal information.** // Note that the test set includes a slightly larger proportion of modern texts (the type of texts we want to generalize to) than the training set."
+25925,E,coleridgeinitiative-show-us-the-data,GROUP,True,public test partly drawn from training set; private not,"A percentage of the public test set publications are drawn from the training set - not all datasets have been identified in train, so these unidentified datasets have been used as a portion of the public test labels. // These should serve as guides for the difficult task of labeling the private test set. // Note that the hidden test set has roughly ~8000 publications, many times the size of the public test set."
+25954,E,birdclef-2021,UNSTATED,False,,
+26002,E,spring21-cs189-hw4-wine,UNSTATED,False,,
+26079,E,ncaam-march-mania-2021,NEWDATA,True,two-stage: future tournament,"In stage one of this two-stage competition, participants will build and test their models against previous tournaments. // In the second stage, participants will predict the outcome of the 2021 tournament. // The file you submit will depend on whether the competition is in stage 1--historical model building--or stage 2--the 2021 tournament. // The real competition is forecasting the 2021 results."
+26124,E,bankdirectmarketing,UNSTATED,False,,
+26132,E,minor-project-2021,UNSTATED,False,,"- At the end of the competition you will have to submit your top 3 best predictions for the private leaderboard, the best of them will be considered for the final score."
+26145,E,mmp2021,UNSTATED,False,,
+26169,E,11785-spring2021-hw2p2s1-face-classification,UNSTATED,False,,
+26319,E,ml2021spring-hw2,UNSTATED,False,,
+26376,E,4771-sp21-regression,UNSTATED,False,,
+26447,E,spring21-cs189-hw5-titanic,UNSTATED,False,,
+26448,E,spring21-cs189-hw5-spam,UNSTATED,False,,
+26475,E,classification-with-non-deep-classifiers,UNSTATED,False,,
+26478,E,tabular-playground-series-apr-2021,UNSTATED,False,,How well does your model perform on truly private test labels? // How well does your model perform on truly unseen data?
+26479,E,tabular-playground-series-may-2021,UNSTATED,False,,
+26480,E,tabular-playground-series-jun-2021,UNSTATED,False,,
+26555,E,11785-spring2021-hw3p2,UNSTATED,False,,
+26579,E,competition-2-yandex-shad-spring-2021,UNSTATED,False,,
+26680,E,siim-covid19-detection,UNSTATED,False,,**Leaderboard Prizes**: Awarded on the basis of private leaderboard rank. // Only selected submissions will be ranked on the private leaderboard. // **Student Team Prize**: Awarded to the top-scoring eligible Student Team on the basis of private leaderboard rank.
+26688,E,california-house-prices,TIME,True,private houses sold after public ones,Also the private leaderboard houses were sold after the ones in the public leaderboard.
+26775,E,cse151b-spring,UNSTATED,False,,"The test set is further split into 80% for the public leaderboard and 20% for the private leaderboard. // In this competition, you’ll apply your data science skills to build motion forecasting models for self-driving vehicles."
+26933,E,google-smartphone-decimeter-challenge,UNSTATED,False,,"As this challenge’s design is focused on post-processing applications such as lane-level mapping, future data along a route will be available to generate positions as precisely as possible."
+26941,E,ai-contest-for-all,UNSTATED,False,,
+27169,E,datamining-2021-2,NO_TEXT,False,,
+27370,E,ml2021spring-hw8,NO_TEXT,False,,
+27467,E,prml-data-contest-jan-2021,UNSTATED,False,,
+27644,E,ml2021-spring-hw7,NO_TEXT,False,,
+27655,E,computer2021-hw5,UNSTATED,False,,
+27751,E,mgtf495,UNSTATED,False,,
+27753,E,spotoroo,UNSTATED,False,,
+27923,E,uw-madison-gi-tract-image-segmentation,UNSTATED,False,,
+27935,E,jigsaw-toxic-severity-rating,UNSTATED,False,,"* **leaderboard.csv** - the data used for both the public and private leaderboard, including the annotator id, the comment pair, and the leaderboard where the data was used."
+27969,E,econometriaenr2021,UNSTATED,False,,
+27994,E,largefinefoodai-iccv-recognition,UNSTATED,False,,
+28007,E,tabular-playground-series-jul-2021,UNSTATED,False,,"The original dataset deals with predicting air pollution in a city via various input sensor values (e.g., a time series)."
+28008,E,tabular-playground-series-aug-2021,UNSTATED,False,,
+28009,E,tabular-playground-series-sep-2021,UNSTATED,False,,
+28010,E,tabular-playground-series-oct-2021,UNSTATED,False,,
+28011,E,tabular-playground-series-nov-2021,UNSTATED,False,,
+28012,E,tabular-playground-series-dec-2021,UNSTATED,False,,
+29066,E,ml2021spring-hw11,NO_TEXT,False,,
+29193,E,classify-leaves,UNSTATED,False,,The test set is split evenly into the public and private leaderboard.
+29594,E,ventilator-pressure-prediction,UNSTATED,False,,"In this competition, participants are given numerous time series of breaths and will learn to predict the airway pressure in the respiratory circuit during the breath, given the time series of control inputs. // Each time series represents an approximately 3-second breath."
+29653,E,rsna-miccai-brain-tumor-radiogenomic-classification,UNSTATED,False,,
+29761,E,landmark-retrieval-2021,UNSTATED,False,,
+29762,E,landmark-recognition-2021,UNSTATED,False,,
+30060,E,chaii-hindi-and-tamil-question-answering,UNSTATED,False,,* Update: we ran a few random sampling based quality checks on the datasets.
+30067,E,lux-ai-2021,UNSTATED,False,,"Our global team of quantitative researchers and developers leverages expertise in machine learning, software engineering, and econometrics to develop solutions for algorithmic pricing, high-dimensional forecasting, and data-driven"
+30103,E,porto-seguro-data-challenge,UNSTATED,False,,
+30198,E,nfl-health-and-safety-helmet-assignment,UNSTATED,False,,"When you submit, your model will be rerun on a set of 15 unseen plays located in a holdout test set."
+30201,E,sartorius-cell-instance-segmentation,UNSTATED,False,,The hidden test set is roughly 240 images.
+30422,E,signverification21,UNSTATED,False,,
+30591,E,beyond-analysis,UNSTATED,False,,
+30749,E,idl-fall2021-hw1p2,UNSTATED,False,,
+30821,E,nyu-computer-vision-csci-ga2271-2021,UNSTATED,False,,
+30874,E,cmpe257-lab1,UNSTATED,False,,
+30907,E,computer-vision-training-fcis-21,UNSTATED,False,,
+31254,E,h-and-m-personalized-fashion-recommendations,UNSTATED,False,,
+31334,E,sfu-cmpt-image-classification-2021-fall,NO_TEXT,False,,
+31379,E,idl-fall21-hw2p2s1-face-classification,UNSTATED,False,,
+31382,E,idl-fall21-hw2p2s2-face-verification,UNSTATED,False,,
+31404,E,cse158258-cooking-prediction,UNSTATED,False,,
+31405,E,cse158-cook-time-prediction,UNSTATED,False,,
+31406,E,cse258-recipe-rating-prediction,UNSTATED,False,,
+31421,E,bt4012-in-class-kaggle-competition-2021-october,UNSTATED,False,,"- Your top accuracy score will be ranked on a public leaderboard // - The public leaderboard is based on 30% of your submission // - At the end of the competition, you will be ranked on a private leaderboard"
+31703,E,tensorflow-great-barrier-reef,UNSTATED,False,,"The following prizes will be awarded on the basis of private leaderboard rank. // - *Achieve a private leaderboard score better than or equal to the private leaderboard score of the Top 10% of teams on the private leaderboard. // For example, if there are 1000 teams, any selected submission with a score greater than the 100th place team's private score will be eligible.* // You must submit to this competition using the provided python time-series API, which ensures that models do not peek forward in time."
+31707,E,dslab-kaggle-competition-fall-21,UNSTATED,False,,You will be scored based on your private and public leaderboard score but also on your creativity on trying various ideas.
+31779,E,feedback-prize-2021,UNSTATED,False,,"A small public test sample has been provided for testing your notebooks. // Note that this is a code competition, in which you will submit code that will be run against an unseen test set."
+31820,E,11785-fall2021-hw3p2,UNSTATED,False,,
+31862,E,prml-data-contest-jul-2021-rb-section,UNSTATED,False,,
+32349,E,uci-cs178-f21,UNSTATED,False,,
+32373,E,iml2021,UNSTATED,False,,"your results on the public and private leaderboards. // Each dataset contains 3500 multivariate time-series (1 per subject) corresponding to the measurements obtained from 31 sensors, during 5s periods."
+32465,E,int303-big-data-analysis,UNSTATED,False,,
+32698,E,rutgers-data101-fall2021-assignment-12,UNSTATED,False,,
+32826,E,ucla-stats-101c-2021-lec4-new,UNSTATED,False,,"`Remark` The actual RMSE value used in the above calculation is not that displayed on the Public Leaderboard under the Leaderboard tab. // By default, Kaggle also includes a Private Leaderboard, which is only available for the hosts. // The results in Private Leaderboard are calculated similarly as for Public Leaderboard. // The test data is in file test.csv."
+32827,E,ucla-stats-101c-2021-lec3-new,UNSTATED,False,,"`Remark` The actual RMSE value used in the above calculation is not that displayed on the Public Leaderboard under the Leaderboard tab. // By default, Kaggle also includes a Private Leaderboard, which is only available for the hosts. // The results in Private Leaderboard are calculated similarly as for Public Leaderboard. // The test data is in file test.csv."
+32892,E,dm2021-lab2-hw2,UNSTATED,False,,The scoring will be given according to your place in the Private Leaderboard ranking:
+32941,E,2021-nycu-ml-hw5,UNSTATED,False,,
+33060,E,widsdatathon2022,UNSTATED,False,,"You will then upload your predictions for a test set to Kaggle and these will be used to determine the public leaderboard rankings and the winners of the competition. // **Answer:** Yes, because at WiDS we believe that the future data scientists to gain familiarity with the mathematical and statistical models used to model climate data. // - [CCAI Tutorial: Building Load Forecasting]"
+33101,E,tabular-playground-series-jan-2022,TIME,True,"public first quarter of test year, private the rest","Note the Public leaderboard is scored on the first quarter of the test year, and the Private on the remaining. // So, we've collected some data and are asking you to build forecasting models to help us decide."
+33102,E,tabular-playground-series-feb-2022,UNSTATED,False,,
+33103,E,tabular-playground-series-mar-2022,UNSTATED,False,,For the March edition of the 2022 Tabular Playground Series you're challenged to forecast twelve-hours of traffic flow in a U.S. // The time series in this dataset are labelled with both location coordinates and a direction of travel -- a combination of features that will test your skill at *spatio-temporal forecasting* within a highly dynamic traffic network.
+33104,E,tabular-playground-series-apr-2022,UNSTATED,False,,This month's challenge is a *time series classification* problem.
+33105,E,tabular-playground-series-may-2022,UNSTATED,False,,
+33106,E,tabular-playground-series-jun-2022,UNSTATED,False,,
+33107,E,tabular-playground-series-jul-2022,UNSTATED,False,,
+33108,E,tabular-playground-series-aug-2022,UNSTATED,False,,
+33109,E,tabular-playground-series-sep-2022,TIME,True,"public first quarter of test year, private the rest","Note the Public leaderboard is scored on the first quarter of the test year, and the Private on the remaining. // Not only are there *six* countries and *four* books to forecast, but you're being asked to forecast sales during the tumultuous year 2021."
+33110,E,tabular-playground-series-oct-2022,UNSTATED,False,,
+33111,E,tabular-playground-series-nov-2022,UNSTATED,False,,
+33120,E,nycupython,NO_TEXT,False,,
+33246,E,birdclef-2022,UNSTATED,False,,
+33349,E,11-785-s22-hw1p2,UNSTATED,False,,
+33350,E,11-785-s22-hw2p2-classification,UNSTATED,False,,
+33351,E,11-785-s22-hw2p2-verification,UNSTATED,False,,
+33352,E,11-785-s22-hw3p2,UNSTATED,False,,
+33353,E,11-785-s22-hw4p2,NO_TEXT,False,,
+33579,E,goodreads-books-reviews-290312,UNSTATED,False,,
+33607,E,nbme-score-clinical-patient-notes,UNSTATED,False,,The patient notes in the test set are not included in the public version of this file.
+33611,E,kaggle-pog-series-s01e01,UNSTATED,False,,
+33657,E,us-patent-phrase-to-phrase-matching,UNSTATED,False,,"A small public test set has been provided for testing purposes, but is not used in scoring. // This is a code competition, in which you will submit code that will be run against an unseen test set."
+33679,E,herbarium-2022-fgvc9,UNSTATED,False,,
+34038,E,netflix-appetency,UNSTATED,False,,
+34093,E,autism-prediction,UNSTATED,False,,
+34189,E,football-match-probability-prediction,UNSTATED,False,,- [Everything you can do with a time series]
+34224,E,caltech-cs155-2022-mp1,UNSTATED,False,,
+34277,E,predicting-implicit-ratings-usfca-2022,UNSTATED,False,,
+34349,E,jpx-tokyo-stock-exchange-prediction,NEWDATA,True,leaderboard updated with market data after the deadline,"Starting after the final submission deadline there will be periodic updates to the leaderboard to reflect market data updates that will be run against selected notebooks. // The data for the public leaderboard period is included as part of the competition dataset. // Accordingly, the active phase public leaderboard for this competition is intended as a convenience for anyone who wants to test their code. // You must submit to this competition using the provided python time-series API, which ensures that models do not peek forward in time."
+34361,E,ml2022spring-hw2,UNSTATED,False,,
+34375,E,sorghum-id-fgvc-9,UNSTATED,False,,
+34419,E,kore-2022,UNSTATED,False,,
+34534,E,CS98-22-DL-Task1,UNSTATED,False,,
+34538,E,mens-march-mania-2022,NEWDATA,True,two-stage: future tournament,"In stage one of this two-stage competition, participants will build and test their models against previous tournaments. // In the second stage, participants will predict the outcome of the 2022 tournament. // The file you submit will depend on whether the competition is in stage 1--historical model building--or stage 2--the 2022 tournament. // The real competition is forecasting the 2022 results."
+34542,E,womens-march-mania-2022,NEWDATA,True,two-stage: future tournament,"In stage one of this two-stage competition, participants will build and test their models against previous tournaments. // In the second stage, participants will predict the outcome of the 2022 tournament. // The file you submit will depend on whether the competition is in stage 1--historical model building--or stage 2--the 2022 tournament. // The real competition is forecasting the 2022 results."
+34547,E,hubmap-organ-segmentation,GROUP,True,"public mixes two data sources, private only one","The training dataset consists of data from public HPA data, the public test set is a combination of private HPA data and HuBMAP data, and the private test set contains only HuBMAP data. // Only the first few rows of the test set are available for download."
+34683,E,predict-potential-spammers-on-fiverr,UNSTATED,False,,- The test set contains anonymized data on ±24K unique users.
+34738,E,teenmagi-2022,UNSTATED,False,,Test data is similar and your classifier is evaluated by the Kaggle server.
+34762,E,ml2022spring-hw4,UNSTATED,False,,
+34954,E,ml2022spring-hw3b,UNSTATED,False,,
+34970,E,image-matching-challenge-2022,UNSTATED,False,,The test data comes from a different source than the train data and contains photos of mostly urban scenes with variable degrees of overlap.
+35074,E,cisc-873-dm-f22-a4,UNSTATED,False,,"Now based on the template, try to improve the model's performance on the public leaderboard by following the data science life-cycle for tuning."
+35150,E,hotel-id-to-combat-human-trafficking-2022-fgvc9,UNSTATED,False,,
+35308,E,feedback-prize-effectiveness,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{LogLoss}\\) is the submission's score on the [main competition metric] , \\(\min\text{LogLoss}\\) is the minimum \\(\text{LogLoss}\\) of all submissions on the Private Leaderboard, and \\(\text{RuntimeSeconds}\\) is // Note that this is a **[Code Competition] **, in which you will submit code that will be run against an unseen test set."
+35321,E,predictingproductivity,UNSTATED,False,,"Predicting worker's productivity is a typical job in managing level, its not only for Employee Performance Assessment, but also highly related to production planning, demand forecast and capability improvement."
+35325,E,paddy-disease-classification,UNSTATED,False,,
+35332,E,amex-default-prediction,UNSTATED,False,,"Training, validation, and testing datasets include time-series behavioral data and anonymized customer profile information."
+35340,E,2022-regression-data-challenge,UNSTATED,False,,
+35420,E,congressionaltweetcompetitionspring2022,UNSTATED,False,,
+35429,E,unifesp-x-ray-body-part-classifier,UNSTATED,False,,
+35439,E,coms4771-spring-2022-regression-competition,UNSTATED,False,,
+35476,E,foursquare-location-matching,UNSTATED,False,,
+35684,E,ml2022spring-hw8,UNSTATED,False,,
+35779,E,smartphone-decimeter-2022,UNSTATED,False,,"As this challenge’s design is focused on post-processing applications such as lane-level mapping, future data along a route will be available to generate positions as precisely as possible."
+35887,E,AI4Code,NEWDATA,True,second stage on notebooks not yet written,"After the submission deadline, Kaggle and X will evaluate the performance of submitted techniques on new, previously unseen notebooks. // #### This is a two-stage competition, with a training stage and a collection stage, during which models will be rerun against notebooks which are yet to be authored. // Starting after the final submission deadline, there will be periodic updates to the leaderboard to reflect models' performance against newly authored notebooks on Kaggle. // - The first-stage test set contains notebooks from an approximately 90-day historical window of time."
+35894,E,deeplearning-hw2-transformer,UNSTATED,False,,
+35909,E,vkcv2022-contest-01-facial-landmarks,UNSTATED,False,,"Даны 5 бейзлайнов (на LB отмечены как `Baseline_XXpts`), каждый из которых соответствует своему гарантированному (`XX`) количеству баллов, которое получат участники со скором на Private LB не ниже этого бейзлайна."
+35978,E,autismdiagnosis,UNSTATED,False,,
+35999,E,ml2022spring-hw7,UNSTATED,False,,
+36060,E,bgudrugchallenge2022,UNSTATED,False,,"The public leaderboard provides publicly visible submission scores based on a representative sample of the test data. // The private leaderboard, by contrast, tracks model performance using the remainder of the test data. // The private leaderboard thus has final say on whose models are best, and hence, who the winners and losers of the Competition will be."
+36363,E,rsna-2022-cervical-spine-fracture-detection,UNSTATED,False,,Only the first few rows of the test set are available for download.
+36414,E,google-universal-image-embedding,UNSTATED,False,,"Unlike a traditional Kaggle code competition where notebooks are rerun top-to-bottom on a private test set, in this competition you will be submitting a model file. // Extract embeddings for the private test and index image sets. // Kaggle will run your model on a held-out test set, perform a k-nearest-neighbors lookup, and score the resulting embedding quality."
+37077,E,g2net-detecting-continuous-gravitational-waves,UNSTATED,False,,
+37190,E,novozymes-enzyme-stability-prediction,UNSTATED,False,,"The test set contains experimental melting temperature of over 2,413 single-mutation variant of an enzyme (GenBank: KOC15878.1), obtained by Novozymes A/S."
+37333,E,mayo-clinic-strip-ai,UNSTATED,False,,
+37794,E,amp-parkinsons-disease-progression-prediction,UNSTATED,False,,"Submissions are evaluated on SMAPE &nbsp;between forecasts and actual values. // You must submit to this competition using the provided python time-series API, which ensures that models do not peek forward in time."
+38128,E,open-problems-multimodal,GROUP,True,"public one donor and some days, private all donors","The public test set comprises samples only from donor `27678`. // The private test set comprises samples from all four donors. // The public test set comprises samples only from days `2`, `3`, and `7`. // In the test set, taken from an unseen later time point in the dataset, competitors will be provided with one modality and be tasked with predicting a paired modality measured in the same cell."
+38257,E,icecube-neutrinos-in-deep-ice,UNSTATED,False,,"$5,000 will be awarded to the team with the highest private leaderboard score as of February 2, 2023 11:59PM UTC (2 weeks from the start of the competition) among submission notebooks published by February 4, 2023 11:59PM UTC."
+38321,E,feedback-prize-english-language-learning,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{MCRMSE}\\) is the submission's score on the [main competition metric] , \\(\text{Base}\\) is the score of the ""baseline"" submission of the mean of each target on the training set, \\(\min\text{MCRMSE}\\) is the mini"
+38760,E,otto-recommender-system,UNSTATED,False,,"In other words, the test data contains sessions truncated by timestamp, and you are to predict what occurs after the point of truncation. // In other words, the test data contains sessions truncated by timestamp, and you are to predict what occurs after the point of truncation."
+39222,E,scrabble-player-rating,UNSTATED,False,,"They must be submitted before the end of the competition deadline.** You can hand select up to two submissions from the ""My Submissions"" tab, otherwise the submission with the best public score (on 30% of the test data) will be ta"
+39272,E,rsna-breast-cancer-detection,UNSTATED,False,,Only the first few rows of the test set are available for download.
+39585,E,learning-equality-curriculum-recommendations,UNSTATED,False,,"Please note that this is a [**Code Competition**] , in which the actual test set is hidden. // The full test set includes an additional 10,000 topics (none present in the training set) and a large number of additional content items."
+39763,E,waveform-inversion,UNSTATED,False,,
+40277,E,nfl-player-contact-detection,UNSTATED,False,,"When you submit, your model will be rerun on a set of 61 unseen plays located in a holdout test set."
+41875,E,cafa-5-protein-function-prediction,NEWDATA,True,evaluated on annotations accumulated after the deadline,"For example, a protein that had no experimental terms in say Molecular Function (MF) subontology of GO and has accumulated experimental annotations in MF after the submission deadline will be included in the test set for evaluatin // The final test set will consist of proteins that will have accumulated functional terms after the submission deadline and therefore, some distribution shift between the sample of proteins used for the leaderboard and the final eva // #### This is a future data prediction competition with an active training phase and a second period where selected submissions will be evaluated against future ground truth data."
+41880,E,tlvmc-parkinsons-freezing-gait-prediction,GROUP,True,public/private formed by grouping on subjects,"This also holds true for the public / private test split. // (In other words, the train / public test / private test splits were formed by grouping on subjects and stratifying on datasets.) // Please note that this is a [**Code Competition**] , in which the actual test set is hidden."
+41881,E,godaddy-microbusiness-density-forecasting,TIME,True,"public most recent month, private future months",During the active phase of the competition only the most recent month of data will be used for the public leaderboard. // Starting after the final submission deadline there will be periodic updates to the leaderboard to as new data becomes available for inclusion in solution file. // Note - your notebooks will be used to predict future data not currently included in the test or train sets. // Submissions are evaluated on SMAPE &nbsp;between forecasts and actual values.
+43454,E,widsdatathon2023,UNSTATED,False,,"You will then upload your predictions for a test set to Kaggle and these will be used to determine the public leaderboard rankings and the winners of the competition. // **Answer:** Yes, because at WiDS we believe that the future data scientists to gain familiarity with the mathematical and statistical models used to model climate data. // In this year’s datathon challenges participants will use data science to improve longer-range weather forecasts to help people prepare and adapt to extreme weather events caused by climate change."
+43873,E,benetech-making-graphs-accessible,GROUP,True,private figures from distinct sources,"The `extracted` figures in the training and public test sets are drawn from the same set of sources. // The figures in the private test set are drawn from a distinct set of sources. // The distribution of chart types may not be identical in the public and private test sets. // This is a [**Code Competition**] , in which the actual test set is hidden."
+44224,E,birdclef-2023,UNSTATED,False,,
+44629,E,playground-series-s3e1,UNSTATED,False,,
+44630,E,playground-series-s3e2,UNSTATED,False,,
+44631,E,playground-series-s3e3,UNSTATED,False,,
+44632,E,playground-series-s3e4,UNSTATED,False,,
+45040,E,lux-ai-season-2,UNSTATED,False,,"Our global team of quantitative researchers and developers leverages expertise in machine learning, software engineering, and econometrics to develop solutions for algorithmic pricing, high-dimensional forecasting, and data-driven"
+45533,E,predict-student-performance-from-game-play,UNSTATED,False,,Note that the hidden test set is roughly as large as the training set; you should expect it will take much longer to run on than the three test samples provided.
+45867,E,UBC-OCEAN,UNSTATED,False,,"The test set contains images from different source hospitals than the train set, with the largest area images almost 100,000 x 50,000 pixels. // Be warned that the test set was specifically constructed to assess how well models generalize."
+45890,E,playground-series-s3e5,UNSTATED,False,,
+45891,E,playground-series-s3e6,UNSTATED,False,,
+45892,E,playground-series-s3e7,UNSTATED,False,,
+45893,E,playground-series-s3e8,UNSTATED,False,,
+45894,E,playground-series-s3e9,UNSTATED,False,,
+45917,E,stable-diffusion-image-to-prompts,UNSTATED,False,,
+46105,E,asl-signs,UNSTATED,False,,"The app prompted the signer with the concept in English to sign, randomly selected from the 250-sign vocabulary."
+46801,E,march-machine-learning-mania-2023,NEWDATA,True,future tournament; no public leaderboard score,"Do not rely on automatic selection to pick your submissions, as there is no public leaderboard score and the system will select your earliest two submissions. // In March 2008, the men's SEC postseason tournament had to reschedule one game (Georgia-Kentucky) to a subsequent day because of a tornado, so Georgia had to actually play two games on the same day. // You are provided data of historical NCAA games to forecast the outcomes of the Division 1 Men's and Women's basketball tournaments."
+47317,E,vesuvius-challenge-ink-detection,UNSTATED,False,,
+47789,E,playground-series-s3e10,UNSTATED,False,,
+47790,E,playground-series-s3e11,UNSTATED,False,,
+49200,E,playground-series-s3e12,UNSTATED,False,,
+49201,E,playground-series-s3e13,UNSTATED,False,,
+49349,E,image-matching-challenge-2023,UNSTATED,False,,
+50160,E,home-credit-credit-risk-model-stability,UNSTATED,False,,- Your solution is among top 20% on the private leaderboard
+51294,E,stanford-ribonanza-rna-folding,NEWDATA,True,private data collected during the competition,"As in the OpenVaccine competition, the majority of the private leaderboard data will be collected in parallel with your prediction efforts -- no one will know the answers until the competition closes! // We have split out 311,935 of these 1,118,513 sequences for a public test set to allow for continuous evaluation through the competition, on the Public Leaderboard. // Our final and most important scoring (the Private Leaderboard) involves 1,031,888 sequences. // If the sum of the lengths of all 1,343,824 sequences in the test set is 269,796,671, then you should make 2 \\(\times\\) 269,796,670 = 539,593,340 predictions."
+51753,E,google-research-identify-contrails-reduce-global-warming,UNSTATED,False,,"We have run research projects in fusion energy plasma modeling, wildfire early detection, optimal car routing, and forecasts for climate disasters. // The hidden test set is approximately the same size (&plusmn; 5%) as the validation set."
+51959,E,playground-series-s3e14,UNSTATED,False,,
+51982,E,playground-series-s3e15,UNSTATED,False,,
+51983,E,playground-series-s3e16,UNSTATED,False,,
+52254,E,rsna-2023-abdominal-trauma-detection,UNSTATED,False,,
+52279,E,hubmap-hacking-the-human-vasculature,GROUP,True,"public two slides, private a different slide","- Two of the WSIs make up the training set, two WSIs make up the public test set, and one WSI makes up the private test set. // In this version, we give some sample data drawn from the public test set to help you author your solutions. // Note that this is a [**Code Competition**] , in which the actual test set is hidden."
+52324,E,bengaliai-speech,GROUP,True,private may contain domains absent from public,There may be domains in the private test set that are not in the public test set. // The test set contains samples from 17 different domains that are not present in training.
+52784,E,icr-identify-age-related-conditions,UNSTATED,False,,"Note that this is a [**Code Competition**] , in which the actual test set is hidden. // Note that all of the data in the test set was collected after the training set was collected."
+52950,E,asl-fingerspelling,UNSTATED,False,,
+53376,E,playground-series-s3e17,UNSTATED,False,,
+53377,E,playground-series-s3e18,UNSTATED,False,,
+53482,E,commonlit-evaluate-student-summaries,GROUP,True,public and private share no prompts,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{MCRMSE}\\) is the submission's score on the [main competition metric] , \\(\text{Base}\\) is the score of the ""baseline"" submission of the mean of each target on the training set, \\(\min\text{MCRMSE}\\) is the mini // The goal of the competition is to predict content and wording scores for summaries on unseen topics."
+53666,E,child-mind-institute-detect-sleep-states,UNSTATED,False,,"Note that this is a [**Code Competition**] , in which the actual test set is hidden. // The full test set contains about 200 series."
+54662,E,kaggle-llm-science-exam,UNSTATED,False,,"The unseen re-run test set is comprised of ~4,000 different prompts."
+56537,E,leap-atmospheric-physics-ai-climsim,UNSTATED,False,,
+57094,E,playground-series-s3e19,TIME,True,"public first quarter of test year, private the rest","Note the Public leaderboard is scored on the first quarter of the test year, and the Private on the remaining. // Submissions are evaluated on [SMAPE] between forecasts and actual values."
+57095,E,playground-series-s3e20,UNSTATED,False,,"The data for this competition is split by time; the years 2019 - 2021 are included in the training data, and your task is to predict the CO2 emissions data for 2022 through November."
+58266,E,predict-ai-model-runtime,UNSTATED,False,,
+59093,E,hms-harmful-brain-activity-classification,UNSTATED,False,,Only a few examples from the test set are available for download.
+59094,E,open-problems-single-cell-perturbations,UNSTATED,False,,"- Do you have any evidence to suggest how you might develop an ideal training set for cell type translation beyond random sampling of compounds in cell types? // To generate the private and public test data, we fit the DE model to all samples in the experiment. // Public Test: // - What is the relationship between the number of compounds measured in the held-out cell types and model performance?"
+59109,E,playground-series-s3e21,UNSTATED,False,,y_hat = rf.predict(test) # test set is hidden from you
+59110,E,playground-series-s3e22,UNSTATED,False,,
+59156,E,MABe-mouse-behavior-detection,UNSTATED,False,,
+59291,E,linking-writing-processes-to-writing-quality,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{RMSE}\\) is the submission's score on the [main competition metric] , \\(\text{Base}\\) is the score of the ""baseline"" submission of the mean of each target on the training set, \\(\min\text{RMSE}\\) is the minimum  // Your solution should be robust to unseen events.**"
+59575,E,uspto-explainable-ai,UNSTATED,False,,Only a few example rows equivalent to the real test set are available for download.
+60890,E,playground-series-s3e23,UNSTATED,False,,
+60891,E,playground-series-s3e24,UNSTATED,False,,
+60892,E,playground-series-s3e25,UNSTATED,False,,
+60893,E,playground-series-s3e26,UNSTATED,False,,
+61247,E,llm-20-questions,UNSTATED,False,,"On each pair, one bot will be randomly assigned as questioner and the other as answerer."
+61446,E,blood-vessel-segmentation,UNSTATED,False,,the Public and Private test datasets: // **Public Test:** // **Private Test:** // The full test set contains about 1500 TIFF images.
+61542,E,llm-detect-ai-generated-text,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{AUC}\\) is the submission's score on the [main competition metric] , \\(\text{Benchmark}\\) is the score of the benchmark `sample_submission.csv`, \\(\max\text{AUC}\\) is the maximum \\(\text{AUC}\\) of all submissi"
+63056,E,isic-2024-challenge,UNSTATED,False,,
+64733,E,geolifeclef-2024,UNSTATED,False,,"This challenge aims to predict plant species in a given location and time using various possible predictors: satellite images and time series, climatic time series, and other rasterized environmental data: land cover, human footpr // This challenge aims to predict plant species in a given location and time using various possible predictors: satellite images and time series, climatic time series, and other rasterized environmental data: land cover, human footpr"
+65626,E,planttraits2024,UNSTATED,False,,
+65711,E,playground-series-s4e1,UNSTATED,False,,
+65862,E,widsdatathon2024-challenge1,UNSTATED,False,,
+66631,E,lmsys-chatbot-arena,UNSTATED,False,,
+66653,E,pii-detection-removal-from-educational-data,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(F_5\\) is the submission's score on the [main competition metric] , \\(\text{Benchmark}\\) is the score of the benchmark `sample_submission.csv`, \\( \max F_5 \\) is the maximum \\( F_5 \\) score of all submissions on the"
+67121,E,llm-prompt-recovery,UNSTATED,False,,
+67356,E,leash-BELKA,UNSTATED,False,,"To test generalizability, the test set contains building blocks that are not in the training set."
+68479,E,playground-series-s4e2,UNSTATED,False,,
+68699,E,playground-series-s4e3,UNSTATED,False,,
+70089,E,um-game-playing-strength-of-mcts-variants,UNSTATED,False,,
+70203,E,birdclef-2024,UNSTATED,False,,
+70367,E,ariel-data-challenge-2024,UNSTATED,False,,"However, neither approach is optimal for denoising jitter time series and we anticipate the winning solutions to include information from all three domains. // A dozen of the exoplanet simulations in the test set were based directly real exoplanets."
+70942,E,equity-post-HCT-survival-predictions,UNSTATED,False,,**Note:** The rerun test data contains approximately the same number of observations as the training data.
+71485,E,learning-agency-lab-automated-essay-scoring-2,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{Kappa}\\) is the submission's score on the [main competition metric] , \\(\text{Base}\\) is the score of the ""baseline"" submission of the mean of each target on the training set, \\(\min\text{Kappa}\\) is the minimu"
+71549,E,rsna-2024-lumbar-spine-degenerative-classification,UNSTATED,False,,
+71885,E,image-matching-challenge-2024,UNSTATED,False,,
+72489,E,playground-series-s4e4,UNSTATED,False,,
+73278,E,playground-series-s4e5,UNSTATED,False,,
+73290,E,playground-series-s4e6,UNSTATED,False,,
+73291,E,playground-series-s4e7,UNSTATED,False,,
+74608,E,neurips-open-polymer-prediction-2025,UNSTATED,False,,"You'll be provided with a polymer's structure as a simple text string ([SMILES] ), and your challenge is to build a model that can accurately forecast five key metrics that determine how it will behave."
+76727,E,playground-series-s4e8,UNSTATED,False,,
+76728,E,playground-series-s4e9,UNSTATED,False,,
+81933,E,child-mind-institute-problematic-internet-use,UNSTATED,False,,"Note that this is a [**Code Competition**] , in which the actual test set is hidden."
+82370,E,make-data-count-finding-data-references,UNSTATED,False,,
+82695,E,eedi-mining-misconceptions-in-mathematics,UNSTATED,False,,"- Must be ranked on the Private Leaderboard higher than the `sample_submission.csv` benchmark. // An Efficiency Prize will be awarded to eligible submissions according to how they are ranked by the following evaluation metric on the private test data. // where \\(\text{MAP@25}\\) is the submission's score on the [main competition metric] , \\(\text{Base}\\) is the score of the ""baseline"" submission with naive predictions, \\(\max\text{MAP@25}\\) is the maximum \\(\text{MAP@25}\\) "
+83035,E,llms-you-cant-please-them-all,UNSTATED,False,,
+84493,E,jane-street-real-time-market-data-forecasting,NEWDATA,True,forecasting phase on future market data,"Starting after the final submission deadline there will be periodic updates to the leaderboard to reflect market data updates that will be run against selected notebooks. // ### Forecasting Phase // The run-time limits for both CPU and GPU notebooks will be extended to 9 hours during the forecasting phase. // This challenge highlights the difficulties in modeling financial markets, including fat-tailed distributions, non-stationary time series, and sudden shifts in market behavior."
+84894,E,playground-series-s4e10,UNSTATED,False,,
+84895,E,playground-series-s4e11,UNSTATED,False,,
+84896,E,playground-series-s4e12,UNSTATED,False,,
+84969,E,czii-cryo-et-object-identification,UNSTATED,False,,Teams must provide their report to Competition Sponsor no later than 2 weeks after the Submission deadline.
+85723,E,playground-series-s5e1,TIME,True,"public first year, private the rest","Note the Public leaderboard is scored on the first year of the data, and the Private on the remaining. // **Your Goal:** The objective of this challenge is to forecast sticker sales in different countries."
+86411,E,lux-ai-season-3,UNSTATED,False,,
+86524,E,fide-google-efficiency-chess-ai-challenge,UNSTATED,False,,
+87793,E,stanford-rna-3d-folding,NEWDATA,True,future data evaluation phase,### Future Data Evaluation Phase // The run-time limits for both CPU and GPU notebooks will be extended to during the future data evaluation period proportional to the number of future samples. // The extra runtime will enable us to use a substantially larger test set as the basis for ranking submissions on the final private leaderboard.
+89659,E,drawing-with-llms,GROUP,True,some categories unique to public or to private,"Three of these categories, `landscapes`, `abstract`, and `fashion`, are present in each of the training, public test, and private test sets. // The remaining categories in the public and private sets are unique to each set."
+90274,E,playground-series-s5e2,UNSTATED,False,,
+91249,E,byu-locating-bacterial-flagellar-motors-2025,UNSTATED,False,,
+91496,E,arc-prize-2025,UNSTATED,False,,"When notebooks are submitted for rerun, they are scored using 240 unseen tasks found in the rerun file named **arc-agi_test_challenges.json**."
+91497,E,march-machine-learning-mania-2025,NEWDATA,True,forecast of a future tournament,"You will be forecasting the outcomes of both the men's and women's 2025 collegiate basketball tournaments, by submitting predictions for every possible tournament matchup. // You are provided data of historical NCAA games to forecast the outcomes of the Division 1 Men's and Women's basketball tournaments."
+91498,E,image-matching-challenge-2025,UNSTATED,False,,
+91714,E,playground-series-s5e3,UNSTATED,False,,
+91715,E,playground-series-s5e4,UNSTATED,False,,
+91716,E,playground-series-s5e5,UNSTATED,False,,
+91717,E,playground-series-s5e6,UNSTATED,False,,
+91718,E,playground-series-s5e7,UNSTATED,False,,
+91719,E,playground-series-s5e8,UNSTATED,False,,
+91720,E,playground-series-s5e9,UNSTATED,False,,
+91721,E,playground-series-s5e10,UNSTATED,False,,
+91722,E,playground-series-s5e11,UNSTATED,False,,
+91723,E,playground-series-s5e12,UNSTATED,False,,
+91844,E,birdclef-2025,UNSTATED,False,,
+94635,E,jigsaw-agile-community-rules,UNSTATED,False,,"The remainder of the labels will be used, in a 30%:70% to form the public and private test sets. // (The number of unseen rules is not specified as part of the competition.)"
+97984,E,physionet-ecg-image-digitization,UNSTATED,False,,"You will build models to extract time series data from Electrocardiogram (ECG) images. // They exist as physical printouts, scanned images, photographs, or time series."
+99552,E,rsna-intracranial-aneurysm-detection,UNSTATED,False,,
+101849,E,ariel-data-challenge-2025,UNSTATED,False,,The dataset comprises time series imagery from two separate instruments plus calibration data.
+102335,E,cmi-detect-behavior-with-sensor-data,UNSTATED,False,,
+104383,E,map-charting-student-math-misunderstandings,UNSTATED,False,,"The re-run test data contains approximately 16,000 rows."
+105802,E,dig-4-bio-raman-transfer-learning-challenge,UNSTATED,False,,
+112509,E,csiro-biomass,UNSTATED,False,,The test set contains over 800 images.
+113558,E,recodai-luc-scientific-image-forgery-detection,NEWDATA,True,forecasting phase on new imagery,### This is a forecasting competition with an active training phase and a separate forecasting phase where models will be run against new imagery. // Starting after the final submission deadline there will be periodic updates to the leaderboard to reflect data updates that will be run against selected notebooks. // ### Forecasting Timeline:
+116062,E,cafa-6-protein-function-prediction,NEWDATA,True,evaluated on annotations accumulated after the deadline,"For example, a protein that had no experimental terms in, say, the Molecular Function (MF) subontology of GO and has accumulated experimental annotations in MF after the submission deadline will be included in the test set for eva // In addition, a protein that already had experimental terms in all three subontologies before the submission deadline and has accumulated experimental annotations in MF after the submission deadline will also be included in the tes // Note that in this competition, we also include the evaluation of proteins that already had experimental terms in all three subontologies, and have accumulated more experimental terms after the submission deadline, this is known as // The test set is unknown at the beginning of the competition."
+116727,E,pokemon-tcg-ai-battle,UNSTATED,False,,"Indicates the Pokémon evolution stage (Basic, Stage 1, Stage 2\) or the card type for Energy and Trainer cards."
+117682,E,vesuvius-challenge-surface-detection,UNSTATED,False,,
+118765,E,stanford-rna-3d-folding-2,NEWDATA,True,future data evaluation phase,### Future Data Evaluation Phase // The run-time limits for both CPU and GPU notebooks will be extended to during the future data evaluation period proportional to the number of future samples. // The extra runtime will enable us to use a substantially larger test set as the basis for ranking submissions on the final private leaderboard.
+119082,E,playground-series-s6e1,UNSTATED,False,,
+121150,E,deep-past-initiative-machine-translation,UNSTATED,False,,
+125192,E,playground-series-s6e2,UNSTATED,False,,
+125197,E,playground-series-s6e3,UNSTATED,False,,
+125218,E,playground-series-s6e8,UNSTATED,False,,
+125219,E,playground-series-s6e9,UNSTATED,False,,
+125220,E,playground-series-s6e4,UNSTATED,False,,
+125221,E,playground-series-s6e5,UNSTATED,False,,
+125222,E,playground-series-s6e6,UNSTATED,False,,
+125223,E,playground-series-s6e7,UNSTATED,False,,
+125224,E,playground-series-s6e10,UNSTATED,False,,
+125681,E,WiDSWorldWide_GlobalDathon26,UNSTATED,False,,The goal is not a single prediction but a calibrated forecast across multiple time horizons. // You will generate calibrated probability forecasts across multiple time horizons to support real-world decisions.
+129329,E,birdclef-2026,UNSTATED,False,,
+129716,E,nvidia-nemotron-model-reasoning-challenge,UNSTATED,False,,
+130469,E,march-machine-learning-mania-2026,NEWDATA,True,forecast of a future tournament,"You will be forecasting the outcomes of both the men's and women's 2026 collegiate basketball tournaments, by submitting predictions for every possible tournament matchup. // You are provided data of historical NCAA games to forecast the outcomes of the Division 1 Men's and Women's basketball tournaments."
+132265,E,rogii-wellbore-geology-prediction,UNSTATED,False,,**Eligibility:** teams must be in the Medal Zone in the public leaderboard to be eligible for a Working Note Award.
+134815,E,ai-agent-security-multi-step-tool-attacks,GROUP,True,private scored against a stricter guardrail,"This lets participants test realistic tool-use risks while keeping evaluation deterministic, comparable, and safe for a public leaderboard. // - **Public leaderboard**: scored against the `OptimalGuardrail` (permissive; source available in the SDK). // - **Private leaderboard**: scored against a stricter private guardrail (not accessible to competitors)."
+136605,E,biohub-cell-tracking-during-development,UNSTATED,False,,"When a notebook is submitted for rerun, a new hidden test set is swapped in. // The size of the hidden test set is approximately the same size as the training dataset."
+138420,E,orbit-wars,UNSTATED,False,,
+147734,E,kaggriculture,UNSTATED,False,,
+151211,E,autonomous-agent-prediction-beta,GROUP,True,public and private come from separate sessions on different datasets,"Each agent submission runs through two mini-competition sessions, one that populates the Public Leaderboard and another that populates the Private Leaderboard. // When the session ends, the best score of the agent's two selected submissions populates that session's leaderboard, falling back to the submissions with the best public score. // Your agent's `Private` score on these datasets populates the competition's Public and Private leaderboards, respectively. // The challenge is to design an agent that can perform well on unseen data from this same family."
+154281,E,rsna-knee-abnormality-detection,UNSTATED,False,,"**test.csv** Example test file with three study IDs from the public test set. // Although efforts have been made to ensure each abnormality is represented in each dataset, the prevalence of abnormalities is not guaranteed to be the same across the training, public leaderboard, and final evaluation datasets."

@@ -1,0 +1,24 @@
+{
+  "seed": 2019,
+  "population_accuracy": 0.7,
+  "public_n": 100,
+  "private_n": 100,
+  "adaptation": false,
+  "results": [
+    {
+      "subset": "all_fixed_models",
+      "n": 100000,
+      "fraction_inclusive_p_le005": 0.03467,
+      "fraction_strict_p_le005": 0.0717,
+      "mean_public_minus_private": -4.699999999999882e-06
+    },
+    {
+      "subset": "top10_by_public",
+      "n": 10000,
+      "fraction_inclusive_p_le005": 0.133,
+      "fraction_strict_p_le005": 0.2337,
+      "mean_public_minus_private": 0.07878200000000003
+    }
+  ],
+  "interpretation": "Synthetic method diagnostic only; no inference about observed Kaggle adaptation"
+}

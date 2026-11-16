@@ -1,0 +1,13 @@
+{
+  "python": "3.14.2",
+  "pandas": "3.0.1",
+  "numpy": "2.4.2",
+  "matplotlib": "3.10.8",
+  "scope": "Published 120 IDs only",
+  "first_submission_rule": "Earliest recorded date, ties by submission ID; date-only records do not independently verify within-day order",
+  "top10_rule": "ceil(0.1*n); public score sorted, ties by submission ID; paper tie rule unspecified",
+  "pvalues": "Exact inclusive and strict hypergeometric tails only for competitions with all scores consistent with appendix sizes; consistency is not independent proof of size",
+  "scipy": "1.17.1",
+  "tail_enumeration_checks": 400,
+  "pvalue_competitions": 19
+}

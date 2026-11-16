@@ -1,0 +1,21 @@
+Cohort,MetricGroup,eligible_1000_pre,paired_nonbench_1000,interior_split,interior_non_community,interior_code_only,interior_2023_on
+extension_candidate,Other named metric,190,189,169,125,67,29
+extension_candidate,Numeric-ID metric (unmapped),125,125,109,106,54,109
+extension_candidate,Accuracy,114,114,94,9,2,2
+extension_candidate,Regression (RMSE/MAE/MSE/RMSLE),66,66,62,24,2,14
+extension_candidate,AUC,61,61,52,24,4,8
+extension_candidate,MAP@K,16,15,14,9,5,5
+extension_candidate,LogLoss,13,13,12,6,0,1
+extension_candidate,MulticlassLoss,4,4,4,3,1,0
+in_window_not_in_original,Other named metric,99,99,85,75,4,0
+in_window_not_in_original,Regression (RMSE/MAE/MSE/RMSLE),58,58,51,36,1,0
+in_window_not_in_original,Accuracy,12,12,0,0,0,0
+in_window_not_in_original,AUC,8,7,1,1,0,0
+in_window_not_in_original,MulticlassLoss,5,5,1,1,0,0
+in_window_not_in_original,LogLoss,2,2,0,0,0,0
+in_window_not_in_original,MAP@K,1,1,0,0,0,0
+original_120,AUC,40,40,40,33,0,0
+original_120,Accuracy,34,34,34,9,0,0
+original_120,MAP@K,17,17,15,12,0,0
+original_120,LogLoss,15,15,15,14,0,0
+original_120,MulticlassLoss,14,14,13,13,0,0

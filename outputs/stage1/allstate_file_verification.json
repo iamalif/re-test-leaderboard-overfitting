@@ -1,0 +1,38 @@
+{
+  "test_file_sha256": "9afb8de68728764905a5f1827256a4e423baba0508d7df9d55ea5ca3e73eb458",
+  "test_rows": 198856,
+  "unique_customers": 55716,
+  "paper_total": 198856,
+  "reconstructed_public": 16714,
+  "reconstructed_private": 39002,
+  "assumptions": [
+    "ordinary equally weighted customer accuracy",
+    "disjoint public/private scored customer subsets",
+    "score values accurately represented to tolerance"
+  ],
+  "status": "Total customers verified from downloaded test file; split counts algebraically reconstructed, not directly read from a released split manifest",
+  "normal_diagnostic": "Normal pooled-variance approximation is a sensitivity diagnostic, not a reconstruction of the original Stirling implementation",
+  "rows": [
+    {
+      "subset": "All submissions",
+      "n": 24523,
+      "exact_customer_p_fraction_le005": 0.012845084206663132,
+      "normal_customer_p_fraction_le005": 0.013130530522366757,
+      "normal_table_p_fraction_le005": 0.7461974472943768
+    },
+    {
+      "subset": "Top 10%",
+      "n": 2453,
+      "exact_customer_p_fraction_le005": 0.038320423970648186,
+      "normal_customer_p_fraction_le005": 0.03872808805544232,
+      "normal_table_p_fraction_le005": 0.9991846718304117
+    },
+    {
+      "subset": "First per team",
+      "n": 1570,
+      "exact_customer_p_fraction_le005": 0.017834394904458598,
+      "normal_customer_p_fraction_le005": 0.017834394904458598,
+      "normal_table_p_fraction_le005": 0.5248407643312102
+    }
+  ]
+}

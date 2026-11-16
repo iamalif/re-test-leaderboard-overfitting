@@ -17,7 +17,8 @@ Re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" 
 - Extension boundary is now provisional: deadline after 2019-04-04 23:59 (the original snapshot dates from about 5-9 April 2019), not in the 120. Counts: `outputs/stage1/cohort_counts.csv`, from `scripts/stage1_cohort_counts.py` (metadata only).
 - Stage 1 closed on delegated authority (see log). Stage 2 plan drafted: `analysis_plan/stage2_analysis_plan_DRAFT.md`. Measures in `scripts/stage2_measures.py`, piloted on the original 120 by `scripts/stage2_pilot_original.py` (outputs in `outputs/stage2/`).
 - Plan fixed: `analysis_plan/stage2_analysis_plan_v1.0.md` (hashes in `analysis_plan/SHA256SUMS.txt`). Split labels done blind: `outputs/stage3/split_labels.csv`.
-- Waiting on the researcher: post the plan publicly (e.g. OSF). Until then no extension score may be read. After posting: write and run `scripts/stage3_extension.py` using `scripts/stage2_measures.py`, exactly as the plan says.
+- Plan posted and archived 16 Nov 2026 (links in the decision log); extension unsealed and stage 3 run. Results: `outputs/stage3_report.md`.
+- (Superseded) Waiting on the researcher: post the plan publicly (e.g. OSF). Until then no extension score may be read. After posting: write and run `scripts/stage3_extension.py` using `scripts/stage2_measures.py`, exactly as the plan says.
 
 ## Rules for whoever works here next
 

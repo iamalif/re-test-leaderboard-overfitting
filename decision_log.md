@@ -149,3 +149,22 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - STILL SEALED: all extension and in-window scores. Unsealing requires the plan to be posted publicly first. That needs the researcher (an account on a public registry such as OSF). Nothing else is pending before stage 3 can run.
 
 - 2026-11-16: OSF no longer allows new projects (its dashboard states none can be created after 16 November 2026; researcher's screenshot). DECISION: the plan is posted in a public GitHub repository instead, with the commit page also saved in the Internet Archive as a third-party timestamp. `.gitignore` added: raw data, the paper PDFs, the Allstate test file, two large derived extracts and the unused author email are not published.
+
+- 2026-11-16 about 03:20 Europe/Stockholm: plan v1.0, label table and hashes pushed to the public repository https://github.com/iamalif/re-test-leaderboard-overfitting as commit 0969d41 (the first local commit 0bf337b was re-stamped with a GitHub no-reply email before pushing; contents identical). Public visibility confirmed by the assistant from outside. Internet Archive snapshot: pending, to be made by the researcher (the assistant cannot reach web.archive.org). Extension scores remain sealed until the snapshot link is recorded here.
+
+# UNSEALED (2026-11-16, 03:27 Europe/Stockholm)
+
+- Internet Archive snapshots supplied by the researcher, both taken before any extension score was read:
+  - plan: https://web.archive.org/web/20261116022305/https://github.com/iamalif/re-test-leaderboard-overfitting/blob/main/analysis_plan/stage2_analysis_plan_v1.0.md (02:23:05 UTC)
+  - commit 0969d41: https://web.archive.org/web/20261116022522/https://github.com/iamalif/re-test-leaderboard-overfitting/commit/0969d41 (02:25:22 UTC)
+- From this entry on, extension (E) and in-window regression (W) scores are read, strictly under plan v1.0. Any departure is logged below as a deviation.
+
+# Stage 3 run under plan v1.0 (2026-11-16, about 03:30-03:50 Europe/Stockholm, Claude)
+
+- Scripts: `scripts/stage3_extension.py` (extract and per-competition measures), `scripts/stage3_tests.py` (tests). Report: `outputs/stage3_report.md`.
+- Analysed: O 114, E 487, W 51. Dropped under rule 4 (identical scores): O 3, E 29. Dropped under rule 3: E 2.
+- Confirmatory, Holm-corrected: H1a accuracy gap level, no difference (E minus O -0.029 pp, 95% interval -0.172 to 0.121, p 0.59). H1b AUC, no difference (-0.0007, -0.0043 to 0.0011, p 0.24). H2 drift positive in 327 of 481 E competitions (68.0%, p 2e-15), significant. H3 relative drift E against O, no difference (p 0.92).
+- Secondary: no regression/classification difference; absolute gap shrinks with test size but selection-adjusted top-decile gap does not; code-only competitions show far larger gap levels (median relative gap 30% against 0.7%) and higher drift; no time trend.
+- Deviations/implementation notes 1-3 are listed in the report. None changes a confirmatory test.
+- Decision: the code-only finding is NOT to be described as overfitting without follow-up; it is the main open question for stage 4.
+- Next: commit and push results (researcher); stage 4 follow-up on code-only competitions (exploratory, marked as such); figures; paper draft.

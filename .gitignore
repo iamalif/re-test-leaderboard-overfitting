@@ -11,3 +11,6 @@ outputs/author_code_request.md
 .DS_Store
 .venv/
 __pycache__/
+
+# Stage 3 extract of Meta Kaggle scores; rebuilt by scripts/stage3_extension.py
+outputs/stage3/analysis_submissions.parquet

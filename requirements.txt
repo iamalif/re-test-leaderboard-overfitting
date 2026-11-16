@@ -1,7 +1,8 @@
+# One environment for every stage. Python 3.12 (stage1_reproduce.py needs 3.11 or later).
+# Verified 2026-11-16 by a clean re-run of all scripts from the raw files.
 duckdb==1.5.6
-numpy==2.2.6
 pandas==2.3.3
-python-dateutil==3.0.0
-pytz==2026.6
-six==1.17.0
-tzdata==2026.6
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.8
+pypdf==7.1.0

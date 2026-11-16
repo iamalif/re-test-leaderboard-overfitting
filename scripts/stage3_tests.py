@@ -8,7 +8,7 @@ import numpy as np, pandas as pd
 from scipy.stats import mannwhitneyu, binomtest, spearmanr
 
 rng = np.random.default_rng(20261116); B = 10_000
-m = pd.read_csv("outputs/stage3/competition_measures.csv")
+m = pd.read_csv("outputs/stage3/competition_measures.csv").sort_values("CompetitionId").reset_index(drop=True)   # fixed order, so bootstrap intervals are reproducible
 m["excluded"] = m.excluded.fillna("")
 print(m.groupby(["Cohort", "excluded"]).size().unstack(fill_value=0))
 d = m[m.excluded == ""].copy()

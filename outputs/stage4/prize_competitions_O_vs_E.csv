@@ -1,0 +1,22 @@
+sample,measure,E,O,p
+all,mean_gap > 0,132/184 = 0.717,41/68 = 0.603,0.09330927969648306
+all,first_mean_gap > 0,121/184 = 0.658,37/68 = 0.544,0.1079673599171545
+all,top10_mean_gap > 0,150/184 = 0.815,45/68 = 0.662,0.01675920879288711
+all,drift_mean > 0,129/178 = 0.725,48/68 = 0.706,0.7538684098467321
+all,median rel_mean_gap,0.1679,0.0095,0.0034189522052747844
+all,median rel_first_gap,0.0847,0.0058,0.0065867646360577
+all,median rel_drift,0.0288,0.0082,0.06965916804241126
+unflagged,mean_gap > 0,110/158 = 0.696,32/58 = 0.552,0.05341793296512734
+unflagged,first_mean_gap > 0,99/158 = 0.627,29/58 = 0.500,0.11800315421376305
+unflagged,top10_mean_gap > 0,126/158 = 0.797,37/58 = 0.638,0.02034949929804656
+unflagged,drift_mean > 0,117/156 = 0.750,40/58 = 0.690,0.3882184310883008
+unflagged,median rel_mean_gap,0.0946,0.0029,0.0020582940268159804
+unflagged,median rel_first_gap,0.0487,0.0014,0.010738851622614292
+unflagged,median rel_drift,0.0288,0.0066,0.01671020775951699
+five original metric groups,mean_gap > 0,18/23 = 0.783,41/68 = 0.603,0.13743091740714902
+five original metric groups,first_mean_gap > 0,17/23 = 0.739,37/68 = 0.544,0.14088910463956908
+five original metric groups,top10_mean_gap > 0,20/23 = 0.870,45/68 = 0.662,0.0658123665230339
+five original metric groups,drift_mean > 0,15/23 = 0.652,48/68 = 0.706,0.6132992388007003
+five original metric groups,median rel_mean_gap,0.099,0.0095,0.0937832583640458
+five original metric groups,median rel_first_gap,0.0652,0.0058,0.10116309386327602
+five original metric groups,median rel_drift,0.0067,0.0082,0.5995101785600032

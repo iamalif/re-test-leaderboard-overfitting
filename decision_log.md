@@ -168,3 +168,21 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Deviations/implementation notes 1-3 are listed in the report. None changes a confirmatory test.
 - Decision: the code-only finding is NOT to be described as overfitting without follow-up; it is the main open question for stage 4.
 - Next: commit and push results (researcher); stage 4 follow-up on code-only competitions (exploratory, marked as such); figures; paper draft.
+
+# Stage 4 started: drift robustness (EXPLORATORY, 2026-11-16, Claude)
+
+- Second commit pushed by the researcher (stage 3 results); seen in the local record of origin/main.
+- Self-review raised two alternative explanations for H2 that the plan's simulation did not cover: (A) teams begin with trivial submissions whose gap is near zero and then inherit the competition's gap level; (B) the gap scales with score level and teams improve.
+- Checks in `scripts/stage4_drift_robustness.py` (outputs in `outputs/stage4/`). Share of E competitions with positive drift: planned measure 68.0%; third versus fourth quarter of each team's submissions 63.3%; after dropping each team's first two submissions 65.4%; within-team slope controlling for score level 66.0% (all sign-test p < 1e-8). Where the first-submission gap is negative, so that explanation A predicts negative drift, the planned drift is still positive in 66.0% (140 of 212) and the late-only drift in 68.2%. In O: 67.5%, 61.1%, 71.9%, 68.4%.
+- Conclusion: the drift result is not produced by A or B. These checks are exploratory and will be reported as such.
+- Quality risks recorded for the researcher: plan designed and approved by the same assistant with no independent review; drift is a new measure validated by one simulation plus these checks; split labels are sparse and from one reader; novelty search not repeated since 15-16 November; the other assistant's stage 1 script has not been re-run in the stage 2 environment and three requirements files exist; RQ4 and notebook forking are not covered.
+
+# Stage 4 follow-ups, clean re-run, figures, first draft (2026-11-16, Claude)
+
+- Researcher: go ahead; reviews are being handled by the researcher, the other assistant and outside experts.
+- Code-only follow-up and prize-competition comparison (EXPLORATORY): `outputs/stage4_report.md`. Main points: the S3 code-only contrast is mostly composition; among Featured and Research competitions relative gap levels are higher after April 2019 (median 0.17 against 0.01, p 0.003), present from first submissions, with drift unchanged; mechanism not identified.
+- DECISION: scope the headline. The 2019 conclusion is confirmed for accuracy and AUC competitions (now mostly in-class). The prize-competition pattern is reported as exploratory and open.
+- Clean re-run of every script from raw files under Python 3.12 reproduced all tables. It exposed one reproducibility flaw: bootstrap intervals depended on row order. Fixed by sorting on competition ID in `scripts/stage3_tests.py`; interval bounds moved in the third significant digit (H1a upper bound 0.121 to 0.116; H3 upper 0.97 to 0.99); no estimate, p-value or conclusion changed. Logged as implementation note 4 in the stage 3 report.
+- One environment now: `requirements.txt` (Python 3.12). The two earlier requirements files moved to `superseded/`.
+- Figures: `scripts/stage5_figures.py` -> `paper/figures/` (four figures, PNG and PDF).
+- First paper draft: `paper/draft_v0.1.md`, with open items marked TODO.

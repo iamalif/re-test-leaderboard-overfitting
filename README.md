@@ -29,20 +29,22 @@ Re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" 
 
 ## Layout
 
-- `data/raw/` — Meta Kaggle `Competitions.csv`, `Teams.csv`, `Submissions.csv` (downloaded 2026-11-15; SHA-256 in the decision log)
-- `scripts/stage0_feasibility.py` — per-competition submission counts and score presence
-- `outputs/stage0_per_competition.csv` — its output
-- `requirements.txt` — pinned environment (Python 3.10, DuckDB, pandas)
+- `analysis_plan/` - plan v1.0 (fixed and archived before unsealing) and hashes
+- `data/raw/` - Meta Kaggle CSVs (not in the repository; hashes in the decision log)
+- `data/reference/` - original 120 IDs, split-label decisions
+- `scripts/` - one or more scripts per stage, named `stageN_*.py`, run from the project root in numeric order
+- `outputs/` - tables per stage, plus `stage1_report.md`, `stage3_report.md`, `stage4_report.md`
+- `paper/` - draft and figures
+- `decision_log.md` - every decision, deviation and result, in order
 
 ## Run
 
+Python 3.12 with `requirements.txt`. Stage 3 is resumable: repeat `python scripts/stage3_extension.py` until it prints DONE.
+
     python -m venv .venv && .venv/bin/pip install -r requirements.txt
-    .venv/bin/python scripts/stage0_feasibility.py
+    for s in stage0_feasibility stage1_cohort_counts stage2_pilot_original stage3_label_extract stage3_extension stage3_tests stage4_drift_robustness stage4_code_only stage5_figures; do .venv/bin/python scripts/$s.py; done
+    .venv/bin/python scripts/stage1_reproduce.py --project .     # before stage2_pilot_original on a fresh checkout
 
-## Handover update — 16 November 2026
+## Status, 16 November 2026 (latest)
 
-Stage 1 was explicitly authorized and is in progress; its completion gate has not passed. See `outputs/stage1_report.md` for findings and unresolved source checks. The original 120 IDs are in `data/reference/original_120_manifest.csv`. The official full paper is `data/reference/roelofs_2019_full.pdf`.
-
-Run the original-only replication with `python3 scripts/stage1_reproduce.py --project .`; append `--from-cache` to reuse `outputs/stage1/original_predeadline_submissions.csv.gz`. Actual audit versions are recorded separately in `requirements-stage1.txt` and the run metadata. The original stage-0 requirements were not used for this run.
-
-The original sample includes 18 competitions ending in 2019. Do not treat deadline year >= 2019 as a disjoint extension boundary. Continue to keep extension scores unexamined until the analysis plan is fixed and publicly posted.
+Stages 0 to 4 done; first paper draft in `paper/draft_v0.1.md`. Read `outputs/stage3_report.md` and `outputs/stage4_report.md` for results. Open items are the TODO list at the end of the draft. Older status notes above are kept for the record.

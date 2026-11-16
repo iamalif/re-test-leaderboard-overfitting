@@ -74,7 +74,7 @@ axs[0].set(xscale="log", yscale="log", xlabel="Test-set size, public plus privat
 axs[1].set(xscale="log", yscale="symlog", xlabel="Test-set size, public plus private", ylabel="Top-10% gap minus selection-only gap (pp)", title="Excess over selection does not")
 axs[1].set_yscale("symlog", linthresh=0.1); axs[1].axhline(0, color=MUTED, lw=0.8)
 for ax in axs: ax.axvline(10_000, color=MUTED, lw=0.8, ls=":")
-fig.tight_layout(w_pad=2.5); bottom_legend(fig, axs[0], "Accuracy competitions with test-set sizes inferred from scores. Dotted line: 10,000 examples.")
+fig.tight_layout(w_pad=4.5); bottom_legend(fig, axs[0], "Accuracy competitions with test-set sizes inferred from scores. Dotted line: 10,000 examples.")
 save(fig, "fig3_test_size")
 
 # Figure 4: prize competitions, relative gap of all and of first submissions

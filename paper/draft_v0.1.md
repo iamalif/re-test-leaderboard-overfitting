@@ -1,3 +1,5 @@
+> Superseded by `main.tex` / `main.pdf` (TMLR template). Kept for the record.
+
 # Leaderboard overfitting on Kaggle, revisited: a pre-specified re-test with a within-team drift measure
 
 **Draft v0.1, 16 November 2026. Working draft for the author; not yet in TMLR format.** Items marked [TODO] must be resolved before submission. Every number comes from the tables in `outputs/` and is traceable through `decision_log.md`.

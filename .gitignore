@@ -14,3 +14,9 @@ __pycache__/
 
 # Stage 3 extract of Meta Kaggle scores; rebuilt by scripts/stage3_extension.py
 outputs/stage3/analysis_submissions.parquet
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg

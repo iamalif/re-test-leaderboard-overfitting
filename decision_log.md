@@ -186,3 +186,13 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - One environment now: `requirements.txt` (Python 3.12). The two earlier requirements files moved to `superseded/`.
 - Figures: `scripts/stage5_figures.py` -> `paper/figures/` (four figures, PNG and PDF).
 - First paper draft: `paper/draft_v0.1.md`, with open items marked TODO.
+
+# Stage 5: literature check, label audit, TMLR draft (2026-11-16, about 04:05-04:40, Claude)
+
+- Literature search repeated 16 Nov 2026. Queries: the 2019 title with "replication" and "re-analysis"; Kaggle public/private leaderboard shake-up and adaptive overfitting with Meta Kaggle 2026; the monoculture preprint; the position paper. No peer-reviewed re-test of the 2019 result on later competitions found. Not proof of absence.
+- Read for related work: Burtch, arXiv:2607.13077 (Appendix G: 158 contests, each team's best public submission, standardized public minus private; the author notes the selection bias; reports a decline in 69% of contests). Bönisch and Losaria, arXiv:2511.06304 (normalised public-private discrepancy over time; no tests). Sculley et al., ICML 2025 position paper (cites the 2019 result as showing reuse was not the main problem).
+- NOT verified and therefore not cited: the brief's statement that MLE-bench says Kaggle submissions sometimes overfit the public leaderboard (search snippets did not show it); the 2026 ecosystem survey (arXiv page rate-limited). Both remain TODO if wanted.
+- TMLR policy on LLM use (jmlr.org/tmlr/faq.html, read 16 Nov 2026): allowed as assistive tools; authors fully responsible; use must be stated in a footnote on the first page. Footnote added to the draft. Secondary reports (September 2026) say a TMLR editor-in-chief has interviewed authors about their own papers and that per-author submission quotas and an AI-generated soundness review were introduced; not verified on TMLR's own pages.
+- Split-label audit: 50 unflagged competitions re-read with a wider sentence filter; 0 labels changed (`outputs/stage5/label_audit_result.md`).
+- Paper converted to the TMLR template: `paper/main.tex`, `paper/references.bib`, compiled to `paper/main.pdf` (7 pages, anonymised). `paper/draft_v0.1.md` is superseded by it.
+- Remaining before submission: author reads and can defend every section; independent reviews; decide how to give anonymous access to code for double-blind review; arXiv endorsement; optional citations above.

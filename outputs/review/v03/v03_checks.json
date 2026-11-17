@@ -1,0 +1,43 @@
+{
+  "head": "1d4417166a23c82196d6d2929dc12356919f565f",
+  "nominal50_accuracy_n": 56,
+  "unequal_minimum_sizes": 16,
+  "simulation_134_of_300_p": 0.0733119525988467,
+  "runner_probes": [
+    {
+      "mode": "fail",
+      "expected": 7,
+      "actual": 7,
+      "stdout": "\n",
+      "stderr": "mock fatal error\nstage 3 failed with exit 7\n"
+    },
+    {
+      "mode": "missing",
+      "expected": 1,
+      "actual": 1,
+      "stdout": "unexpected successful exit\n",
+      "stderr": "stage 3 ended without DONE or PAUSED\n"
+    },
+    {
+      "mode": "pause",
+      "expected": 0,
+      "actual": 0,
+      "stdout": "PAUSED: mock\nDONE mock\nALL DONE\n",
+      "stderr": ""
+    },
+    {
+      "mode": "done",
+      "expected": 0,
+      "actual": 0,
+      "stdout": "DONE mock\nALL DONE\n",
+      "stderr": ""
+    }
+  ],
+  "preserved_plan_and_measures": true,
+  "confirmatory_results_preserved": true,
+  "hashes": {
+    "paper/main.pdf": "26feee8d565c95eb988910821ba544842813306dd625aeec8198ff7a384fb795",
+    "scripts/stage6_split_size_symmetry.py": "41347f65b2ac419497dbec5679af4d0cb2b32f200a6028e4a6f4100efc4baa41",
+    "run_all.sh": "6b5acc5e5ba0702f619e412cdb230b5412752cc90c0bd99d17b73c76d73a34ef"
+  }
+}

@@ -20,3 +20,6 @@ paper/*.aux
 paper/*.log
 paper/*.out
 paper/*.blg
+
+# Stage 7 extract of post-deadline scores
+outputs/stage7/post_deadline_submissions.parquet

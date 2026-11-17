@@ -2,7 +2,8 @@
 
 The follow-up review showed that a random split gives drift an expectation of zero but not a symmetric sign
 unless the two sets have equal size. Two consequences are examined here:
- (a) drift sign by reported public share: sign symmetry under a random split is only guaranteed near 50%;
+ (a) drift sign by REPORTED (nominal) public share. Sign symmetry under a random split needs exactly equal scored sets,
+     which a reported 50% does not verify;
  (b) mean (not sign) of drift for raw-score metrics, which has expectation zero under a random split whatever the sizes.
 Uses unclipped drift from outputs/stage6/verify_review_numbers.csv for (b).
 
@@ -21,7 +22,7 @@ def sign_row(label, x, col="drift_mean"):
     v = x[col].dropna(); pos, nz = int((v > 0).sum()), int((v != 0).sum())
     rows.append(dict(analysis="sign", subset=label, n=nz, positive=pos, share=pos / nz if nz else np.nan, p=binomtest(pos, nz, .5).pvalue if nz else np.nan))
 for coh in ("E", "O", "O+E"):
-    x = m if coh == "O+E" else m[m.Cohort == coh]
+    x = m[m.Cohort.isin(["O", "E"])] if coh == "O+E" else m[m.Cohort == coh]   # corrected 17 Nov: the pooled set wrongly included cohort W
     for b, y in x.groupby("band", observed=True): sign_row(f"{coh}, all metrics, {b}", y)
     for b, y in x[x.Group.isin(RAW)].groupby("band", observed=True): sign_row(f"{coh}, accuracy/AUC/MAP@K, {b}", y, "drift_raw")
 def mean_row(label, x, scale):
@@ -31,7 +32,7 @@ def mean_row(label, x, scale):
     rows.append(dict(analysis="mean", subset=label, n=len(v), mean=v.mean(), ci_lo=np.percentile(bs, 2.5), ci_hi=np.percentile(bs, 97.5),
                      median=np.median(v), share=float((v > 0).mean())))
 for coh in ("E", "O", "O+E"):
-    x = m if coh == "O+E" else m[m.Cohort == coh]
+    x = m[m.Cohort.isin(["O", "E"])] if coh == "O+E" else m[m.Cohort == coh]   # corrected 17 Nov: the pooled set wrongly included cohort W
     mean_row(f"{coh}, accuracy, mean drift (pp)", x[x.Group == "Accuracy"], 100)
     mean_row(f"{coh}, AUC, mean drift (x100)", x[x.Group == "AUC"], 100)
     mean_row(f"{coh}, MAP@K, mean drift (x100)", x[x.Group == "MAP@K"], 100)

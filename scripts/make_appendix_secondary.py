@@ -49,7 +49,7 @@ LABEL = {"H1a accuracy mean gap": "H1a accuracy, median gap", "H1b AUC mean gap"
 s6rows = []
 for _, r in c[c["sample"] == "S6 not flagged"].iterrows():
     n = f"{int(r.n_E)}" + ("" if isnan(r.n_O) else f"/{int(r.n_O)}")
-    s6rows.append(" & ".join([LABEL[r.test], esc(r.effect), n, f(r.estimate), f"({f(r.ci_lo)}, {f(r.ci_hi)})",
+    s6rows.append(" & ".join([LABEL[r.test], n, f(r.estimate), f"({f(r.ci_lo)}, {f(r.ci_hi)})",
                               f(r.p_holm)]) + " \\\\")
 
 HEAD = "Group & Quantity & $n$ & Estimate & 95\\% interval & Share $>0$ & $p$ \\\\\n\\midrule\n"
@@ -81,9 +81,9 @@ tex = ("\\section{All pre-specified secondary quantities}\n\\label{app:secondary
 + "\n".join(s5rows) + "\n\\bottomrule\n\\end{tabular}\n\\end{table}\n\n"
 "\\begin{table}[!t]\n\\centering\\small\n"
 "\\caption{S6: the four confirmatory tests repeated without flagged competitions (a secondary analysis). Effects as in "
-"Table~\\ref{tab:confirm}; accuracy in percentage points; relative drift in team spreads. $p$-values Holm-corrected "
+"Table~\\ref{tab:confirm} (differences in medians, $E$ minus $O$, and a share for H2); accuracy in percentage points; relative drift in team spreads. $p$-values Holm-corrected "
 "within these four. $n$: $E$, or $E$/$O$, competitions.}\\label{tab:s6}\n"
-"\\begin{tabular}{llllll}\n\\toprule\nTest & Effect & $n$ & Estimate & 95\\% interval & $p$ \\\\\n\\midrule\n"
-+ "\n".join(s6rows) + "\n\\bottomrule\n\\end{tabular}\n\\end{table}\n")
+"\\begin{tabular}{lllll}\n\\toprule\nTest & $n$ & Estimate & 95\\% interval & $p$ \\\\\n\\midrule\n"
++ "\n".join(s6rows) + "\n\\bottomrule\n\\end{tabular}\n\\end{table}\n\\FloatBarrier\n")
 open("paper/appendix_secondary.tex", "w").write(tex)
 print(len(d), "secondary rows;", len(s5rows), "S5 rows;", len(s6rows), "S6 rows")

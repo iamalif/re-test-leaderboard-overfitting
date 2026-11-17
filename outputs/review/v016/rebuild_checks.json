@@ -1,0 +1,10 @@
+{
+  "illustration_max_abs_diff": 0.0,
+  "appendix_identical": true,
+  "archive_hashes": {
+    "analysis_plan/stage2_analysis_plan_v1.0.md": true,
+    "data/reference/split_label_decisions.py": true,
+    "scripts/stage2_measures.py": true,
+    "outputs/stage3/split_labels.csv": true
+  }
+}

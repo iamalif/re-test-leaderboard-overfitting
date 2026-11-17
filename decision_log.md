@@ -415,3 +415,9 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Footnote now: LLM assistants "were used to assist with implementing the analysis code, with analysis design, with drafting the manuscript, and for critical review. The authors directed the study, evaluated every suggestion, reviewed and revised all analyses and text, and take full responsibility for the results and conclusions."
 - Review wording, in two places, now says "a separate LLM-assisted review". In Reproducibility it re-implemented the confirmatory tests and the main per-competition measures and reproduced them to within 1e-10 relative, matching the comprehensive review's documented tolerance.
 - The third party's proposed "the authors selected all analyses, preregistered the study design" was not used verbatim. The archived plan in the review package states it was "approved under authority the researcher delegated to the analysis assistant", and a reviewer reading both would see a contradiction. The adopted wording is consistent with the plan.
+
+# Comprehensive QA of v0.16 answered; paper v0.17 (2026-11-17, about 22:20-22:45, Claude)
+
+- Review `reviews/review_2026-11-17_v016.md` (second assistant): no numerical failure. Four interpretation and wording corrections, all to text I added during the presentation rounds (Proposition 1's interpretation and scope; the Allstate abstract comparison was not like-for-like; the simulation claim; the reproducibility scope). All accepted; response `reviews/response_2026-11-17_v016.md`.
+- LESSON RECORDED: strengthening the presentation to answer outside feedback produced four overreaches in two hours. Further changes should be corrections only.
+- Package rebuilt: SHA-256 9735c944e62826fe1e64ab4e0a510e80d6ca606c1152161e7c67747fbc5458f9.

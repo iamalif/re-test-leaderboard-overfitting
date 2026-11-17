@@ -1,0 +1,85 @@
+{
+  "independent_comparison": {
+    "mean_gap": {
+      "max_abs": 0.0,
+      "max_relative": 0.0,
+      "pure_relative_failures": [],
+      "combined_tolerance_pass": true
+    },
+    "drift_mean": {
+      "max_abs": 0.001953125,
+      "max_relative": 6.911878291682222e-15,
+      "pure_relative_failures": [],
+      "combined_tolerance_pass": true
+    }
+  },
+  "recent": {
+    "n": 156,
+    "drift_n": 151,
+    "positive": 114
+  },
+  "package": {
+    "sha256": "587b314085b98ee7a41549190895dc21769583900548f2f5fbcd543266cbb084",
+    "files": 186,
+    "manifest_failures": [],
+    "project_differences": [],
+    "illustration_script_present": true
+  },
+  "ledger": {
+    "stages": 15,
+    "exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "outputs": 193,
+    "failures": []
+  },
+  "proposition_random_split": {
+    "values": [
+      0.25,
+      0.25,
+      0.25,
+      0.25,
+      -1.0
+    ],
+    "mean": 0.0,
+    "positive_share": 0.8
+  },
+  "auc_equal_split_counterexample": {
+    "valid_splits": 18,
+    "values": [
+      -0.5,
+      -1.0,
+      -2.0,
+      0.5,
+      0.0,
+      -1.0,
+      -0.5,
+      -1.5,
+      -2.0,
+      2.0,
+      1.5,
+      0.5,
+      1.0,
+      0.0,
+      -0.5,
+      2.0,
+      1.0,
+      0.5
+    ],
+    "mean": 0.0
+  }
+}

@@ -1,0 +1,228 @@
+\documentclass[10pt]{article}
+\usepackage{tmlr}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{Leaderboard Overfitting on Kaggle, Revisited:\\ A Pre-Specified Re-Test and the Limits of Aggregate Scores}
+
+\author{\name Anonymous authors \\ \addr Paper under double-blind review}
+
+\def\month{MM}
+\def\year{YYYY}
+\def\openreview{\url{https://openreview.net/forum?id=XXXX}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\citet{roelofs2019meta} compared public and private leaderboard scores in 120 Kaggle competitions and found little evidence of substantial adaptive overfitting. We reconstruct that study from public data and re-test its conclusion on 487 later competitions, under an analysis plan archived before any new score was examined. The reconstruction recovers all 120 competitions and the five accuracy outliers, but the published test-set sizes are incompatible with the recorded scores in 11 of 32 accuracy competitions. In the clearest case, Allstate, the published sizes count rows of the test file while the task scores customers: with customer counts, 1.3\% of submissions reject the original null model at the 5\% level, against 74.6\% with the published counts, so whether this competition shows irregularity depends on the scoring unit. Sizes inferred from the scores make the original test computable for 33 of 34 accuracy competitions instead of 19. In the re-test, the median public--private gap of the 95 accuracy and 73 AUC competitions differs from the original sample by less than margins set in advance, although absolute accuracy gaps are somewhat larger. Within teams, later submissions favour the public leaderboard more than earlier ones in 68\% of later competitions and in 68\% of the original ones; in later competitions the median size is 1.7\% of the distance between a median and a top-decile team. This is the pattern adaptation to public feedback would produce, but we show that it also arises without any use of feedback when the two sets differ in composition, and that under random splits of unequal size its sign need not be balanced. The lesson extends to any audit of test reuse from aggregate scores: formal tests need verified scoring units and test-set sizes, and a divergence between reused and held-out scores does not by itself distinguish adaptation from differences between the evaluation sets.\footnote{The research question and direction are the authors'. Large language model assistants were used to implement the analysis code, to propose and refine analysis designs and text, and for critical review. The authors reviewed, revised and approved the work at every stage and are responsible for all content.}
+\end{abstract}
+
+\section{Introduction}
+
+A Kaggle competition gives every submission two scores. The public score is computed on one part of the test set and shown at once; the private score is computed on the rest and revealed when the competition ends. The public part is a test set whose scores guide teams thousands of times, while the private part gives no feedback before the end, so comparing the two is an observational check on adaptive overfitting \citep{dwork2015reusable,blum2015ladder}. \citet{roelofs2019meta} used this design on 120 competitions and concluded that overfitting ``did not pose a significant danger''. Together with test-set replication studies \citep{recht2019imagenet,yadav2019cold}, the result underpins the view that benchmark reuse has been less harmful than theory allows, and it is still cited in that role \citep{sculley2025position}.
+
+The sample behind the result ends in April 2019. Since then the platform has added competitions in which code is re-run on hidden data, a monthly series on synthetic data, and metrics defined per competition. Later descriptive work reports noticeable public--private discrepancies \citep{bonisch2025chronicles,burtch2026monoculture}, though with measures that select each team's best public submission or that are not accompanied by tests. Our searches on 15, 16 and 17 November 2026 found no peer-reviewed re-test of the 2019 result on later competitions; this is a statement about those searches, not proof of absence.
+
+Our argument has one line. The later data preserve the original study's narrowly defined aggregate finding, while the reconstruction and an analysis of identification clarify what that finding can and cannot establish about adaptive overfitting. The questions are not specific to Kaggle: public leaderboards for machine learning benchmarks, including those for large language models, are audited with the same comparison between a reused and a held-out set. We do not claim that our Kaggle percentages transfer to them. What transfers is methodological: verify the scoring unit and size behind any formal test, and do not read a divergence between reused and held-out scores as adaptation without evidence that the two sets are exchangeable.
+
+This paper makes four contributions.
+\begin{itemize}
+\item An independent reconstruction of the 2019 study from the public data, with every discrepancy documented, including a scoring-unit discrepancy that changes the outcome of the formal test for the competition the original text singles out (Section~\ref{sec:recon}).
+\item Minimum compatible test-set sizes computed from accuracy scores, graded by how far independent evidence supports them. In our reconstruction they allow the original null-model test to be computed for 33 of the 34 original accuracy competitions, where published sizes that fit every recorded score, benchmark submissions included, allow 19.
+\item A re-test on 487 later competitions with four pre-specified confirmatory tests (Section~\ref{sec:confirm}), followed by secondary and exploratory analyses that are labelled as such.
+\item A within-team temporal divergence between public and private scores, found in two thirds of competitions in both periods, with an account of the assumptions under which it would indicate adaptation and a simulation showing that it arises equally without feedback (Sections~\ref{sec:methods} and~\ref{sec:explore}, Figure~\ref{fig:ident}).
+\end{itemize}
+
+\section{Related work}
+
+\paragraph{Adaptive data analysis.} Reusing a holdout set can invalidate its estimates \citep{dwork2015reusable}, and leaderboard mechanisms have been designed to limit this \citep{blum2015ladder}. Theory also predicts when reuse should be benign: similarity between models reduces the effective number of queries \citep{mania2019similarity}, and problems with more classes are harder to overfit by reuse \citep{feldman2019multiclass}.
+
+\paragraph{Empirical studies of reuse.} New test sets for ImageNet and MNIST showed accuracy drops but stable rankings \citep{recht2019imagenet,yadav2019cold}. \citet{roelofs2019meta} is the largest study of reuse within competitions. Its authors listed open questions that motivate our secondary analyses, among them regression competitions and uncertainty for metrics other than accuracy, and recommended a minimum of 10,000 test examples, which our test-size analysis examines.
+
+\paragraph{Later analyses of Kaggle.} \citet{bonisch2025chronicles} report normalised public--private discrepancies across competitions, without formal tests. \citet{burtch2026monoculture} relates the homogeneity of contestants' code to the drop from public to private score of each team's leaderboard submission (129 competitions in the current version). A team's leaderboard submission is usually chosen on its public score, which by itself makes such a drop positive on average. Neither re-tests the 2019 analysis.
+
+\section{Reconstructing the original study}
+\label{sec:recon}
+
+\paragraph{Sample.} The 120 competition identifiers are listed in the original appendix. All are present in the Meta Kaggle snapshot of 15 November 2026 \citep{metakaggle}. We recover 1,510,406 pre-deadline submissions with both scores, against 1,513,918 published; 46 of the 120 counts match exactly and none differs by more than 2.6\%. The latest deadline in the sample is 4 April 2019, and the next competition that meets the published inclusion rule, with a deadline of 9 April, is absent. We do not know the date of the original extraction. As a cohort convention inferred from the included sample, we start our extension after 4 April 2019.
+
+\paragraph{Inclusion rule.} The published rule is at least 1,000 pre-deadline submissions and one of five metrics. Applied to the current data it yields 28 further competitions inside the original window. Of these, 26 report a public share of 0 or 100 percent, which suggests an unstated requirement that a real split exists.
+
+\paragraph{Headline pattern.} The five largest mean accuracy gaps belong to the five competitions the original paper names as outliers.
+
+\paragraph{Test-set sizes.} Unweighted accuracy times the number of scored examples must be a whole number. Checked on the scores of non-benchmark submissions, for 11 of the 32 accuracy competitions with published sizes, the published sizes fail this check. The clearest case is the Allstate competition. The paper lists 59,657 public and 139,199 private examples, which sum to the 198,856 rows of the test file; the task scores one prediction per customer, and the file contains 55,716 customers. The original text attributes this competition's small $p$-values to its ``198,856 examples''. With customer counts of 16,714 and 39,002, which are the sizes implied by the scores together with the customer total, 1.3\% of submissions have $p \le 0.05$ under the original null model; a normal approximation with the published counts gives 74.6\%. We make no claim about what the original code computed. In the other ten cases the smallest sizes compatible with the scores are: off by one from the published sizes, or with public and private exchanged (four cases); the same or nearly the same total with a different split (three); far smaller than published (two); and identical for both sets, in a competition where every submission has identical public and private scores (one). Only the Allstate total is confirmed by an independent source.
+
+\paragraph{Unspecified choices.} Submission dates have day precision, so the first submission of a team is not always identifiable; the handling of ties at the top-10\% cutoff is not stated; and the tail probability is inclusive in the main text and strict in the appendix. We use submission identifiers to order submissions within a day, keep all ties, and use the inclusive tail.
+
+\section{Methods}
+\label{sec:methods}
+
+\paragraph{Cohorts.} $O$ is the original sample. $E$ contains competitions with a deadline after 4 April 2019 and no later than 15 November 2026. $W$ contains earlier regression competitions, which the original study excluded by design. A competition is analysed if it has at least 1,000 pre-deadline submissions, reports a public share between 1 and 99 percent, has at least 1,000 scored submissions from non-benchmark teams, and does not have identical public and private scores for at least 99\% of submissions. This leaves 114 competitions in $O$, 487 in $E$ and 51 in $W$.
+
+\paragraph{Score handling.} Accuracy, AUC and MAP@K are analysed as recorded. For every other metric, both scores are clipped to the 1st--99th percentile range of the competition's public scores, to stop sentinel values dominating means. The bounds come from public scores only, so the treatment is not symmetric in the two sets; Section~\ref{sec:explore} reports results without it.
+
+\paragraph{Gap.} The gap of a submission is its public score minus its private score, signed so that a positive value favours the public score. The mean gap of a competition is the average over its submissions, as in the original study.
+
+\paragraph{Team spread.} To compare metrics we divide by the team spread: the distance between the median team and the top-decile team, measured on teams' median public scores. A relative gap or drift of 0.01 is one percent of what separates a median team from a top-decile team.
+
+\paragraph{Within-team drift.} For each team with at least four submissions, ordered in time, drift is the mean gap of the later half of its submissions minus the mean gap of the earlier half (the middle submission is dropped when the number is odd). The drift of a competition is the average over teams. The analysis does not choose submissions by score, and a gap that is the same for every model cancels within each team. A team that tunes to public feedback carries the public noise it has selected into later submissions, which can produce positive drift.
+
+Positive drift is not specific to adaptation, and the 50\% reference of our pre-specified sign test (H2) does not follow from the absence of adaptation in general. Three cases should be kept apart. (i) If the two sets differ in composition, a gap that depends on the model can grow as teams improve, with no use of feedback. (ii) If the split is random and submissions do not depend on feedback, drift on a metric that averages over examples has expectation zero; its sign is balanced only under further conditions, in particular public and private sets of equal size and scores analysed without clipping. With unequal sizes the smaller set's mean is the more skewed, and the sign can be far from balanced: when later models correct every test example but one and a fifth of the test set is public, drift is positive in 80\% of random splits although its expectation is zero. (iii) Feedback dependence includes stopping after a favourable public score, which is not the same as tuning a model. We report H2 as specified and examine these cases in Section~\ref{sec:explore}.
+
+\paragraph{Minimum compatible sizes and formal test.} For accuracy competitions we compute, separately for public and private scores, the smallest integer on which every score is a whole count. Each score is converted to the nearest fraction with denominator at most 5,000,000 (agreement within $10^{-11}$), the size is their least common multiple, built up from the most frequent denominators and skipping any factor that would take it above 5,000,000, and it is used only when there are at least 20 distinct scores and every score lies within $10^{-4}$ of a whole count. For ordinary unweighted accuracy recorded with enough precision, the true number of scored examples is then a multiple of this size; with finite precision this is a convention, not a proof, since a very large size can mimic a small one. We grade the result by independent support: (A) the total is confirmed by the test file (Allstate); (B) it equals the published size (21 original competitions); (C) its public share is within one point of the public share reported by the platform, which supports the ratio but not the multiplier (96 competitions); (D) no support (7). Three further accuracy competitions have scores that fit no lattice under this convention or fall outside the unit interval and are not used. In the 21 original competitions whose published sizes are compatible with the scores, the published size equals the minimum and is never a proper multiple; this is corroboration within that historical subset, not an estimate of how often the minimum is correct elsewhere. With these sizes we compute, for each submission, the exact two-sided inclusive tail probability of its accuracy difference when its correct answers are split at random \citep{roelofs2019meta}. Results for tiers C and D are conditional on the minimum being the true size.
+
+\paragraph{Independent-resplitting reference for the top decile.} The top 10\% of submissions by public score have a positive expected gap even without adaptation. As a reference we simulate the null model with each submission split independently, select the top 10\% on simulated public scores, and subtract the resulting expected gap from the observed one. Real submissions share one split and are correlated, which changes the gap that selection can produce; for identical submissions it is zero. The reference is a benchmark under independence, not an estimate of the selection effect.
+
+\paragraph{Checks of the computations.} Our exact tail probabilities agree with an independently written implementation on 68,552 submissions to within $10^{-14}$. In a simulation in which teams accept changes that raise their public score, drift is positive whether or not the private set is uniformly harder; this is a positive control for one mechanism, not a validation against others.
+
+\paragraph{Split labels.} From competition descriptions we flagged competitions whose host states that the private set is a later period, a different group or source, or a newly collected dataset: 44 of 516 candidates in $E$. Most descriptions say nothing about the split, so an unflagged competition is not known to have a random split. A second reader, who knew the labels and the results, read the full description text of 50 unflagged competitions and changed no label, noting three ambiguous cases. This checks the application of the rubric to what hosts wrote; it says nothing about splits that hosts did not describe. A known case shows the limit: the original authors learned from one host that a split was not random, and nothing in that competition's description says so.
+
+\paragraph{Pre-specification.} The measures were developed on $O$, which had been fully examined. The analysis plan, with four confirmatory tests corrected by the method of \citet{holm1979} and six secondary analyses, and the split labels were committed to a public repository and archived by a third party on 16 November 2026, before any score in $E$ or $W$ was examined (the SHA-256 of the plan file begins \texttt{2198d3d7}; archive links are withheld for anonymous review). Until then only counts, metric names, dates and description text of those competitions had been examined. Unless stated otherwise, intervals are 95\% bootstrap intervals over competitions. The competition is the unit of inference throughout.
+
+\paragraph{Departures from the plan and implementation notes.} Two departures. The planned re-reading of 50 unflagged descriptions was first done on excerpts by the original reader; it was redone on full text by a second reader, who knew the labels and results. Some secondary quantities are reported without the planned intervals: the Spearman correlations, the shares of positive values and the top-decile summary. Implementation notes, which follow the written rules: the formal accuracy test is computed only when every score lies in the unit interval; the finite-score rule excludes two competitions that passed the earlier count of filled score fields; bootstrap resampling orders competitions by identifier, for reproducibility; and reading recorded scores exactly, instead of with a library's default parser, changed four rows of original-sample tables that the paper does not use. All are recorded with dates in the released decision log. None changes a confirmatory test.
+
+\section{Confirmatory results}
+\label{sec:confirm}
+
+\begin{table}[t]
+\caption{Pre-specified confirmatory tests. H1a, H1b and H3: Mann--Whitney tests, with the difference in medians as effect size; H2: sign test, with the interval for the share. Intervals are 95\% bootstrap intervals; $p$-values are Holm-corrected. pp: percentage points.}
+\label{tab:confirm}
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llllr}
+\toprule
+Test & $E$ & $O$ & $E$ minus $O$ & $p$ \\
+\midrule
+H1a accuracy, median gap & 0.030 pp ($n=95$) & 0.059 pp ($n=33$) & $-0.029$ pp ($-0.172$, $0.116$) & 1.00 \\
+H1b AUC, median gap & 0.0005 ($n=73$) & 0.0012 ($n=40$) & $-0.0007$ ($-0.0043$, $0.0011$) & 0.72 \\
+H2 share with positive drift & 68.0\% (327 of 481) & & (63.8, 72.1), against 50\% & $<10^{-13}$ \\
+H3 median relative drift & 0.79\% ($n=194$) & 0.66\% ($n=113$) & 0.13 points ($-0.33$, $0.99$) & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:confirm} gives the four tests. For accuracy and for AUC competitions, the median of the competitions' signed mean gaps does not differ detectably between the cohorts (Figure~\ref{fig:gap}), and both intervals for the difference in medians exclude the thresholds we set in advance, one percentage point of accuracy and 0.01 of AUC. This bounds a shift in the typical signed gap. It does not show that the whole distributions, or absolute discrepancies, are unchanged; the intervals are not adjusted for multiplicity. The share of competitions with a mean gap above those thresholds is 15\% in $O$ and 11\% in $E$ for accuracy, and 30\% and 18\% for AUC.
+
+Drift is positive in 327 of 481 later competitions (Figure~\ref{fig:drift}). H2 was pre-specified as a test against one half and is reported as specified; its rejection shows that the divergence is common, not that it departs from a reference that the absence of adaptation would justify, which Section~\ref{sec:methods} shows one half is not in general. Across the five original metric groups its median size is 0.79\% of the team spread in $E$ and 0.66\% in $O$, with no detectable difference; the interval is wide relative to those medians and we set no equivalence margin, so a change in size is not excluded. The qualitative conclusions of all four tests are unchanged when flagged competitions are removed (H2: 312 of 453; estimates and intervals in Appendix Table~\ref{tab:s6}). That restriction removes only documented differences between the sets.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig1_gap_level.pdf}
+\caption{Distribution of competition mean gaps. Dotted lines mark the pre-set thresholds for a material gap.}
+\label{fig:gap}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig2_drift.pdf}
+\caption{Share of competitions with positive within-team drift (later submissions have a larger public-over-private gap than earlier ones), by metric group, with 95\% Wilson intervals. Groups with fewer than eight competitions are omitted.}
+\label{fig:drift}
+\end{figure}
+
+\section{Secondary results}
+\label{sec:secondary}
+
+These analyses were specified in advance but are not confirmatory. Every pre-specified secondary quantity is listed in Appendix~\ref{app:secondary}.
+
+\paragraph{Regression and classification.} We find no clear difference. Median relative drift is 0.5\% for regression ($E$ and $W$, $n=124$) and 0.7\% for classification ($E$ and $O$, $n=307$); the difference is $-0.2$ points ($-1.0$, $2.1$).
+
+\paragraph{Test-set size.} Among 125 accuracy competitions with inferred sizes, the absolute mean gap falls with total test size (Spearman $-0.61$): its median is 0.83 percentage points below 10,000 examples and 0.16 at or above (Figure~\ref{fig:size}). The top-decile gap net of the independent-resplitting reference shows no clear association with size (Spearman 0.12, $p=0.20$). Smaller test sets go with larger gaps in either direction, as sampling noise predicts. The data do not single out 10,000 as a threshold, and the lack of association for the reference-adjusted gap is not evidence of independence. Both statements depend on the minimum sizes.
+
+\paragraph{Time and platform.} Within $E$ we detect no monotone association of relative drift or relative gap with deadline year (Spearman 0.03 and 0.01). Competitions that accept submissions only from notebooks (``code-only''; not all of them re-run code on hidden data) have larger relative gaps than the rest of $E$ (median 0.30 against 0.007); Section~\ref{sec:explore} examines this.
+
+\paragraph{Formal accuracy test.} The median share of first-per-team submissions with $p \le 0.05$ is 1.7\% in $O$ and 1.8\% in $E$; it exceeds 10\% in 9\% and 11\% of competitions. These shares are conditional on the minimum sizes: if every size were twice the minimum, the medians would be 11.1\% and 11.7\%.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig3_test_size.pdf}
+\caption{Accuracy competitions: gap size, and top-decile gap net of the independent-resplitting reference, against minimum compatible test-set size.}
+\label{fig:size}
+\end{figure}
+
+\section{Exploratory results}
+\label{sec:explore}
+
+The analyses in this section were chosen after the results above were known.
+
+\paragraph{Why the divergence does not identify adaptation.} The pattern survives three changes to the measure: drift is positive in 63.3\% of later competitions when only the third and fourth quarters of each team's submissions are compared, in 65.4\% after dropping each team's first two submissions, and in 66.0\% with a pooled linear within-team adjustment for score level. It is positive in 66.0\% of competitions whose first submissions have a negative gap, and in 63.8\% (307 of 481) without clipping. These checks do not exclude every version of the mechanisms they address.
+
+Two counterexamples, both from a critical review of this work carried out with a second LLM-based assistant, show that the pattern does not establish adaptation. In the first, predetermined submissions whose accuracy rises along a curve, evaluated on two sets that differ in composition, pass all of the checks above with a relative drift of about 1\% and a negative first-submission gap. In the second, the split is random: the unequal-size example of Section~\ref{sec:methods}, in which drift is positive in 80\% of splits without feedback.
+
+Figure~\ref{fig:ident} shows the first point in a simulation of our own (deterministic; script released). In one simulated competition the split is random, no model is better than another in expectation, and teams keep a change only if it raises their public score. In the other no team uses feedback: every team follows a fixed path of improvement, and the public set over-represents the kind of example on which models improve. Average drift is $+0.56$ and $+0.66$ percentage points and is positive for 93\% and 83\% of teams; both start from a slightly negative first-submission gap. Aggregate scores of the kind Meta Kaggle records cannot tell the two apart.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig5_identification.pdf}
+\caption{Simulated illustration, not data: average public-minus-private accuracy by submission number in two competitions of 300 teams with 12 submissions each. Left: adaptation to public feedback on a random split, without real improvement. Right: no feedback, sets of different composition, models improving. The within-team drift is nearly the same.}
+\label{fig:ident}
+\end{figure}
+
+Table~\ref{tab:share} shows the share of positive drift by the public share that the platform reports. Positive drift is about as common where the public set is reported to be half or more of the test set as where it is the smaller part. This is evidence against one simple version of the unequal-size account, in which the same pattern of per-example improvement operates everywhere. It does not verify equal-sized random splits, since a reported share is nominal (among the 56 accuracy competitions reported at 50\%, 16 have unequal minimum compatible sizes), and it cannot exclude accounts in which improvement patterns differ between the groups of competitions being compared. For accuracy, the mean of unclipped drift is 0.10 percentage points across both cohorts (95\% interval 0.02 to 0.19; later competitions alone, $-0.01$ to 0.22).
+
+Only five analysed competitions state a random split (three original, two later; drift positive in three). First-submission gaps are positive in 56\% of later competitions; differences between the sets and adaptation before a team's first submission are both possible reasons, and we do not estimate either. We conclude that the divergence is real as a description and is in the direction adaptation predicts, and that pre-deadline scores do not separate adaptation from model-dependent differences between the sets.
+
+\begin{table}[t]
+\caption{Exploratory: competitions with positive within-team drift, by the public share of the test set that the platform reports (nominal). Left: all metrics, planned measure. Right: accuracy, AUC and MAP@K, unclipped scores. Original and later cohorts combined.}
+\label{tab:share}
+\centering\small
+\begin{tabular}{lcc}
+\toprule
+Public share & All metrics & Accuracy, AUC, MAP@K \\
+\midrule
+Under 40\% & 244 of 357 (68\%) & 92 of 140 (66\%) \\
+40--49\% & 35 of 45 (78\%) & 7 of 10 (70\%) \\
+Exactly 50\% & 89 of 139 (64\%) & 58 of 90 (64\%) \\
+Over 50\% & 36 of 54 (67\%) & 22 of 30 (73\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Related competitions, strata and tails.} Course series and recurring contests are not independent. We grouped competitions by hosting organisation where one is recorded, and otherwise by the first two hyphen-separated parts of their identifier after removing digits. This gives 365 groups for the 652 analysed competitions of all three cohorts, 247 of them among later competitions with defined drift. The grouping is crude and was fixed before these results were computed; it is one sensitivity analysis, not a general correction for dependence. Resampling groups instead of competitions leaves the confirmatory picture unchanged: the interval for the accuracy difference in medians is $-0.20$ to $0.11$ percentage points, for AUC $-0.0041$ to $0.0019$, and for the share of later competitions with positive drift 62.9\% to 71.8\%. Taking one competition per group gives a median share of 68.0\%.
+
+Splitting by host category, which is not a matching of tasks, datasets or test sizes, the comparison of signed gaps is similar for in-class accuracy competitions (median 0.02 percentage points in $E$, 0.06 in $O$) and for AUC competitions outside the Community category (0.0004 and 0.0005). For accuracy competitions outside the Community category there are only 13 and 8 competitions; the medians are 0.23 and 0.01 percentage points and the interval for their difference, $-0.31$ to $0.65$, is uninformative.
+
+Signed gaps can cancel, so we also report absolute mean gaps. For accuracy the median absolute mean gap is 0.34 percentage points in $E$ and 0.20 in $O$ (upper quartiles 1.09 and 0.61); for AUC it is 0.0027 and 0.0043 (upper quartiles 0.0098 and 0.0165). Accuracy competitions are thus somewhat less tightly matched between public and private scores in the later cohort even though the typical signed gap is not larger.
+
+\paragraph{The original outliers.} For two of the five outliers the top-10\% gap is close to the independent-resplitting reference (difference $-0.23$ and $+0.06$ percentage points), so these gaps are compatible with selection under that reference; for the other three the gap is larger ($+6.0$, $+2.8$ and $+1.2$).
+
+\paragraph{Featured and Research competitions.} In the Featured and Research host categories, the median relative gap is 0.17 in $E$ ($n=184$) against 0.01 in $O$ ($n=68$; $p=0.003$), and already 0.08 against 0.01 for teams' first submissions (Appendix Figure~\ref{fig:prize}). The share with positive drift is similar (72.5\% against 70.6\%). Within $E$, notebook-only competitions in these categories have a larger median relative gap than the others (0.30 against 0.06; Mann--Whitney $p=0.12$, and $p=0.03$ without flagged competitions), so the platform contrast of Section~\ref{sec:secondary} reflects both which categories use notebooks and a difference within them. Only 23 of the 184 use one of the original five metrics, so H1 does not speak to them. Scores are also more tightly packed in recent competitions of these categories, which enlarges any gap expressed in team spreads. A gap present from the first submission is compatible with differences in how the two sets are built or scored, and also with adaptation inherited from public notebooks before a team's first submission. We have not identified the mechanism.
+
+
+
+\section{Limitations}
+
+Aggregate scores limit what can be identified. Drift cannot separate adaptation from model-dependent differences between non-exchangeable sets; the 50\% reference of its sign test is guaranteed for feedback-free submissions under equal-size random splits of example-averaged metrics with unclipped scores, and not in general otherwise; and it cannot see adaptation that is complete before a team's first submission. Under the stated scoring and precision convention, minimum compatible sizes are lower bounds; outside tiers A and B the formal test is conditional on them. Each tail probability is valid for its own submission under the null model, but all submissions of a competition share one split and are correlated, so their tail probabilities are dependent: the share below 0.05 has no exact reference distribution, and the top-decile reference assumes independent splits. Split design is unknown for most competitions: labels record what hosts wrote and were assigned by one reader; the second reading was not blind to labels or results.
+
+The comparison between cohorts is by metric, not by task, host or year. Accuracy competitions are mostly in-class in both periods (25 of 33 and 82 of 95); AUC competitions are not (29 of 73 in $E$). Only six of the 95 accuracy competitions in $E$ ended after 2022. Our grouping of related competitions is crude, and dependence that it misses would make the intervals too narrow. We also designed a contrast of the gap's course before and after the competition deadline, when the feedback available to teams changes, and withdrew it without running it: with a handful of submissions on either side, a change located at the deadline cannot be told from ordinary smooth curvature of a feedback-free trajectory. No post-deadline public and private scores were compared. The study uses one snapshot of Meta Kaggle. We did not study the number of classes or notebook forking.
+
+\section{Conclusion}
+
+The original study's aggregate finding survives reconstruction and extension, but its evidence needs two qualifications: the published test-set sizes are incompatible with the recorded scores in 11 of 32 accuracy competitions, and in the clearest case the scoring unit decides the outcome of the formal test. For accuracy and AUC competitions, the typical signed gap between public and private scores is as small after April 2019 as in the original sample, within margins fixed in advance; absolute gaps for accuracy are somewhat larger. Within teams, later submissions favour the public leaderboard slightly more than earlier ones in about two thirds of competitions in both periods. That is the direction adaptation predicts, but leaderboard scores alone cannot attribute it to adaptation, because the same pattern follows from model-dependent differences between sets whose construction is mostly undocumented. Featured and Research competitions since 2019 show larger public-over-private gaps from the first submission onward, on metrics the original study did not cover. Settling these questions needs, at a minimum, what Meta Kaggle does not contain: per-example predictions and the public--private assignment of test examples. Three practical consequences follow. Studies that test reuse with aggregate accuracy should report the scoring unit and verify test-set sizes against the scores, since a wrong size can change the formal test by more than an order of magnitude (Section~\ref{sec:recon}). Hosts can make leaderboards auditable by stating how the public set was drawn and its exact size. Platforms could release, after a competition, the split assignment and per-example predictions for a documented sample of submissions, which would allow stronger checks of sampling, composition and dependence; attributing the divergence to feedback would still need a justified design, such as randomised access to feedback, or explicit identifying assumptions.
+
+\subsubsection*{Broader Impact Statement}
+The study uses public, aggregate competition data; teams appear only as numeric identifiers, and no individual or team is profiled or named. The main risk is misreading: a small typical gap is not evidence that test sets can be reused without limit, and the within-team divergence is not evidence that particular teams overfitted. We state both limits in the text.
+
+\subsubsection*{Reproducibility}
+Code, the archived analysis plan, the label table and all result tables will be released. Meta Kaggle is released under the Apache 2.0 licence and updated daily; we used the files downloaded on 15 November 2026, whose SHA-256 hashes are released with the code. Because the dataset page offers no earlier versions, the three files we used are available to the editors during review and will be deposited with a persistent identifier on publication. All scripts were re-run from the raw files in two clean environments (Python 3.12 with pandas 2.3, and Python 3.14 with pandas 3.1). The two runs agree exactly in every identifier, count, label and sign. Of their decimal results, 2,443 differ in the last digits; all but one agree to within $3\times10^{-12}$ of their value, and the exception is a difference of two nearly equal numbers, of size $2\times10^{-11}$, that agrees to within $2\times10^{-7}$ of its value. A critical review carried out with a second LLM-based assistant recomputed the confirmatory tests and reproduced them exactly; its counterexamples and sensitivity analyses are included with the code.
+
+\bibliography{references}
+\bibliographystyle{tmlr}
+
+\appendix
+\input{appendix_secondary}
+
+\section{Featured and Research competitions}
+\label{app:prize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig4_prize.pdf}
+\caption{Featured and Research competitions: mean gap in units of the team spread, for all submissions and for teams' first submissions.}
+\label{fig:prize}
+\end{figure}
+\end{document}

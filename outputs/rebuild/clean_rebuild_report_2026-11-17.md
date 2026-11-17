@@ -17,3 +17,18 @@
 - **Fix:** both scripts now read the score columns as text and convert them with Python's `float()`, which is correctly rounded under any pandas version.
 - **Effect:** in the repository's tables, `top10_mean_gap` and the top-10% tie bounds changed for competitions 8900 and 10200 (for example 0.023606 to 0.023559 in 8900), and the share of teams with positive or negative drift changed for 4493 and 5275 (a few teams' drift is exactly zero). No number in the paper changed.
 - **Result after the fix:** `rebuild_py314_comparison_2026-11-17.csv`: 34 tables the same, 1 different in shape (the team-flags file explained above). `rebuild_py312_after_parsing_fix_2026-11-17.csv`: Python 3.12 environment, 33 the same, the same single exception. The two environments give the same tables.
+
+## Addendum 2, 17 November 2026 afternoon: stricter comparison
+
+- The package review found that `scripts/compare_outputs.py` (version 1) compared numeric columns only and ignored text columns, column names and text missingness. Version 1 is kept in `superseded/`. Version 2 compares column names and order, row counts, every text cell, and every number (relative tolerance 1e-9, absolute 1e-12; NaN and infinities exactly), cell by cell in mixed columns; classifies tables not rebuilt by the pipeline; and passes a self-test of 16 deliberately altered tables (`--selftest`).
+- Version 2 found two things version 1 missed, neither a change in any result:
+  1. `outputs/stage3/competition_measures.csv` had been built across two runs of the stage 3 script (before and after the 16 November fix for scores outside the unit interval). Its column order therefore differed from a single run, and the bookkeeping column `scores_in_0_1` was blank for 69 accuracy competitions measured in the first run. All other values were identical. The table was regenerated in one run under Python 3.14 (old copy in `superseded/outputs_before_single_run/`), and `stage3_extension.py` now writes a fixed column order whatever the run history. Downstream stages re-run.
+  2. `outputs/stage4/code_only_tests.csv` mixes counts and decimals in one column; its decimals agree to about 1e-15 between environments.
+- **Result:** with version 2, both clean rebuilds (Python 3.14 and Python 3.12) PASS against the project: every rebuilt table matches; the one known exception is the team-flags intermediate; 20 tables are not rebuilt by the pipeline (review outputs, rebuild reports, withdrawn-design counts, the hand-assembled stage 1 register, the 4,000-draw table). Reports regenerated: `rebuild_py314_comparison_2026-11-17.csv`, `rebuild_py312_after_parsing_fix_2026-11-17.csv`. Earlier statements that 33 or 34 tables were "the same" were made with version 1 and are superseded by this one.
+
+## Addendum 3, 17 November 2026, 15:09-15:17 Europe/Stockholm: package smoke test on the researcher's machine
+
+- **What was run:** the researcher unpacked `anonymous_review_package.zip` into an empty folder on their own Mac, linked the three Meta Kaggle files, created a fresh virtual environment with Python 3.14.2 and `requirements.txt`, and ran `CLEAN=1 PY=.venv/bin/python bash run_all.sh` as one process. This is the first execution of the wrapper end to end as a single process.
+- **Result:** every stage completed; the run ended with `ALL DONE`.
+- **Comparison** with `scripts/compare_outputs.py` version 2 against the project's outputs: 34 tables the same, 20 not rebuilt (expected), 1 known exception (team-flags intermediate); `RESULT: PASS`.
+- So the package reproduces every rebuilt result table on a third machine, under a third interpreter build (3.14.2, besides 3.14.8 and 3.12.15 in the assistant's environment), from the zip alone plus the public data.

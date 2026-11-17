@@ -30,6 +30,15 @@ for extra in ("ANON_README.md", "CHRONOLOGY.md"):
     shutil.copy2(os.path.join("anonymous_package_docs", extra), os.path.join(DEST, extra)); copied.append(extra)
 with open(os.path.join(DEST, "MANIFEST_SHA256.txt"), "w") as m:
     for f in sorted(copied): m.write(hashlib.sha256(open(os.path.join(DEST, f), "rb").read()).hexdigest() + "  " + f + "\n")
+# every file the documented pipeline needs must be present (identity filtering must not silently drop one)
+import re as _re
+needed = ["run_all.sh", "requirements.txt", "requirements-py312.txt", "ANON_README.md", "CHRONOLOGY.md", "scripts/compare_outputs.py",
+          "analysis_plan/stage2_analysis_plan_v1.0.md", "analysis_plan/SHA256SUMS.txt", "data/reference/original_120_manifest.csv",
+          "data/reference/split_label_decisions.py", "scripts/stage2_measures.py"]
+needed += _re.findall(r"scripts/[A-Za-z0-9_]+\.py", open("run_all.sh").read())
+missing = [f for f in sorted(set(needed)) if not os.path.exists(os.path.join(DEST, f))]
+if missing: print("REQUIRED FILES MISSING FROM PACKAGE:", missing); sys.exit(1)
+print("required files present:", len(set(needed)))
 # final scan of the package itself
 bad = []
 for r, _, fs in os.walk(DEST):
@@ -42,6 +51,7 @@ with zipfile.ZipFile("anonymous_review_package.zip", "w", zipfile.ZIP_DEFLATED) 
     for r, _, fs in os.walk(DEST):
         for f in sorted(fs):
             p = os.path.join(r, f); zi = zipfile.ZipInfo(os.path.relpath(p, DEST), date_time=(2026, 11, 17, 0, 0, 0)); zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = ((0o755 if f.endswith('.sh') else 0o644) | 0o100000) << 16      # regular file; run_all.sh executable
             z.writestr(zi, open(p, "rb").read())                       # fixed timestamps, no user or path metadata
 print("copied", len(copied), "files; left out for identity strings:", len(dropped))
 for f, why in dropped: print("  left out:", f, why)

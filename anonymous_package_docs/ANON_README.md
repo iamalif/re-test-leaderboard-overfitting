@@ -21,7 +21,7 @@ Supplementary material for the submission "Leaderboard Overfitting on Kaggle, Re
 
 ## Running
 
-Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `requirements-py312.txt`; both give the same tables), then `CLEAN=1 PY=python bash run_all.sh`. About ten to twenty minutes on a laptop. Compare with the shipped tables using `python scripts/compare_outputs.py outputs_previous_<time> outputs`.
+Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `requirements-py312.txt`; both give the same tables), then `CLEAN=1 PY=python bash run_all.sh`. About ten to twenty minutes on a laptop. Then compare with the shipped tables: `python scripts/compare_outputs.py outputs_previous_<time> outputs`. It compares column names, every text cell and every number (relative tolerance 1e-9, absolute 1e-12), lists tables the pipeline does not rebuild, and ends with PASS or a list of failures. `python scripts/compare_outputs.py --selftest` checks the comparison itself against deliberately altered tables.
 
 ## Where each claim in the paper comes from
 
@@ -48,3 +48,20 @@ Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `require
 | Clean rebuild | `outputs/rebuild/` | `compare_outputs.py` |
 
 Analyses under `outputs/stage4/`, `outputs/stage6/` and `outputs/review/` were chosen after the planned results were known and are exploratory.
+
+## Status of the reports in `outputs/`
+
+The paper states the current claims. The reports are kept as written at the time, with amendments appended where a later review changed their interpretation.
+
+| Report | Status |
+|---|---|
+| `stage1_report.md`, `stage1_audit_update.md`, `allstate_verification_note.md` | Stage 1 reconstruction. Its formal test used published sizes for 19 competitions; the paper uses minimum compatible sizes with evidence tiers instead. |
+| `independent_reanalysis_route.md` | Stage 1 plan for proceeding without the original code. Current. |
+| `stage3_report.md` | The planned results. Numbers current; its reading of drift as adaptation is superseded by the paper (drift is a description consistent with adaptation, not a measurement of it). |
+| `stage4_report.md` | Exploratory follow-ups. Amended at the end: the checks rule out two specific explanations only; "selection-adjusted" means relative to an independent-resplitting reference. |
+| `stage5/label_audit_result.md` | Amended at the end: a same-reader excerpt check; the full-text second reading is in `outputs/review/revision/`. |
+| `rebuild/clean_rebuild_report_2026-11-17.md` | Rebuild evidence, with an addendum for the Python 3.14 environment. |
+
+## Independent reviewer's checks
+
+Supplied with their code: `outputs/review/review_checks.py`, `outputs/review/audit_more.py`, `outputs/review/revision/followup_checks.py`, `outputs/review/v03/review_v03_checks.py` and their outputs. Supplied as results only (their scripts contain machine-specific paths and were left out): the deadline-design counterexamples, the second reader's audit export script, and the v0.5 verification check. Their result files are included, except one summary file that names the reviewing tool.

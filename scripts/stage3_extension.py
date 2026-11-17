@@ -92,4 +92,10 @@ for cid, m in c.iterrows():
     else:
         row.to_csv(OUT, index=False)
     done.add(cid)
+# Fixed column order (17 Nov 2026): rows are appended across resumable runs, so column order used to depend on run
+# history. This is the order an uninterrupted run produces.
+COLUMN_ORDER = ['CompetitionId', 'Cohort', 'Group', 'Metric', 'MetricName', 'Segment', 'CodeOnly', 'DeadlineYear', 'Deadline', 'split_label', 'flagged', 'higher_better', 'n_analysis', 'n', 'teams', 'mean_gap', 'median_gap', 'first_mean_gap', 'top10_mean_gap', 'top10_n', 'noise_sd_first', 'share_identical', 'drift_teams', 'drift_mean', 'drift_se', 'drift_median', 'drift_share_positive', 'drift_share_negative', 'team_spread', 'rel_mean_gap', 'rel_drift', 'excluded', 'n_pub', 'n_priv', 'fit_pub', 'fit_priv', 'scores_in_0_1', 'p05_all', 'p05_first', 'p05_top10', 'top10_gap_null', 'top10_gap_null_sd', 'top10_gap_excess']
+final = pd.read_csv(OUT)
+assert set(final.columns) <= set(COLUMN_ORDER), set(final.columns) - set(COLUMN_ORDER)
+final.reindex(columns=COLUMN_ORDER).to_csv(OUT, index=False)
 print("DONE", len(done), "competitions")

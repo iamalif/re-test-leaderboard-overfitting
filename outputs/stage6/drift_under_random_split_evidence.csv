@@ -1,8 +1,8 @@
 subset,n,positive,share,sign_p
 split stated random (O+E),5,3,0.6,1.0
-"accuracy, O+E, all with sizes",125,74,0.592,0.04866218514586793
+"accuracy, O+E, all with sizes",125,74,0.592,0.04866218514586781
 "accuracy, share of first-submission p<=0.05 is at most 5% (outcome-selected filter; NOT evidence of a random split)",94,56,0.5957446808510638,0.07897554800108206
 "accuracy, share of first-submission p<=0.05 above 5%",31,18,0.5806451612903226,0.47312965989112854
 "accuracy, tiers A-B only",22,14,0.6363636363636364,0.28627872467041016
-"O: first-submission gap positive (level, not drift)",114,65,0.5701754385964912,0.15976150778501863
-"E: first-submission gap positive (level, not drift)",487,274,0.5626283367556468,0.006491775062465361
+"O: first-submission gap positive (level, not drift)",114,65,0.5701754385964912,0.1597615077850186
+"E: first-submission gap positive (level, not drift)",487,274,0.5626283367556468,0.006491775062465429

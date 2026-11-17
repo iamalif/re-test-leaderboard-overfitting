@@ -274,3 +274,18 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - FIX: both scripts read scores as text and convert with Python's float(). Repository stage 1 and 2 tables regenerated under 3.14. Changed: `top10_mean_gap` and tie bounds for 8900 and 10200; team-level drift sign shares for 4493 and 5275. No number in the paper changed.
 - After the fix: 3.14 rebuild 34 tables the same, 3.12 rebuild 33 the same; the only exception in both is the documented team-flags intermediate. Evidence and addendum in `outputs/rebuild/`.
 - Paper v0.6 reproducibility sentence updated to mention both environments. Anonymised package rebuilt.
+
+# Package review answered; stricter comparison; single-run stage 3 table (2026-11-17, about 15:10-15:40, Claude)
+
+- Review `reviews/review_2026-11-17_package.md`: the comparison tool ignored text columns (concrete false pass shown); the zip dropped the run script's executable bit; identity filtering could silently drop needed files. All accepted; response `reviews/response_2026-11-17_package.md`.
+- CORRECTION: earlier statements that the clean rebuild matched "33 tables" / "34 tables" were made with a tool that compared numbers only. Superseded by the version 2 comparison below.
+- `scripts/compare_outputs.py` v2 (v1 in `superseded/`), with a 16-case self-test.
+- v2 found `outputs/stage3/competition_measures.csv` had been built across two runs (column order; `scores_in_0_1` blank for 69 accuracy competitions from the first run). Regenerated in a single run under Python 3.14; `stage3_extension.py` now writes a fixed column order. Downstream stages 3 tests, 4, 5 figures, 6 re-run. Old copy in `superseded/outputs_before_single_run/`. No result or paper number changed.
+- Both clean rebuilds (3.14 and 3.12) now PASS under v2; one known exception (team-flags intermediate).
+- Package builder: explicit zip file modes, required-file assertion (26 files), README sections on report status and reviewer checks. Zip re-verified after extraction (modes, manifest hashes, comparison self-test).
+- The researcher's smoke test is running from the earlier zip; its scripts produce the same tables, so its output is to be compared against the updated project outputs with the v2 tool.
+
+# Package smoke test PASSED on the researcher's Mac (2026-11-17, 15:17, Claude)
+
+- From the zip alone plus the public Meta Kaggle files, Python 3.14.2, fresh virtual environment, `CLEAN=1 bash run_all.sh` as a single process: ALL DONE. Comparison (tool v2) against the project: 34 same, 20 not rebuilt (expected), 1 known exception; RESULT: PASS. Recorded in `outputs/rebuild/clean_rebuild_report_2026-11-17.md`, addendum 3.
+- This closes the reproducibility work. Remaining before submission: the researcher's own read-through of `paper/main.pdf`; arXiv endorsement; preprint timing under double-blind review; optional repeat of the literature search shortly before submitting.

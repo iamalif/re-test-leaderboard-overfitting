@@ -15,7 +15,7 @@ Supplementary material for the submission "Leaderboard Overfitting on Kaggle, Re
 
 ## Not included, and how to obtain it
 
-- Meta Kaggle raw files (`Competitions.csv`, `Teams.csv`, `Submissions.csv`), downloaded 15 November 2026 from Kaggle's public Meta Kaggle dataset. Place them in `data/raw/`. SHA-256: Competitions `1bbfaf5d754c972a6b441b97dc1e74217e79d9395fc64d182fd14e9e38810a84`; Submissions `2c4359f1d37fb3047319ee76f9bb3fed4e8e62d9771e5b694d40d9d03f8092b2`; Teams `ba4911a2903f65f57f3a3eba4ee831bfc277ebab5142b6135b1e5984f761e067`. The dataset is updated daily, so a later download will not match these hashes exactly.
+- Meta Kaggle raw files (`Competitions.csv`, `Teams.csv`, `Submissions.csv`), downloaded 15 November 2026 from Kaggle's public Meta Kaggle dataset. Place them in `data/raw/`. SHA-256: Competitions `1bbfaf5d754c972a6b441b97dc1e74217e79d9395fc64d182fd14e9e38810a84`; Submissions `2c4359f1d37fb3047319ee76f9bb3fed4e8e62d9771e5b694d40d9d03f8092b2`; Teams `ba4911a2903f65f57f3a3eba4ee831bfc277ebab5142b6135b1e5984f761e067`. The dataset (Apache 2.0 licence) is updated daily and its page offers no earlier versions, so a later download will not match these hashes exactly. The exact files are available to the editors during review and will be deposited with a persistent identifier on publication.
 - The Allstate competition test file (`test_v2.csv`, SHA-256 `9afb8de68728764905a5f1827256a4e423baba0508d7df9d55ea5ca3e73eb458`), from that competition's data page; needed only for the optional file check in `scripts/stage1_reproduce.py`.
 - Two large extracts of the raw data that the scripts rebuild.
 

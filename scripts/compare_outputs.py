@@ -8,7 +8,9 @@ REPORT.csv lists every file with its status. DIFFERENCES.csv lists every decimal
 but passes: file, row key, column, both values, absolute and relative difference.
 
 Scope: outputs/stage0_per_competition.csv and every CSV under the pipeline directories (PIPELINE_DIRS). Files in
-HISTORICAL are kept results that the pipeline does not rebuild; they may be absent from either tree. Any other missing or
+HISTORICAL are kept results that the pipeline does not rebuild; they may be absent from either tree. Files in
+OPTIONAL_INPUT are built only from an optional input that is not shipped; they may be absent from NEW_DIR only when that
+input is absent from NEW_DIR's project root. Any other missing or
 extra pipeline table fails. Everything outside the pipeline (review/, rebuild/, stage5/, stage7/) is not compared.
 
 Every cell is read as literal text (no missing-value guessing). A table passes only if column names and order match,
@@ -34,6 +36,10 @@ import pandas as pd
 RTOL, ATOL = 1e-9, 1e-12
 PIPELINE_DIRS = ["stage1", "stage2", "stage3", "stage4", "stage6"]
 PIPELINE_FILES = ["stage0_per_competition.csv"]
+OPTIONAL_INPUT = {   # results built only when an optional input file is present next to the new tree (path relative to the
+                     # project root, taken as the parent of NEW_DIR); absent from NEW is accepted only if that input is absent
+    "stage1/allstate_file_verification.json": "data/reference/test_v2.csv",   # Allstate competition test file, not shipped
+}
 HISTORICAL = {   # kept results that the pipeline does not regenerate; may be absent from a rebuild
     "stage1/accuracy_size_evidence_register.csv": "assembled during stage 1; superseded in the paper by stage 6 tiers",
     "stage6/deadline_design_eligibility_metadata_only.csv": "count table for the withdrawn deadline design",
@@ -159,7 +165,11 @@ def run(ref, new, report=None, diff_report=None):
     R, N = _tables(ref), _tables(new); rows = []; alldiffs = []
     for t in sorted(R | N):
         r = dict(table=t)
-        if t not in N: r["status"] = "historical, not rebuilt" if t in HISTORICAL else "MISSING FROM NEW"
+        if t not in N:
+            if t in HISTORICAL: r["status"] = "historical, not rebuilt"
+            elif t in OPTIONAL_INPUT and not os.path.exists(os.path.join(os.path.abspath(new), os.pardir, OPTIONAL_INPUT[t])):
+                r["status"] = "not rebuilt, optional input absent"; r["detail"] = OPTIONAL_INPUT[t]
+            else: r["status"] = "MISSING FROM NEW"
         elif t not in R: r["status"] = "historical, not rebuilt" if t in HISTORICAL else "ONLY IN NEW"
         else:
             st, d = (compare_json if t.endswith(".json") else compare_tables)(os.path.join(ref, t), os.path.join(new, t))
@@ -170,7 +180,7 @@ def run(ref, new, report=None, diff_report=None):
     if report: out.to_csv(report, index=False)
     if diff_report: pd.DataFrame(alldiffs, columns=["file", "key", "column", "reference", "new", "abs_diff", "rel_diff"]).to_csv(diff_report, index=False)
     print(out.status.value_counts().to_string())
-    bad = out[~out.status.isin(["same", "historical, not rebuilt"])]
+    bad = out[~out.status.isin(["same", "historical, not rebuilt", "not rebuilt, optional input absent"])]
     if len(bad): print("\nFAILURES:"); print(bad[[c for c in ("table", "status", "detail") if c in bad]].to_string(index=False)); return 1
     ntol = int(out.get("cells_within_tolerance", pd.Series([0])).fillna(0).sum())
     mx = out.get("max_rel_diff", pd.Series([0.0])).fillna(0).max(); ma = out.get("max_abs_diff", pd.Series([0.0])).fillna(0).max()
@@ -232,6 +242,14 @@ def selftest():
                                    "json count changed": ({"rows": [{"n": 5}]}, {"rows": [{"n": 6}]}, "DIFFERENT VALUES")}.items():
             _j.dump(x, open(ja, "w")); _j.dump(y, open(jb, "w")); got = compare_json(ja, jb)[0]; ok &= got == want
             print(f"{'ok  ' if got == want else 'FAIL'} {name:36s} expected {want:20s} got {got}")
+        # optional-input result: absent from the new tree is accepted only while its input is absent
+        for sub in ("r2", "p2/outputs"): os.makedirs(os.path.join(d, sub, "stage1"))
+        _j.dump({"n": 1}, open(os.path.join(d, "r2", "stage1", "allstate_file_verification.json"), "w"))
+        st = run(os.path.join(d, "r2"), os.path.join(d, "p2", "outputs")); good = st == 0; ok &= good
+        print(f"{'ok  ' if good else 'FAIL'} {'optional input absent, result absent':36s} expected PASS                 got {'PASS' if st == 0 else 'FAIL'}")
+        os.makedirs(os.path.join(d, "p2", "data", "reference")); open(os.path.join(d, "p2", "data", "reference", "test_v2.csv"), "w").write("x")
+        st = run(os.path.join(d, "r2"), os.path.join(d, "p2", "outputs")); good = st == 1; ok &= good
+        print(f"{'ok  ' if good else 'FAIL'} {'optional input present, result absent':36s} expected FAIL                 got {'PASS' if st == 0 else 'FAIL'}")
     print("SELFTEST", "PASSED" if ok else "FAILED"); return 0 if ok else 1
 
 

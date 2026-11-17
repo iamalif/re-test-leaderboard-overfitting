@@ -43,6 +43,29 @@ c = c[(c.CohortCode != "W") | c.Metric.isin(["RMSE", "MAE", "MSE", "RMSLE"])]
 lab = read_csv_exact("outputs/stage3/split_labels.csv")[["CompetitionId", "split_label", "flagged"]]
 c = c.merge(lab, on="CompetitionId", how="left").set_index("CompetitionId")
 
+# Both stage 3 caches -- the extracted scores (PARQ) and the per-competition row store (ROWS) -- are bound to one
+# fingerprint: SHA-256 of this script, the measure and CSV-reading helpers, the stage 0/1 metadata tables, the split
+# labels, and the raw Submissions.csv and Teams.csv from which scores are extracted. The fingerprint is computed on
+# every start. If either cache exists and the stored fingerprint is missing or differs in any entry, the run stops
+# and asks for a clean rebuild; a resumed run therefore uses only caches made by identical code and inputs.
+# Changed 17 Nov 2026 (earlier versions checked only the row store, and not the raw score files).
+import json, hashlib
+def _h(f):
+    d = hashlib.sha256()
+    with open(f, "rb") as fh:
+        for b in iter(lambda: fh.read(1 << 24), b""): d.update(b)
+    return d.hexdigest()
+FINGERPRINT = {f: _h(f) for f in ("scripts/stage3_extension.py", "scripts/stage2_measures.py", "scripts/csvio.py",
+                                  "outputs/stage1/cohort_per_competition.csv", "outputs/stage0_per_competition.csv",
+                                  "outputs/stage3/split_labels.csv", "data/raw/Submissions.csv", "data/raw/Teams.csv")}
+FPFILE = "outputs/stage3/cache_fingerprint.json"
+_caches = [f for f in (PARQ, OUT + ".rows.jsonl") if os.path.exists(f)]
+if _caches:
+    if not os.path.exists(FPFILE) or json.load(open(FPFILE)) != FINGERPRINT:
+        sys.exit(f"{_caches} made by different code or inputs; rebuild with CLEAN=1")
+else:
+    with open(FPFILE, "w") as fh: json.dump(FINGERPRINT, fh, indent=1)
+
 if not os.path.exists(PARQ):
     con = duckdb.connect(); con.execute("SET memory_limit='2GB'; SET temp_directory='/tmp/duck'")
     con.register("ids", pd.DataFrame({"CompetitionId": c.index.astype(str)}))
@@ -54,27 +77,14 @@ if not os.path.exists(PARQ):
       JOIN read_csv('data/raw/Teams.csv', header=true, all_varchar=true) t ON s.TeamId = t.Id
       WHERE t.CompetitionId IN (SELECT CompetitionId FROM ids) AND s.IsAfterDeadline='False' AND t.IsBenchmark='False'
         AND isfinite(try_cast(s.PublicScoreFullPrecision AS DOUBLE)) AND isfinite(try_cast(s.PrivateScoreFullPrecision AS DOUBLE))
-      ORDER BY 1, 2) TO '{PARQ}' (FORMAT parquet, ROW_GROUP_SIZE 100000)""")
+      ORDER BY 1, 2) TO '{PARQ}.partial' (FORMAT parquet, ROW_GROUP_SIZE 100000)""")
+    os.replace(PARQ + ".partial", PARQ)   # an interrupted extraction never leaves a cache that looks complete
     print("extracted", con.sql(f"select count(*), count(distinct CompetitionId) from '{PARQ}'").fetchall(), flush=True)
 
 # Rows are appended as JSON lines (Python's repr of each float, so exact) and the CSV is written once at the end.
 # Earlier versions re-read and rewrote the whole CSV after every competition, which re-parsed every stored number
 # each time (inexact under pandas 2.x). Changed 17 Nov 2026.
-import json
 ROWS = OUT + ".rows.jsonl"
-# The row store is bound to the code and inputs that produced it: resuming after any of them changed is refused.
-import hashlib
-def _h(f):
-    with open(f, "rb") as fh: return hashlib.sha256(fh.read()).hexdigest()
-FINGERPRINT = {f: _h(f) for f in ("scripts/stage3_extension.py", "scripts/stage2_measures.py", "scripts/csvio.py",
-                                  "outputs/stage1/cohort_per_competition.csv", "outputs/stage0_per_competition.csv",
-                                  "outputs/stage3/split_labels.csv")}
-FPFILE = ROWS + ".fingerprint.json"
-if os.path.exists(ROWS):
-    if not os.path.exists(FPFILE) or json.load(open(FPFILE)) != FINGERPRINT:
-        sys.exit(f"{ROWS} was made by different code or inputs; rebuild with CLEAN=1 (or delete it)")
-else:
-    with open(FPFILE, "w") as fh: json.dump(FINGERPRINT, fh, indent=1)
 # Note: the store is read only by this script with Python's json module, which writes missing values as NaN.
 done = set()
 if os.path.exists(ROWS):

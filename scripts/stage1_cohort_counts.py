@@ -40,7 +40,7 @@ SELECT p.CompetitionId, p.Slug, p.HostSegmentTitle, p.Deadline, p.DeadlineYear, 
        ELSE 'not_ended' END AS Cohort
 FROM 'outputs/stage0_per_competition.csv' p JOIN cnt USING (CompetitionId)
 WHERE cnt.n_pre >= 1000""")
-con.execute("COPY (SELECT * FROM c ORDER BY Deadline) TO 'outputs/stage1/cohort_per_competition.csv' (HEADER)")
+con.execute("COPY (SELECT * FROM c ORDER BY Deadline, CompetitionId) TO 'outputs/stage1/cohort_per_competition.csv' (HEADER)")
 con.execute("""COPY (
 SELECT Cohort, MetricGroup, count(*) AS eligible_1000_pre,
        count(*) FILTER (n_pre_both_nonbench>=1000) AS paired_nonbench_1000,

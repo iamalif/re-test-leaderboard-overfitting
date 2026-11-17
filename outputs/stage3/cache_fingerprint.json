@@ -1,0 +1,10 @@
+{
+ "scripts/stage3_extension.py": "93aabbd7afee428df6018964cfb58be2d1f5ac521e275f548e63dd818d17173d",
+ "scripts/stage2_measures.py": "14179ef7c31712b376b22eebd26996f74ad734616b93fef03d4352867c91a425",
+ "scripts/csvio.py": "95d07afb3721fe1832e9cd83dd27a784e8376dfba7fee0abc72ac0873febea9f",
+ "outputs/stage1/cohort_per_competition.csv": "375e17ed88966a3734fc4ef6330946fa030b64a83c0162a42f5881b37fd8134f",
+ "outputs/stage0_per_competition.csv": "56d04cc3e4f4191e57bbbbc8bd4324b974681149d7a25d637c43820fbbe74bdb",
+ "outputs/stage3/split_labels.csv": "edf340c395de553bb53086c811dc32ad3c4bb8d9313eb44f57455f155abab1b2",
+ "data/raw/Submissions.csv": "2c4359f1d37fb3047319ee76f9bb3fed4e8e62d9771e5b694d40d9d03f8092b2",
+ "data/raw/Teams.csv": "ba4911a2903f65f57f3a3eba4ee831bfc277ebab5142b6135b1e5984f761e067"
+}

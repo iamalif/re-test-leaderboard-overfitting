@@ -26,7 +26,7 @@ def bottom_legend(fig, ax, note=None):
     if note: fig.text(0.5, -0.11, note, ha="center", fontsize=7.5, color=MUTED)
 
 def save(fig, name):
-    fig.savefig(f"paper/figures/{name}.png"); fig.savefig(f"paper/figures/{name}.pdf"); plt.close(fig)
+    fig.savefig(f"paper/figures/{name}.png"); fig.savefig(f"paper/figures/{name}.pdf", metadata={"CreationDate": None}); plt.close(fig)
 
 # Figure 1: gap level, accuracy and AUC
 fig, axs = plt.subplots(1, 2, figsize=(7.2, 3.0))

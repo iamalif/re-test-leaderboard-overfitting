@@ -1,0 +1,43 @@
+table,alignment,cells_within_tolerance,detail,max_abs_diff,max_rel_diff,status
+stage0_per_competition.csv,key CompetitionId,0.0,,0.0,0.0,same
+stage1/accuracy_size_evidence_register.csv,,,,,,"historical, not rebuilt"
+stage1/allstate_file_verification.json,fields,0.0,,0.0,0.0,same
+stage1/allstate_reconstructed_size_sensitivity.json,fields,0.0,,0.0,0.0,same
+stage1/benchmark_and_tie_sensitivity.csv,bytes identical,0.0,,,,same
+stage1/candidate_cohort_counts.csv,bytes identical,0.0,,,,same
+stage1/cohort_counts.csv,bytes identical,0.0,,,,same
+stage1/cohort_per_competition.csv,key CompetitionId,0.0,,0.0,0.0,same
+stage1/denominator_audit.csv,bytes identical,0.0,,,,same
+stage1/denominator_candidates_UNVERIFIED.csv,bytes identical,0.0,,,,same
+stage1/first_day_and_pvalue_sensitivity.csv,bytes identical,0.0,,,,same
+stage1/original_sample_audit.csv,bytes identical,0.0,,,,same
+stage1/original_team_flags.csv,bytes identical,0.0,,,,same
+stage1/pvalue_summary.csv,bytes identical,0.0,,,,same
+stage1/replication_summary.csv,bytes identical,0.0,,,,same
+stage1/synthetic_selection_check.json,fields,0.0,,0.0,0.0,same
+stage2/pilot_original_drift_tests.csv,bytes identical,0.0,,,,same
+stage2/pilot_original_inferred_sizes.csv,bytes identical,0.0,,,,same
+stage2/pilot_original_measures.csv,bytes identical,0.0,,,,same
+stage2/pilot_simulation.csv,bytes identical,0.0,,,,same
+stage3/competition_measures.csv,bytes identical,0.0,,,,same
+stage3/results_confirmatory.csv,bytes identical,0.0,,,,same
+stage3/results_descriptive.csv,bytes identical,0.0,,,,same
+stage3/results_secondary.csv,bytes identical,0.0,,,,same
+stage3/split_evidence_sentences.csv,bytes identical,0.0,,,,same
+stage3/split_labels.csv,bytes identical,0.0,,,,same
+stage4/code_only_summary.csv,bytes identical,0.0,,,,same
+stage4/code_only_tests.csv,bytes identical,0.0,,,,same
+stage4/drift_robustness_per_competition.csv,bytes identical,0.0,,,,same
+stage4/drift_robustness_summary.csv,bytes identical,0.0,,,,same
+stage4/prize_competitions_O_vs_E.csv,bytes identical,0.0,,,,same
+stage6/competition_clusters.csv,bytes identical,0.0,,,,same
+stage6/deadline_design_eligibility_metadata_only.csv,,,,,,"historical, not rebuilt"
+stage6/dependence_and_strata.csv,bytes identical,0.0,,,,same
+stage6/dependence_and_strata_4000draws.csv,,,,,,"historical, not rebuilt"
+stage6/drift_under_random_split_evidence.csv,bytes identical,0.0,,,,same
+stage6/exchangeability_simulation.csv,bytes identical,0.0,,,,same
+stage6/h1_tail_summary.csv,bytes identical,0.0,,,,same
+stage6/post_deadline_counts_metadata_only.csv,,,,,,"historical, not rebuilt"
+stage6/size_evidence_tiers.csv,bytes identical,0.0,,,,same
+stage6/split_size_symmetry.csv,bytes identical,0.0,,,,same
+stage6/verify_review_numbers.csv,bytes identical,0.0,,,,same

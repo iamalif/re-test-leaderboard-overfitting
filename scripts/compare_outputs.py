@@ -16,10 +16,12 @@ the set of row keys matches exactly, and every cell matches:
   - identical text: match;
   - otherwise, if either cell is empty, or an integer, or not a number: mismatch (identifiers, counts, labels,
     booleans and missing values must be exactly equal);
-  - otherwise both are decimals: they must have the same sign (negative / zero / positive) and finiteness; if either
-    column holds only whole numbers below 2**53 in the reference (a count written as a decimal, e.g. "10.0"), they
-    must be equal; in p-value columns (P_COLUMNS) they must fall on the same
-    side of 0.01, 0.05 and 0.10; and |a - b| <= 1e-12 + 1e-9 * |b|. Note that this is a combined absolute and
+  - otherwise both are decimals: they must have the same sign (negative / zero / positive) and finiteness; if the
+    column holds only whole numbers below 2**53 in the reference, it is treated as a count written as a decimal
+    (e.g. "10.0") and the cells must be equal -- a heuristic inferred from the reference values, not from a declared
+    column type, so a measure that happens to be whole-valued in every reference row is held to exact equality
+    (stricter, never looser); in columns whose names match P_COLUMNS (p-value protection is by column name only)
+    they must fall on the same side of 0.01, 0.05 and 0.10; and |a - b| <= 1e-12 + 1e-9 * |b|. Note that this is a combined absolute and
     relative tolerance, not a pure relative bound: for |b| below 1e-3 the absolute term dominates.
 JSON result files (JSON_RESULTS) are compared field by field under the same cell rules; fields that describe the
 environment or the run (JSON_IGNORE) are skipped. Figures are not compared: they are drawn from compared tables.

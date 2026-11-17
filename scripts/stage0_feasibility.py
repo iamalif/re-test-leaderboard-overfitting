@@ -49,7 +49,7 @@ SELECT c.Id::BIGINT AS CompetitionId, c.Slug, c.Title, c.HostSegmentTitle,
 FROM read_csv('{RAW}/Competitions.csv', header=true, all_varchar=true) c
 LEFT JOIN read_csv('{RAW}/Teams.csv', header=true, all_varchar=true) t ON t.CompetitionId = c.Id
 LEFT JOIN sub s ON s.TeamId = t.Id::BIGINT
-GROUP BY ALL ORDER BY Deadline
+GROUP BY ALL ORDER BY Deadline, CompetitionId   -- ties on Deadline broken by identifier, so row order is reproducible
 ) TO 'outputs/stage0_per_competition.csv' (HEADER)
 """)
 print(con.execute("SELECT count(*), sum(n_all), sum(n_pre) FROM 'outputs/stage0_per_competition.csv'").fetchall())

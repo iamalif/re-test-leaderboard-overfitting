@@ -40,7 +40,7 @@ else:
   if i%10==0: print('Read submission chunk',i,flush=True)
  d=exact_scores(pd.concat(parts,ignore_index=True))
  assert set(d.CompetitionId)<=set(manifest.index)
- d.to_csv(out/'original_predeadline_submissions.csv.gz',index=False)
+ d.to_csv(out/'original_predeadline_submissions.csv.gz',index=False,compression={'method':'gzip','mtime':0})
 summary=[]
 fig,axes=plt.subplots(1,5,figsize=(16,3.5))
 for cid,m in manifest.iterrows():
@@ -126,7 +126,7 @@ for cid,m in manifest[manifest.PaperMetric=='Accuracy'].iterrows():
 pd.DataFrame(audit).to_csv(out/'denominator_audit.csv',index=False)
 pd.DataFrame(candidates).to_csv(out/'denominator_candidates_UNVERIFIED.csv',index=False)
 pd.DataFrame(pstats).to_csv(out/'pvalue_summary.csv',index=False)
-pd.concat(pframes).to_csv(out/'original_pvalues_consistent_sizes.csv.gz',index=False)
+pd.concat(pframes).to_csv(out/'original_pvalues_consistent_sizes.csv.gz',index=False,compression={'method':'gzip','mtime':0})
 metadata=json.load(open(out/'run_metadata.json'));metadata.update(scipy=scipy.__version__,pvalues='Exact inclusive and strict hypergeometric tails only for competitions with all scores consistent with appendix sizes; consistency is not independent proof of size',tail_enumeration_checks=checks,pvalue_competitions=len(pframes))
 json.dump(metadata,open(out/'run_metadata.json','w'),indent=2)
 print('Exact-tail validation cases:',checks,'; p-value competitions:',len(pframes),flush=True)

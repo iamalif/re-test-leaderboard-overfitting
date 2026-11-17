@@ -85,3 +85,28 @@ Prompted by `reviews/review_2026-11-17_v3_provenance.md`.
 - 3.14 run vs project: 38 of 38 result files identical (35 tables, 3 JSON). Project pipeline outputs, manifest and ledger are this run's.
 - 3.12 run vs 3.14 run: PASS, 38 of 38. 2,443 decimal cells differ in the last digits (`py312_vs_py314_differences.csv`, summary by file in `py312_vs_py314_difference_summary.csv`): 2,392 within 1e-14 of their value, all but one within 3e-12; the exception is `top10_tie_bound_width` for competition 4986 (2.05e-11, a difference of two numbers near 0.02), within 1.7e-7 of its value. No identifier, count, label, boolean, missing value, sign or p-value threshold side differs.
 - The macOS smoke test (addendum 5) used the previous zip and comparison v3; its outputs were not retained in the project.
+
+## Addendum 7, 17 November 2026, about 17:20-18:30: stage 3 cache provenance, byte-reproducible outputs, final runs (supersedes addendum 6's run table)
+
+Prompted by `reviews/review_2026-11-17_v4.md`.
+
+**Changes.**
+- Stage 3 caches. One fingerprint, `outputs/stage3/cache_fingerprint.json`, binds both caches (the extracted scores, `analysis_submissions.parquet`, and the row store) to SHA-256 of: `scripts/stage3_extension.py`, `scripts/stage2_measures.py`, `scripts/csvio.py`, `outputs/stage1/cohort_per_competition.csv`, `outputs/stage0_per_competition.csv`, `outputs/stage3/split_labels.csv`, `data/raw/Submissions.csv`, `data/raw/Teams.csv`. It is computed at every start. If either cache exists and the stored fingerprint is missing or differs in any entry, stage 3 stops and asks for `CLEAN=1`. The extract is written to a temporary name and renamed when complete. What is not checked: the content of the parquet file itself (it is trusted because it can only have been written by a run with the same fingerprint) and the Python and library versions (recorded in the run manifest, not in the fingerprint).
+- Guard tested on a copy of the final tree: unchanged inputs resume and finish (DONE 686); a changed raw-file hash is refused; a parquet without a fingerprint is refused.
+- Row order. Two metadata tables were sorted by deadline only; competitions sharing a deadline came out in varying order between runs. Ties now broken by CompetitionId. Gzip timestamps and PDF creation dates removed. A repeat of the affected stages in the same environment reproduces every file byte for byte. Earlier "identical" statements in this report mean cell by cell (the comparison aligns rows by key); no result depended on row order.
+- Comparison tool header wording only (count rule = heuristic from reference values; p-value protection by column name).
+
+**Final runs** (fresh folders, final code; `final_v5/`). Stages run with the same commands and order as `run_all.sh`, under one run identifier per environment, in several shell calls (the assistant's shell limits each call to three minutes and stops background jobs).
+
+| | Python 3.14.8, pandas 3.1.1 | Python 3.12.15, pandas 2.3.3 |
+|---|---|---|
+| Run identifier | final_py314_20261117c | final_py312_20261117c |
+| Stages, all exit 0 | 15 | 15 |
+| All 31 code and reference files equal the current project files | yes | yes |
+| Raw inputs equal the hashes archived on 15 Nov | yes | yes |
+| Output files matching their ledger hashes | 193 of 193 | 193 of 193 |
+| Machine | Linux, arm64 (VM on the researcher's Mac) | same |
+
+- 3.14 run vs project (before copying): PASS, 38 of 38 result files same, 0 decimal differences. Project pipeline outputs, ledger, manifest and figures are now this run's; afterwards all 193 project outputs match the 3.14 ledger.
+- 3.12 run vs 3.14 run: PASS, 38 of 38. Cell-level difference file byte-identical to final_v4's: 2,443 decimal cells, all but one within 3e-12 relative; the exception is competition 4986's `top10_tie_bound_width` (1.7e-7 relative). Figures differ in bytes between the two environments (different matplotlib versions); they are drawn from compared tables.
+- Paper recompiled with the regenerated figures: 10 pages, extracted text of every page unchanged.

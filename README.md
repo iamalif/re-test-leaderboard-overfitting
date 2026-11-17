@@ -4,7 +4,7 @@ A pre-registered re-test of Roelofs et al., "A Meta-Analysis of Overfitting in M
 
 ## Status (17 November 2026)
 
-- Paper: `paper/main.pdf` (v0.10, 13 pages including references and appendix; source `paper/main.tex`, generated appendix `paper/appendix_secondary.tex`).
+- Paper: `paper/main.pdf` (v0.11, 14 pages including references and appendix; source `paper/main.tex`, generated appendix `paper/appendix_secondary.tex`).
 - Analysis plan v1.0, fixed and archived publicly on 16 Nov 2026 before any later-competition score was examined: `analysis_plan/`.
 - All results are rebuilt from the raw data by one command (below). Clean runs under Python 3.14 and 3.12 agree, and a smoke test of the review package passed on macOS (`outputs/rebuild/`).
 - Remaining before submission: the researcher's read-through, and venue-specific preparation.
@@ -29,7 +29,7 @@ Python 3.14 with `requirements.txt` (or Python 3.12 with `requirements-py312.txt
     python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
     CLEAN=1 PY=.venv/bin/python bash run_all.sh
 
-Then `python scripts/compare_outputs.py outputs_previous_<time> outputs` compares the new tables with the previous ones. To rebuild the paper's appendix: `python scripts/make_appendix_secondary.py`; to build the review package: `python scripts/make_anonymous_package.py`.
+Then `python scripts/compare_outputs.py outputs_previous_<time> outputs` compares the new tables with the previous ones. To rebuild the paper's appendix: `python scripts/make_appendix_secondary.py`; Figure 5 (a simulation, not data): `python scripts/illustrate_identification.py`; to build the review package: `python scripts/make_anonymous_package.py`.
 
 ## Rules for whoever works here next
 

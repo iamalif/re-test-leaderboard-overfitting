@@ -1,53 +1,39 @@
 # Re-testing leaderboard overfitting on Kaggle
 
-Re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" (NeurIPS 2019) on later Kaggle competitions. Target venue: TMLR. The research brief (15 Nov 2026) is the governing document; ask the researcher for it if it is not in this folder.
+A pre-registered re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" (NeurIPS 2019), on Kaggle competitions that ended after the original sample. Target venue: TMLR.
 
-## Current state (2026-11-16)
+## Status (17 November 2026)
 
-- Stage 0 metadata feasibility completed; its cohort boundary/counts were provisional and have been corrected in the stage 1 reports.
-- The researcher authorized stage 1. It is in progress; its completion gate has not passed.
-- Original-only descriptive replication recovered all 120 competitions and the five named accuracy outliers. Formal verification remains open because of scoring sizes, ordering and p-value-definition issues.
-- Read `outputs/stage1_audit_update.md` first, then `outputs/stage1_report.md` and `decision_log.md`.
-- Allstate test file verified; OpenReview lead confirmed unrelated. Read outputs/allstate_verification_note.md. Original analysis code/configuration remains missing. The researcher prefers no author contact: proceed via the independent reanalysis route in outputs/independent_reanalysis_route.md. The unused email draft must not be sent.
-- No new-competition score comparisons have been performed.
-
-### Update 16 Nov 2026, about 03:15 (Claude, back on the project)
-
-- Reviewed and re-checked the other assistant's stage 1 work; see "Takeover review by Claude" in `decision_log.md`.
-- Extension boundary is now provisional: deadline after 2019-04-04 23:59 (the original snapshot dates from about 5-9 April 2019), not in the 120. Counts: `outputs/stage1/cohort_counts.csv`, from `scripts/stage1_cohort_counts.py` (metadata only).
-- Stage 1 closed on delegated authority (see log). Stage 2 plan drafted: `analysis_plan/stage2_analysis_plan_DRAFT.md`. Measures in `scripts/stage2_measures.py`, piloted on the original 120 by `scripts/stage2_pilot_original.py` (outputs in `outputs/stage2/`).
-- Plan fixed: `analysis_plan/stage2_analysis_plan_v1.0.md` (hashes in `analysis_plan/SHA256SUMS.txt`). Split labels done blind: `outputs/stage3/split_labels.csv`.
-- Plan posted and archived 16 Nov 2026 (links in the decision log); extension unsealed and stage 3 run. Results: `outputs/stage3_report.md`.
-- (Superseded) Waiting on the researcher: post the plan publicly (e.g. OSF). Until then no extension score may be read. After posting: write and run `scripts/stage3_extension.py` using `scripts/stage2_measures.py`, exactly as the plan says.
-
-## Rules for whoever works here next
-
-- Do not compare public and private scores for competitions after the original sample until the stage 2 analysis plan is written, dated and posted publicly. Stage 0 looked only at counts and score presence.
-- Log every decision and its reason in `decision_log.md`; append, do not rewrite earlier entries.
-- One script per stage in `scripts/`, run from the project root. Never edit `data/raw/`.
-- No paid services, cloud compute or human participants.
+- Paper: `paper/main.pdf` (v0.9, 13 pages including references and appendix; source `paper/main.tex`, generated appendix `paper/appendix_secondary.tex`).
+- Analysis plan v1.0, fixed and archived publicly on 16 Nov 2026 before any later-competition score was examined: `analysis_plan/`.
+- All results are rebuilt from the raw data by one command (below). Clean runs under Python 3.14 and 3.12 agree, and a smoke test of the review package passed on macOS (`outputs/rebuild/`).
+- Remaining before submission: the researcher's read-through, and venue-specific preparation.
 
 ## Layout
 
-- `analysis_plan/` - plan v1.0 (fixed and archived before unsealing) and hashes
-- `data/raw/` - Meta Kaggle CSVs (not in the repository; hashes in the decision log)
-- `data/reference/` - original 120 IDs, split-label decisions
-- `scripts/` - one or more scripts per stage, named `stageN_*.py`, run from the project root in numeric order
-- `outputs/` - tables per stage, plus `stage1_report.md`, `stage3_report.md`, `stage4_report.md`
-- `paper/` - draft and figures
-- `decision_log.md` - every decision, deviation and result, in order
+- `analysis_plan/`: plan v1.0 and its SHA-256 hashes. Never edited after archiving.
+- `data/raw/`: Meta Kaggle CSVs, downloaded 15 Nov 2026 (not in the repository; Apache 2.0; hashes in `decision_log.md` and the package README).
+- `data/reference/`: the original 120 competition IDs and the split-label decisions (third-party PDFs and the optional Allstate test file are kept locally, not in the repository).
+- `scripts/`: one script per stage (`stageN_*.py`), shared code (`stage2_measures.py`, `csvio.py`), run and provenance tools (`run_stage.py`, `run_manifest.py`, `compare_outputs.py`), package and appendix builders, `diagnostics/`.
+- `outputs/`: result tables per stage; stage reports (`stage1_report.md`, `stage3_report.md`, `stage4_report.md`); `run_ledger.jsonl` and `run_manifest.json` of the run that produced them; `rebuild/` (reproducibility evidence); `review/` (checks run during review).
+- `paper/`: manuscript, figures, bibliography, TMLR style files; `paper/versions/` keeps earlier drafts.
+- `reviews/`: every critical review of the work and the response to it, plus the review briefs (`reviews/briefs/`). The paper refers to this review history; keep it.
+- `anonymous_package_docs/`: README and chronology for the anonymised review package; `anonymous_review_package.zip` is built by `scripts/make_anonymous_package.py` (not in the repository).
+- `superseded/`: withdrawn or replaced material, kept for the record (deadline addendum and its scripts, earlier comparison tools, the unused author email draft, which must not be sent).
+- `decision_log.md`: every decision, deviation and correction, in order.
 
 ## Run
 
-Python 3.14 with `requirements.txt` (or Python 3.12 with `requirements-py312.txt`). One command rebuilds everything from `data/raw/` in the right order and stops on any failure:
+Python 3.14 with `requirements.txt` (or Python 3.12 with `requirements-py312.txt`). One command rebuilds every table and figure from `data/raw/` and stops on any failure:
 
     python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
     CLEAN=1 PY=.venv/bin/python bash run_all.sh
 
-## Status, 17 November 2026 (latest)
+Then `python scripts/compare_outputs.py outputs_previous_<time> outputs` compares the new tables with the previous ones. To rebuild the paper's appendix: `python scripts/make_appendix_secondary.py`; to build the review package: `python scripts/make_anonymous_package.py`.
 
-Five rounds of independent review answered (`reviews/response_*.md`; latest `reviews/response_2026-11-17_v4.md`). Final clean runs under Python 3.14 and 3.12 agree (`outputs/rebuild/clean_rebuild_report_2026-11-17.md`, addendum 7; `outputs/rebuild/final_v5/`). Paper: `paper/main.pdf` (v0.8, 10 pages plus a two-page appendix). Pre-submission QA: `reviews/qa_2026-11-17_claude.md`. Remaining before submission: the researcher's read-through, a smoke test of the final zip, a fresh literature search, arXiv endorsement and preprint timing.
+## Rules for whoever works here next
 
-## Status, 16 November 2026
-
-Stages 0 to 5 done. An independent review (`reviews/review_2026-11-16.md`) led to a major revision of the paper's claims: see `reviews/response_2026-11-16.md` and, for the follow-up review, `reviews/response_2026-11-17_followup.md`. A third review is answered in `reviews/response_2026-11-17_v03.md`. A proposed further test at the competition deadline was withdrawn after two pre-unsealing reviews and never run (`superseded/`); no post-deadline public and private scores have been compared (wording corrected 17 Nov; see the decision log). Current paper: `paper/main.pdf` (v0.6). Anonymised review package: run `python scripts/make_anonymous_package.py`. Rebuild evidence: `outputs/rebuild/`. Earlier versions: earlier versions are kept as `paper/main_v0.1_before_review.tex` and `paper/main_v0.2_before_followup.tex`. Results: `outputs/stage3_report.md` (planned), `outputs/stage4_report.md` and `outputs/stage6/` (exploratory). Older status notes above are kept for the record.
+- Do not edit `analysis_plan/`, `data/raw/` or archived results. Any departure from the plan is logged in `decision_log.md` and reported in the paper.
+- Append to `decision_log.md`; never rewrite earlier entries.
+- No post-deadline public and private scores are compared (the deadline contrast was withdrawn).
+- No paid services, cloud compute or human participants. Do not contact the original authors.

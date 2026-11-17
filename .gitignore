@@ -7,7 +7,7 @@ data/reference/test_v2.csv
 outputs/stage1/original_predeadline_submissions.csv.gz
 outputs/stage1/original_pvalues_consistent_sizes.csv.gz
 # Unused draft email
-outputs/author_code_request.md
+superseded/author_code_request.md
 .DS_Store
 .venv/
 __pycache__/

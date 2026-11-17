@@ -361,3 +361,15 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 
 - 2026-11-17 20:20: the researcher's screenshot of the Meta Kaggle dataset page (taken 17 Nov) shows License: Apache 2.0, expected update frequency Daily, 66.46 GB, 41 files. No version history is visible on the page. The paper now states the licence. Snapshot retrieval route still open.
 - 2026-11-17 20:25: the dataset page's menu has no version history either (researcher's screenshot). DECISION (fallback set out to the researcher): the exact three files are offered to the editors during review, in a confidential note, and deposited with a persistent identifier (e.g. Zenodo, Apache 2.0 notice kept) on publication, not before, to preserve anonymity. Paper and package README now say this. TO DO at submission: confidential note to the action editor. TO DO on acceptance: the deposit. Package rebuilt: SHA-256 ab6528bbc622308e1f71c1ef2282ebb6ad1dee8e44c5d74d63f391a35ba7fc24.
+
+# Project folder tidied (2026-11-17, about 20:35, Claude, at the researcher's request)
+
+- Deleted (all rebuildable or obsolete, none tracked by git): 13 old package build folders, the package build folder, LaTeX build files, .DS_Store files, __pycache__.
+- Moved, with history kept: review briefs to `reviews/briefs/`; earlier paper drafts to `paper/versions/`; `outputs/stage7/` (withdrawn deadline contrast, metadata only) to `superseded/outputs_stage7_withdrawn_deadline/`; the unused author email draft to `superseded/` (still ignored by git). Paths in earlier log entries refer to the old locations.
+- README rewritten as a current guide; its earlier status notes are in this log.
+
+# Deep QA pass and paper v0.9 (2026-11-17, about 20:40-21:00, Claude)
+
+- Checked: TMLR style files byte-identical to the official repository (tmlr.sty, tmlr.bst, fancyhdr.sty); the template's optional sections; the non-adaptive counterexample (relative drift 1.07%, first-submission gap negative, all three robustness variants positive) and the positive-control simulation against their saved outputs; the drift definition against the code (odd counts drop the middle submission); the share-above-threshold definition (signed gap above +1 pp or +0.01).
+- Paper v0.9: the intro's "published sizes allow 19" now says these are published sizes that fit every recorded score, benchmark submissions included (21 fit the non-benchmark scores; two more fail only on a few benchmark scores); the drift definition states the odd-count rule; the conclusion adds three practical consequences (verify sizes and scoring units; hosts state split design and size; platforms release split assignments for a sample); an optional Broader Impact Statement, as the TMLR template invites. No number changed.
+- Package rebuilt: SHA-256 b127ae08208e4dc695722d1494c677744957aff40f0ddda7537e004a4410276d.

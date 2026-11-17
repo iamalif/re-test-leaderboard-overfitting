@@ -19,8 +19,9 @@ Kevin B{\"o}nisch and Leandro Losaria.
 
 \bibitem[Burtch(2026)]{burtch2026monoculture}
 Gordon Burtch.
-\newblock The hitchhiker's guide to monoculture.
-\newblock arXiv:2607.13077, 2026.
+\newblock The hitchhiker's guide to monoculture: {AI} homogenizes syntax, not
+  (necessarily) semantics.
+\newblock arXiv:2607.13077v3, 2026.
 
 \bibitem[Dwork et~al.(2015)Dwork, Feldman, Hardt, Pitassi, Reingold, and
   Roth]{dwork2015reusable}

@@ -26,7 +26,7 @@
   2. `outputs/stage4/code_only_tests.csv` mixes counts and decimals in one column; its decimals agree to about 1e-15 between environments.
 - **Result:** with version 2, both clean rebuilds (Python 3.14 and Python 3.12) PASS against the project: every rebuilt table matches; the one known exception is the team-flags intermediate; 20 tables are not rebuilt by the pipeline (review outputs, rebuild reports, withdrawn-design counts, the hand-assembled stage 1 register, the 4,000-draw table). Reports regenerated: `rebuild_py314_comparison_2026-11-17.csv`, `rebuild_py312_after_parsing_fix_2026-11-17.csv`. Earlier statements that 33 or 34 tables were "the same" were made with version 1 and are superseded by this one.
 
-## Addendum 3, 17 November 2026, 15:09-15:17 Europe/Stockholm: package smoke test on the researcher's machine
+## Addendum 3, 17 November 2026, 15:09-15:17 (local time): package smoke test on the researcher's machine
 
 - **What was run:** the researcher unpacked `anonymous_review_package.zip` into an empty folder on their own Mac, linked the three Meta Kaggle files, created a fresh virtual environment with Python 3.14.2 and `requirements.txt`, and ran `CLEAN=1 PY=.venv/bin/python bash run_all.sh` as one process. This is the first execution of the wrapper end to end as a single process.
 - **Result:** every stage completed; the run ended with `ALL DONE`.

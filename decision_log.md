@@ -236,3 +236,23 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Metadata-only eligibility for v1.1: 211 competitions (41 O, 170 E) at window 3; 283 at window 2; 111 at window 5. Window 3 was chosen before these counts were produced; all three were then seen.
 - STILL SEALED: all post-deadline scores. Not to be run until v1.1 has had a second pre-unsealing review, is marked fixed, and is public and archived.
 - Response: `reviews/response_2026-11-17_deadline.md`.
+
+# Addendum A withdrawn; definitions fixed for dependence and stratified checks (2026-11-17, about 02:15, Claude)
+
+- Second pre-unsealing review (`reviews/review_2026-11-17_deadline_v11.md`): a smooth, feedback-free cubic gap trajectory makes both X and Y negative. I had asked for exactly such a case and said I would drop the test if one existed. DECISION: Addendum A's sign-test rule is WITHDRAWN and will not be run. Reason: with four window means, a deadline-located change cannot be told from ordinary third-order curvature; higher differences only move the problem up one order. Files moved to `superseded/`. Post-deadline scores remain unread by anyone on the project.
+- Own finding: `outputs/stage3/split_labels.csv` had been built by an inline snippet, not by a script in the repository. Added `scripts/stage3_build_labels.py`; it reproduces the archived table byte for byte (SHA-256 edf340c3...).
+- DEFINITIONS FIXED BEFORE LOOKING AT THE CONTRASTS BELOW (exploratory; crude by design):
+  - Related-competition cluster: if the competition has an OrganizationId, the cluster is that organisation (338 of 652 analysed competitions; note organisation 4 hosts the whole Playground series and becomes one large cluster). Otherwise the cluster is the slug with all digits removed, cut to its first two hyphen-separated non-empty tokens (so `ml2019spring-hw2` and `ml2020spring-hw3` share a cluster). Known misses: course series whose slugs differ in words, not digits.
+  - Dependence checks: (a) cluster bootstrap (resample clusters with replacement, 10,000 draws) for the H1a, H1b and H3 median differences and the H2 share; (b) one randomly chosen competition per cluster, repeated 2,000 times, giving the distribution of the H2 share and of its sign-test p-value.
+  - Stratified O-versus-E comparison: accuracy and AUC mean gaps within host category collapsed to Community versus not Community; a stratum is reported only if both cohorts have at least 5 competitions; difference in medians with a bootstrap interval.
+  - Tail summary for H1: 10th, 25th, 50th, 75th and 90th percentiles of the signed and of the absolute mean gap, by cohort, for accuracy and AUC.
+
+# Dependence, strata, tails and clean re-run (2026-11-17, about 02:20-03:10, Claude)
+
+- Results of the checks whose definitions are fixed in the previous entry: group bootstrap leaves all four confirmatory results unchanged (H1a -0.20 to 0.11 pp; H1b -0.0043 to 0.0019; H2 62.9% to 71.8%; H3 -0.0042 to 0.0099). One competition per group: H2 share 68.0%. 365 groups; the largest is organisation 4 with 113 competitions.
+- Stratified comparisons: similar within Community accuracy and non-Community AUC; non-Community accuracy too small to say (13 against 8).
+- NEW QUALIFICATION of H1 for the paper: absolute mean gaps for accuracy are larger in E (median 0.34 pp against 0.20; upper quartile 1.09 against 0.61) while signed medians are similar. For AUC absolute gaps are smaller in E.
+- Clean re-run (Python 3.12, fresh directory, stage by stage in `run_all.sh` order): 34 tables compared, all identical after one fix. The fix: `scripts/stage6_split_size_symmetry.py` now sorts by competition ID before bootstrapping (same flaw as stage 3 earlier). `outputs/stage1/original_team_flags.csv` differs in size between a fresh run and the repository copy (all teams versus a shorter list); it only supplies the set of benchmark team IDs and nothing downstream differs. `run_all.sh` itself was not executed as a single process in my shell; its control flow was checked by the reviewer with stubs.
+- `scripts/stage3_build_labels.py` added to `run_all.sh`, as was `stage6_dependence_and_strata.py`; stage 7 removed.
+- Paper v0.5: paragraph on related competitions, strata and tails; limitations record the withdrawn deadline contrast; conclusion notes larger absolute gaps for accuracy. v0.4 kept as `paper/main_v0.4_before_dependence.tex`.
+- Response: `reviews/response_2026-11-17_deadline_v11.md`.

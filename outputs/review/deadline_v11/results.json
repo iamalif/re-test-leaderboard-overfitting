@@ -1,0 +1,34 @@
+{
+  "trajectory": "private=0.5+k/1024; gap=(2048*k-k^3)/1048576; deadline between k=15 and16",
+  "result": {
+    "eligible_teams": 40,
+    "X": -0.000720977783203125,
+    "X_placebo": -0.0005664825439453125,
+    "Y": -0.0001544952392578125,
+    "step_post": 0.0037851333618164062,
+    "step_pre": 0.004506111145019531,
+    "level_post": 0.0029296875,
+    "level_pre": 0.0029296875
+  },
+  "X_test": {
+    "quantity": "X",
+    "competitions": 20,
+    "negative": 20,
+    "positive": 0,
+    "zero": 0,
+    "share_negative_of_nonzero": 1.0,
+    "sign_p": 1.9073486328125e-06,
+    "median": -0.000720977783203125
+  },
+  "Y_test": {
+    "quantity": "Y",
+    "competitions": 20,
+    "negative": 20,
+    "positive": 0,
+    "zero": 0,
+    "share_negative_of_nonzero": 1.0,
+    "sign_p": 1.9073486328125e-06,
+    "median": -0.0001544952392578125
+  },
+  "empty_eligible_check": "KeyError(('gap', 0))"
+}

@@ -15,6 +15,7 @@ rng = np.random.default_rng(20261117)
 m = pd.read_csv("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""]
 m = m.merge(pd.read_csv("outputs/stage1/cohort_per_competition.csv")[["CompetitionId", "LeaderboardPercentage"]], on="CompetitionId")
 m = m.merge(pd.read_csv("outputs/stage6/verify_review_numbers.csv")[["CompetitionId", "drift_raw"]], on="CompetitionId")
+m = m.sort_values("CompetitionId").reset_index(drop=True)   # fixed order so bootstrap intervals are reproducible
 m["band"] = pd.cut(m.LeaderboardPercentage, [0, 39, 49, 50, 99], labels=["public under 40%", "public 40-49%", "public exactly 50%", "public over 50%"])
 RAW = ["Accuracy", "AUC", "MAP@K"]
 rows = []

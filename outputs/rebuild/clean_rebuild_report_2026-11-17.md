@@ -53,3 +53,9 @@ Prompted by the review `reviews/review_2026-11-17_post_v05.md`.
 | Python 3.12.15, pandas 2.3.3, NumPy 2.2.6 | `ledger_final_py312_2026-11-17.jsonl` | Against the 3.14 run: PASS, 35 of 35; every identifier, count, label, boolean, missing value and sign identical; 2,441 decimal cells differ within tolerance (`final_py312_vs_final_py314_2026-11-17.csv`). |
 
 Every number in the paper was checked against the final tables and is unchanged. The archived plan, label table and measure code still match the hashes recorded on 16 November.
+
+## Addendum 5, 17 November 2026, about 15:35-15:56: smoke test of the final package on the researcher's machine
+
+- The final `anonymous_review_package.zip` (built after addendum 4) was unpacked into an empty folder on the researcher's Mac (Apple Silicon, macOS, Python 3.14.2), with a fresh virtual environment from `requirements.txt` and the three Meta Kaggle files linked. `CLEAN=1 PY=.venv/bin/python bash run_all.sh` ran as one process and ended with `ALL DONE`.
+- Comparison v3 against the shipped tables: 35 pipeline tables match, 4 historical (not rebuilt); RESULT: PASS. 663 decimal cells differ within tolerance (floating-point rounding between this machine's processor, numerical libraries and Python build and those of the shipped run); every identifier, count, label, boolean, missing value and sign is identical.
+- Together with addendum 4: three complete runs on two operating systems, two processor architectures and two Python/pandas generations agree exactly on everything except decimal rounding, and on that to within one part in 10^9.

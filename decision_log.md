@@ -300,3 +300,8 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Bug of my own caught by v3 before anything was stored: first `csvio.py` misread DuckDB's lowercase booleans. Fixed and checked against pandas on every table.
 - Final fresh runs, one code version, all stages exit 0: Python 3.14.8/pandas 3.1.1 and Python 3.12.15/pandas 2.3.3. v3 PASS between them (2,441 decimal cells within tolerance; everything else identical). Project pipeline outputs replaced by the 3.14 run's (35 of 35 byte-identical). Ledgers and comparison reports in `outputs/rebuild/`. Paper numbers unchanged; archived hashes unchanged. Paper reproducibility sentence made precise.
 - Remaining: the researcher's smoke test of the final zip.
+
+# Final package smoke test PASSED (2026-11-17, 15:56, Claude)
+
+- Researcher's Mac, final zip, Python 3.14.2, fresh environment, `CLEAN=1 bash run_all.sh` as one process: ALL DONE. Comparison v3 against the shipped tables: 35 match, 4 historical; RESULT: PASS; 663 decimal cells within tolerance, everything else identical. Rebuild report addendum 5.
+- Reproducibility work closed. Remaining before submission: the researcher's read-through of `paper/main.pdf`; arXiv endorsement; preprint timing under double-blind review; a fresh literature search shortly before submitting; optionally, removing the researcher's name from search patterns in public scripts.

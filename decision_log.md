@@ -404,3 +404,8 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - No new substantive concern: the proposition is simple (accepted; its value is interpretive, as the paper says), Featured/Research is secondary (it stays exploratory), a theory-heavy reviewer might want a broader impossibility claim (deliberately not made). Probabilities not used.
 - Found by me while checking the feedback's wording: the simulation paragraph said aggregate scores "cannot tell the two apart", more than the simulation shows (the two runs differ, for example, in first-submission gap). Now: "Within-team drift, the statistic our data allow, does not tell the two apart."
 - Decision: stop presentation rounds here; next gate is the researcher's read-through.
+
+# Fifth third-party feedback; paper v0.15 (2026-11-17, about 22:10, Claude)
+
+- No new concern of substance. One wording suggestion adopted: the contribution bullet said the simulation shows drift "arises equally without feedback" (an overstatement). It now names "a formal characterisation (Proposition 1) and a simulation showing that positive drift is not specific to adaptation".
+- Anticipating the expected reviewer question on recent competitions, the limitation on accuracy coverage now adds a descriptive count, computed from `outputs/stage3/competition_measures.csv` and not a pre-specified test: 156 of 487 later competitions ended in 2023-2026, and drift is positive in 114 of the 151 where it is defined.

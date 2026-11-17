@@ -35,7 +35,8 @@ import re as _re
 needed = ["run_all.sh", "requirements.txt", "requirements-py312.txt", "ANON_README.md", "CHRONOLOGY.md", "scripts/compare_outputs.py",
           "analysis_plan/stage2_analysis_plan_v1.0.md", "analysis_plan/SHA256SUMS.txt", "data/reference/original_120_manifest.csv",
           "data/reference/split_label_decisions.py", "scripts/stage2_measures.py", "scripts/csvio.py", "scripts/run_stage.py",
-          "scripts/diagnostics/parser_precision_check.py", "outputs/run_ledger.jsonl"]
+          "scripts/diagnostics/parser_precision_check.py", "outputs/run_ledger.jsonl",
+          "scripts/run_manifest.py", "outputs/run_manifest.json"]
 needed += _re.findall(r"scripts/[A-Za-z0-9_]+\.py", open("run_all.sh").read())
 missing = [f for f in sorted(set(needed)) if not os.path.exists(os.path.join(DEST, f))]
 if missing: print("REQUIRED FILES MISSING FROM PACKAGE:", missing); sys.exit(1)

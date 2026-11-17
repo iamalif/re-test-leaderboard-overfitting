@@ -32,3 +32,4 @@ outputs_previous_*/
 
 # stage 3 row store (intermediate)
 outputs/stage3/competition_measures.csv.rows.jsonl
+outputs/stage3/competition_measures.csv.rows.jsonl.fingerprint.json

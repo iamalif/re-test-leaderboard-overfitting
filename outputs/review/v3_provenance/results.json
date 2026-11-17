@@ -1,0 +1,194 @@
+{
+  "cells": {
+    "0.0499999999999 => 0.0500000000001": [
+      true,
+      "tolerance"
+    ],
+    "10.0 => 10.000000001": [
+      true,
+      "tolerance"
+    ],
+    "1e-400 => 2e-400": [
+      true,
+      "tolerance"
+    ],
+    "NA => NULL": [
+      false,
+      "text"
+    ],
+    "1e-14 => -1e-14": [
+      false,
+      "sign"
+    ]
+  },
+  "reader": {
+    "uint64": {
+      "exact": {
+        "dtype": "int64",
+        "values": [
+          "-9223372036854775808"
+        ]
+      },
+      "pandas": {
+        "dtype": "uint64",
+        "values": [
+          "9223372036854775808"
+        ]
+      }
+    },
+    "missing_large": {
+      "exact": {
+        "dtype": "float64",
+        "values": [
+          "9007199254740992.0",
+          "nan"
+        ]
+      },
+      "pandas": {
+        "dtype": "float64",
+        "values": [
+          "9007199254740992.0",
+          "nan"
+        ]
+      }
+    },
+    "underscore": {
+      "exact": {
+        "dtype": "float64",
+        "values": [
+          "1000.0"
+        ]
+      },
+      "pandas": {
+        "dtype": "str",
+        "values": [
+          "1_000"
+        ]
+      }
+    },
+    "leadingzero": {
+      "exact": {
+        "dtype": "int64",
+        "values": [
+          "1"
+        ]
+      },
+      "pandas": {
+        "dtype": "int64",
+        "values": [
+          "1"
+        ]
+      }
+    },
+    "date": {
+      "exact": {
+        "dtype": "object",
+        "values": [
+          "2026-11-17"
+        ]
+      },
+      "pandas": {
+        "dtype": "str",
+        "values": [
+          "2026-11-17"
+        ]
+      }
+    },
+    "inf": {
+      "exact": {
+        "dtype": "float64",
+        "values": [
+          "inf"
+        ]
+      },
+      "pandas": {
+        "dtype": "float64",
+        "values": [
+          "inf"
+        ]
+      }
+    }
+  },
+  "ledgers": {
+    "ledger_final_py314_2026-11-17.jsonl": {
+      "stages": 15,
+      "exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "current_script_hash_mismatch": [],
+      "first": "2026-11-17T14:40:08+00:00",
+      "last": "2026-11-17T14:44:20+00:00"
+    },
+    "ledger_final_py312_2026-11-17.jsonl": {
+      "stages": 15,
+      "exits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "current_script_hash_mismatch": [],
+      "first": "2026-11-17T14:44:35+00:00",
+      "last": "2026-11-17T14:48:21+00:00"
+    }
+  },
+  "tolerance_tables": [
+    {
+      "table": "stage4/drift_robustness_per_competition.csv",
+      "cells_within_tolerance": 1395
+    },
+    {
+      "table": "stage3/competition_measures.csv",
+      "cells_within_tolerance": 558
+    },
+    {
+      "table": "stage6/verify_review_numbers.csv",
+      "cells_within_tolerance": 247
+    },
+    {
+      "table": "stage2/pilot_original_measures.csv",
+      "cells_within_tolerance": 90
+    },
+    {
+      "table": "stage3/results_secondary.csv",
+      "cells_within_tolerance": 49
+    },
+    {
+      "table": "stage1/benchmark_and_tie_sensitivity.csv",
+      "cells_within_tolerance": 24
+    },
+    {
+      "table": "stage6/split_size_symmetry.csv",
+      "cells_within_tolerance": 21
+    },
+    {
+      "table": "stage3/results_descriptive.csv",
+      "cells_within_tolerance": 12
+    }
+  ]
+}

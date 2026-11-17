@@ -58,4 +58,30 @@ Every number in the paper was checked against the final tables and is unchanged.
 
 - The final `anonymous_review_package.zip` (built after addendum 4) was unpacked into an empty folder on the researcher's Mac (Apple Silicon, macOS, Python 3.14.2), with a fresh virtual environment from `requirements.txt` and the three Meta Kaggle files linked. `CLEAN=1 PY=.venv/bin/python bash run_all.sh` ran as one process and ended with `ALL DONE`.
 - Comparison v3 against the shipped tables: 35 pipeline tables match, 4 historical (not rebuilt); RESULT: PASS. 663 decimal cells differ within tolerance (floating-point rounding between macOS's and Linux's builds of the numerical libraries and between Python 3.14.2 and 3.14.8); every identifier, count, label, boolean, missing value and sign is identical.
-- Together with addendum 4: three complete runs, on two operating systems (a Linux virtual machine and macOS) and two Python/pandas generations, agree exactly on everything except decimal rounding, and on that to within one part in 10^9. All three ran on the same physical machine (Apple Silicon, arm64): the assistant's Linux environment is a virtual machine on the researcher's Mac. A run on a different processor architecture (for example x86-64) has not been done.
+- Together with addendum 4: three complete runs, on two operating systems (a Linux virtual machine and macOS) and two Python/pandas generations, agree exactly on everything except decimal rounding (see addendum 6 for the exact tolerance and the measured differences). All three ran on the same physical machine (Apple Silicon, arm64): the assistant's Linux environment is a virtual machine on the researcher's Mac. A run on a different processor architecture (for example x86-64) has not been done.
+
+## Addendum 6, 17 November 2026, about 16:20-17:10: comparison v4, run manifests, final runs (supersedes addendum 4's comparison results)
+
+Prompted by `reviews/review_2026-11-17_v3_provenance.md`.
+
+**Changes.**
+- Comparison v4: counts written as decimals are compared exactly (columns whose reference values are all whole numbers below 2^53); p-value columns must fall on the same side of 0.01, 0.05 and 0.10; three JSON result files are compared field by field (version and file-hash fields skipped); a cell-level difference report is written. 28-case self-test. A first version applied exact equality to every whole-looking decimal and flagged values of about 10^94 and 10^16 from the pathological custom-metric competitions (deviation 3 in the stage 3 report), which differ in the 16th digit; the rule was restricted to count-like columns.
+- The acceptance rule is |a - b| <= 1e-12 + 1e-9 |b|. Earlier text called this "within one part in 10^9", which overstates it for small values. Corrected in the paper and README.
+- `csvio.py` v2: integers outside int64 and numbers with underscores stay text; options that change type inference are refused; documented as verified for this project's tables only. Still reproduces pandas' types and values on every project table under pandas 2.3 and 3.1.
+- Stage 3 row store bound to a fingerprint of its code and inputs; resuming after a change is refused.
+- `scripts/run_manifest.py` (run identifier; hashes of all code, reference and raw input files; versions; machine). `run_stage.py` records the run identifier, script hash taken before running, helper hashes and deleted files.
+
+**Final runs** (fresh folders, final code; `final_v4/`):
+
+| | Python 3.14.8, pandas 3.1.1 | Python 3.12.15, pandas 2.3.3 |
+|---|---|---|
+| Run identifier | final_py314_20261117 | final_py312_20261117 |
+| Stages, all exit 0 | 15 | 15 |
+| Stage scripts and helpers equal current files | yes | yes |
+| Raw inputs equal the hashes archived on 15 Nov | yes | yes |
+| Output files matching their ledger hashes | 193 of 193 | 193 of 193 |
+| Machine | Linux, arm64 (VM on the researcher's Mac) | same |
+
+- 3.14 run vs project: 38 of 38 result files identical (35 tables, 3 JSON). Project pipeline outputs, manifest and ledger are this run's.
+- 3.12 run vs 3.14 run: PASS, 38 of 38. 2,443 decimal cells differ in the last digits (`py312_vs_py314_differences.csv`, summary by file in `py312_vs_py314_difference_summary.csv`): 2,392 within 1e-14 of their value, all but one within 3e-12; the exception is `top10_tie_bound_width` for competition 4986 (2.05e-11, a difference of two numbers near 0.02), within 1.7e-7 of its value. No identifier, count, label, boolean, missing value, sign or p-value threshold side differs.
+- The macOS smoke test (addendum 5) used the previous zip and comparison v3; its outputs were not retained in the project.

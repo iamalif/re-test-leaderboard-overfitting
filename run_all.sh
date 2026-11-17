@@ -1,6 +1,7 @@
 #!/bin/bash
 # Rebuild every pipeline table and figure from data/raw/. Python 3.14 with requirements.txt (or Python 3.12 with
-# requirements-py312.txt). Stops at the first failure. Every stage is recorded in outputs/run_ledger.jsonl.
+# requirements-py312.txt). Stops at the first failure. The run's code and inputs are recorded in
+# outputs/run_manifest.json and every stage in outputs/run_ledger.jsonl, under one run identifier.
 #
 # Result tables are tracked in the repository and stage 3 resumes from its row store, so a plain run REUSES
 # earlier work. For a clean rebuild:   CLEAN=1 PY=.venv/bin/python bash run_all.sh
@@ -11,12 +12,14 @@ set -euo pipefail
 PY=${PY:-python}
 if [ "${CLEAN:-0}" = "1" ]; then
   prev=outputs_previous_$(date +%Y%m%d_%H%M%S); mkdir -p "$prev"
-  for p in outputs/stage0_per_competition.csv outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 outputs/run_ledger.jsonl; do
+  for p in outputs/stage0_per_competition.csv outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 outputs/run_ledger.jsonl outputs/run_manifest.json; do
     if [ -e "$p" ]; then mv "$p" "$prev/"; fi
   done
   echo "moved pipeline outputs to $prev"
 fi
 mkdir -p outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 paper/figures
+export RUN_ID=${RUN_ID:-run_$(date -u +%Y%m%dT%H%M%SZ)}
+"$PY" scripts/run_manifest.py
 S() { "$PY" scripts/run_stage.py "$@"; }
 S scripts/stage0_feasibility.py
 S scripts/stage1_reproduce.py --project .

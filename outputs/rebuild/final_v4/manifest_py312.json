@@ -1,0 +1,63 @@
+{
+ "run_id": "final_py312_20261117",
+ "started_utc": "2026-11-17T15:26:48+00:00",
+ "python": "3.12.15",
+ "machine": "aarch64",
+ "system": "Linux",
+ "packages": {
+  "duckdb": "1.5.6",
+  "pandas": "2.3.3",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "matplotlib": "3.10.8",
+  "pyarrow": "26.0.1",
+  "pypdf": null
+ },
+ "code": {
+  "data/reference/21__replication_a_meta_mdp_approa.pdf": "2c75082a2f6a98b57212391bcf3bb0ca0e98933a048faac688235cad79408c20",
+  "data/reference/original_120_manifest.csv": "ecf4ed09febff438f199b10eaf8ef5227fe0faddf2f1d75d3ba2fdc4fe2f1109",
+  "data/reference/roelofs_2019_full.pdf": "f28c1529374d18d05039ed33f9af77d4f2450fba98ea81312a0bbe3d0c1f0474",
+  "data/reference/split_label_decisions.py": "b629ac5464fd7fa72e48b18c5fbe9b97e950fcd692917dc666682b5c0c14ac2d",
+  "data/reference/test_v2.csv": "9afb8de68728764905a5f1827256a4e423baba0508d7df9d55ea5ca3e73eb458",
+  "requirements-py312.txt": "5917f659549727081fc00270d1682b255015bccc3c5a2b703880870bc45591e4",
+  "requirements.txt": "a5d42fc46ca926bb141d169dec17385d2d8b65c707fda31f1f08db444ffe5e7f",
+  "run_all.sh": "6f2d64a960a657d968cfabf96f449de8ed30faf8b2087e6f15ffde3421727db4",
+  "scripts/compare_outputs.py": "76184c982d3ca529dff8f3d65f6c5018db2a985adb770e898d3d6b9b1fcb4800",
+  "scripts/csvio.py": "95d07afb3721fe1832e9cd83dd27a784e8376dfba7fee0abc72ac0873febea9f",
+  "scripts/diagnostics/parser_precision_check.py": "5922c972808054b169bbf3404c42ea39264befd35cf4c665ccc8358e4f4d8510",
+  "scripts/make_anonymous_package.py": "68dc1a13a38fbfc2a26d319651cd97ea6c07151c7370fd5a1b0a4bb69f58d7b3",
+  "scripts/run_manifest.py": "9b318d564edd6fbaec7104d5a3fa5fe9ad2f91f36408c4ffd805b29918576f19",
+  "scripts/run_stage.py": "996a66ae40846445a88456e426816a0298933352f20edfad305fbdd3f7575369",
+  "scripts/stage0_feasibility.py": "761620a1806519f78b4ed1c06e0c8c950889a1c038070b1c644be7a0db39f1d8",
+  "scripts/stage1_cohort_counts.py": "13973e78e0b9e1da952304e50dd55c64a9a35b507f8a1e8ea2840b7d13bb88c0",
+  "scripts/stage1_reproduce.py": "bf7751fa6fd5984d5bfb4e3873762ceb55d0c265d55300e05b90b7f036dca9c3",
+  "scripts/stage2_measures.py": "14179ef7c31712b376b22eebd26996f74ad734616b93fef03d4352867c91a425",
+  "scripts/stage2_pilot_original.py": "f3f35aa5aeee4d9e3928b65ce8e53ee8786cb5762b71a3fb7a3333bfbd48346e",
+  "scripts/stage3_build_labels.py": "393d73915e712fba0663307c6ee3be13e20025af75060e9c8c50ef0727497067",
+  "scripts/stage3_extension.py": "a672649e6bf86f4da614c4ca0dc9515f80403ab2768ddba05b4c749959fea12b",
+  "scripts/stage3_label_extract.py": "3bf087a6c04927537cbf900218889c0fb72e065c54b044d423859399deb9fb59",
+  "scripts/stage3_tests.py": "5664f465fd5c10b41c8db7c9ed51f55ed11edd148a15050c3777f5aabb685264",
+  "scripts/stage4_code_only.py": "4edae33d7d9fe48bc953f44f271b1117812b3e866c3107fc42e12cbcf6f65cd9",
+  "scripts/stage4_drift_robustness.py": "49679b4c4d01c78d3dc0242c98888e3d4bc201a046f72acd993f712e74878c78",
+  "scripts/stage5_figures.py": "c1f639c21680b26049cbd6b09839edc73200ae15bb15340287363497a6726509",
+  "scripts/stage5_label_audit_sample.py": "fd783fffda9bb647bf4ffc2a7dbec05b6b81eb1b8cba23232d324f0801a2dd98",
+  "scripts/stage6_dependence_and_strata.py": "78c3549c3e5ceb5e6bbd97d20670d0a4a58823add0dbd146f7654f50385abf46",
+  "scripts/stage6_review_response.py": "3e5bf7852d64ca6c1d07d54dddf1154de035724a50640c5c799ea35bdc303c20",
+  "scripts/stage6_split_size_symmetry.py": "7fc980d6578a4d13946557002d7208205502f13371b85f64a58d54e2d92ace3e",
+  "scripts/stage6_verify_review_numbers.py": "ac9557e5eada7fa5aef4ce3216be42f81cf74aa6f5fe4de99bf12281cffeec0a"
+ },
+ "raw_inputs": {
+  "data/raw/Competitions.csv": {
+   "sha256": "1bbfaf5d754c972a6b441b97dc1e74217e79d9395fc64d182fd14e9e38810a84",
+   "bytes": 186779589
+  },
+  "data/raw/Submissions.csv": {
+   "sha256": "2c4359f1d37fb3047319ee76f9bb3fed4e8e62d9771e5b694d40d9d03f8092b2",
+   "bytes": 2729389325
+  },
+  "data/raw/Teams.csv": {
+   "sha256": "ba4911a2903f65f57f3a3eba4ee831bfc277ebab5142b6135b1e5984f761e067",
+   "bytes": 798320091
+  }
+ }
+}

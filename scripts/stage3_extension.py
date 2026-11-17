@@ -62,6 +62,20 @@ if not os.path.exists(PARQ):
 # each time (inexact under pandas 2.x). Changed 17 Nov 2026.
 import json
 ROWS = OUT + ".rows.jsonl"
+# The row store is bound to the code and inputs that produced it: resuming after any of them changed is refused.
+import hashlib
+def _h(f):
+    with open(f, "rb") as fh: return hashlib.sha256(fh.read()).hexdigest()
+FINGERPRINT = {f: _h(f) for f in ("scripts/stage3_extension.py", "scripts/stage2_measures.py", "scripts/csvio.py",
+                                  "outputs/stage1/cohort_per_competition.csv", "outputs/stage0_per_competition.csv",
+                                  "outputs/stage3/split_labels.csv")}
+FPFILE = ROWS + ".fingerprint.json"
+if os.path.exists(ROWS):
+    if not os.path.exists(FPFILE) or json.load(open(FPFILE)) != FINGERPRINT:
+        sys.exit(f"{ROWS} was made by different code or inputs; rebuild with CLEAN=1 (or delete it)")
+else:
+    with open(FPFILE, "w") as fh: json.dump(FINGERPRINT, fh, indent=1)
+# Note: the store is read only by this script with Python's json module, which writes missing values as NaN.
 done = set()
 if os.path.exists(ROWS):
     with open(ROWS) as fh: done = {json.loads(line)["CompetitionId"] for line in fh if line.strip()}

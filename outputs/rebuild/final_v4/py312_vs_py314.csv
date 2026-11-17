@@ -1,0 +1,39 @@
+table,alignment,cells_within_tolerance,detail,max_abs_diff,max_rel_diff,status
+stage0_per_competition.csv,key CompetitionId,0,,0.0,0.0,same
+stage1/allstate_file_verification.json,fields,0,,0.0,0.0,same
+stage1/allstate_reconstructed_size_sensitivity.json,fields,0,,0.0,0.0,same
+stage1/benchmark_and_tie_sensitivity.csv,key CompetitionId,24,,1.3877787807814457e-17,1.6890627947942409e-07,same
+stage1/candidate_cohort_counts.csv,bytes identical,0,,,,same
+stage1/cohort_counts.csv,bytes identical,0,,,,same
+stage1/cohort_per_competition.csv,key CompetitionId,0,,0.0,0.0,same
+stage1/denominator_audit.csv,bytes identical,0,,,,same
+stage1/denominator_candidates_UNVERIFIED.csv,bytes identical,0,,,,same
+stage1/first_day_and_pvalue_sensitivity.csv,bytes identical,0,,,,same
+stage1/original_sample_audit.csv,bytes identical,0,,,,same
+stage1/original_team_flags.csv,bytes identical,0,,,,same
+stage1/pvalue_summary.csv,bytes identical,0,,,,same
+stage1/replication_summary.csv,key CompetitionId,11,,1.3877787807814457e-17,2.6535446169714396e-16,same
+stage1/synthetic_selection_check.json,fields,2,,1.3877787807814457e-17,9.912087680635678e-15,same
+stage2/pilot_original_drift_tests.csv,file order,2,,4.336808689942018e-19,2.0143941167026415e-16,same
+stage2/pilot_original_inferred_sizes.csv,bytes identical,0,,,,same
+stage2/pilot_original_measures.csv,key CompetitionId,90,,1.7763568394002505e-15,1.233493123763622e-14,same
+stage2/pilot_simulation.csv,bytes identical,0,,,,same
+stage3/competition_measures.csv,key CompetitionId,558,,5.928554968950589e+79,2.2607144518552194e-13,same
+stage3/results_confirmatory.csv,file order,7,,3.469446951953614e-18,2.6794813170918533e-15,same
+stage3/results_descriptive.csv,file order,12,,2.7755575615628914e-17,7.570938212009738e-16,same
+stage3/results_secondary.csv,file order,49,,2.220446049250313e-16,9.194648010649737e-15,same
+stage3/split_evidence_sentences.csv,bytes identical,0,,,,same
+stage3/split_labels.csv,bytes identical,0,,,,same
+stage4/code_only_summary.csv,file order,1,,5.551115123125783e-17,1.8572853442478115e-16,same
+stage4/code_only_tests.csv,file order,2,,5.551115123125783e-17,2.8542358997095084e-16,same
+stage4/drift_robustness_per_competition.csv,key CompetitionId,1395,,5.928554968950589e+79,2.142009298222709e-12,same
+stage4/drift_robustness_summary.csv,file order,6,,1.6653345369377348e-16,7.0811511468331196e-15,same
+stage4/prize_competitions_O_vs_E.csv,bytes identical,0,,,,same
+stage6/competition_clusters.csv,bytes identical,0,,,,same
+stage6/dependence_and_strata.csv,file order,9,,5.551115123125783e-17,2.6794813170918533e-15,same
+stage6/drift_under_random_split_evidence.csv,file order,3,,1.249000902703301e-16,1.0421527996905355e-14,same
+stage6/exchangeability_simulation.csv,file order,1,,8.326672684688674e-17,1.1357865108642126e-15,same
+stage6/h1_tail_summary.csv,file order,3,,8.673617379884035e-19,3.2082862164462306e-16,same
+stage6/size_evidence_tiers.csv,bytes identical,0,,,,same
+stage6/split_size_symmetry.csv,file order,21,,2.220446049250313e-16,1.1121309367160569e-15,same
+stage6/verify_review_numbers.csv,key CompetitionId,247,,8.0,1.5229509621945513e-14,same

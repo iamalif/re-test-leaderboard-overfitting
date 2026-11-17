@@ -14,12 +14,13 @@ Checks, per competition:
 
 Run from the project root:  python scripts/stage4_drift_robustness.py
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import sys, duckdb, numpy as np, pandas as pd
 from scipy.stats import binomtest
 sys.path.insert(0, "scripts")
 from stage2_measures import prepare_scores, oriented_gap
 
-m = pd.read_csv("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""].set_index("CompetitionId")
+m = read_csv_exact("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""].set_index("CompetitionId")
 con = duckdb.connect(); rows = []
 for cid, r in m.iterrows():
     g = con.sql(f"select * from 'outputs/stage3/analysis_submissions.parquet' where CompetitionId={cid}").df()

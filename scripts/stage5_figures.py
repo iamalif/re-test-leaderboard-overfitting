@@ -3,6 +3,7 @@
 Run from the project root:  python scripts/stage5_figures.py
 Output: paper/figures/fig1_gap_level.png, fig2_drift.png, fig3_test_size.png, fig4_prize.png (and .pdf)
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -12,7 +13,7 @@ plt.rcParams.update({"font.size": 9, "axes.edgecolor": MUTED, "axes.labelcolor":
                      "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6,
                      "axes.titlesize": 9.5, "axes.titleweight": "bold", "axes.titlelocation": "left", "legend.frameon": False,
                      "figure.dpi": 200, "savefig.bbox": "tight", "font.family": "DejaVu Sans"})
-m = pd.read_csv("outputs/stage4/drift_robustness_per_competition.csv")
+m = read_csv_exact("outputs/stage4/drift_robustness_per_competition.csv")
 O, E = m[m.Cohort == "O"], m[m.Cohort == "E"]
 LAB = {"O": "Original (to April 2019)", "E": "Extension (after April 2019)"}
 

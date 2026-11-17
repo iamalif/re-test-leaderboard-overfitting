@@ -1,0 +1,162 @@
+{
+  "environment": {
+    "python": "3.14.2 (v3.14.2:df793163d58, Dec  5 2025, 12:18:06) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "pandas": "3.0.1"
+  },
+  "fixtures": {
+    "id_changed": [
+      "same",
+      {
+        "alignment": "key CompetitionId",
+        "max_abs_diff": 1.0,
+        "detail": ""
+      }
+    ],
+    "sign_flip": [
+      "same",
+      {
+        "alignment": "key CompetitionId",
+        "max_abs_diff": 2e-14,
+        "detail": ""
+      }
+    ],
+    "NA_text": [
+      "same",
+      {
+        "alignment": "key CompetitionId",
+        "max_abs_diff": 0.0,
+        "detail": ""
+      }
+    ],
+    "leading_zero_text": [
+      "same",
+      {
+        "alignment": "key CompetitionId",
+        "max_abs_diff": 0.0,
+        "detail": ""
+      }
+    ],
+    "bool_flip": [
+      "DIFFERENT VALUES",
+      {
+        "alignment": "key CompetitionId",
+        "max_abs_diff": 1.0,
+        "detail": "flagged: 1 numeric cells in a text column differ"
+      }
+    ]
+  },
+  "corrupt_known_exception_exit": 0,
+  "stage3_exact_differences": {
+    "mean_gap": {
+      "rows": 561,
+      "maxdiff": 3.7053468555941183e+78,
+      "sign_changes": 0
+    },
+    "median_gap": {
+      "rows": 552,
+      "maxdiff": 1.4551915228366852e-11,
+      "sign_changes": 0
+    },
+    "first_mean_gap": {
+      "rows": 559,
+      "maxdiff": 1.1641532182693481e-10,
+      "sign_changes": 0
+    },
+    "top10_mean_gap": {
+      "rows": 548,
+      "maxdiff": 5.820766091346741e-11,
+      "sign_changes": 0
+    },
+    "noise_sd_first": {
+      "rows": 548,
+      "maxdiff": 4.547473508864641e-13,
+      "sign_changes": 0
+    },
+    "share_identical": {
+      "rows": 622,
+      "maxdiff": 9.8879238130678e-17,
+      "sign_changes": 0
+    },
+    "drift_mean": {
+      "rows": 571,
+      "maxdiff": 0.001953125,
+      "sign_changes": 0
+    },
+    "drift_se": {
+      "rows": 520,
+      "maxdiff": 0.001953125,
+      "sign_changes": 0
+    },
+    "drift_median": {
+      "rows": 549,
+      "maxdiff": 1.2732925824820995e-11,
+      "sign_changes": 0
+    },
+    "drift_share_positive": {
+      "rows": 95,
+      "maxdiff": 1.1102230246251565e-16,
+      "sign_changes": 0
+    },
+    "drift_share_negative": {
+      "rows": 208,
+      "maxdiff": 8.326672684688674e-17,
+      "sign_changes": 0
+    },
+    "team_spread": {
+      "rows": 527,
+      "maxdiff": 2.2737367544323206e-13,
+      "sign_changes": 0
+    },
+    "rel_mean_gap": {
+      "rows": 412,
+      "maxdiff": 5.928554968950589e+79,
+      "sign_changes": 0
+    },
+    "rel_drift": {
+      "rows": 547,
+      "maxdiff": 7.450580596923828e-09,
+      "sign_changes": 0
+    },
+    "fit_priv": {
+      "rows": 1,
+      "maxdiff": 1.1102230246251565e-16,
+      "sign_changes": 0
+    },
+    "p05_all": {
+      "rows": 108,
+      "maxdiff": 9.8879238130678e-17,
+      "sign_changes": 0
+    },
+    "p05_first": {
+      "rows": 80,
+      "maxdiff": 9.71445146547012e-17,
+      "sign_changes": 0
+    },
+    "p05_top10": {
+      "rows": 82,
+      "maxdiff": 9.71445146547012e-17,
+      "sign_changes": 0
+    },
+    "top10_gap_null": {
+      "rows": 115,
+      "maxdiff": 9.920449878242366e-17,
+      "sign_changes": 0
+    },
+    "top10_gap_null_sd": {
+      "rows": 107,
+      "maxdiff": 9.93129189996722e-17,
+      "sign_changes": 0
+    },
+    "top10_gap_excess": {
+      "rows": 116,
+      "maxdiff": 9.71445146547012e-17,
+      "sign_changes": 0
+    },
+    "scores_in_0_1": {
+      "rows": 69
+    }
+  },
+  "zip_mode": "0o100755",
+  "zip_files": 130,
+  "manifest_bad": []
+}

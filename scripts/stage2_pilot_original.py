@@ -4,6 +4,7 @@ and check them on simulated data. Reads no extension scores.
 Run from the project root:  python scripts/stage2_pilot_original.py
 Needs outputs/stage1/original_predeadline_submissions.csv.gz (from stage1_reproduce.py).
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import sys, json
 import numpy as np, pandas as pd
 sys.path.insert(0, "scripts")
@@ -11,13 +12,13 @@ from stage2_measures import (prepare_scores, competition_measures, infer_denomin
                              null_top_decile_gap, first_per_team, top_decile)
 from scipy.stats import binomtest, wilcoxon
 
-man = pd.read_csv("data/reference/original_120_manifest.csv").set_index("CompetitionId")
+man = read_csv_exact("data/reference/original_120_manifest.csv").set_index("CompetitionId")
 # Scores read as text and converted with Python's float() (correctly rounded under any pandas version). Added 17 Nov 2026.
 d = pd.read_csv("outputs/stage1/original_predeadline_submissions.csv.gz",
                 dtype={"PublicScoreFullPrecision": str, "PrivateScoreFullPrecision": str})
 for _c in ("PublicScoreFullPrecision", "PrivateScoreFullPrecision"):
     d[_c] = [float(v) if isinstance(v, str) and v.strip() != "" else float("nan") for v in d[_c]]
-flags = pd.read_csv("outputs/stage1/original_team_flags.csv")
+flags = read_csv_exact("outputs/stage1/original_team_flags.csv")
 bench = set(flags.loc[flags.IsBenchmark, "TeamId"])
 d = d.rename(columns={"PublicScoreFullPrecision": "pub", "PrivateScoreFullPrecision": "priv"})
 d["pub"] = pd.to_numeric(d.pub, errors="coerce"); d["priv"] = pd.to_numeric(d.priv, errors="coerce")
@@ -49,7 +50,7 @@ for cid, m in man.iterrows():
 res = pd.DataFrame(rows); res.to_csv("outputs/stage2/pilot_original_measures.csv", index=False)
 den = pd.DataFrame(den); den.to_csv("outputs/stage2/pilot_original_inferred_sizes.csv", index=False)
 pv = pd.concat(pvals)
-old = pd.read_csv("outputs/stage1/original_pvalues_consistent_sizes.csv.gz").merge(pv, on=["CompetitionId", "Id"])
+old = read_csv_exact("outputs/stage1/original_pvalues_consistent_sizes.csv.gz").merge(pv, on=["CompetitionId", "Id"])
 print("cross-check against the stage 1 p-values (independent implementation):", len(old), "submissions in",
       old.CompetitionId.nunique(), "competitions; max abs difference", float((old.p - old.p_inclusive).abs().max()))
 tests = []

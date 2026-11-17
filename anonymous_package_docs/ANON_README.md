@@ -21,7 +21,11 @@ Supplementary material for the submission "Leaderboard Overfitting on Kaggle, Re
 
 ## Running
 
-Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `requirements-py312.txt`; both give the same tables), then `CLEAN=1 PY=python bash run_all.sh`. About ten to twenty minutes on a laptop. Then compare with the shipped tables: `python scripts/compare_outputs.py outputs_previous_<time> outputs`. It compares column names, every text cell and every number (relative tolerance 1e-9, absolute 1e-12), lists tables the pipeline does not rebuild, and ends with PASS or a list of failures. `python scripts/compare_outputs.py --selftest` checks the comparison itself against deliberately altered tables.
+Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `requirements-py312.txt`; both give the same tables), then `CLEAN=1 PY=python bash run_all.sh`. About ten to twenty minutes on a laptop. Then compare with the shipped tables: `python scripts/compare_outputs.py outputs_previous_<time> outputs`. It compares the 35 pipeline tables cell by cell: identifiers, counts, labels, true/false flags, missing values and signs must match exactly; decimals must agree within one part in 10^9 (absolute 1e-12) and have the same sign. It ends with PASS or a list of failures. `python scripts/compare_outputs.py --selftest` checks the comparison itself against 22 deliberately altered tables.
+
+Every stage records its script hash, environment, timing, exit status and output hashes in `outputs/run_ledger.jsonl`. The shipped ledger is that of the run that produced the shipped tables (Python 3.14.8, pandas 3.1.1). A second complete run under Python 3.12.15 with pandas 2.3.3 agrees with it exactly in every identifier, count, label and sign; 2,441 decimal cells differ by floating-point rounding between the two NumPy/pandas generations, all within one part in 10^9 (`outputs/rebuild/`).
+
+All CSV tables are read through `scripts/csvio.py`, which converts numbers with Python's correctly rounded `float()`: the default CSV number parser of pandas 2.x and 3.0 is not correctly rounded (`scripts/diagnostics/parser_precision_check.py` measures this).
 
 ## Where each claim in the paper comes from
 

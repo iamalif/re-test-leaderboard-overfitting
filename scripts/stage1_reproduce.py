@@ -2,6 +2,7 @@
 Run: python3 scripts/stage1_reproduce.py --project /path/to/project
 Requires pandas, numpy, matplotlib. Manifest transcribed from published appendix.
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import argparse,json,platform
 from pathlib import Path
 import numpy as np
@@ -18,7 +19,7 @@ def exact_scores(df):
   if col in df: df[col]=[float(v) if isinstance(v,str) and v.strip()!='' else float('nan') for v in df[col]]
  return df
 root=a.project; out=a.output or root/'outputs'/'stage1';out.mkdir(parents=True,exist_ok=True)
-manifest=pd.read_csv(root/'data'/'reference'/'original_120_manifest.csv').set_index('CompetitionId')
+manifest=read_csv_exact(root/'data'/'reference'/'original_120_manifest.csv').set_index('CompetitionId')
 assert len(manifest)==120 and manifest.index.is_unique
 if a.from_cache:
  d=exact_scores(pd.read_csv(out/'original_predeadline_submissions.csv.gz',dtype=SCORE_TEXT))
@@ -130,7 +131,7 @@ metadata=json.load(open(out/'run_metadata.json'));metadata.update(scipy=scipy.__
 json.dump(metadata,open(out/'run_metadata.json','w'),indent=2)
 print('Exact-tail validation cases:',checks,'; p-value competitions:',len(pframes),flush=True)
 # Metadata-only cohort reconciliation; no extension scores are read here.
-current=pd.read_csv(root/'outputs/stage0_per_competition.csv')
+current=read_csv_exact(root/'outputs/stage0_per_competition.csv')
 joined=manifest.reset_index().merge(current,on='CompetitionId',how='left',validate='one_to_one')
 joined['PairedCountDifference']=joined.n_pre_both-joined.PaperSubmissions
 joined.to_csv(out/'original_sample_audit.csv',index=False)
@@ -150,13 +151,16 @@ json.dump(fingerprints,open(out/'input_hashes.json','w'),indent=2)
 
 # Original-sample metadata and tie sensitivity. These are audit outputs, not extensions.
 if (out/'original_team_flags.csv').exists():
- teamflags=pd.read_csv(out/'original_team_flags.csv')
+ teamflags=read_csv_exact(out/'original_team_flags.csv')
 else:
  flagparts=[]
  for chunk in pd.read_csv(root/'data/raw/Teams.csv',usecols=['Id','CompetitionId','IsBenchmark'],chunksize=200000):
   flagparts.append(chunk[chunk.CompetitionId.isin(manifest.index)])
  teamflags=pd.concat(flagparts).rename(columns={'Id':'TeamId'})
- teamflags.to_csv(out/'original_team_flags.csv',index=False)
+# Keep exactly the teams with retained pre-deadline submissions (the only teams the analysis uses), in TeamId order.
+# Before 17 Nov 2026 a fresh run wrote every team ever registered (1,385,785) while the stored file held these 101,661.
+teamflags=teamflags[teamflags.TeamId.isin(set(d.TeamId))].sort_values('TeamId').reset_index(drop=True)
+teamflags.to_csv(out/'original_team_flags.csv',index=False)
 benchmark_ids=set(teamflags.loc[teamflags.IsBenchmark,'TeamId'])
 sensitivity=[]
 for cid,m in manifest.iterrows():
@@ -170,7 +174,7 @@ for cid,m in manifest.iterrows():
  sensitivity.append({'CompetitionId':cid,'Metric':m.PaperMetric,'all_mean_gap':g.gap.mean(),'nonbenchmark_mean_gap':ordinary.gap.mean(),'benchmark_submission_n':len(g)-len(ordinary),'top10_gap_tie_min':low,'top10_gap_tie_max':upper,'top10_tie_bound_width':upper-low})
 pd.DataFrame(sensitivity).to_csv(out/'benchmark_and_tie_sensitivity.csv',index=False)
 
-pv=pd.read_csv(out/'original_pvalues_consistent_sizes.csv.gz')
+pv=read_csv_exact(out/'original_pvalues_consistent_sizes.csv.gz')
 joined=d.merge(pv,on=['CompetitionId','Id'],validate='one_to_one')
 order=[]
 for cid,g in joined.groupby('CompetitionId'):

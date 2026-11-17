@@ -5,10 +5,11 @@ this version uses 10,000 as specified.
 
 Run from the project root:  python scripts/stage6_dependence_and_strata.py
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import re, duckdb, numpy as np, pandas as pd
 from scipy.stats import binomtest
 rng = np.random.default_rng(20261117)
-m = pd.read_csv("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""].sort_values("CompetitionId")
+m = read_csv_exact("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""].sort_values("CompetitionId")
 meta = duckdb.connect().sql("select Id::bigint CompetitionId, Slug, OrganizationId from read_csv('data/raw/Competitions.csv',header=true,all_varchar=true)").df()
 m = m.merge(meta, on="CompetitionId")
 def cluster(r):

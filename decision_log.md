@@ -289,3 +289,14 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 
 - From the zip alone plus the public Meta Kaggle files, Python 3.14.2, fresh virtual environment, `CLEAN=1 bash run_all.sh` as a single process: ALL DONE. Comparison (tool v2) against the project: 34 same, 20 not rebuilt (expected), 1 known exception; RESULT: PASS. Recorded in `outputs/rebuild/clean_rebuild_report_2026-11-17.md`, addendum 3.
 - This closes the reproducibility work. Remaining before submission: the researcher's own read-through of `paper/main.pdf`; arXiv endorsement; preprint timing under double-blind review; optional repeat of the literature search shortly before submitting.
+
+# Review of post-v0.5 work answered; final ledgered runs (2026-11-17, about 15:30-16:40, Claude)
+
+- Review `reviews/review_2026-11-17_post_v05.md`. All findings accepted; response `reviews/response_2026-11-17_post_v05.md`.
+- CORRECTION OF RECORD: statements that "no post-deadline score has been read" are replaced by "no post-deadline score has been analysed". Pipeline steps load all submissions before filtering, and on 17 Nov a parser diagnostic without a deadline filter passed 14,733 post-deadline public-score strings of competitions 8900 and 10200 through a number-format comparison. No gap, private score or other quantity was computed from them. Earlier entries are left as written.
+- CORRECTION: the earlier parser figure (10,387 of 41,739) used that unfiltered population. On the analysis population: pandas 2.3 misreads 7,544 public and 7,157 private of 26,985; pandas 3.1 none.
+- CORRECTION: comparison v2 results (addenda 2-3 of the rebuild report) and the smoke-test comparison are superseded; v2 tolerated identifier changes and sign flips and waived any team-flags change.
+- Changes: comparison v3; `scripts/csvio.py` exact reading everywhere; stage 3 JSON-lines row store; stage 1 team flags restricted to teams with retained submissions (exception removed); `scripts/run_stage.py` ledger; `CLEAN=1` moves pipeline outputs only; parser diagnostic saved under `scripts/diagnostics/`.
+- Bug of my own caught by v3 before anything was stored: first `csvio.py` misread DuckDB's lowercase booleans. Fixed and checked against pandas on every table.
+- Final fresh runs, one code version, all stages exit 0: Python 3.14.8/pandas 3.1.1 and Python 3.12.15/pandas 2.3.3. v3 PASS between them (2,441 decimal cells within tolerance; everything else identical). Project pipeline outputs replaced by the 3.14 run's (35 of 35 byte-identical). Ledgers and comparison reports in `outputs/rebuild/`. Paper numbers unchanged; archived hashes unchanged. Paper reproducibility sentence made precise.
+- Remaining: the researcher's smoke test of the final zip.

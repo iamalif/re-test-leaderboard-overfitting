@@ -2,10 +2,11 @@
 (a) drift without percentile clipping; (b) first-submission rejection share when inferred sizes are doubled.
 Run from the project root:  python scripts/stage6_verify_review_numbers.py
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import sys, duckdb, numpy as np, pandas as pd
 sys.path.insert(0, "scripts")
 from stage2_measures import oriented_gap, team_drift, exact_pvalues, first_per_team
-m = pd.read_csv("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""]
+m = read_csv_exact("outputs/stage3/competition_measures.csv"); m = m[m.excluded.fillna("") == ""]
 con = duckdb.connect(); rows = []
 for r in m.itertuples():
     g = con.sql(f"select * from 'outputs/stage3/analysis_submissions.parquet' where CompetitionId={r.CompetitionId}").df()

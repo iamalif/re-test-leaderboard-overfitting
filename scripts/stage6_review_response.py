@@ -7,14 +7,15 @@
 
 Run from the project root:  python scripts/stage6_review_response.py
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import sys, numpy as np, pandas as pd
 from scipy.stats import binomtest
 sys.path.insert(0, "scripts")
 from stage2_measures import team_drift
 
-m = pd.read_csv("outputs/stage4/drift_robustness_per_competition.csv")
-coh = pd.read_csv("outputs/stage1/cohort_per_competition.csv")[["CompetitionId", "LeaderboardPercentage", "Slug"]]
-man = pd.read_csv("data/reference/original_120_manifest.csv")[["CompetitionId", "PaperPublicSize", "PaperPrivateSize"]]
+m = read_csv_exact("outputs/stage4/drift_robustness_per_competition.csv")
+coh = read_csv_exact("outputs/stage1/cohort_per_competition.csv")[["CompetitionId", "LeaderboardPercentage", "Slug"]]
+man = read_csv_exact("data/reference/original_120_manifest.csv")[["CompetitionId", "PaperPublicSize", "PaperPrivateSize"]]
 m = m.merge(coh, on="CompetitionId").merge(man, on="CompetitionId", how="left")
 
 # ---- 1. size tiers

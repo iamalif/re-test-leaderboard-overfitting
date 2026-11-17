@@ -8,6 +8,7 @@ Run from the project root, repeatedly until it prints DONE:
     python scripts/stage3_extension.py [--max-seconds 150]
 Outputs: outputs/stage3/analysis_submissions.parquet, outputs/stage3/competition_measures.csv
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import argparse, os, sys, time
 import duckdb, numpy as np, pandas as pd
 sys.path.insert(0, "scripts")
@@ -32,14 +33,14 @@ def metric_group(metric, name):                      # plan section 4
     return "Other"
 
 
-c = pd.read_csv("outputs/stage1/cohort_per_competition.csv")
-s0 = pd.read_csv("outputs/stage0_per_competition.csv", usecols=["CompetitionId", "MetricIsMax"])
+c = read_csv_exact("outputs/stage1/cohort_per_competition.csv")
+s0 = read_csv_exact("outputs/stage0_per_competition.csv", usecols=["CompetitionId", "MetricIsMax"])
 c = c.merge(s0, on="CompetitionId")
 c["Group"] = [metric_group(m, n) for m, n in zip(c.Metric, c.MetricName)]
 c["CohortCode"] = c.Cohort.map({"original_120": "O", "extension_candidate": "E", "in_window_not_in_original": "W"})
 c = c[c.CohortCode.notna() & c.LeaderboardPercentage.between(1, 99)]            # rules 1 (in file) and 2
 c = c[(c.CohortCode != "W") | c.Metric.isin(["RMSE", "MAE", "MSE", "RMSLE"])]
-lab = pd.read_csv("outputs/stage3/split_labels.csv")[["CompetitionId", "split_label", "flagged"]]
+lab = read_csv_exact("outputs/stage3/split_labels.csv")[["CompetitionId", "split_label", "flagged"]]
 c = c.merge(lab, on="CompetitionId", how="left").set_index("CompetitionId")
 
 if not os.path.exists(PARQ):
@@ -56,7 +57,14 @@ if not os.path.exists(PARQ):
       ORDER BY 1, 2) TO '{PARQ}' (FORMAT parquet, ROW_GROUP_SIZE 100000)""")
     print("extracted", con.sql(f"select count(*), count(distinct CompetitionId) from '{PARQ}'").fetchall(), flush=True)
 
-done = set(pd.read_csv(OUT).CompetitionId) if os.path.exists(OUT) else set()
+# Rows are appended as JSON lines (Python's repr of each float, so exact) and the CSV is written once at the end.
+# Earlier versions re-read and rewrote the whole CSV after every competition, which re-parsed every stored number
+# each time (inexact under pandas 2.x). Changed 17 Nov 2026.
+import json
+ROWS = OUT + ".rows.jsonl"
+done = set()
+if os.path.exists(ROWS):
+    with open(ROWS) as fh: done = {json.loads(line)["CompetitionId"] for line in fh if line.strip()}
 con = duckdb.connect()
 for cid, m in c.iterrows():
     if cid in done: continue
@@ -86,16 +94,19 @@ for cid, m in c.iterrows():
                 r.update(p05_all=float((g.p <= .05).mean()), p05_first=float((first_per_team(g).p <= .05).mean()),
                          p05_top10=float((top_decile(g, True).p <= .05).mean()),
                          top10_gap_null=nm, top10_gap_null_sd=ns, top10_gap_excess=r["top10_mean_gap"] - nm)
-    row = pd.DataFrame([r])
-    if os.path.exists(OUT):
-        old = pd.read_csv(OUT); pd.concat([old, row], ignore_index=True).to_csv(OUT, index=False)
-    else:
-        row.to_csv(OUT, index=False)
+    with open(ROWS, "a") as fh:
+        fh.write(json.dumps({k: (v.item() if hasattr(v, "item") else v) for k, v in r.items()}) + "\n")
     done.add(cid)
 # Fixed column order (17 Nov 2026): rows are appended across resumable runs, so column order used to depend on run
 # history. This is the order an uninterrupted run produces.
 COLUMN_ORDER = ['CompetitionId', 'Cohort', 'Group', 'Metric', 'MetricName', 'Segment', 'CodeOnly', 'DeadlineYear', 'Deadline', 'split_label', 'flagged', 'higher_better', 'n_analysis', 'n', 'teams', 'mean_gap', 'median_gap', 'first_mean_gap', 'top10_mean_gap', 'top10_n', 'noise_sd_first', 'share_identical', 'drift_teams', 'drift_mean', 'drift_se', 'drift_median', 'drift_share_positive', 'drift_share_negative', 'team_spread', 'rel_mean_gap', 'rel_drift', 'excluded', 'n_pub', 'n_priv', 'fit_pub', 'fit_priv', 'scores_in_0_1', 'p05_all', 'p05_first', 'p05_top10', 'top10_gap_null', 'top10_gap_null_sd', 'top10_gap_excess']
-final = pd.read_csv(OUT)
+with open(ROWS) as fh: final = pd.DataFrame([json.loads(line) for line in fh if line.strip()])
 assert set(final.columns) <= set(COLUMN_ORDER), set(final.columns) - set(COLUMN_ORDER)
-final.reindex(columns=COLUMN_ORDER).to_csv(OUT, index=False)
+REQUIRED = ["CompetitionId", "Cohort", "Group", "Metric", "Segment", "CodeOnly", "DeadlineYear", "split_label", "flagged",
+            "higher_better", "n_analysis", "excluded", "n", "mean_gap", "drift_mean", "team_spread", "rel_drift", "rel_mean_gap"]
+missing = [c for c in REQUIRED if c not in final.columns]
+assert not missing, f"required columns missing: {missing}"
+assert final.CompetitionId.is_unique, "a competition was measured twice"
+assert len(final) == len(c), f"{len(final)} rows for {len(c)} competitions"
+final.sort_values("CompetitionId").reindex(columns=COLUMN_ORDER).to_csv(OUT, index=False)
 print("DONE", len(done), "competitions")

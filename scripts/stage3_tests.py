@@ -4,11 +4,12 @@ Run from the project root:  python scripts/stage3_tests.py
 Input : outputs/stage3/competition_measures.csv
 Output: outputs/stage3/results_confirmatory.csv, results_secondary.csv, results_descriptive.csv
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import numpy as np, pandas as pd
 from scipy.stats import mannwhitneyu, binomtest, spearmanr
 
 rng = np.random.default_rng(20261116); B = 10_000
-m = pd.read_csv("outputs/stage3/competition_measures.csv").sort_values("CompetitionId").reset_index(drop=True)   # fixed order, so bootstrap intervals are reproducible
+m = read_csv_exact("outputs/stage3/competition_measures.csv").sort_values("CompetitionId").reset_index(drop=True)   # fixed order, so bootstrap intervals are reproducible
 m["excluded"] = m.excluded.fillna("")
 print(m.groupby(["Cohort", "excluded"]).size().unstack(fill_value=0))
 d = m[m.excluded == ""].copy()

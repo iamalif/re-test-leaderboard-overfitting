@@ -29,3 +29,6 @@ anonymous_package/
 anonymous_package_old_*/
 anonymous_review_package.zip
 outputs_previous_*/
+
+# stage 3 row store (intermediate)
+outputs/stage3/competition_measures.csv.rows.jsonl

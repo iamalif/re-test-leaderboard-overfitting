@@ -4,8 +4,9 @@ a much wider net than the one used for the original labelling.
 
 Run from the project root:  python scripts/stage5_label_audit_sample.py > outputs/stage5/label_audit_sentences.txt
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import re, duckdb, pandas as pd
-lab = pd.read_csv("outputs/stage3/split_labels.csv")
+lab = read_csv_exact("outputs/stage3/split_labels.csv")
 s = lab[(~lab.flagged) & lab.cohort.isin(["O", "E"])].sample(50, random_state=20261116).sort_values("CompetitionId")
 tx = duckdb.connect().sql("select Id::bigint id, coalesce(Overview,'')||' \n '||coalesce(DatasetDescription,'') t from read_csv('data/raw/Competitions.csv',header=true,all_varchar=true)").df().set_index("id").t
 WIDE = re.compile(r"test|leaderboard|private|public (score|lb|set)|split|held|hold-?out|future|later|stage|phase|unseen|subjects?|patients?|chronolog|time[- ]series|forecast", re.I)

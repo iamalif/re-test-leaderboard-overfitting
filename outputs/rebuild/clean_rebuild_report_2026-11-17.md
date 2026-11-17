@@ -32,3 +32,24 @@
 - **Result:** every stage completed; the run ended with `ALL DONE`.
 - **Comparison** with `scripts/compare_outputs.py` version 2 against the project's outputs: 34 tables the same, 20 not rebuilt (expected), 1 known exception (team-flags intermediate); `RESULT: PASS`.
 - So the package reproduces every rebuilt result table on a third machine, under a third interpreter build (3.14.2, besides 3.14.8 and 3.12.15 in the assistant's environment), from the zip alone plus the public data.
+
+## Addendum 4, 17 November 2026, about 15:30-16:40: final ledgered runs (supersedes the comparisons in addenda 1-3)
+
+Prompted by the review `reviews/review_2026-11-17_post_v05.md`.
+
+**Corrections to the earlier addenda.**
+- Comparison v2 (used in addenda 2 and 3) applied a numeric tolerance to identifiers and could pass a sign flip; its blanket exception for the team-flags file passed arbitrary changes to that file. Its PASS results are superseded by the v3 results below.
+- Addendum 1's figure "10,387 of 41,739" came from a query without a deadline or benchmark filter. Restricted to the analysis population (pre-deadline, non-benchmark, both scores present), pandas 2.3 misreads 7,544 of 26,985 public and 7,157 of 26,985 private scores in competitions 8900 and 10200; pandas 3.1 none (`scripts/diagnostics/parser_precision_check.py`). The unfiltered query also passed 14,733 post-deadline public-score strings of these two original competitions through the number-format comparison; nothing was computed from them.
+- Addendum 2 said the regenerated stage 3 table differed only in column order and one bookkeeping column. Literally, many decimal cells also differed at floating-point precision (for example 571 `drift_mean` cells), because the earlier file had been re-read and rewritten with pandas 2.3 after every competition. No sign or decision changed.
+- Addendum 3's smoke test ran the zip built at about 14:40 (scripts as of `f36215a`) and compared it against later outputs with comparison v2. It shows the wrapper runs end to end on the researcher's machine; its comparison result is superseded.
+
+**Code changes.** Comparison v3 (exact identifiers, counts, labels, booleans, missing values and signs; decimals within rtol 1e-9, atol 1e-12; explicit pipeline scope and historical list; no exceptions; 22-case self-test). `scripts/csvio.py`: every script reads tables exactly; verified to give the same column types and values as pandas on every project table under pandas 2.3 and 3.1. A first version accepted only "True"/"False" and misread DuckDB's lowercase booleans; the v3 comparison caught it in the first final run, before anything was stored. Stage 3 appends rows to a JSON-lines store and writes the CSV once, with required-column, uniqueness and row-count checks. The stage 1 script now stores exactly the 101,661 teams with retained pre-deadline submissions, as the stored file already did. `scripts/run_stage.py` writes a per-stage ledger; `run_all.sh` uses it, and `CLEAN=1` now moves only pipeline outputs.
+
+**Final runs.** Fresh folders, final code, every stage through the ledger, every stage exit 0.
+
+| Run | Ledger | Comparison |
+|---|---|---|
+| Python 3.14.8, pandas 3.1.1, NumPy 2.5.5 | `ledger_final_py314_2026-11-17.jsonl` | Project outputs replaced by this run's outputs: 35 of 35 pipeline tables byte-identical (`final_py314_vs_project_2026-11-17.csv`). |
+| Python 3.12.15, pandas 2.3.3, NumPy 2.2.6 | `ledger_final_py312_2026-11-17.jsonl` | Against the 3.14 run: PASS, 35 of 35; every identifier, count, label, boolean, missing value and sign identical; 2,441 decimal cells differ within tolerance (`final_py312_vs_final_py314_2026-11-17.csv`). |
+
+Every number in the paper was checked against the final tables and is unchanged. The archived plan, label table and measure code still match the hashes recorded on 16 November.

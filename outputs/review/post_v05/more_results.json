@@ -1,0 +1,130 @@
+{
+  "outputs/stage3/results_confirmatory.csv": {},
+  "outputs/stage2/pilot_original_drift_tests.csv": {},
+  "outputs/stage1/replication_summary.csv": {
+    "top10_mean_gap": {
+      "rows": 2,
+      "ids": [
+        8900,
+        10200
+      ],
+      "old": [
+        0.02360644794371096,
+        0.0007934850427343285
+      ],
+      "new": [
+        0.02355932052876918,
+        0.0007935635383271904
+      ]
+    }
+  },
+  "outputs/stage2/pilot_original_measures.csv": {
+    "drift_share_positive": {
+      "rows": 1,
+      "ids": [
+        4493
+      ],
+      "old": [
+        0.6726190476190477
+      ],
+      "new": [
+        0.6666666666666666
+      ]
+    },
+    "drift_share_negative": {
+      "rows": 1,
+      "ids": [
+        5275
+      ],
+      "old": [
+        0.524546660769571
+      ],
+      "new": [
+        0.5249889429455993
+      ]
+    }
+  },
+  "outputs/stage2/pilot_original_inferred_sizes.csv": {},
+  "current_default_vs_roundtrip_signchanges": {
+    "drift_mean": 0,
+    "rel_drift": 0,
+    "mean_gap": 0
+  },
+  "stage3_beyond_tolerance": {},
+  "converter_formats": [
+    "nan",
+    "nan",
+    "0.001",
+    "nan",
+    "nan",
+    "0.25",
+    "inf",
+    "-inf",
+    "nan"
+  ],
+  "identity_hits": {},
+  "image_pdf_metadata": {
+    "paper/figures/fig1_gap_level.pdf": {
+      "/Creator": "Matplotlib v3.11.2, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.11.2",
+      "/CreationDate": "D:20261117141218Z"
+    },
+    "paper/figures/fig1_gap_level.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    "paper/figures/fig2_drift.pdf": {
+      "/Creator": "Matplotlib v3.11.2, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.11.2",
+      "/CreationDate": "D:20261117141218Z"
+    },
+    "paper/figures/fig2_drift.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    "paper/figures/fig3_test_size.pdf": {
+      "/Creator": "Matplotlib v3.11.2, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.11.2",
+      "/CreationDate": "D:20261117141218Z"
+    },
+    "paper/figures/fig3_test_size.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    "paper/figures/fig4_prize.pdf": {
+      "/Creator": "Matplotlib v3.11.2, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.11.2",
+      "/CreationDate": "D:20261117141218Z"
+    },
+    "paper/figures/fig4_prize.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        199.9996,
+        199.9996
+      ]
+    },
+    "outputs/stage1/allstate_scoring_unit_sensitivity.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        159.9946,
+        159.9946
+      ]
+    },
+    "outputs/stage1/mean_gap_distributions.png": {
+      "Software": "Matplotlib version3.11.2, https://matplotlib.org/",
+      "dpi": [
+        159.9946,
+        159.9946
+      ]
+    }
+  }
+}

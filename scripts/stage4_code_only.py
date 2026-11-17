@@ -6,10 +6,11 @@ same public notebook), (ii) a level difference present from the first submission
 
 Run from the project root:  python scripts/stage4_code_only.py
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import numpy as np, pandas as pd
 from scipy.stats import binomtest, mannwhitneyu, fisher_exact
 
-x = pd.read_csv("outputs/stage4/drift_robustness_per_competition.csv")
+x = read_csv_exact("outputs/stage4/drift_robustness_per_competition.csv")
 x["prize"] = x.Segment.isin(["Featured", "Research"])
 x["rel_first_gap"] = x.first_mean_gap / x.team_spread
 x["spread_over_noise"] = x.team_spread / x.noise_sd_first.replace(0, np.nan)      # yardstick relative to first-submission gap noise

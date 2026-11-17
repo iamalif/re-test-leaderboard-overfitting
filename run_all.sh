@@ -1,34 +1,42 @@
 #!/bin/bash
-# Rebuild every table and figure from data/raw/. Python 3.14 with requirements.txt (or Python 3.12 with requirements-py312.txt). Stops at the first failure.
-# Result tables are tracked in the repository and stage 3 skips competitions it finds already recorded, so a plain
-# run in a checkout REUSES them. For a clean rebuild run:   CLEAN=1 PY=.venv/bin/python ./run_all.sh
-# CLEAN=1 moves the existing outputs/ aside to outputs_previous_<time>/ and recomputes everything from data/raw/.
+# Rebuild every pipeline table and figure from data/raw/. Python 3.14 with requirements.txt (or Python 3.12 with
+# requirements-py312.txt). Stops at the first failure. Every stage is recorded in outputs/run_ledger.jsonl.
+#
+# Result tables are tracked in the repository and stage 3 resumes from its row store, so a plain run REUSES
+# earlier work. For a clean rebuild:   CLEAN=1 PY=.venv/bin/python bash run_all.sh
+# CLEAN=1 moves the pipeline outputs (outputs/stage0_per_competition.csv, outputs/stage1-4, outputs/stage6, the
+# ledger) to outputs_previous_<time>/ and recomputes them. Reports and review files elsewhere in outputs/ stay.
 # Afterwards compare:   python scripts/compare_outputs.py outputs_previous_<time> outputs
 set -euo pipefail
 PY=${PY:-python}
 if [ "${CLEAN:-0}" = "1" ]; then
-  prev=outputs_previous_$(date +%Y%m%d_%H%M%S); mv outputs "$prev"; echo "moved existing outputs to $prev"
+  prev=outputs_previous_$(date +%Y%m%d_%H%M%S); mkdir -p "$prev"
+  for p in outputs/stage0_per_competition.csv outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 outputs/run_ledger.jsonl; do
+    if [ -e "$p" ]; then mv "$p" "$prev/"; fi
+  done
+  echo "moved pipeline outputs to $prev"
 fi
 mkdir -p outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 paper/figures
-$PY scripts/stage0_feasibility.py
-$PY scripts/stage1_reproduce.py --project .
-$PY scripts/stage1_cohort_counts.py
-$PY scripts/stage2_pilot_original.py
-$PY scripts/stage3_label_extract.py
-$PY scripts/stage3_build_labels.py
+S() { "$PY" scripts/run_stage.py "$@"; }
+S scripts/stage0_feasibility.py
+S scripts/stage1_reproduce.py --project .
+S scripts/stage1_cohort_counts.py
+S scripts/stage2_pilot_original.py
+S scripts/stage3_label_extract.py
+S scripts/stage3_build_labels.py
 while true; do
-  set +e; out=$($PY scripts/stage3_extension.py --max-seconds 100000); status=$?; set -e
+  set +e; out=$(S scripts/stage3_extension.py --max-seconds 100000); status=$?; set -e
   echo "$out" | tail -2
   if [ $status -ne 0 ]; then echo "stage 3 failed with exit $status" >&2; exit $status; fi
   if echo "$out" | grep -q '^DONE'; then break; fi
   if ! echo "$out" | grep -q '^PAUSED'; then echo "stage 3 ended without DONE or PAUSED" >&2; exit 1; fi
 done
-$PY scripts/stage3_tests.py
-$PY scripts/stage4_drift_robustness.py
-$PY scripts/stage4_code_only.py
-$PY scripts/stage5_figures.py
-$PY scripts/stage6_review_response.py
-$PY scripts/stage6_verify_review_numbers.py
-$PY scripts/stage6_split_size_symmetry.py
-$PY scripts/stage6_dependence_and_strata.py
+S scripts/stage3_tests.py
+S scripts/stage4_drift_robustness.py
+S scripts/stage4_code_only.py
+S scripts/stage5_figures.py
+S scripts/stage6_review_response.py
+S scripts/stage6_verify_review_numbers.py
+S scripts/stage6_split_size_symmetry.py
+S scripts/stage6_dependence_and_strata.py
 echo "ALL DONE"

@@ -4,10 +4,11 @@ The table archived on 16 Nov 2026 was produced by these same steps run inline; t
 Run from the project root, after stage3_label_extract.py:  python scripts/stage3_build_labels.py [--check]
 --check compares the result with the archived hash and does not overwrite the file.
 """
+from csvio import read_csv_exact   # exact CSV reading under any pandas version
 import sys, hashlib, io, importlib.util, pandas as pd
 spec = importlib.util.spec_from_file_location("d", "data/reference/split_label_decisions.py"); d = importlib.util.module_from_spec(spec); spec.loader.exec_module(d)
 FLAGS = d.FLAGS
-ev = pd.read_csv("outputs/stage3/split_evidence_sentences.csv").fillna("")
+ev = read_csv_exact("outputs/stage3/split_evidence_sentences.csv").fillna("")
 assert set(FLAGS) <= set(ev.id)
 ev["split_label"] = [FLAGS[i][0] if i in FLAGS else ("NO_TEXT" if l < 200 else "UNSTATED") for i, l in zip(ev.id, ev.text_len)]
 ev["label_reason"] = [FLAGS[i][1] if i in FLAGS else "" for i in ev.id]

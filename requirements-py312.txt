@@ -1,0 +1,8 @@
+# Second verified environment: Python 3.12. Produces the same result tables as requirements.txt (checked 17 Nov 2026).
+duckdb==1.5.6
+pandas==2.3.3
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.8
+pyarrow==26.0.1
+pypdf==7.1.0

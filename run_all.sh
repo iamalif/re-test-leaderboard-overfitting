@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rebuild every table and figure from data/raw/. Python 3.12 with requirements.txt. Stops at the first failure.
+# Rebuild every table and figure from data/raw/. Python 3.14 with requirements.txt (or Python 3.12 with requirements-py312.txt). Stops at the first failure.
 # Result tables are tracked in the repository and stage 3 skips competitions it finds already recorded, so a plain
 # run in a checkout REUSES them. For a clean rebuild run:   CLEAN=1 PY=.venv/bin/python ./run_all.sh
 # CLEAN=1 moves the existing outputs/ aside to outputs_previous_<time>/ and recomputes everything from data/raw/.

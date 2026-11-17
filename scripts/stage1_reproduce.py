@@ -10,11 +10,18 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 p=argparse.ArgumentParser();p.add_argument('--project',type=Path,required=True);p.add_argument('--output',type=Path);p.add_argument('--from-cache',action='store_true');a=p.parse_args()
+# Scores are read as text and converted with Python's float(), which is correctly rounded. pandas 2.x's default CSV
+# parser is not (it is off by one rounding step for about a quarter of these values); pandas 3.1 is. Added 17 Nov 2026.
+SCORE_TEXT={'PublicScoreFullPrecision':str,'PrivateScoreFullPrecision':str}
+def exact_scores(df):
+ for col in SCORE_TEXT:
+  if col in df: df[col]=[float(v) if isinstance(v,str) and v.strip()!='' else float('nan') for v in df[col]]
+ return df
 root=a.project; out=a.output or root/'outputs'/'stage1';out.mkdir(parents=True,exist_ok=True)
 manifest=pd.read_csv(root/'data'/'reference'/'original_120_manifest.csv').set_index('CompetitionId')
 assert len(manifest)==120 and manifest.index.is_unique
 if a.from_cache:
- d=pd.read_csv(out/'original_predeadline_submissions.csv.gz')
+ d=exact_scores(pd.read_csv(out/'original_predeadline_submissions.csv.gz',dtype=SCORE_TEXT))
  assert set(d.CompetitionId)<=set(manifest.index)
 else:
  teams=[]
@@ -23,14 +30,14 @@ else:
  teams=pd.concat(teams).set_index('Id').CompetitionId
  parts=[]
  cols=['Id','TeamId','SubmissionDate','IsAfterDeadline','PublicScoreFullPrecision','PrivateScoreFullPrecision']
- for i,c in enumerate(pd.read_csv(root/'data/raw/Submissions.csv',usecols=cols,chunksize=250000)):
+ for i,c in enumerate(pd.read_csv(root/'data/raw/Submissions.csv',usecols=cols,chunksize=250000,dtype=SCORE_TEXT)):
   # Filter by published competition IDs before converting or comparing scores.
   c=c[c.TeamId.isin(teams.index)].copy()
   c['CompetitionId']=c.TeamId.map(teams)
   c=c[c.IsAfterDeadline.astype(str).str.lower()=='false']
   parts.append(c)
   if i%10==0: print('Read submission chunk',i,flush=True)
- d=pd.concat(parts,ignore_index=True)
+ d=exact_scores(pd.concat(parts,ignore_index=True))
  assert set(d.CompetitionId)<=set(manifest.index)
  d.to_csv(out/'original_predeadline_submissions.csv.gz',index=False)
 summary=[]
@@ -197,7 +204,7 @@ json.dump({'status':'Conditional sensitivity using reconstructed denominators; o
 from scipy.stats import norm
 if (root/'data/reference/test_v2.csv').exists():
  p=root/'data/reference/test_v2.csv';test=pd.read_csv(p,usecols=['customer_ID']);N=test.customer_ID.nunique();assert len(test)==198856 and N==55716 and test.customer_ID.notna().all()
- d=pd.read_csv(out/'original_predeadline_submissions.csv.gz');g=d[d.CompetitionId==3788].copy();g['day']=pd.to_datetime(g.SubmissionDate,format='%m/%d/%Y')
+ d=exact_scores(pd.read_csv(out/'original_predeadline_submissions.csv.gz',dtype=SCORE_TEXT));g=d[d.CompetitionId==3788].copy();g['day']=pd.to_datetime(g.SubmissionDate,format='%m/%d/%Y')
  npub,npriv=16714,39002;assert npub+npriv==N
  kp=np.rint(g.PublicScoreFullPrecision*npub);kq=np.rint(g.PrivateScoreFullPrecision*npriv)
  assert (np.abs(kp-g.PublicScoreFullPrecision*npub)<1e-4).all() and (np.abs(kq-g.PrivateScoreFullPrecision*npriv)<1e-4).all()

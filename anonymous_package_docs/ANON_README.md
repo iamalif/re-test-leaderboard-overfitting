@@ -21,7 +21,7 @@ Supplementary material for the submission "Leaderboard Overfitting on Kaggle, Re
 
 ## Running
 
-Python 3.12, `pip install -r requirements.txt`, then `CLEAN=1 PY=python ./run_all.sh`. About ten minutes on a laptop. Compare with the shipped tables using `python scripts/compare_outputs.py outputs_previous_<time> outputs`.
+Python 3.14 with `pip install -r requirements.txt` (or Python 3.12 with `requirements-py312.txt`; both give the same tables), then `CLEAN=1 PY=python bash run_all.sh`. About ten to twenty minutes on a laptop. Compare with the shipped tables using `python scripts/compare_outputs.py outputs_previous_<time> outputs`.
 
 ## Where each claim in the paper comes from
 

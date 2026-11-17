@@ -12,7 +12,11 @@ from stage2_measures import (prepare_scores, competition_measures, infer_denomin
 from scipy.stats import binomtest, wilcoxon
 
 man = pd.read_csv("data/reference/original_120_manifest.csv").set_index("CompetitionId")
-d = pd.read_csv("outputs/stage1/original_predeadline_submissions.csv.gz")
+# Scores read as text and converted with Python's float() (correctly rounded under any pandas version). Added 17 Nov 2026.
+d = pd.read_csv("outputs/stage1/original_predeadline_submissions.csv.gz",
+                dtype={"PublicScoreFullPrecision": str, "PrivateScoreFullPrecision": str})
+for _c in ("PublicScoreFullPrecision", "PrivateScoreFullPrecision"):
+    d[_c] = [float(v) if isinstance(v, str) and v.strip() != "" else float("nan") for v in d[_c]]
 flags = pd.read_csv("outputs/stage1/original_team_flags.csv")
 bench = set(flags.loc[flags.IsBenchmark, "TeamId"])
 d = d.rename(columns={"PublicScoreFullPrecision": "pub", "PrivateScoreFullPrecision": "priv"})

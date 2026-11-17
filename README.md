@@ -39,10 +39,10 @@ Re-test of Roelofs et al., "A Meta-Analysis of Overfitting in Machine Learning" 
 
 ## Run
 
-Python 3.12 with `requirements.txt`. One command rebuilds everything from `data/raw/` in the right order and stops on any failure:
+Python 3.14 with `requirements.txt` (or Python 3.12 with `requirements-py312.txt`). One command rebuilds everything from `data/raw/` in the right order and stops on any failure:
 
-    python -m venv .venv && .venv/bin/pip install -r requirements.txt
-    PY=.venv/bin/python ./run_all.sh
+    python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+    CLEAN=1 PY=.venv/bin/python bash run_all.sh
 
 ## Status, 16 November 2026 (latest)
 

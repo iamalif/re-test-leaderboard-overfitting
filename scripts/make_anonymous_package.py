@@ -8,7 +8,7 @@ Run from the project root:  python scripts/make_anonymous_package.py
 """
 import os, re, shutil, hashlib, zipfile, sys
 DEST = "anonymous_package"
-INCLUDE = ["scripts", "run_all.sh", "requirements.txt", "analysis_plan/stage2_analysis_plan_v1.0.md", "analysis_plan/SHA256SUMS.txt",
+INCLUDE = ["scripts", "run_all.sh", "requirements.txt", "requirements-py312.txt", "analysis_plan/stage2_analysis_plan_v1.0.md", "analysis_plan/SHA256SUMS.txt",
            "data/reference/original_120_manifest.csv", "data/reference/split_label_decisions.py", "outputs", "paper/figures"]
 EXCLUDE = re.compile(r"(__pycache__|\.DS_Store|\.parquet$|\.csv\.gz$|outputs/author_code_request\.md|scripts/make_anonymous_package\.py|"
                      r"outputs/stage1/[A-Za-z@]+_\d+\.png$|outputs/stage1/pvalues_\d+\.png$|outputs/stage5/label_audit_sentences\.txt)")

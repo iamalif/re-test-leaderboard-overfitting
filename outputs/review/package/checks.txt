@@ -1,0 +1,3 @@
+ZIP run_all.sh mode: 0600; direct invocation raises PermissionError.
+Changed label RANDOM to TIME with identical numeric fields: exit 0; status
+same    1

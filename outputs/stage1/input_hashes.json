@@ -16,11 +16,7 @@
     "bytes": 8793
   },
   "stage1_reproduce.py": {
-    "sha256": "e3befde24a7367a4a82795c2d60db55a96dd7bee92065472556aee6d47a4fcdc",
-    "bytes": 19045
-  },
-  "test_v2.csv": {
-    "sha256": "9afb8de68728764905a5f1827256a4e423baba0508d7df9d55ea5ca3e73eb458",
-    "bytes": 14129816
+    "sha256": "42126447f009a93589467c77e158cd03fccf35945344ee79a0af57afef945d0c",
+    "bytes": 19616
   }
 }

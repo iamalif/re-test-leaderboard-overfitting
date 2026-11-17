@@ -266,3 +266,11 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Paper v0.6: exact grouping rule and counts; grouping called one sensitivity analysis; host-category split said not to be matching. v0.5 not separately kept (changes are these three sentences and one interval bound).
 - Anonymised package: `scripts/make_anonymous_package.py` -> `anonymous_package/`, `anonymous_review_package.zip` (not tracked in Git). Docs in `anonymous_package_docs/`.
 - Remaining before submission: the researcher's read-through; smoke test of the package on the researcher's machine; arXiv endorsement; decide on preprint timing given double-blind review.
+
+# Main environment moved to Python 3.14; exact score parsing (2026-11-17, about 14:10-14:40, Claude)
+
+- Researcher's Mac has Python 3.14 and asked whether the project should use it. DECISION: Python 3.14 is the main documented environment (`requirements.txt`: DuckDB 2.0.0, pandas 3.1.1, NumPy 2.5.5, SciPy 1.18.1, Matplotlib 3.11.2); Python 3.12 kept as a second verified environment (`requirements-py312.txt`). Reason: longer support (to 2030), the researcher's and reviewer's machines already run it, and two verified environments are a stronger reproducibility claim than one.
+- FINDING from the 3.14 rebuild: pandas 2.3's default CSV parser reads decimal numbers inexactly (10,387 of 41,739 public scores in competitions 8900 and 10200 were one rounding step off); pandas 3.1 is exact. Affects only `stage1_reproduce.py` and `stage2_pilot_original.py`; stage 3 onward reads scores with DuckDB, which is exact, so all confirmatory and later results were already identical across environments (within 1e-12).
+- FIX: both scripts read scores as text and convert with Python's float(). Repository stage 1 and 2 tables regenerated under 3.14. Changed: `top10_mean_gap` and tie bounds for 8900 and 10200; team-level drift sign shares for 4493 and 5275. No number in the paper changed.
+- After the fix: 3.14 rebuild 34 tables the same, 3.12 rebuild 33 the same; the only exception in both is the documented team-flags intermediate. Evidence and addendum in `outputs/rebuild/`.
+- Paper v0.6 reproducibility sentence updated to mention both environments. Anonymised package rebuilt.

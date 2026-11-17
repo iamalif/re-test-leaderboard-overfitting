@@ -1,0 +1,41 @@
+{
+  "commit": "fe9d27d7fe3b7705af766b03b4c8a6b15b100f01",
+  "pdf_sha256": "baef9c1da507fec9ab97d76b3b7323eb690a3e81e80671658781e7ef242441ff",
+  "zip_sha256": "9735c944e62826fe1e64ab4e0a510e80d6ca606c1152161e7c67747fbc5458f9",
+  "archived_hashes": {
+    "analysis_plan/stage2_analysis_plan_v1.0.md": true,
+    "data/reference/split_label_decisions.py": true,
+    "scripts/stage2_measures.py": true,
+    "outputs/stage3/split_labels.csv": true
+  },
+  "ledger": {
+    "stages": 15,
+    "exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "output_count": 193,
+    "hash_failures": []
+  },
+  "package": {
+    "members": 193,
+    "manifest_failures": [],
+    "project_differences": [],
+    "targeted_identity_hits": {}
+  },
+  "appendix_byte_identical": true,
+  "changed_analysis_files_since_v016": []
+}

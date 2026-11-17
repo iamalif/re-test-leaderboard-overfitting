@@ -421,3 +421,23 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Review `reviews/review_2026-11-17_v016.md` (second assistant): no numerical failure. Four interpretation and wording corrections, all to text I added during the presentation rounds (Proposition 1's interpretation and scope; the Allstate abstract comparison was not like-for-like; the simulation claim; the reproducibility scope). All accepted; response `reviews/response_2026-11-17_v016.md`.
 - LESSON RECORDED: strengthening the presentation to answer outside feedback produced four overreaches in two hours. Further changes should be corrections only.
 - Package rebuilt: SHA-256 9735c944e62826fe1e64ab4e0a510e80d6ca606c1152161e7c67747fbc5458f9.
+
+# Researcher's read-through complete (2026-11-17, 22:01)
+
+- The researcher has read the paper (v0.17) and found it in order. Question raised: the AI-use footnote says "the authors'" (plural). Intentional for double-blind review: the template's "Anonymous authors" line, and plural wording reveal nothing about the number of authors. TO DO at camera-ready, if the paper has a single author: change the footnote to "The research question and direction are the author's ... The author directed the study ..." ("we" in the body may stay, which is common in single-author papers).
+
+# Venue and submission decisions (2026-11-17, about 22:20, Claude, on the researcher's delegation)
+
+- Venue: TMLR first, submitted by the end of November 2026, because TMLR paused submissions from 2 Dec 2025 to 5 Jan 2026 and may pause again. No concurrent submission anywhere, and no splitting of the work into several papers. Allowed alongside: an arXiv preprint and non-archival workshops. If accepted: request the Journal-to-Conference and Reproducibility certifications are considered; J2C presentation at ICML or NeurIPS 2027. Not eligible: MLRC 2026 (it covers reproductions of papers from 2025 on). Fallbacks only after a TMLR rejection, one at a time: NeurIPS 2027 Evaluations & Datasets track, DMLR, JMLR.
+- Authorship: sole author. AI systems are not authors; nobody who did not contribute is added.
+- Data access for the editor: the three exact files plus archive links on a private cloud link, given only in an OpenReview comment readable by the action editor and Editors-in-Chief (who already see author identities). An anonymous copy if a reviewer asks.
+- arXiv: no rush, since the work is already publicly timestamped (GitHub commit and Internet Archive snapshots). Post when an endorsement is obtained (ask a lecturer at the researcher's university who posts in cs.LG) or after TMLR acceptance, whichever comes first, using the TMLR "preprint" style option.
+- URGENT for the researcher: an OpenReview profile with the university email (otherwise moderation takes up to two weeks).
+- 2026-11-17 22:40: submission/EDITOR_README.txt written (hashes, licence, archive links) to go with the data files on the researcher's secondary Google Drive.
+- 2026-11-18 00:42: OpenReview profile active (~Al_Amin_Alif1; du.se preferred, personal email as backup; ORCID 0009-0004-0751-6306 created and linked). Next: data upload to the secondary Google Drive.
+
+# Submission kit frozen (2026-11-18, about 01:05, Claude)
+
+- Second assistant's final QA of v0.17 (`reviews/review_2026-11-17_v017.md`): no outstanding correction; scientific QA closed. Its reviewed artefacts match the frozen files byte for byte: PDF baef9c1d..., ZIP 9735c944....
+- Frozen copies in `submission/` (tmlr_submission_v0.17.pdf; supplementary_anonymous_package.zip, ignored by git). Kit: `submission/SUBMISSION_KIT.md` (form fields, plain-text abstract, recommended action editors from TMLR's board, declarations, confidential note, checklist).
+- Data files uploaded by the researcher to the secondary Google Drive with EDITOR_README.txt. The link is kept by the researcher only and goes into the confidential comment.

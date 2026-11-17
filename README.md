@@ -46,7 +46,7 @@ Python 3.14 with `requirements.txt` (or Python 3.12 with `requirements-py312.txt
 
 ## Status, 17 November 2026 (latest)
 
-Five rounds of independent review answered (`reviews/response_*.md`; latest `reviews/response_2026-11-17_v4.md`). Final clean runs under Python 3.14 and 3.12 agree (`outputs/rebuild/clean_rebuild_report_2026-11-17.md`, addendum 7; `outputs/rebuild/final_v5/`). Paper: `paper/main.pdf` (v0.7, 10 pages plus a one-page appendix). Pre-submission QA: `reviews/qa_2026-11-17_claude.md`. Remaining before submission: the researcher's read-through, a smoke test of the final zip, a fresh literature search, arXiv endorsement and preprint timing.
+Five rounds of independent review answered (`reviews/response_*.md`; latest `reviews/response_2026-11-17_v4.md`). Final clean runs under Python 3.14 and 3.12 agree (`outputs/rebuild/clean_rebuild_report_2026-11-17.md`, addendum 7; `outputs/rebuild/final_v5/`). Paper: `paper/main.pdf` (v0.8, 10 pages plus a two-page appendix). Pre-submission QA: `reviews/qa_2026-11-17_claude.md`. Remaining before submission: the researcher's read-through, a smoke test of the final zip, a fresh literature search, arXiv endorsement and preprint timing.
 
 ## Status, 16 November 2026
 

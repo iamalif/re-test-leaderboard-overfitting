@@ -1,0 +1,116 @@
+{
+  "hypergeom_cases": 1225,
+  "max_error": 3.3306690738754696e-16,
+  "rounded_lattice_example": {
+    "true_N": 1000000000001,
+    "inferred": [
+      100,
+      1.0
+    ],
+    "multiple": false
+  },
+  "zip_files": 167,
+  "zip_sha256": "d78fa7345e0d2fc47545ca367612ed1c5f72135d78b4a4d5d3d09ca7c44afd70",
+  "zip_hash_failures": [],
+  "targeted_identity_hits": [],
+  "S1_denominators": [
+    {
+      "group": "regression E+W",
+      "measure": "drift_mean",
+      "n": 125,
+      "share_positive": 0.56
+    },
+    {
+      "group": "classification E+O",
+      "measure": "drift_mean",
+      "n": 308,
+      "share_positive": 0.6655844155844156
+    },
+    {
+      "group": "regression E",
+      "measure": "drift_mean",
+      "n": 74,
+      "share_positive": 0.581081081081081
+    },
+    {
+      "group": "classification E",
+      "measure": "drift_mean",
+      "n": 194,
+      "share_positive": 0.6597938144329897
+    },
+    {
+      "group": "regression E+W",
+      "measure": "rel_drift",
+      "n": 124,
+      "share_positive": 0.5564516129032258
+    },
+    {
+      "group": "classification E+O",
+      "measure": "rel_drift",
+      "n": 307,
+      "share_positive": 0.6644951140065146
+    },
+    {
+      "group": "regression E",
+      "measure": "rel_drift",
+      "n": 74,
+      "share_positive": 0.581081081081081
+    },
+    {
+      "group": "classification E",
+      "measure": "rel_drift",
+      "n": 194,
+      "share_positive": 0.6597938144329897
+    },
+    {
+      "group": "regression E+W",
+      "measure": "rel_mean_gap",
+      "n": 124,
+      "share_positive": 0.4838709677419355
+    },
+    {
+      "group": "classification E+O",
+      "measure": "rel_mean_gap",
+      "n": 307,
+      "share_positive": 0.5798045602605864
+    },
+    {
+      "group": "regression E",
+      "measure": "rel_mean_gap",
+      "n": 74,
+      "share_positive": 0.4189189189189189
+    },
+    {
+      "group": "classification E",
+      "measure": "rel_mean_gap",
+      "n": 194,
+      "share_positive": 0.5618556701030928
+    },
+    {
+      "group": "regression minus classification, E+W vs E+O",
+      "measure": "rel_drift",
+      "n": 124,
+      "share_positive": NaN
+    },
+    {
+      "group": "regression minus classification, within E",
+      "measure": "rel_drift",
+      "n": 74,
+      "share_positive": NaN
+    },
+    {
+      "group": "regression minus classification, E+W vs E+O",
+      "measure": "rel_mean_gap",
+      "n": 124,
+      "share_positive": NaN
+    },
+    {
+      "group": "regression minus classification, within E",
+      "measure": "rel_mean_gap",
+      "n": 74,
+      "share_positive": NaN
+    }
+  ],
+  "secondary_rows": 88,
+  "spearman_missing_CIs": 8
+}

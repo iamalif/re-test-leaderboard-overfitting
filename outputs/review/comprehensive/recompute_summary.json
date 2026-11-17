@@ -1,0 +1,28 @@
+{
+  "competitions": 686,
+  "submissions": 10598147,
+  "mismatches": {
+    "mean_gap": [],
+    "drift_mean": []
+  },
+  "exclusion_raw_vs_clip": [],
+  "confirmatory_raw_p": [
+    0.5896954866430071,
+    0.24047576319717023,
+    2.2129261612447087e-15,
+    0.9208851543030421
+  ],
+  "cohorts": {
+    "E": 487,
+    "O": 114,
+    "W": 51
+  },
+  "later_accuracy_post2022": 6,
+  "zero_drifts": 0,
+  "archived_hashes": {
+    "analysis_plan/stage2_analysis_plan_v1.0.md": true,
+    "data/reference/split_label_decisions.py": true,
+    "scripts/stage2_measures.py": true,
+    "outputs/stage3/split_labels.csv": true
+  }
+}

@@ -349,3 +349,12 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 
 - The author states: the research idea is the author's, found after the author's own search for novel questions; the author reviewed every step in depth; no review from the second assistant was passed on unchanged, all were substantially revised by the author. The QA's C1 concern was based on the assistant's partial view of the author's involvement and is revised accordingly.
 - Author's instruction: the AI-use declaration follows the requirements of the target venue. For TMLR (a first-page footnote), the footnote now reads: the research question and direction are the authors'; LLM assistants implemented the analysis code, proposed and refined analysis designs and text, and were used for critical review; the authors reviewed, revised and approved the work at every stage and are responsible for all content. "Independent review" in the text now reads "a critical review carried out with a second LLM-based assistant".
+
+# Comprehensive QA answered; paper v0.8 (2026-11-17, about 19:50-20:40, Claude)
+
+- Review `reviews/review_2026-11-17_comprehensive.md` (second assistant; independent recomputation of gaps and drift for 686 competitions and of formal-test fractions for 125, all matching). All points accepted; response `reviews/response_2026-11-17_comprehensive.md`.
+- CORRECTION: my v0.7 deviations paragraph listed the finite-score rule as a departure, but plan rule 3 already requires finite scores. Reclassified as an implementation note. My v0.7 appendix claimed completeness without being complete; it is now generated from all 88 rows of the secondary results table.
+- Figure 2 title made neutral; Python 3.14 run final_py314_20261117d; every output byte-identical to the previous run except Figure 2.
+- Burtch (2026) v3 count of 129 confirmed in its HTML (SI Fig. S7 caption and Table S5).
+- Open, needs the researcher: an exact-snapshot retrieval route and the Meta Kaggle licence.
+- Package rebuilt: SHA-256 b02087e27942fb390d6d8de0f73d3354d7e0bb123a7451b05b3b3abf0e5ab6b4. Changed since the smoke-tested zip: `stage5_figures.py` (title string), the new appendix script, Figure 2, the run ledger and manifest, the rebuild report text and review files. No analysis code changed.

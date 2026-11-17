@@ -59,7 +59,7 @@ for coh, g, k, n in rows:
     ax.text(hi + 0.012, y, f"{k} of {n}", va="center", fontsize=7, color=MUTED)
 ax.axvline(0.5, color=MUTED, lw=0.8)
 ax.set(yticks=range(len(order)), yticklabels=order[::-1], xlim=(0.2, 1.0), xlabel="Share of competitions with positive team drift (95% interval)",
-       title="Later submissions favour the public leaderboard more than earlier ones")
+       title="Share of competitions with positive within-team drift")
 ax.grid(axis="y", visible=False)
 ax.plot([], [], "o-", color=BLUE, label=LAB["O"]); ax.plot([], [], "o-", color=ORANGE, label=LAB["E"]); fig.tight_layout(); bottom_legend(fig, ax)
 save(fig, "fig2_drift")

@@ -4,7 +4,7 @@ Supplementary material for the submission "Leaderboard Overfitting on Kaggle, Re
 
 ## Contents
 
-- `analysis_plan/stage2_analysis_plan_v1.0.md` - the plan as archived before any later-competition score was read; `SHA256SUMS.txt` holds its hash and those of the label table and measure code.
+- `analysis_plan/stage2_analysis_plan_v1.0.md` - the plan as archived before any later-competition score was examined; `SHA256SUMS.txt` holds its hash and those of the label table and measure code.
 - `scripts/` - all analysis code. `scripts/stage2_measures.py` defines every measure.
 - `run_all.sh` - runs every stage in order. `CLEAN=1 ./run_all.sh` moves existing outputs aside and recomputes from raw data.
 - `data/reference/` - the 120 original competition identifiers transcribed from the 2019 paper's appendix, and the split-label reading decisions.

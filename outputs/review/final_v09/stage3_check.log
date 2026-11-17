@@ -1,0 +1,32 @@
+excluded       rule3_fewer_than_1000  rule4_identical_scores
+Cohort                                                      
+E         487                      2                      29
+O         114                      0                       3
+W          51                      0                       0
+        sample                                  test  n_E   n_O  median_E  median_O                       effect  estimate    ci_lo   ci_hi       p  positive  nonzero  p_holm  significant_05
+           all                 H1a accuracy mean gap   95  33.0   0.02956   0.05905 median E minus median O (pp)  -0.02949 -0.17228 0.11609 0.58970       NaN      NaN 1.00000           False
+           all                      H1b AUC mean gap   73  40.0   0.00047   0.00116      median E minus median O  -0.00069 -0.00433 0.00110 0.24048       NaN      NaN 0.72143           False
+           all    H2 drift exists in E (all metrics)  481   NaN       NaN       NaN    share with positive drift   0.67983  0.63825 0.72141 0.00000     327.0    481.0 0.00000            True
+           all H3 relative drift, five metric groups  194 113.0   0.00788   0.00659      median E minus median O   0.00129 -0.00326 0.00989 0.92089       NaN      NaN 1.00000           False
+S6 not flagged                 H1a accuracy mean gap   95  32.0   0.02956   0.05555 median E minus median O (pp)  -0.02599 -0.16609 0.12453 0.76215       NaN      NaN 1.00000           False
+S6 not flagged                      H1b AUC mean gap   73  38.0   0.00047   0.00081      median E minus median O  -0.00034 -0.00360 0.00130 0.42452       NaN      NaN 1.00000           False
+S6 not flagged    H2 drift exists in E (all metrics)  453   NaN       NaN       NaN    share with positive drift   0.68874  0.64459 0.73068 0.00000     312.0    453.0 0.00000            True
+S6 not flagged H3 relative drift, five metric groups  194 103.0   0.00788   0.00457      median E minus median O   0.00331 -0.00295 0.01068 0.65629       NaN      NaN 1.00000           False
+
+Cohort          Group   n  median_mean_gap  share_gap_positive  drift_n  share_drift_positive  median_rel_drift  median_rel_gap  q25_rel_drift  q75_rel_drift  flagged  share_gap_above_threshold threshold
+     O            AUC  40           0.0012              0.6000       40                0.7750            0.0143          0.0218         0.0013         0.0557        2                     0.3000      0.01
+     O       Accuracy  33           0.0006              0.6667       33                0.5152            0.0005          0.0146        -0.0141         0.0265        1                     0.1515      1 pp
+     O        LogLoss  13          -0.0000              0.4615       13                0.6923            0.0085         -0.0040        -0.0046         0.0486        2                        NaN       NaN
+     O          MAP@K  15           0.0002              0.6000       15                0.7333            0.0029          0.0022        -0.0004         0.0240        2                        NaN       NaN
+     O MulticlassLoss  13           0.0026              0.6923       13                0.6923            0.0012          0.0095        -0.0059         0.0135        3                        NaN       NaN
+     O            ALL 114           0.0006              0.6140      114                0.6754            0.0066          0.0094        -0.0045         0.0435       10                        NaN       NaN
+     E            AUC  73           0.0005              0.5890       73                0.7123            0.0068          0.0140        -0.0048         0.0379        0                     0.1781      0.01
+     E       Accuracy  95           0.0003              0.5368       95                0.6105            0.0078          0.0048        -0.0086         0.0434        0                     0.1053      1 pp
+     E        LogLoss   8           0.0001              0.5000        8                0.6250            0.0716         -0.0236        -0.0345         0.4163        0                        NaN       NaN
+     E          MAP@K  14           0.0010              0.7143       14                0.7143            0.0162          0.0253        -0.0027         0.0406        0                        NaN       NaN
+     E MulticlassLoss   4          -0.0033              0.2500        4                0.7500            0.0136         -0.0672        -0.0037         0.0318        0                        NaN       NaN
+     E          Other 219           0.0070              0.6895      213                0.7324            0.0293          0.0808        -0.0014         0.1115       30                        NaN       NaN
+     E     Regression  74          -0.0003              0.4189       74                0.5811            0.0212         -0.0074        -0.0156         0.1959        2                        NaN       NaN
+     E            ALL 487           0.0013              0.5975      481                0.6798            0.0168          0.0278        -0.0064         0.0966       32                        NaN       NaN
+     W     Regression  51           0.0009              0.5882       51                0.5294            0.0028          0.0213        -0.0084         0.0535        4                        NaN       NaN
+     W            ALL  51           0.0009              0.5882       51                0.5294            0.0028          0.0213        -0.0084         0.0535        4                        NaN       NaN

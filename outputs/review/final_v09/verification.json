@@ -1,0 +1,67 @@
+{
+  "results_confirmatory.csv": {
+    "shape": [
+      8,
+      15
+    ],
+    "failed_columns": [],
+    "max_abs_diff": 0
+  },
+  "results_secondary.csv": {
+    "shape": [
+      88,
+      10
+    ],
+    "failed_columns": [],
+    "max_abs_diff": 1.1102230246251565e-16
+  },
+  "results_descriptive.csv": {
+    "shape": [
+      16,
+      14
+    ],
+    "failed_columns": [],
+    "max_abs_diff": 0
+  },
+  "appendix_byte_identical": true,
+  "manifest_code_differences": [
+    "scripts/make_appendix_secondary.py"
+  ],
+  "ledger_stages": 15,
+  "ledger_example_keys": [
+    "run_id",
+    "stage",
+    "args",
+    "script_sha256",
+    "helper_sha256",
+    "commit",
+    "python",
+    "packages",
+    "start_utc",
+    "end_utc",
+    "seconds",
+    "exit",
+    "outputs_changed",
+    "outputs_deleted",
+    "large_outputs_changed"
+  ],
+  "ledger_output_count": 193,
+  "ledger_output_mismatches": [],
+  "ledger_exits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

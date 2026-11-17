@@ -1,0 +1,3 @@
+Exploratory verification, 17 November 2026, baseline 937fdf1.
+
+In an isolated directory, linked the unchanged scripts directory and the recorded competition_measures.csv; ran scripts/stage3_tests.py followed by scripts/make_appendix_secondary.py. Compared all columns with the project using exact strings/missingness and numerical tolerance rtol=1e-9, atol=1e-12. The generated appendix is byte-identical. See verification.json for measured differences, code-manifest comparison and ledger hashes. Package check verifies each manifest entry and compares same-named members to project files. These are reproducibility checks, not newly selected scientific analyses. Prior independently implemented checks remain under outputs/review/comprehensive/.

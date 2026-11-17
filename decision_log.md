@@ -227,3 +227,12 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Self-test on synthetic data: adaptive 100% X<0; composition trend 0%; noise 50%. A first version of the simulator had an accidental composition trend (fixed number of changed predictions per set); corrected before fixing the addendum.
 - UNVERIFIED ASSUMPTION: after the deadline a team sees both its public and private score for late submissions. A web search on 17 Nov did not return Kaggle documentation stating this. The researcher is asked to confirm.
 - SEALED until the addendum is public and archived: all post-deadline scores. `scripts/stage7_deadline_contrast.py` must not be run without `--selftest` before then.
+
+# Addendum A v1.0 withdrawn before use; v1.1 drafted (2026-11-17, about 02:05-02:40, Claude)
+
+- Pre-unsealing review (`reviews/review_2026-11-17_deadline.md`) found the v1.0 statistic invalid: it compared quarter-means before the deadline with the mean of ALL post-deadline submissions, so a linear feedback-free trajectory gives X = b(m - q)/2, with a zero placebo. My v1.0 self-test had built the favourable case in (q = 4, m = 8). Accepted. v1.0 was never archived and never run on data; kept in `superseded/`.
+- v1.1 (`analysis_plan/addendum_A_deadline_contrast_v1.1.md`, NOT YET FIXED): four equal consecutive windows of 3 submissions; X (zero for linear trajectories) and Y = X minus placebo (zero for quadratic); a change is reported only if both sign tests are significant and negative; analysis described as descriptive; exposure, bundled changes and the blind case stated as limits; public-score restriction dropped; ties counted.
+- Synthetic suite saved (`outputs/stage7/selftest_suite.csv`), including both review counterexamples. Known failures recorded: a gap bend located exactly at the deadline (reported as a change), and adaptation that continues unchanged after the deadline (not detected).
+- Metadata-only eligibility for v1.1: 211 competitions (41 O, 170 E) at window 3; 283 at window 2; 111 at window 5. Window 3 was chosen before these counts were produced; all three were then seen.
+- STILL SEALED: all post-deadline scores. Not to be run until v1.1 has had a second pre-unsealing review, is marked fixed, and is public and archived.
+- Response: `reviews/response_2026-11-17_deadline.md`.

@@ -1,0 +1,17 @@
+case,post_per_team,kind,X_pp,X_placebo_pp,Y_pp,share_X_negative,share_Y_negative,share_placebo_negative
+"linear gap, feedback-free",3,deterministic,0.0,0.0,0.0,,,
+"linear gap, feedback-free",8,deterministic,0.0,0.0,0.0,,,
+"linear gap, feedback-free",30,deterministic,0.0,0.0,0.0,,,
+"gap saturates exactly at the deadline, feedback-free",3,deterministic,-0.10000000000000009,0.0,-0.10000000000000009,,,
+"gap saturates exactly at the deadline, feedback-free",8,deterministic,-0.10000000000000009,0.0,-0.10000000000000009,,,
+"gap saturates exactly at the deadline, feedback-free",30,deterministic,-0.10000000000000009,0.0,-0.10000000000000009,,,
+"concave (quadratic) gap, feedback-free",3,deterministic,-0.07199999999999811,-0.07199999999999793,-1.734723475976807e-16,,,
+"concave (quadratic) gap, feedback-free",8,deterministic,-0.07199999999999811,-0.07199999999999793,-1.734723475976807e-16,,,
+"concave (quadratic) gap, feedback-free",30,deterministic,-0.07199999999999811,-0.07199999999999793,-1.734723475976807e-16,,,
+"gap saturates smoothly (exponential), feedback-free",3,deterministic,-0.049707238586283245,-0.07232360538741797,0.022616366801134734,,,
+"gap saturates smoothly (exponential), feedback-free",8,deterministic,-0.049707238586283245,-0.07232360538741797,0.022616366801134734,,,
+"gap saturates smoothly (exponential), feedback-free",30,deterministic,-0.049707238586283245,-0.07232360538741797,0.022616366801134734,,,
+adaptive before; private score steers after,8,"simulated, 60 competitions",-0.3963194444444444,-0.01724206349206356,-0.37907738095238075,1.0,0.9333333333333333,0.5333333333333333
+adaptive before; unsteered changes after,8,"simulated, 60 competitions",-0.26785383597883616,-0.008644179894179814,-0.2592096560846564,0.9666666666666667,0.8333333333333334,0.5166666666666667
+adaptive before and after (public still steers),8,"simulated, 60 competitions",-0.03392195767195774,-0.01577380952380943,-0.018148148148148305,0.6333333333333333,0.5,0.65
+no feedback use at all (noise),8,"simulated, 60 competitions",0.023065476190476396,0.008826058201057961,0.01423941798941844,0.5166666666666667,0.5333333333333333,0.4666666666666667

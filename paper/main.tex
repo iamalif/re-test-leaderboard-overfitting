@@ -108,7 +108,7 @@ H3 median relative drift & 0.79\% ($n=194$) & 0.66\% ($n=113$) & 0.13 points ($-
 
 Table~\ref{tab:confirm} gives the four tests. For accuracy and for AUC competitions, the median of the competitions' signed mean gaps does not differ detectably between the cohorts (Figure~\ref{fig:gap}), and both intervals for the difference in medians exclude the thresholds we set in advance, one percentage point of accuracy and 0.01 of AUC. This bounds a shift in the typical signed gap. It does not show that the whole distributions, or absolute discrepancies, are unchanged; the intervals are not adjusted for multiplicity. The share of competitions with a mean gap above those thresholds is 15\% in $O$ and 11\% in $E$ for accuracy, and 30\% and 18\% for AUC.
 
-Drift is positive in 327 of 481 later competitions (Figure~\ref{fig:drift}). Across the five original metric groups its median size is 0.79\% of the team spread in $E$ and 0.66\% in $O$, with no detectable difference; the interval is wide relative to those medians and we set no equivalence margin, so a change in size is not excluded. The qualitative conclusions of all four tests are unchanged when flagged competitions are removed (H2: 312 of 453; estimates and intervals in Appendix Table~\ref{tab:s6}). That restriction removes only documented differences between the sets.
+Drift is positive in 327 of 481 later competitions (Figure~\ref{fig:drift}). H2 was pre-specified as a test against one half and is reported as specified; its rejection shows that the divergence is common, not that it departs from a reference that the absence of adaptation would justify, which Section~\ref{sec:methods} shows one half is not in general. Across the five original metric groups its median size is 0.79\% of the team spread in $E$ and 0.66\% in $O$, with no detectable difference; the interval is wide relative to those medians and we set no equivalence margin, so a change in size is not excluded. The qualitative conclusions of all four tests are unchanged when flagged competitions are removed (H2: 312 of 453; estimates and intervals in Appendix Table~\ref{tab:s6}). That restriction removes only documented differences between the sets.
 
 \begin{figure}[t]
 \centering
@@ -149,7 +149,7 @@ These analyses were specified in advance but are not confirmatory. Every pre-spe
 
 The analyses in this section were chosen after the results above were known.
 
-\paragraph{What the drift result does and does not show.} The pattern survives three changes to the measure: drift is positive in 63.3\% of later competitions when only the third and fourth quarters of each team's submissions are compared, in 65.4\% after dropping each team's first two submissions, and in 66.0\% with a pooled linear within-team adjustment for score level. It is positive in 66.0\% of competitions whose first submissions have a negative gap, and in 63.8\% (307 of 481) without clipping. These checks do not exclude every version of the mechanisms they address.
+\paragraph{Why the divergence does not identify adaptation.} The pattern survives three changes to the measure: drift is positive in 63.3\% of later competitions when only the third and fourth quarters of each team's submissions are compared, in 65.4\% after dropping each team's first two submissions, and in 66.0\% with a pooled linear within-team adjustment for score level. It is positive in 66.0\% of competitions whose first submissions have a negative gap, and in 63.8\% (307 of 481) without clipping. These checks do not exclude every version of the mechanisms they address.
 
 Two counterexamples, both from a critical review of this work carried out with a second LLM-based assistant, show that the pattern does not establish adaptation. In the first, predetermined submissions whose accuracy rises along a curve, evaluated on two sets that differ in composition, pass all of the checks above with a relative drift of about 1\% and a negative first-submission gap. In the second, the split is random: the unequal-size example of Section~\ref{sec:methods}, in which drift is positive in 80\% of splits without feedback.
 
@@ -190,14 +190,9 @@ Signed gaps can cancel, so we also report absolute mean gaps. For accuracy the m
 
 \paragraph{The original outliers.} For two of the five outliers the top-10\% gap is close to the independent-resplitting reference (difference $-0.23$ and $+0.06$ percentage points), so these gaps are compatible with selection under that reference; for the other three the gap is larger ($+6.0$, $+2.8$ and $+1.2$).
 
-\paragraph{Featured and Research competitions.} In the Featured and Research host categories, the median relative gap is 0.17 in $E$ ($n=184$) against 0.01 in $O$ ($n=68$; $p=0.003$), and already 0.08 against 0.01 for teams' first submissions (Figure~\ref{fig:prize}). The share with positive drift is similar (72.5\% against 70.6\%). Within $E$, notebook-only competitions in these categories have a larger median relative gap than the others (0.30 against 0.06; Mann--Whitney $p=0.12$, and $p=0.03$ without flagged competitions), so the platform contrast of Section~\ref{sec:secondary} reflects both which categories use notebooks and a difference within them. Only 23 of the 184 use one of the original five metrics, so H1 does not speak to them. Scores are also more tightly packed in recent competitions of these categories, which enlarges any gap expressed in team spreads. A gap present from the first submission is compatible with differences in how the two sets are built or scored, and also with adaptation inherited from public notebooks before a team's first submission. We have not identified the mechanism.
+\paragraph{Featured and Research competitions.} In the Featured and Research host categories, the median relative gap is 0.17 in $E$ ($n=184$) against 0.01 in $O$ ($n=68$; $p=0.003$), and already 0.08 against 0.01 for teams' first submissions (Appendix Figure~\ref{fig:prize}). The share with positive drift is similar (72.5\% against 70.6\%). Within $E$, notebook-only competitions in these categories have a larger median relative gap than the others (0.30 against 0.06; Mann--Whitney $p=0.12$, and $p=0.03$ without flagged competitions), so the platform contrast of Section~\ref{sec:secondary} reflects both which categories use notebooks and a difference within them. Only 23 of the 184 use one of the original five metrics, so H1 does not speak to them. Scores are also more tightly packed in recent competitions of these categories, which enlarges any gap expressed in team spreads. A gap present from the first submission is compatible with differences in how the two sets are built or scored, and also with adaptation inherited from public notebooks before a team's first submission. We have not identified the mechanism.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.9\linewidth]{figures/fig4_prize.pdf}
-\caption{Featured and Research competitions: mean gap in units of the team spread, for all submissions and for teams' first submissions.}
-\label{fig:prize}
-\end{figure}
+
 
 \section{Limitations}
 
@@ -220,4 +215,14 @@ Code, the archived analysis plan, the label table and all result tables will be 
 
 \appendix
 \input{appendix_secondary}
+
+\section{Featured and Research competitions}
+\label{app:prize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig4_prize.pdf}
+\caption{Featured and Research competitions: mean gap in units of the team spread, for all submissions and for teams' first submissions.}
+\label{fig:prize}
+\end{figure}
 \end{document}

@@ -1,0 +1,4 @@
+CompetitionId,Cohort,Slug,n_pub,n_priv,PaperPublicSize,PaperPrivateSize,LeaderboardPercentage,inferred_public_share,size_tier,p05_first,p05_all,fit_pub,fit_priv,scores_in_0_1,all_scores_compatible
+14666,E,machine-learning-project-2,32444.0,75704.0,,,30,29.99963013647964,C: split ratio matches the reported public share; multiplier unverified,,,0.9730077120822622,0.9770742358078602,,False
+22720,E,sysu-dmml-1,17676.0,7576.0,,,70,69.99841596705211,C: split ratio matches the reported public share; multiplier unverified,,,0.9903660886319846,0.9854651162790696,,False
+23478,E,ai-club-inductions,3600.0,2400.0,,,60,60.0,C: split ratio matches the reported public share; multiplier unverified,,,1.0,1.0,False,False

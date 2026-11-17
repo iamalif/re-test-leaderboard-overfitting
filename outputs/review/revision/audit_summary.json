@@ -1,0 +1,18 @@
+{
+  "n": 50,
+  "changed_labels": 0,
+  "changed_flags": 0,
+  "reviewer": "Codex, second assistant; post-unsealing and not blinded to prior labels/results",
+  "label_counts": {
+    "UNSTATED": 46,
+    "RANDOM": 2,
+    "NO_TEXT": 2
+  },
+  "ambiguous_hidden_file_terminology": [
+    14774,
+    25914,
+    29653
+  ],
+  "scope": "Full local Overview and DatasetDescription; no linked documents, image contents, or external host verification",
+  "original_label_sha256": "edf340c395de553bb53086c811dc32ad3c4bb8d9313eb44f57455f155abab1b2"
+}

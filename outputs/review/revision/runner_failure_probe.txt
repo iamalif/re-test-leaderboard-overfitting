@@ -1,0 +1,9 @@
+EXPLORATORY MOCK TEST: no analysis scripts executed.
+resuming stage 3
+ALL DONE
+
+STDERR
+MOCK: fatal extraction error, exit 7
+DONE (mock only)
+
+EXIT 0

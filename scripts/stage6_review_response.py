@@ -18,7 +18,7 @@ man = pd.read_csv("data/reference/original_120_manifest.csv")[["CompetitionId", 
 m = m.merge(coh, on="CompetitionId").merge(man, on="CompetitionId", how="left")
 
 # ---- 1. size tiers
-a = m[(m.Group == "Accuracy") & m.n_pub.notna()].copy()
+a = m[(m.Group == "Accuracy") & m.p05_first.notna()].copy()   # usable fits only: every score on the lattice and within 0-1 (corrected after the follow-up review)
 a["inferred_public_share"] = 100 * a.n_pub / (a.n_pub + a.n_priv)
 a["share_matches_reported"] = (a.inferred_public_share - a.LeaderboardPercentage).abs() <= 1.0
 a["published_equal"] = (a.n_pub == a.PaperPublicSize) & (a.n_priv == a.PaperPrivateSize)
@@ -74,8 +74,8 @@ def add(label, x):
 add("split stated random (O+E)", m[m.split_label == "RANDOM"])
 acc = a
 add("accuracy, O+E, all with sizes", acc)
-add("accuracy, first submissions fit the null (share p<=0.05 at most 5%)", acc[acc.p05_first <= 0.05])
-add("accuracy, first submissions do not fit (share above 5%)", acc[acc.p05_first > 0.05])
+add("accuracy, share of first-submission p<=0.05 is at most 5% (outcome-selected filter; NOT evidence of a random split)", acc[acc.p05_first <= 0.05])
+add("accuracy, share of first-submission p<=0.05 above 5%", acc[acc.p05_first > 0.05])
 add("accuracy, tiers A-B only", acc[acc.size_tier.str[0].isin(["A", "B"])])
 for coh_ in ("O", "E"):
     x = m[m.Cohort == coh_]; v = x.first_mean_gap; pos = int((v > 0).sum()); nz = int((v != 0).sum())

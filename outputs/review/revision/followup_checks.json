@@ -1,0 +1,37 @@
+{
+  "five_examples": {
+    "mean_drift": 0.0,
+    "positive_probability": 0.8
+  },
+  "large_example": {
+    "N": 10000,
+    "public_size": 2000,
+    "private_size": 8000,
+    "positive_drift": "1/8000",
+    "positive_probability": 0.8,
+    "negative_drift": "-1/2000",
+    "negative_probability": 0.2,
+    "mean_drift": 0
+  },
+  "baseline": "517ee6f84cdf0222eaaa73c732ca3ef2287ade64",
+  "invalid_sizes_in_tiers": [
+    14666,
+    22720,
+    23478
+  ],
+  "tier_counts_all": {
+    "A": 1,
+    "B": 21,
+    "C": 99,
+    "D": 7
+  },
+  "tier_counts_compatible": {
+    "A": 1,
+    "B": 21,
+    "C": 96,
+    "D": 7
+  },
+  "paper_sha256": "4d2c4bfbafcc9de28551c29e8d53c9042a23886c5af1cfec987512b041835341",
+  "plan_unchanged": true,
+  "stage3_confirmatory_unchanged": true
+}

@@ -207,3 +207,12 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Review's sensitivity numbers recomputed and confirmed (unclipped drift 307 of 481; doubled sizes 11.1% and 11.7%).
 - Paper revised to v0.2 (`paper/main.tex`, 9 pages); pre-review version kept as `paper/main_v0.1_before_review.tex`. New title: "Leaderboard Overfitting on Kaggle, Revisited: A Pre-Specified Re-Test and the Limits of Aggregate Scores". Response: `reviews/response_2026-11-16.md`. `run_all.sh` added.
 - Open: second-reader full-text label audit; series-level dependence; matched O/E comparisons; fuller tail summaries for H1; anonymised code package; arXiv endorsement.
+
+# Follow-up review and second revision (2026-11-17, about 01:00-01:30, Claude)
+
+- Follow-up review (`reviews/review_2026-11-16_followup.md`, baseline 517ee6f): the converse added in the first response ("under a random split drift has no preferred sign") is FALSE for unequal split sizes; exact counterexample with 80% positive drift and no feedback. Accepted and WITHDRAWN. Note for the record: my stage 6 simulation had returned 44.7% positive under a random split and I dismissed the departure from 50% as noise.
+- Also accepted: the first-submission-fit subgroup is not evidence of a random split (removed from the paper); three invalid fits in the tier inventory (tiers now A 1, B 21, C 96, D 7 over 125 usable fits); "code-only" does not mean re-run on hidden data; runner did not stop on failure (fixed, not yet re-run end to end).
+- The second assistant completed the full-text audit of the 50-competition sample as second reader: 0 label changes, three ambiguous cases (14774, 25914, 29653). This closes the audit owed under plan section 8; the earlier excerpt-based check remains logged as a deviation. The second reader was not blind to labels or results.
+- New exploratory analysis (`scripts/stage6_split_size_symmetry.py`): share of positive drift does not depend on reported public share (under 40%: 67%; exactly 50%: 63%; over 50%: 67%; O+E, all metrics). Equal-size, unclipped, accuracy/AUC/MAP@K: 58 of 90 positive (p 0.008); E alone 37 of 61 (p 0.12). Mean unclipped accuracy drift O+E 0.10 pp (0.02 to 0.19). The unequal-size mechanism does not explain the pattern; the composition mechanism remains open.
+- Paper revised to v0.3; v0.2 kept as `paper/main_v0.2_before_followup.tex`. Response: `reviews/response_2026-11-17_followup.md`.
+- Standing position: descriptive and identification-limits framing. No causal claim about adaptation.

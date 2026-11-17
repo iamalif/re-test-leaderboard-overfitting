@@ -4,7 +4,7 @@ A pre-registered re-test of Roelofs et al., "A Meta-Analysis of Overfitting in M
 
 ## Status (17 November 2026)
 
-- Paper: `paper/main.pdf` (v0.13, 14 pages including references and appendix; source `paper/main.tex`, generated appendix `paper/appendix_secondary.tex`).
+- Paper: `paper/main.pdf` (v0.14, 14 pages including references and appendix; source `paper/main.tex`, generated appendix `paper/appendix_secondary.tex`).
 - Analysis plan v1.0, fixed and archived publicly on 16 Nov 2026 before any later-competition score was examined: `analysis_plan/`.
 - All results are rebuilt from the raw data by one command (below). Clean runs under Python 3.14 and 3.12 agree, and a smoke test of the review package passed on macOS (`outputs/rebuild/`).
 - Remaining before submission: the researcher's read-through, and venue-specific preparation.

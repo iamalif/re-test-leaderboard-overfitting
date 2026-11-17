@@ -1,9 +1,15 @@
 #!/bin/bash
 # Rebuild every table and figure from data/raw/. Python 3.12 with requirements.txt. Stops at the first failure.
-# Stage 3 is resumable and skips competitions already in outputs/stage3/competition_measures.csv;
-# for a truly clean rebuild, start from a fresh checkout (or move outputs/ aside first).
+# Result tables are tracked in the repository and stage 3 skips competitions it finds already recorded, so a plain
+# run in a checkout REUSES them. For a clean rebuild run:   CLEAN=1 PY=.venv/bin/python ./run_all.sh
+# CLEAN=1 moves the existing outputs/ aside to outputs_previous_<time>/ and recomputes everything from data/raw/.
+# Afterwards compare:   python scripts/compare_outputs.py outputs_previous_<time> outputs
 set -euo pipefail
 PY=${PY:-python}
+if [ "${CLEAN:-0}" = "1" ]; then
+  prev=outputs_previous_$(date +%Y%m%d_%H%M%S); mv outputs "$prev"; echo "moved existing outputs to $prev"
+fi
+mkdir -p outputs/stage1 outputs/stage2 outputs/stage3 outputs/stage4 outputs/stage6 paper/figures
 $PY scripts/stage0_feasibility.py
 $PY scripts/stage1_reproduce.py --project .
 $PY scripts/stage1_cohort_counts.py

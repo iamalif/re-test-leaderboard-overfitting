@@ -256,3 +256,13 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - `scripts/stage3_build_labels.py` added to `run_all.sh`, as was `stage6_dependence_and_strata.py`; stage 7 removed.
 - Paper v0.5: paragraph on related competitions, strata and tails; limitations record the withdrawn deadline contrast; conclusion notes larger absolute gaps for accuracy. v0.4 kept as `paper/main_v0.4_before_dependence.tex`.
 - Response: `reviews/response_2026-11-17_deadline_v11.md`.
+
+# Review of v0.5 answered; reproducibility closed out; anonymised package (2026-11-17, about 02:45-03:20, Claude)
+
+- Review `reviews/review_2026-11-17_v05.md`: no new major issue; three packaging items. All accepted (`reviews/response_2026-11-17_v05.md`).
+- DEVIATION now logged: the group bootstrap first ran with 4,000 draws although the definition entry said 10,000. Re-run at 10,000 (first run kept as `outputs/stage6/dependence_and_strata_4000draws.csv`). H1b interval lower bound -0.0043 -> -0.0041; others unchanged at printed precision.
+- `run_all.sh`: `CLEAN=1` moves `outputs/` aside before recomputing. `scripts/compare_outputs.py` added. Rebuild evidence in `outputs/rebuild/`.
+- `outputs/stage4/prize_competitions_O_vs_E.csv` is now produced by `scripts/stage4_code_only.py` (it had been built inline); exact match with the earlier table.
+- Paper v0.6: exact grouping rule and counts; grouping called one sensitivity analysis; host-category split said not to be matching. v0.5 not separately kept (changes are these three sentences and one interval bound).
+- Anonymised package: `scripts/make_anonymous_package.py` -> `anonymous_package/`, `anonymous_review_package.zip` (not tracked in Git). Docs in `anonymous_package_docs/`.
+- Remaining before submission: the researcher's read-through; smoke test of the package on the researcher's machine; arXiv endorsement; decide on preprint timing given double-blind review.

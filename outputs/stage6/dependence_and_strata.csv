@@ -1,13 +1,13 @@
 analysis,quantity,estimate,ci_lo,ci_hi,clusters,median_E,median_O
-cluster bootstrap,"H1a accuracy median gap, E minus O (pp)",-0.029491546772960002,-0.204827636147965,0.11157088723169999,80.0,,
-cluster bootstrap,"H1b AUC median gap, E minus O",-0.0006881038051529,-0.004267287388143772,0.001870436102604011,67.0,,
-cluster bootstrap,"H3 median relative drift, E minus O",0.0012948203556496993,-0.0041559967982303355,0.0098774572896443,180.0,,
-cluster bootstrap,H2 share of E competitions with positive drift,0.6798336798336798,0.6287653297978124,0.7177247300063528,247.0,,
-"one competition per cluster, 2000 draws",H2 share positive,0.680161943319838,0.659919028340081,0.6963562753036437,247.0,,
-"one competition per cluster, 2000 draws",H2 sign-test p-value (median; 97.5th percentile in ci_hi),1.518526009786526e-08,6.108977445113691e-10,5.612555999323111e-07,247.0,,
+cluster bootstrap,"H1a accuracy median gap, E minus O (pp)",-0.029491546772960002,-0.20495901893654,0.11157088723169999,80.0,,
+cluster bootstrap,"H1b AUC median gap, E minus O",-0.0006881038051529,-0.004099941452304736,0.001908084083447657,67.0,,
+cluster bootstrap,"H3 median relative drift, E minus O",0.0012948203556496993,-0.0043440253878630096,0.0099669756315765,180.0,,
+cluster bootstrap,H2 share of E competitions with positive drift,0.6798336798336798,0.6285697596795727,0.718346598681756,247.0,,
+"one competition per cluster, 2000 draws",H2 share positive,0.680161943319838,0.659919028340081,0.7004048582995951,247.0,,
+"one competition per cluster, 2000 draws",H2 sign-test p-value (median; 97.5th percentile in ci_hi),1.518526009786526e-08,2.6119571776772485e-10,5.612555999323111e-07,247.0,,
 by cluster type,"E share positive drift, organisation clusters only",0.7357142857142858,,,108.0,,
 by cluster type,"E share positive drift, excluding organisation 4 (Playground host)",0.6666666666666666,,,246.0,,
-stratified,"Accuracy, Community: median gap E (82) minus O (25) pp",-0.04261428494433663,-0.21534985464106998,0.07688093339192953,,0.01643503699509337,0.05904932193943
+stratified,"Accuracy, Community: median gap E (82) minus O (25) pp",-0.04261428494433663,-0.210539723809165,0.07677718864451846,,0.01643503699509337,0.05904932193943
 stratified,"Accuracy, not Community: median gap E (13) minus O (8) pp",0.21970777829671,-0.31387554934357165,0.6524607959008251,,0.2313620015806,0.01165422328389
 stratified,"AUC, Community: median gap E (29) minus O (7) ",-0.0051591008725748,-0.0433963401853623,0.0033106921250833,,0.0008451451849145,0.0060042460574893
-stratified,"AUC, not Community: median gap E (44) minus O (33) ",-9.99066600553e-05,-0.0037041428951036003,0.0015076192591377499,,0.0003754346854839,0.0004753413455392
+stratified,"AUC, not Community: median gap E (44) minus O (33) ",-9.99066600553e-05,-0.00388868412965595,0.0015415347196313068,,0.0003754346854839,0.0004753413455392

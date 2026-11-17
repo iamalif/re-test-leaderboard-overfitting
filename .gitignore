@@ -23,3 +23,9 @@ paper/*.blg
 
 # Stage 7 extract of post-deadline scores
 outputs/stage7/post_deadline_submissions.parquet
+
+# Anonymised review package (built by scripts/make_anonymous_package.py)
+anonymous_package/
+anonymous_package_old_*/
+anonymous_review_package.zip
+outputs_previous_*/

@@ -1,5 +1,7 @@
 """Stage 6 (EXPLORATORY): dependence between related competitions, stratified O-versus-E comparisons, and tail
 summaries for H1. Definitions were written in decision_log.md (17 Nov 2026) before this script was run.
+First run used 4,000 group-bootstrap draws instead of the logged 10,000 (kept as dependence_and_strata_4000draws.csv);
+this version uses 10,000 as specified.
 
 Run from the project root:  python scripts/stage6_dependence_and_strata.py
 """
@@ -20,20 +22,22 @@ O, E = m[m.Cohort == "O"], m[m.Cohort == "E"]
 print("clusters:", m.cluster.nunique(), "for", len(m), "competitions; largest:", m.cluster.value_counts().head(4).to_dict())
 
 def cluster_boot(df, stat, B=10000):
-    groups = [g for _, g in df.groupby("cluster")]; out = []
+    """Resample whole groups with replacement. `stat` receives a DataFrame. Row positions are gathered with arrays
+    (same draws as concatenating group frames, far faster)."""
+    df = df.reset_index(drop=True); groups = [g.index.values for _, g in df.groupby("cluster")]; out = []
     for _ in range(B):
-        idx = rng.integers(0, len(groups), len(groups)); out.append(stat(pd.concat([groups[i] for i in idx])))
+        idx = rng.integers(0, len(groups), len(groups)); out.append(stat(df.iloc[np.concatenate([groups[i] for i in idx])]))
     return np.nanpercentile(out, [2.5, 97.5])
 rows = []
 def med_diff(col, grp, scale=1.0):
     sub = m[m.Group.isin(grp) & m.Cohort.isin(["O", "E"]) & m[col].notna()]
     f = lambda d: (d[d.Cohort == "E"][col].median() - d[d.Cohort == "O"][col].median()) * scale
-    lo, hi = cluster_boot(sub, f, 4000); return f(sub), lo, hi, sub.cluster.nunique()
+    lo, hi = cluster_boot(sub, f); return f(sub), lo, hi, sub.cluster.nunique()
 for name, col, grp, sc in (("H1a accuracy median gap, E minus O (pp)", "mean_gap", ["Accuracy"], 100), ("H1b AUC median gap, E minus O", "mean_gap", ["AUC"], 1),
                            ("H3 median relative drift, E minus O", "rel_drift", FIVE, 1)):
     est, lo, hi, k = med_diff(col, grp, sc); rows.append(dict(analysis="cluster bootstrap", quantity=name, estimate=est, ci_lo=lo, ci_hi=hi, clusters=k))
 e = E[E.drift_mean.notna()]
-lo, hi = cluster_boot(e, lambda d: (d.drift_mean > 0).mean(), 4000)
+lo, hi = cluster_boot(e, lambda d: (d.drift_mean > 0).mean())
 rows.append(dict(analysis="cluster bootstrap", quantity="H2 share of E competitions with positive drift", estimate=(e.drift_mean > 0).mean(), ci_lo=lo, ci_hi=hi, clusters=e.cluster.nunique()))
 shares, ps = [], []
 for _ in range(2000):

@@ -1,0 +1,51 @@
+table,rows_new,rows_ref,sha256_new,sha256_ref,max_relative_difference,nan_mismatches,identical_bytes,status
+stage0_per_competition.csv,12865.0,12865.0,6ca235d121f140bc,63ebf7f96fafb239,0.0,0.0,False,same
+stage1/benchmark_and_tie_sensitivity.csv,120.0,120.0,6491a13311ee561b,f555321d1b603ab8,3.3996165822422277e-09,0.0,False,same
+stage1/candidate_cohort_counts.csv,2.0,2.0,5ce775480de09ff7,5ce775480de09ff7,0.0,0.0,True,same
+stage1/cohort_counts.csv,20.0,20.0,cb7ae88f34b3dbd1,cb7ae88f34b3dbd1,0.0,0.0,True,same
+stage1/cohort_per_competition.csv,894.0,894.0,42188cf1b9df3bcd,ca6f1460d8aa2715,0.0,0.0,False,same
+stage1/denominator_audit.csv,34.0,34.0,36b767d475f3cc86,36b767d475f3cc86,0.0,0.0,True,same
+stage1/denominator_candidates_UNVERIFIED.csv,133.0,133.0,b323c6bd30c89359,b323c6bd30c89359,0.0,0.0,True,same
+stage1/first_day_and_pvalue_sensitivity.csv,19.0,19.0,78e879ece6b442ad,78e879ece6b442ad,0.0,0.0,True,same
+stage1/original_sample_audit.csv,120.0,120.0,d8626ea8b0e54edb,d8626ea8b0e54edb,0.0,0.0,True,same
+stage1/original_team_flags.csv,1385785.0,101661.0,0b3d5a31b00df5ab,16ee8ae3108266be,,,,DIFFERENT SHAPE
+stage1/pvalue_summary.csv,57.0,57.0,47317ed7f2b2821f,f7805d5b1653ba54,2.62879670788224e-14,0.0,False,same
+stage1/replication_summary.csv,120.0,120.0,05563ebb1dd17417,847f82888764f8a6,1.9917472634512733e-14,0.0,False,same
+stage2/pilot_original_drift_tests.csv,6.0,6.0,6459350b318cf6a8,989b846a3707e2cc,0.0,0.0,False,same
+stage2/pilot_original_inferred_sizes.csv,34.0,34.0,a99571ff938eeb47,a99571ff938eeb47,0.0,0.0,True,same
+stage2/pilot_original_measures.csv,120.0,120.0,f4dff6cd7c21f7c0,02c52b3641965114,8.926779301383591e-14,0.0,False,same
+stage2/pilot_simulation.csv,4.0,4.0,52b017e25c617d8e,52b017e25c617d8e,0.0,0.0,True,same
+stage3/competition_measures.csv,686.0,686.0,1c38e35f6d3f87ef,77db346bb59e8472,0.0,0.0,False,same
+stage3/results_confirmatory.csv,8.0,8.0,dfb3ba44074ef601,dfb3ba44074ef601,0.0,0.0,True,same
+stage3/results_descriptive.csv,16.0,16.0,2e4041855cf53c45,2e4041855cf53c45,0.0,0.0,True,same
+stage3/results_secondary.csv,88.0,88.0,d813c48d47609b33,d813c48d47609b33,0.0,0.0,True,same
+stage3/split_evidence_sentences.csv,684.0,684.0,ae9bda5914060c4d,ae9bda5914060c4d,0.0,0.0,True,same
+stage3/split_labels.csv,684.0,684.0,edf340c395de553b,edf340c395de553b,0.0,0.0,True,same
+stage4/code_only_summary.csv,4.0,4.0,3bff0a65cca93d12,3bff0a65cca93d12,0.0,0.0,True,same
+stage4/code_only_tests.csv,9.0,9.0,cf7e1e4efc01d991,cf7e1e4efc01d991,0.0,0.0,True,same
+stage4/drift_robustness_per_competition.csv,652.0,652.0,5410d33d36248589,b481dc5cd928a50e,0.0,0.0,False,same
+stage4/drift_robustness_summary.csv,56.0,56.0,867aef9d18f759bb,867aef9d18f759bb,0.0,0.0,True,same
+stage6/competition_clusters.csv,652.0,652.0,fc7a113aec3a2e2c,fc7a113aec3a2e2c,0.0,0.0,True,same
+stage6/dependence_and_strata.csv,12.0,12.0,74996febec581fb4,74996febec581fb4,0.0,0.0,True,same
+stage6/drift_under_random_split_evidence.csv,7.0,7.0,57561c19ca2c31c6,57561c19ca2c31c6,0.0,0.0,True,same
+stage6/exchangeability_simulation.csv,2.0,2.0,2a865bd68e5d0f9b,2a865bd68e5d0f9b,0.0,0.0,True,same
+stage6/h1_tail_summary.csv,8.0,8.0,0e6760f4a1c74942,0e6760f4a1c74942,0.0,0.0,True,same
+stage6/size_evidence_tiers.csv,125.0,125.0,c01cabda29a1a398,c9362c1f6f046c9e,0.0,0.0,False,same
+stage6/split_size_symmetry.csv,39.0,39.0,dcaf8ba6d3930a87,dcaf8ba6d3930a87,0.0,0.0,True,same
+stage6/verify_review_numbers.csv,652.0,652.0,1f7162ad94eff79a,487ae25adbce11b2,0.0,0.0,False,same
+review/confirmatory_recomputed.csv,,,,,,,,only in reference
+review/nonadaptive_counterexample.csv,,,,,,,,only in reference
+review/original_11_size_disagreements.csv,,,,,,,,only in reference
+review/raw_drift_and_size_sensitivity.csv,,,,,,,,only in reference
+review/revision/full_text_second_reader_audit.csv,,,,,,,,only in reference
+review/revision/ineligible_size_tiers.csv,,,,,,,,only in reference
+review/revision/random_split_exact_counterexample.csv,,,,,,,,only in reference
+review/v03/corrected_split_share_table.csv,,,,,,,,only in reference
+review/v03/nominal_50_accuracy_sizes.csv,,,,,,,,only in reference
+stage1/accuracy_size_evidence_register.csv,,,,,,,,only in reference
+stage4/prize_competitions_O_vs_E.csv,,,,,,,,only in reference
+stage6/deadline_design_eligibility_metadata_only.csv,,,,,,,,only in reference
+stage6/dependence_and_strata_4000draws.csv,,,,,,,,only in reference
+stage6/post_deadline_counts_metadata_only.csv,,,,,,,,only in reference
+stage7/eligibility_v1.1_metadata_only.csv,,,,,,,,only in reference
+stage7/selftest_suite.csv,,,,,,,,only in reference

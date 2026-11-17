@@ -42,3 +42,13 @@ au, bu = a[~a.flagged], b[~b.flagged]
 tests.append(dict(measure="rel_mean_gap, unflagged only", code_only=au.rel_mean_gap.median(), not_code_only=bu.rel_mean_gap.median(), mannwhitney_p=mannwhitneyu(au.rel_mean_gap.dropna(), bu.rel_mean_gap.dropna()).pvalue))
 tt = pd.DataFrame(tests); tt.to_csv("outputs/stage4/code_only_tests.csv", index=False); print(tt.round(4).to_string(index=False))
 print(pd.crosstab(x[x.Cohort == "E"].Group, [x[x.Cohort == "E"].prize, x[x.Cohort == "E"].CodeOnly]))
+
+# ---- Featured and Research competitions, O versus E (was first produced by an inline snippet on 16 Nov; moved here 17 Nov)
+o = x[(x.Cohort == "O") & x.prize]; e = x[(x.Cohort == "E") & x.prize]; prows = []
+for lab, ee, oo in (("all", e, o), ("unflagged", e[~e.flagged], o[~o.flagged]), ("five original metric groups", e[~e.Group.isin(["Other", "Regression"])], o)):
+    for col in ("mean_gap", "first_mean_gap", "top10_mean_gap", "drift_mean"):
+        tab = [[int((ee[col] > 0).sum()), int((ee[col] <= 0).sum())], [int((oo[col] > 0).sum()), int((oo[col] <= 0).sum())]]
+        prows.append(dict(sample=lab, measure=col + " > 0", E=f"{tab[0][0]}/{sum(tab[0])} = {tab[0][0]/sum(tab[0]):.3f}", O=f"{tab[1][0]}/{sum(tab[1])} = {tab[1][0]/sum(tab[1]):.3f}", p=fisher_exact(tab)[1]))
+    for col in ("rel_mean_gap", "rel_first_gap", "rel_drift"):
+        prows.append(dict(sample=lab, measure="median " + col, E=round(ee[col].median(), 4), O=round(oo[col].median(), 4), p=mannwhitneyu(ee[col].dropna(), oo[col].dropna()).pvalue))
+pd.DataFrame(prows).to_csv("outputs/stage4/prize_competitions_O_vs_E.csv", index=False)

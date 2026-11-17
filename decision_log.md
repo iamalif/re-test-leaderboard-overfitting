@@ -409,3 +409,9 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 
 - No new concern of substance. One wording suggestion adopted: the contribution bullet said the simulation shows drift "arises equally without feedback" (an overstatement). It now names "a formal characterisation (Proposition 1) and a simulation showing that positive drift is not specific to adaptation".
 - Anticipating the expected reviewer question on recent competitions, the limitation on accuracy coverage now adds a descriptive count, computed from `outputs/stage3/competition_measures.csv` and not a pre-specified test: 156 of 487 later competitions ended in 2023-2026, and drift is positive in 114 of the 151 where it is defined.
+
+# AI-use wording refined after the researcher's exchange with the third party (2026-11-17, about 22:15, Claude)
+
+- Footnote now: LLM assistants "were used to assist with implementing the analysis code, with analysis design, with drafting the manuscript, and for critical review. The authors directed the study, evaluated every suggestion, reviewed and revised all analyses and text, and take full responsibility for the results and conclusions."
+- Review wording, in two places, now says "a separate LLM-assisted review". In Reproducibility it re-implemented the confirmatory tests and the main per-competition measures and reproduced them to within 1e-10 relative, matching the comprehensive review's documented tolerance.
+- The third party's proposed "the authors selected all analyses, preregistered the study design" was not used verbatim. The archived plan in the review package states it was "approved under authority the researcher delegated to the analysis assistant", and a reviewer reading both would see a contradiction. The adopted wording is consistent with the plan.

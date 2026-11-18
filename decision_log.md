@@ -441,3 +441,8 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - Second assistant's final QA of v0.17 (`reviews/review_2026-11-17_v017.md`): no outstanding correction; scientific QA closed. Its reviewed artefacts match the frozen files byte for byte: PDF baef9c1d..., ZIP 9735c944....
 - Frozen copies in `submission/` (tmlr_submission_v0.17.pdf; supplementary_anonymous_package.zip, ignored by git). Kit: `submission/SUBMISSION_KIT.md` (form fields, plain-text abstract, recommended action editors from TMLR's board, declarations, confidential note, checklist).
 - Data files uploaded by the researcher to the secondary Google Drive with EDITOR_README.txt. The link is kept by the researcher only and goes into the confidential comment.
+
+# SUBMITTED to TMLR (2026-11-18, 01:10 Europe/Stockholm)
+
+- OpenReview forum: https://openreview.net/forum?id=b3wKG8vniF ; TMLR submission number 14632; sole author ~Al_Amin_Alif1; regular submission; PDF `submission/tmlr_submission_v0.17.pdf` (SHA-256 baef9c1d...), supplementary `submission/supplementary_anonymous_package.zip` (SHA-256 9735c944...). Current readers: TMLR, Action Editors, Authors, AI Reviewer. Competing interests N/A; human subjects not applicable.
+- Pending: confidential comment to the editors (data link, archive evidence), after checking its readers; action editor recommendation if TMLR asks for it; no confirmation email received (both inboxes checked); the submission is confirmed on OpenReview itself.

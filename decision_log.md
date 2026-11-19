@@ -449,3 +449,8 @@ Waiting on the researcher: (1) review and approve the plan; (2) post it publicly
 - 2026-11-18 01:24: confidential comment posted (note GMOxC2wDN1), readers Editors-in-Chief, Action Editors, Authors only; signed 'by Authors'. Email notification received at du.se. Remaining open: action editor recommendation, if TMLR asks under Tasks.
 - 2026-11-18 01:35: post-submission brief for the second assistant: reviews/briefs/BRIEF_2026-11-18_post_submission.md
 - 2026-11-18 04:25: action editors recommended (TMLR asked by email at 04:05): Stephan Clémençon, Matthew J. Holland, Martin Mundt, Frederic Sala, all available with spare capacity; profiles checked by the researcher and the assistant. A. Feder Cooper unavailable; Junpei Komiyama at capacity (10 of 10). Authors of the 2019 study deliberately not recommended.
+
+# arXiv preparation (2026-11-19, about 22:30, Claude)
+
+- The researcher proposed asking the 2019 study's authors for an arXiv endorsement. Advised against: it would reveal authorship of an anonymous paper under review to likely reviewers, and it conflicts with the project's no-contact rule. Researcher to ask Dalarna faculty instead.
+- Named preprint built from the frozen v0.17 source, with nothing else changed: TMLR "preprint" option; author "Al Amin Alif, School of Information and Engineering, Dalarna University, Sweden" (no email until the researcher decides); footnote in the singular. `paper/preprint_named_v0.17.pdf` (for endorsers) and `paper/arxiv_source.zip` (TeX source with .bbl; compiles standalone, 14 pages). The submitted TMLR files are untouched.

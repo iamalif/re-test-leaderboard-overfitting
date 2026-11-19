@@ -36,3 +36,7 @@ outputs/stage3/competition_measures.csv.rows.jsonl.fingerprint.json
 
 # Frozen supplementary copy (built artefact)
 submission/*.zip
+
+# arXiv preprint build (not part of the submission)
+paper/arxiv/
+paper/arxiv_source.zip
